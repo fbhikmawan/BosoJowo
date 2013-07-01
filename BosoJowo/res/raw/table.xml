@@ -1,0 +1,323 @@
+<sql>
+<statement>
+CREATE TABLE IF NOT EXISTS pepak (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT, 
+	name VARCHAR(50))
+</statement>
+<statement>INSERT INTO pepak VALUES(1,'Kawruh Rupa')</statement>
+<statement>INSERT INTO pepak VALUES(2,'Paramasastra')</statement>
+<statement>INSERT INTO pepak VALUES(3,'Kawruh Basa')</statement>
+<statement>INSERT INTO pepak VALUES(4,'Kasusastraan')</statement>
+<statement>INSERT INTO pepak VALUES(5,'Pewayangan')</statement>
+<statement>INSERT INTO pepak VALUES(6,'Aksara Jawa')</statement>
+
+<statement>
+CREATE TABLE IF NOT EXISTS category (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	pepakId INTEGER,
+	catname VARCHAR(100))
+</statement>
+<statement>INSERT INTO category VALUES(1,1,'Tetawuhan')</statement>
+<statement>INSERT INTO category VALUES(2,1,'Kewan')</statement>
+<statement>INSERT INTO category VALUES(3,1,'Manungso')</statement>
+<statement>INSERT INTO category VALUES(4,1,'Kawruh Liya-liya')</statement>
+<statement>INSERT INTO category VALUES(5,2,'Tembung Lingga')</statement>
+<statement>INSERT INTO category VALUES(6,2,'Tembung Andahan')</statement>
+<statement>INSERT INTO category VALUES(7,2,'Tembung Rangkep')</statement>
+<statement>INSERT INTO category VALUES(8,2,'Tembung Camboran')</statement>
+<statement>INSERT INTO category VALUES(9,2,'Tembung Tanduk')</statement>
+<statement>INSERT INTO category VALUES(10,2,'Tembung Tanggap')</statement>
+<statement>INSERT INTO category VALUES(11,2,'Ayahan Tembung')</statement>
+<statement>INSERT INTO category VALUES(12,2,'Silah-silahing Tembung - Jenis Kata')</statement>
+<statement>INSERT INTO category VALUES(13,2,'Silah-silahing Ukara - Jenis Kalimat')</statement>
+<statement>INSERT INTO category VALUES(14,2,'Tembung Kromo Perangane Awak')</statement>
+<statement>INSERT INTO category VALUES(15,2,'Tembung-tembung Liyane - Kata lainya')</statement>
+<statement>INSERT INTO category VALUES(16,3,'Tembung Podo Tegese - Persamaan Kata')</statement>
+<statement>INSERT INTO category VALUES(17,3,'Tembung Kosok Balen - Kebalikan Kata')</statement>
+<statement>INSERT INTO category VALUES(18,3,'Negesi Tembung - Arti Kata')</statement>
+<statement>INSERT INTO category VALUES(19,3,'Tembung Kawi - Kata Kawi')</statement>
+<statement>INSERT INTO category VALUES(20,3,'Tembung Dasanama - Kata Dasanama')</statement>
+<statement>INSERT INTO category VALUES(21,3,'Tembung Camboran')</statement>
+<statement>INSERT INTO category VALUES(22,3,'Tembung Saroja')</statement>
+<statement>INSERT INTO category VALUES(23,3,'Tembung Garbah')</statement>
+<statement>INSERT INTO category VALUES(24,3,'Tembung Entar')</statement>
+<statement>INSERT INTO category VALUES(25,3,'Keretabasa')</statement>
+<statement>INSERT INTO category VALUES(26,3,'Rurabasa')</statement>
+<statement>INSERT INTO category VALUES(27,3,'Tembung Plutan')</statement>
+<statement>INSERT INTO category VALUES(28,3,'Yogyaswara')</statement>
+<statement>INSERT INTO category VALUES(29,4,'Pribasan')</statement>
+<statement>INSERT INTO category VALUES(30,4,'Cangkriman')</statement>
+<statement>INSERT INTO category VALUES(31,4,'Wangsalan')</statement>
+<statement>INSERT INTO category VALUES(32,4,'Tembang')</statement>
+<statement>INSERT INTO category VALUES(33,4,'Purwakanthi')</statement>
+<statement>INSERT INTO category VALUES(34,5,'Satriya lan Kesatriya')</statement>
+<statement>INSERT INTO category VALUES(35,5,'Pandhita lan Pertapane')</statement>
+<statement>INSERT INTO category VALUES(36,5,'Pusaka, Gaman lan Jejimat')</statement>
+<statement>INSERT INTO category VALUES(37,5,'Ratu lan Negarane')</statement>
+<statement>INSERT INTO category VALUES(38,5,'Dewa lan Kahyangane')</statement>
+<statement>INSERT INTO category VALUES(39,5,'Arame Adbi Kinasih')</statement>
+<statement>INSERT INTO category VALUES(40,5,'Dasanama Jeneng ing Pewayangan')</statement>
+<statement>INSERT INTO category VALUES(41,5,'Gamelan')</statement>
+<statement>INSERT INTO category VALUES(42,6,'Hanacaraka')</statement>
+
+<statement>
+CREATE TABLE IF NOT EXISTS subcategory (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	categoryId INTEGER,
+	subcatname VARCHAR(160))
+</statement>
+<statement>INSERT INTO subcategory VALUES(1,1,'Arane Kembang - Nama Bunga')</statement>
+<statement>INSERT INTO subcategory VALUES(2,1,'Arane Pentil - Nama Pentil Buah')</statement>
+<statement>INSERT INTO subcategory VALUES(3,1,'Arane Woh - Nama Buah')</statement>
+<statement>INSERT INTO subcategory VALUES(4,1,'Arane Isi - Nama Biji')</statement>
+<statement>INSERT INTO subcategory VALUES(5,1,'Arane Godhong - Nama Daun')</statement>
+<statement>INSERT INTO subcategory VALUES(6,1,'Arane Wit - Nama Pohon')</statement>
+<statement>INSERT INTO subcategory VALUES(7,2,'Arane Anak Kewan - Nama Anak Hewan')</statement>
+<statement>INSERT INTO subcategory VALUES(8,2,'Arane Turunane Kewan - Nama Keturunan Hewan')</statement>
+<statement>INSERT INTO subcategory VALUES(9,2,'Arane Gaman Kewan - Nama Senjata Hewan')</statement>
+<statement>INSERT INTO subcategory VALUES(10,2,'Solahe Kewan - Tingkah Hewan')</statement>
+<statement>INSERT INTO subcategory VALUES(11,2,'Swara Ngundang Kewan - Suara Manggil Hewan')</statement>
+<statement>INSERT INTO subcategory VALUES(12,2,'Swarane Kewan - Suara Hewan')</statement>
+<statement>INSERT INTO subcategory VALUES(13,2,'Rupane Kewan - Rupa-rupa Hewan')</statement>
+<statement>INSERT INTO subcategory VALUES(14,2,'Sebutane Mangan - Sebutan Cara Makan')</statement>
+<statement>INSERT INTO subcategory VALUES(15,3,'Urutane Turunan - Urutan Keturunan')</statement>
+<statement>INSERT INTO subcategory VALUES(16,3,'Urutane Sedulur - Urutan Saudara')</statement>
+<statement>INSERT INTO subcategory VALUES(17,3,'Prenahe Sedulur - Nama Sebutan Saudara')</statement>
+<statement>INSERT INTO subcategory VALUES(18,3,'Arane Wong - Sebutan Orang')</statement>
+<statement>INSERT INTO subcategory VALUES(19,3,'Sebutane Bocah - Sebutan Anak')</statement>
+<statement>INSERT INTO subcategory VALUES(20,3,'Candrane Perangan Awak')</statement>
+<statement>INSERT INTO subcategory VALUES(21,3,'Cacading Awak')</statement>
+<statement>INSERT INTO subcategory VALUES(22,3,'Perangan Sing...')</statement>
+<statement>INSERT INTO subcategory VALUES(23,3,'Pepindhan')</statement>
+<statement>INSERT INTO subcategory VALUES(24,3,'Sanepa')</statement>
+<statement>INSERT INTO subcategory VALUES(25,4,'Jenenge Pegawean')</statement>
+<statement>INSERT INTO subcategory VALUES(26,4,'Jenenge Tali')</statement>
+<statement>INSERT INTO subcategory VALUES(27,4,'Jenenge Wektu')</statement>
+<statement>INSERT INTO subcategory VALUES(28,4,'Jenenge Papan Panggonan')</statement>
+<statement>INSERT INTO subcategory VALUES(29,4,'Ambune Apa')</statement>
+<statement>INSERT INTO subcategory VALUES(30,4,'Rasa Apa')</statement>
+<statement>INSERT INTO subcategory VALUES(31,4,'Wilangan Kawi')</statement>
+<statement>INSERT INTO subcategory VALUES(32,4,'Wilangan Saperangan')</statement>
+<statement>INSERT INTO subcategory VALUES(33,4,'Ngemu Teges Mbangetake')</statement>
+<statement>INSERT INTO subcategory VALUES(34,4,'Tegese Sanaliko')</statement>
+<statement>INSERT INTO subcategory VALUES(35,4,'Tegese Tanpo')</statement>
+<statement>INSERT INTO subcategory VALUES(36,4,'Dino lan Pasaran')</statement>
+<!--paramasastra -->
+<statement>INSERT INTO subcategory VALUES(37,5,'Babagan Tembung Lingga - Bab Tembung Lingga')</statement>
+<statement>INSERT INTO subcategory VALUES(38,6,'Ater-ater Hanuswara')</statement>
+<statement>INSERT INTO subcategory VALUES(39,6,'Ater-ater Tripurasa')</statement>
+<statement>INSERT INTO subcategory VALUES(40,6,'Ater-ater Liyane')</statement>
+<statement>INSERT INTO subcategory VALUES(41,6,'Seselan')</statement>
+<statement>INSERT INTO subcategory VALUES(42,6,'Penambang')</statement>
+<!-- tembung rangkep -->
+<statement>INSERT INTO subcategory VALUES(43,7,'Tembung Dwilingga')</statement>
+<statement>INSERT INTO subcategory VALUES(44,7,'Tembung Dwipurwa')</statement>
+<statement>INSERT INTO subcategory VALUES(45,7,'Tembung Dwisasana')</statement>
+<statement>INSERT INTO subcategory VALUES(46,8,'Tembung Camboran yoiku')</statement>
+<statement>INSERT INTO subcategory VALUES(47,8,'Tembung Camboran Tunggal')</statement>
+<statement>INSERT INTO subcategory VALUES(48,8,'Tembung Camboran Wudhar')</statement>
+<statement>INSERT INTO subcategory VALUES(49,9,'Tembung Tanduk yaiku')</statement>
+<statement>INSERT INTO subcategory VALUES(50,9,'Tembung Tanduk Kriya Wantah')</statement>
+<statement>INSERT INTO subcategory VALUES(51,9,'Tembung Tanduk i - Kriya')</statement>
+<statement>INSERT INTO subcategory VALUES(52,9,'Tembung Tanduk ke - Kriya')</statement>
+<statement>INSERT INTO subcategory VALUES(53,10,'Tembung Tanggap yaiku')</statement>
+<statement>INSERT INTO subcategory VALUES(54,10,'Tembung Tanggap Tripurasa')</statement>
+<statement>INSERT INTO subcategory VALUES(55,10,'Tembung Tanggap na')</statement>
+<statement>INSERT INTO subcategory VALUES(56,10,'Tembung Tanggap Tarung')</statement>
+<statement>INSERT INTO subcategory VALUES(57,10,'Tembung Tanggap ka')</statement>
+<statement>INSERT INTO subcategory VALUES(58,11,'Babagan Ayahane Tembung - Bab Ayahane Tembung')</statement>
+<statement>INSERT INTO subcategory VALUES(59,12,'Silah-silahing Tembung "Golongan" - Jenis Kata')</statement>
+<statement>INSERT INTO subcategory VALUES(60,13,'Silah-silahing Ukara "Golongan" - Jenis Kalimat')</statement>
+<statement>INSERT INTO subcategory VALUES(61,14,'Perangane Awak')</statement>
+<statement>INSERT INTO subcategory VALUES(62,15,'A')</statement>
+<statement>INSERT INTO subcategory VALUES(63,15,'B')</statement>
+<statement>INSERT INTO subcategory VALUES(64,15,'C')</statement>
+<statement>INSERT INTO subcategory VALUES(65,15,'D')</statement>
+<statement>INSERT INTO subcategory VALUES(66,15,'E')</statement>
+<statement>INSERT INTO subcategory VALUES(67,15,'G')</statement>
+<statement>INSERT INTO subcategory VALUES(68,15,'I')</statement>
+<statement>INSERT INTO subcategory VALUES(69,15,'J')</statement>
+<statement>INSERT INTO subcategory VALUES(70,15,'K')</statement>
+<statement>INSERT INTO subcategory VALUES(71,15,'L')</statement>
+<statement>INSERT INTO subcategory VALUES(72,15,'M')</statement>
+<statement>INSERT INTO subcategory VALUES(73,15,'N')</statement>
+<statement>INSERT INTO subcategory VALUES(74,15,'O')</statement>
+<statement>INSERT INTO subcategory VALUES(75,15,'p')</statement>
+<statement>INSERT INTO subcategory VALUES(76,15,'R')</statement>
+<statement>INSERT INTO subcategory VALUES(77,15,'S')</statement>
+<statement>INSERT INTO subcategory VALUES(78,15,'T')</statement>
+<statement>INSERT INTO subcategory VALUES(79,15,'U')</statement>
+<statement>INSERT INTO subcategory VALUES(80,15,'W')</statement>
+<statement>INSERT INTO subcategory VALUES(81,15,'Y')</statement>
+
+<!-- Kawruh basa / padha tegese -->
+<statement>INSERT INTO subcategory VALUES(82,16,'A')</statement>
+<statement>INSERT INTO subcategory VALUES(83,16,'B')</statement>
+<statement>INSERT INTO subcategory VALUES(84,16,'C')</statement>
+<statement>INSERT INTO subcategory VALUES(85,16,'D')</statement>
+<statement>INSERT INTO subcategory VALUES(86,16,'E')</statement>
+<statement>INSERT INTO subcategory VALUES(87,16,'G')</statement>
+<statement>INSERT INTO subcategory VALUES(88,16,'I')</statement>
+<statement>INSERT INTO subcategory VALUES(89,16,'J')</statement>
+<statement>INSERT INTO subcategory VALUES(90,16,'K')</statement>
+<statement>INSERT INTO subcategory VALUES(91,16,'l')</statement>
+<statement>INSERT INTO subcategory VALUES(92,16,'M')</statement>
+<statement>INSERT INTO subcategory VALUES(93,16,'N')</statement>
+<statement>INSERT INTO subcategory VALUES(94,16,'O')</statement>
+<statement>INSERT INTO subcategory VALUES(95,16,'P')</statement>
+<statement>INSERT INTO subcategory VALUES(96,16,'R')</statement>
+<statement>INSERT INTO subcategory VALUES(97,16,'S')</statement>
+<statement>INSERT INTO subcategory VALUES(98,16,'T')</statement>
+<statement>INSERT INTO subcategory VALUES(99,16,'U')</statement>
+<statement>INSERT INTO subcategory VALUES(100,16,'W')</statement>
+<statement>INSERT INTO subcategory VALUES(101,16,'Y')</statement>
+
+<!-- Kawruh basa / kosok balen -->
+<statement>INSERT INTO subcategory VALUES(102,17,'A')</statement>
+<statement>INSERT INTO subcategory VALUES(103,17,'B')</statement>
+<statement>INSERT INTO subcategory VALUES(104,17,'C')</statement>
+<statement>INSERT INTO subcategory VALUES(105,17,'D')</statement>
+<statement>INSERT INTO subcategory VALUES(106,17,'E')</statement>
+<statement>INSERT INTO subcategory VALUES(107,17,'G')</statement>
+<statement>INSERT INTO subcategory VALUES(108,17,'I')</statement>
+<statement>INSERT INTO subcategory VALUES(109,17,'J')</statement>
+<statement>INSERT INTO subcategory VALUES(110,17,'K')</statement>
+<statement>INSERT INTO subcategory VALUES(111,17,'l')</statement>
+<statement>INSERT INTO subcategory VALUES(112,17,'M')</statement>
+<statement>INSERT INTO subcategory VALUES(113,17,'N')</statement>
+<statement>INSERT INTO subcategory VALUES(114,17,'O')</statement>
+<statement>INSERT INTO subcategory VALUES(115,17,'P')</statement>
+<statement>INSERT INTO subcategory VALUES(116,17,'R')</statement>
+<statement>INSERT INTO subcategory VALUES(117,17,'S')</statement>
+<statement>INSERT INTO subcategory VALUES(118,17,'T')</statement>
+<statement>INSERT INTO subcategory VALUES(119,17,'U')</statement>
+<statement>INSERT INTO subcategory VALUES(120,17,'W')</statement>
+
+<!-- negsei tembung -->
+<statement>INSERT INTO subcategory VALUES(121,18,'Agung')</statement>
+<statement>INSERT INTO subcategory VALUES(122,18,'Panggung')</statement>
+<statement>INSERT INTO subcategory VALUES(123,18,'Banyu')</statement>
+<statement>INSERT INTO subcategory VALUES(124,18,'Babat')</statement>
+<statement>INSERT INTO subcategory VALUES(125,18,'Juru')</statement>
+<statement>INSERT INTO subcategory VALUES(126,18,'Olah')</statement>
+<statement>INSERT INTO subcategory VALUES(127,18,'Pecah')</statement>
+<statement>INSERT INTO subcategory VALUES(128,18,'Runtuh')</statement>
+<statement>INSERT INTO subcategory VALUES(129,18,'Raja')</statement>
+<statement>INSERT INTO subcategory VALUES(130,18,'Sebrang')</statement>
+<statement>INSERT INTO subcategory VALUES(131,18,'Sari')</statement>
+<statement>INSERT INTO subcategory VALUES(132,18,'Tahun')</statement>
+<statement>INSERT INTO subcategory VALUES(133,18,'Timbangan')</statement>
+
+<!-- Tembung kawi -->
+<statement>INSERT INTO subcategory VALUES(134,19,'A')</statement>
+<statement>INSERT INTO subcategory VALUES(135,19,'B')</statement>
+<statement>INSERT INTO subcategory VALUES(136,19,'C')</statement>
+<statement>INSERT INTO subcategory VALUES(137,19,'D')</statement>
+<statement>INSERT INTO subcategory VALUES(138,19,'E')</statement>
+<statement>INSERT INTO subcategory VALUES(139,19,'G')</statement>
+<statement>INSERT INTO subcategory VALUES(140,19,'H')</statement>
+<statement>INSERT INTO subcategory VALUES(141,19,'I')</statement>
+<statement>INSERT INTO subcategory VALUES(142,19,'J')</statement>
+<statement>INSERT INTO subcategory VALUES(143,19,'K')</statement>
+<statement>INSERT INTO subcategory VALUES(144,19,'L')</statement>
+<statement>INSERT INTO subcategory VALUES(145,19,'M')</statement>
+<statement>INSERT INTO subcategory VALUES(146,19,'N')</statement>
+<statement>INSERT INTO subcategory VALUES(147,19,'O')</statement>
+<statement>INSERT INTO subcategory VALUES(148,19,'P')</statement>
+<statement>INSERT INTO subcategory VALUES(149,19,'R')</statement>
+<statement>INSERT INTO subcategory VALUES(150,19,'S')</statement>
+<statement>INSERT INTO subcategory VALUES(151,19,'T')</statement>
+<statement>INSERT INTO subcategory VALUES(152,19,'U')</statement>
+<statement>INSERT INTO subcategory VALUES(153,19,'W')</statement>
+<statement>INSERT INTO subcategory VALUES(154,19,'Y')</statement>
+
+<!-- dasanama -->
+<statement>INSERT INTO subcategory VALUES(155,20,'Dasanama')</statement>
+<statement>INSERT INTO subcategory VALUES(156,21,'Camboran Wutuh')</statement>
+<statement>INSERT INTO subcategory VALUES(157,21,'Camboran Tugel (wantah)')</statement>
+
+<statement>INSERT INTO subcategory VALUES(158,22,'A')</statement>
+<statement>INSERT INTO subcategory VALUES(159,22,'B')</statement>
+<statement>INSERT INTO subcategory VALUES(160,22,'C')</statement>
+<statement>INSERT INTO subcategory VALUES(161,22,'D')</statement>
+<statement>INSERT INTO subcategory VALUES(162,22,'E')</statement>
+<statement>INSERT INTO subcategory VALUES(163,22,'G')</statement>
+<statement>INSERT INTO subcategory VALUES(164,22,'I')</statement>
+<statement>INSERT INTO subcategory VALUES(165,22,'J')</statement>
+<statement>INSERT INTO subcategory VALUES(166,22,'K')</statement>
+<statement>INSERT INTO subcategory VALUES(167,22,'L')</statement>
+<statement>INSERT INTO subcategory VALUES(168,22,'M')</statement>
+<statement>INSERT INTO subcategory VALUES(169,22,'N')</statement>
+<statement>INSERT INTO subcategory VALUES(170,22,'O')</statement>
+<statement>INSERT INTO subcategory VALUES(171,22,'P')</statement>
+<statement>INSERT INTO subcategory VALUES(172,22,'R')</statement>
+<statement>INSERT INTO subcategory VALUES(173,22,'S')</statement>
+<statement>INSERT INTO subcategory VALUES(174,22,'T')</statement>
+<statement>INSERT INTO subcategory VALUES(175,22,'U')</statement>
+<statement>INSERT INTO subcategory VALUES(176,22,'W')</statement>
+
+
+<statement>INSERT INTO subcategory VALUES(177,23,'Tembung Garba')</statement>
+<statement>INSERT INTO subcategory VALUES(178,24,'Tembung Entar')</statement>
+<statement>INSERT INTO subcategory VALUES(179,25,'Keretabasa')</statement>
+<statement>INSERT INTO subcategory VALUES(180,26,'Rurabasa')</statement>
+<statement>INSERT INTO subcategory VALUES(181,27,'Tembung Plutan')</statement>
+<statement>INSERT INTO subcategory VALUES(182,28,'Yogyaswara')</statement>
+<statement>INSERT INTO subcategory VALUES(183,29,'Pribahasan, Bebasan, lan Saloka')</statement>
+
+<!-- Cangkriman -->
+<statement>INSERT INTO subcategory VALUES(184,30,'Cangkriman Wancah')</statement>
+<statement>INSERT INTO subcategory VALUES(185,30,'Cangkriman Pepindhan')</statement>
+<statement>INSERT INTO subcategory VALUES(186,30,'Cangkriman Wujud Tembang')</statement>
+
+<!-- Wangsalan -->
+<statement>INSERT INTO subcategory VALUES(187,31,'Wangsalan Sajroning Pacelathon')</statement>
+<statement>INSERT INTO subcategory VALUES(188,31,'Wangsalan Edi Peni')</statement>
+<statement>INSERT INTO subcategory VALUES(189,31,'Kinanthi')</statement>
+<statement>INSERT INTO subcategory VALUES(190,31,'Pangkur')</statement>
+
+<statement>INSERT INTO subcategory VALUES(191,32,'Babagan Tembang lan Warna-warnine')</statement>
+<statement>INSERT INTO subcategory VALUES(192,32,'Tuladha Tembang - Kinanthi')</statement>
+<statement>INSERT INTO subcategory VALUES(193,32,'Tuladha Tembang - Pangkur')</statement>
+<statement>INSERT INTO subcategory VALUES(194,32,'Tuladha Tembang - Dhandhanggula')</statement>
+<statement>INSERT INTO subcategory VALUES(195,32,'Tuladha Tembang - Parikan')</statement>
+
+<!-- Purwakanthi -->
+<statement>INSERT INTO subcategory VALUES(196,33,'Purwakanthi Guru Swara')</statement>
+<statement>INSERT INTO subcategory VALUES(197,33,'Purwakanthi Guru Sastra')</statement>
+<statement>INSERT INTO subcategory VALUES(198,33,'Purwakanthi Lumaksita')</statement>
+
+<!-- Pewayangan -->
+<statement>INSERT INTO subcategory VALUES(199,34,'Satriya lan Kasatriyane')</statement>
+<statement>INSERT INTO subcategory VALUES(200,35,'Pandhita lan Pertapane')</statement>
+<statement>INSERT INTO subcategory VALUES(201,36,'Pusaka, Gegaman, lan Jimat')</statement>
+<statement>INSERT INTO subcategory VALUES(202,37,'Ratu (Narendra) lan Negarane')</statement>
+<statement>INSERT INTO subcategory VALUES(203,38,'Dewa lan Kahyangane')</statement>
+<statement>INSERT INTO subcategory VALUES(204,39,'Arane Abdi Kinasih')</statement>
+<statement>INSERT INTO subcategory VALUES(205,40,'Dasanama Jeneng ing Pawayangan')</statement>
+
+
+<statement>INSERT INTO subcategory VALUES(206,41,'Wujud Gamelan')</statement>
+<statement>INSERT INTO subcategory VALUES(207,41,'Swara Gamelan')</statement>
+<statement>INSERT INTO subcategory VALUES(208,41,'Perangane Gamelan')</statement>
+<statement>INSERT INTO subcategory VALUES(209,41,'Bab Gaweyane')</statement>
+<statement>INSERT INTO subcategory VALUES(210,41,'Bab Gerong')</statement>
+<statement>INSERT INTO subcategory VALUES(211,41,'Bab Nabuh Gamelan')</statement>
+<statement>INSERT INTO subcategory VALUES(212,41,'Bab Laras')</statement>
+<statement>INSERT INTO subcategory VALUES(213,41,'Bahan Gamelan')</statement>
+<statement>INSERT INTO subcategory VALUES(214,41,'Arane Gendhing')</statement>
+
+
+<statement>INSERT INTO subcategory VALUES(215,42,'Hanacaraka')</statement>
+
+
+
+<statement>
+CREATE TABLE IF NOT EXISTS posts (
+	_id INTEGER PRIMARY KEY AUTOINCREMENT,
+	subcatId INTEGER,
+	postOne VARCHAR(1024),
+	postTwo VARCHAR(1024),
+	picture VARCHAR(50))
+</statement>
+</sql>

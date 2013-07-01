@@ -1,0 +1,796 @@
+<sql>
+<!--<statement>INSERT INTO posts VALUES(1820,183,'Adigang, adigung, adiguna-->
+<!--- Wong sing ngendelake kekuwatan, kaluhuran lan kapinteran','','')</statement>-->
+<!--<statement>INSERT INTO posts VALUES(1790,183,'Adhang-adhang tetesin embun-->
+<!--- Njagakake barang mung saolehe bae','','')</statement>-->
+<statement>INSERT INTO posts VALUES(1821,183,'Aji godhong garing
+- Barang kang ora nduwe aji babar pisan','','')</statement>
+<statement>INSERT INTO posts VALUES(1822,183,'Ana catur mungkur
+- ora gelem ngrungokake rerasan','','')</statement>
+<statement>INSERT INTO posts VALUES(1823,183,'Ana dhaulate ora ono begjane
+- Wis arep nemu kebegjan nanging ora sido','','')</statement>
+<statement>INSERT INTO posts VALUES(1824,183,'Ana gula ana semut
+- Panggonan sing ngrejekeni mesthi akeh sing nekani','','')</statement>
+<statement>INSERT INTO posts VALUES(1825,183,'Anak polah bapa keprandhah
+- Wong tuwa nemu reribed amarga saka polahe anak','','')</statement>
+<statement>INSERT INTO posts VALUES(1826,183,'Ancik-ancik pucuking eri
+- Wong kang tansah sumelang yen keluputan','','')</statement>
+<statement>INSERT INTO posts VALUES(1827,183,'Anggutuk lor kena kidul
+- Ngangkah marang sawijining wong katibakake marang wong liya','','')</statement>
+<statement>INSERT INTO posts VALUES(1828,183,'Angon mangsa
+- Golek wektu sing prayoga','','')</statement>
+<statement>INSERT INTO posts VALUES(1829,183,'Angon ulat ngumbar tangan
+- Nyawang kahanan arep nglimpe','','')</statement>
+<statement>INSERT INTO posts VALUES(1830,183,'Arep jamure emoh watange
+- Gelem kepenak ora gelem rekasane','','')</statement>
+<statement>INSERT INTO posts VALUES(1831,183,'Asu arebut balung
+- Padu rebutan barang sepele','','')</statement>
+<statement>INSERT INTO posts VALUES(1832,183,'Asu gedhe menang kerahe
+- Wong sing gedhe pangkate mesthi luwih gedhe panguasane','','')</statement>
+<statement>INSERT INTO posts VALUES(1833,183,'Asu marani gepuk
+- Njarak marani bebaya','','')</statement>
+<statement>INSERT INTO posts VALUES(1834,183,'Ati bengkong oleh oncong
+- Duwe niyat ala oleh dalan','','')</statement>
+<statement>INSERT INTO posts VALUES(1835,183,'Bala dewa ilang gapite
+- ilang kaluhurane','','')</statement>
+<statement>INSERT INTO posts VALUES(1836,183,'Banyu pinerang
+- Pasulayane sedulur mesthi enggal pulihe','','')</statement>
+<statement>INSERT INTO posts VALUES(1837,183,'Bathang lelaku
+- Wong lelungan ngambah panggonan sing mbebayani','','')</statement>
+<statement>INSERT INTO posts VALUES(1838,183,'Bathok bolu isi madu
+- Wong asor nanging sugih kapinteran','','')</statement>
+<statement>INSERT INTO posts VALUES(1839,183,'Bebek mungsuh mliwis
+- Wong pinter mungsuh wong pinter','','')</statement>
+<statement>INSERT INTO posts VALUES(1840,183,'Becik ketitik ala ketara
+- Becik ala bakal ketara ing tembe mburi','','')</statement>
+<statement>INSERT INTO posts VALUES(1841,183,'Belo melu seton
+- Mung melu-melu bae ora ngerti karepe','','')</statement>
+<statement>INSERT INTO posts VALUES(1842,183,'Beras wutah orang mulih marang takere
+- Samu barang kang wis owah arang bisa pulih kaya maune','','')</statement>
+<statement>INSERT INTO posts VALUES(1843,183,'Mbidhung apirowang
+- Arep ngrewangi malah ngrusuhi','','')</statement>
+<statement>INSERT INTO posts VALUES(1844,183,'Blaba wuda
+- Saking lomane nganti uripe kacingkrangan','','')</statement>
+<statement>INSERT INTO posts VALUES(1845,183,'Blilu tau pinter durung nglakoni
+- Senajan durung mangerti nanging wis bisa nglakoni','','')</statement>
+<statement>INSERT INTO posts VALUES(1846,183,'Bubuk oleh leng
+- Duwe niyat ala oleh dalan','','')</statement>
+<statement>INSERT INTO posts VALUES(1847,183,'Buru uceng kelangan dheleg
+- Mburu barang sepele kelangan barang sing aji','','')</statement>
+<statement>INSERT INTO posts VALUES(1848,183,'Busuk ketekuk pinter keblinger
+- Bodho lan pinter padha dene nemoni cilaka','','')</statement>
+<statement>INSERT INTO posts VALUES(1849,183,'Mbuwang tilas
+- Nutupi patrapane ethok-ethok nyambut gawe liya','','')</statement>
+<statement>INSERT INTO posts VALUES(1850,183,'Bung pring petung
+- Bocah sing gelis gedhe','','')</statement>
+<statement>INSERT INTO posts VALUES(1851,183,'Buntel kadhut ora nginang ora udud
+- Wong nyambut gawe borongan, oraoleh mangan lan rokok','','')</statement>
+<statement>INSERT INTO posts VALUES(1852,183,'Car-cor kaya kurang janganan
+- Guneman waton metu tanpa dipikir dhisik','','')</statement>
+<statement>INSERT INTO posts VALUES(1853,183,'Cathok gawel
+- Ora diajak rembugan nanging melu-melu ngrembug','','')</statement>
+<statement>INSERT INTO posts VALUES(1854,183,'Cebol nggayuh lintang
+- Duwe kekarepan sing mokal bakal kelakon','','')</statement>
+<statement>INSERT INTO posts VALUES(1855,183,'Cecak nguntal empyak
+- Gegayuhan sing ora timbang karo kekuwatane','','')</statement>
+<statement>INSERT INTO posts VALUES(1856,183,'Cedhak celelng boloten (Cedhak kebo gupak)
+- Cedhak karo wong ala ngajari katut ala','','')</statement>
+<statement>INSERT INTO posts VALUES(1857,183,'Cincing-cincing meksa klebus
+- Rekane arep ngirit nanging meksa entek akeh','','')</statement>
+<statement>INSERT INTO posts VALUES(1858,183,'Ciri wanci lelai ginawa mati
+- Pakulitanan ilange menawa wis mati','','')</statement>
+<statement>INSERT INTO posts VALUES(1859,183,'Criwis cawis
+- Akeh alesan nanging gelem nindakake','','')</statement>
+<statement>INSERT INTO posts VALUES(1860,183,'Cuplak andheng-andheng ora prenah panggonanebakal disingkirake
+- Samubarang kang njalari ala prayogane disingkirake','','')</statement>
+<statement>INSERT INTO posts VALUES(1861,183,'Dadia suket suthik nyengggut
+- Emoh sapa aruh','','')</statement>
+<statement>INSERT INTO posts VALUES(1862,183,'Dahwen ati open
+- Nacad sejatine melik','','')</statement>
+<statement>INSERT INTO posts VALUES(1863,183,'Dhadhang diunekake kuntul, kuntul diunekake dhadhang
+- Ala diunekake apik, apik diunekake ala','','')</statement>
+<statement>INSERT INTO posts VALUES(1864,183,'Desa mawa cara, negara mawa tata
+- Saben panggonan duwe cara dhewe-dhewe','','')</statement>
+<statement>INSERT INTO posts VALUES(1865,183,'Dhemit ora ndulit setan ora doyan
+- Tansah ginajar slamet, ora ana reribed','','')</statement>
+<statement>INSERT INTO posts VALUES(1866,183,'Digarokake diulokake
+- Dikon nyambut gawe abot','','')</statement>
+<statement>INSERT INTO posts VALUES(1867,183,'Dikena iwake aja nganti buthek banyune
+- Bisa kaleksanan karepe tanpa gawe gendra','','')</statement>
+<statement>INSERT INTO posts VALUES(1868,183,'Dipalangana mlumpat, ditalenana medhot
+- Ora kena dipenggak','','')</statement>
+<statement>INSERT INTO posts VALUES(1869,183,'Diwenehi ati ngrogoh rempela
+- Diwenehi sethithik njaluk sing akeh','','')</statement>
+<statement>INSERT INTO posts VALUES(1870,183,'Dom sumurup ing banyu
+- Laku samar','','')</statement>
+<statement>INSERT INTO posts VALUES(1871,183,'Dudu berase ditempurake
+- Nyambungi guneme liyan nanging ora gathuk','','')</statement>
+<statement>INSERT INTO posts VALUES(1872,183,'Dudu sanak dudu kadang, yen mati melu kelingan
+- Senajan wong liya, yen ana rekasane melu ngrasakake','','')</statement>
+<statement>INSERT INTO posts VALUES(1873,183,'Dudutan lan anculan
+- Padha kethikan, sing siji api-apai ora ngerti','','')</statement>
+<statement>INSERT INTO posts VALUES(1874,183,'Durung ilang puput lempuyange
+- Dipadhake bocah cilik, durun dianggep diwasa','','')</statement>
+<statement>INSERT INTO posts VALUES(1875,183,'Eman-eman ora keduman
+- Rekane welas nanging rugi','','')</statement>
+<statement>INSERT INTO posts VALUES(1876,183,'Emban cidhe emban siladan
+- Siji lan sijine ora padha pangrekuhe (ora adil)','','')</statement>
+<statement>INSERT INTO posts VALUES(1877,183,'Embat-embat clarat
+- Nyambut gawe sing ngati-ati banget','','')</statement>
+<statement>INSERT INTO posts VALUES(1878,183,'Emprit abuntut bedhug
+- Prakara sepele dadi gedhe','','')</statement>
+<statement>INSERT INTO posts VALUES(1879,183,'Endhas gundhut dikepeti
+- Wis kepenak ditambahi luwih kepenak maneh','','')</statement>
+<statement>INSERT INTO posts VALUES(1880,183,'Enggon welud didoli udhet
+- Panggonane wong pinter, dipameri kepinteran','','')</statement>
+<statement>INSERT INTO posts VALUES(1881,183,'Entek golek kurang amek
+- Olehe ngunen-uneni sakatoge','','')</statement>
+<statement>INSERT INTO posts VALUES(1882,183,'Entek jarake
+- Entek kasugihane','','')</statement>
+<statement>INSERT INTO posts VALUES(1883,183,'Esuk dhele sore tempe
+- Ora teteg atine (mencla-mencle)','','')</statement>
+<statement>INSERT INTO posts VALUES(1884,183,'Gagak nganggo laring merak
+- Wong asor duwe tumindak kaya wong luhur','','')</statement>
+<statement>INSERT INTO posts VALUES(1885,183,'Gajah alingan suket teki
+- Lair karo batine beda banget, mesthi bakal ketara','','')</statement>
+<statement>INSERT INTO posts VALUES(1886,183,'Nggajah elar
+- Sarwa gedhe lan santosa kekarepane','','')</statement>
+<statement>INSERT INTO posts VALUES(1887,183,'Gajah ngidak rapah
+- Wong sing nrajang wewalere dhewe','','')</statement>
+<statement>INSERT INTO posts VALUES(1888,183,'Gajah tumbuk, kancil mati tengah
+- Wong gedhe padha padudon, wong cilik sing sengsara','','')</statement>
+<statement>INSERT INTO posts VALUES(1889,183,'Garang garing
+- Umuk sugih nanging sejatine kacingkrangan','','')</statement>
+<statement>INSERT INTO posts VALUES(1890,183,'Gawe luwangan, ngurugi luwangan
+- Golek utang kanggo nyaur utang','','')</statement>
+<statement>INSERT INTO posts VALUES(1891,183,'Nggayuh-nggayuh luput
+- Samubarang sing dijangka ora kaleksanan','','')</statement>
+<statement>INSERT INTO posts VALUES(1892,183,'Genthong umos
+- Ora bisa nyimpen wadi','','')</statement>
+<statement>INSERT INTO posts VALUES(1893,183,'Giri lusi tan kena ingina
+- Ora kena ngina marang wong liya','','')</statement>
+<statement>INSERT INTO posts VALUES(1894,183,'Gliyak-gliyuk tumindake sareh pakoleh
+- Alon-alon olehe tumindak, nanging kaleksanan sedyane','','')</statement>
+<statement>INSERT INTO posts VALUES(1895,183,'Golek banyu bening
+- Golek pitutur sing becik','','')</statement>
+<statement>INSERT INTO posts VALUES(1896,183,'Golek-golek ketanggor wong luru-luru
+- Karepe arep golek-golek malah dijaluki','','')</statement>
+<statement>INSERT INTO posts VALUES(1897,183,'Golek uceng kelangan dheleg
+- Golek sethithik malah kelangan akeh','','')</statement>
+<statement>INSERT INTO posts VALUES(1898,183,'Gong lumaku tinabuh
+- Wong kang kumudu-kudu ditakoni','','')</statement>
+<statement>INSERT INTO posts VALUES(1899,183,'Gumembrang ora adang
+- Entek-entekan, wis ora ana babar pisan','','')</statement>
+<statement>INSERT INTO posts VALUES(1900,183,'Gupak pulut ora mangan nangkane
+- Melu rekasane ora melu kepenake','','')</statement>
+<statement>INSERT INTO posts VALUES(1901,183,'Idu didilat maneh
+- Njabel gunem sing wis kawetu','','')</statement>
+<statement>INSERT INTO posts VALUES(1902,183,'Iwak klebu ing wuwu
+- Kena apus sarana gampang banget','','')</statement>
+<statement>INSERT INTO posts VALUES(1903,183,'Njagakake barang sing durung mesthi
+- Njagakake barang sing durung mesthi','','')</statement>
+<statement>INSERT INTO posts VALUES(1904,183,'Njajah desa milang kori
+- Lelungan menyang ngendi-endi','','')</statement>
+<statement>INSERT INTO posts VALUES(1905,183,'Jalma angkara mati murka
+- Nemu bilahi jalaran saka murka','','')</statement>
+<statement>INSERT INTO posts VALUES(1906,183,'Jalukan ora wewehan
+- Seneng njaluk nanging ora gelem weweh','','')</statement>
+<statement>INSERT INTO posts VALUES(1907,183,'Jaran krubuhan empyak
+- Wong sing wis kapok banget','','')</statement>
+<statement>INSERT INTO posts VALUES(1908,183,'Jarit luwas ing sampiran
+- Wong duwe kapinteran nanging ora dugunakake','','')</statement>
+<statement>INSERT INTO posts VALUES(1909,183,'Jati ketlusuban ruyung
+- Golongane wong becik kalebon wong ala','','')</statement>
+<statement>INSERT INTO posts VALUES(1910,183,'Jer basuki mawa beya
+- Kabeh gegayuhan mbutuhake wragad','','')</statement>
+<statement>INSERT INTO posts VALUES(1911,183,'Njujul wuwul
+- Prakara sing ngundhak-undhaki rekasa','','')</statement>
+<statement>INSERT INTO posts VALUES(1912,183,'Njunjung ngentebake
+- Ngalembana nangning niyate ngasorake','','')</statement>
+<statement>INSERT INTO posts VALUES(1913,183,'Kacang mangsa ninggala lanjaran
+- Kelakuwane anak akeh-akehe niru wong tuwane','','')</statement>
+<statement>INSERT INTO posts VALUES(1914,183,'Kadang konang
+- Ngakoni sudulur mung karo sing sugih-sugih','','')</statement>
+<statement>INSERT INTO posts VALUES(1915,183,'Kakehan gludhug kurang udan
+- Kakehan omong nanging ora ana buktine','','')</statement>
+<statement>INSERT INTO posts VALUES(1916,183,'kalah cacak menang cacak
+- Embuh kalah embuh menang wani nyoba','','')</statement>
+<statement>INSERT INTO posts VALUES(1917,183,'Kandhang langit kemul mega
+- Wong sing ora duwe papan panggonan','','')</statement>
+<statement>INSERT INTO posts VALUES(1918,183,'Karubyung kabotan pinjung sarwa
+- Wong wadon iku anane ribed','','')</statement>
+<statement>INSERT INTO posts VALUES(1919,183,'Katepang ngrangsang gunung
+- Kagedhen panjangka mokal bakal kelakon','','')</statement>
+<statement>INSERT INTO posts VALUES(1920,183,'Katon cempaka sewakul
+- Disenengi wong akeh','','')</statement>
+<statement>INSERT INTO posts VALUES(1921,183,'Kaya banyu karo lenga
+- Paseduluran sing ora bisa rukun','','')</statement>
+<statement>INSERT INTO posts VALUES(1922,183,'Kaya dhayang oleh kedhung
+- Nglakoni gaweyan sing cocok karo atine','','')</statement>
+<statement>INSERT INTO posts VALUES(1923,183,'Kaya wedhus dhumbar ing kacangan
+- Kesenangan amarga nemoni apa sing dibutuhake','','')</statement>
+<statement>INSERT INTO posts VALUES(1924,183,'Kebat kliwat gancang pincang
+- Yen tumindak sarwa kesusu asile ora becik','','')</statement>
+<statement>INSERT INTO posts VALUES(1925,183,'Kebanjiran segara madu
+- Nemoni kabegjan sing gedhe banget','','')</statement>
+<statement>INSERT INTO posts VALUES(1926,183,'Kebo ilang tombok kandhang
+- Wis kelangan isih tombok maneh','','')</statement>
+<statement>INSERT INTO posts VALUES(1927,183,'Kebo bule mati setra
+- Wong pinter nanging ora ana sing mbutuhake','','')</statement>
+<statement>INSERT INTO posts VALUES(1928,183,'Kebo kabotan sungu
+- Wong tuwa sing rekasa amarga kakehan anak','','')</statement>
+<statement>INSERT INTO posts VALUES(1929,183,'Kebo lumumpat ing palang
+- Ngadili prekara orang nganggo wewaton','','')</statement>
+<statement>INSERT INTO posts VALUES(1930,183,'Kebo mulih menyang kandhang
+- Wong lunga bali maneh menyang asale','','')</statement>
+<statement>INSERT INTO posts VALUES(1931,183,'Kebo nungsu gudel
+- Wong tuwa njaluk wuruk marang wong enom','','')</statement>
+<statement>INSERT INTO posts VALUES(1932,183,'Kagedhen empyak kurang cagak
+- Kagedhen kekarepan nanging ora sembada','','')</statement>
+<statement>INSERT INTO posts VALUES(1933,183,'Kejrugugan gunung menyan
+- nemu kabegjan gedhe banget','','')</statement>
+<statement>INSERT INTO posts VALUES(1934,183,'Kekudhung walulang macan
+- Ngapusi wong saran njaluk tulung marang wong sing dipercaya dening wong sing diapusi','','')</statement>
+<statement>INSERT INTO posts VALUES(1935,183,'Kelacak kepathak
+- Wis ora bisa selak amarga kabukten','','')</statement>
+<statement>INSERT INTO posts VALUES(1936,183,'Kemladheyan ngajak sempal
+- Wong manut marake rusak','','')</statement>
+<statement>INSERT INTO posts VALUES(1937,183,'Kena iwake aja buthek banyune
+- Bisa kelakon kekarepane nanging ora gawe rame','','')</statement>
+<statement>INSERT INTO posts VALUES(1938,183,'Kendel ngringkel dhadhang ora godag
+- Ngakune kendel lan pinter jebule jirih tur bodho','','')</statement>
+<statement>INSERT INTO posts VALUES(1939,183,'Kencana katon wingka
+- Senajan apik tetep ora seneng','','')</statement>
+<statement>INSERT INTO posts VALUES(1940,183,'Kenes ora ethes
+- Sugih nanging bodho','','')</statement>
+<statement>INSERT INTO posts VALUES(1941,183,'Keplok ora tombok
+- Melu seneng nanging ora wragad','','')</statement>
+<statement>INSERT INTO posts VALUES(1942,183,'Kere munggah bale
+- Wong asor diadekake wong mulya','','')</statement>
+<statement>INSERT INTO posts VALUES(1943,183,'Kere nemoni malem
+- Wong kang bedhigasan','','')</statement>
+<statement>INSERT INTO posts VALUES(1944,183,'Kerot ora duwe untu
+- Duwe kekarepan nanging ora duwe wragad','','')</statement>
+<statement>INSERT INTO posts VALUES(1945,183,'Karubuhan gunung
+- Nemoni kasusahan sing gedhe banget','','')</statement>
+<statement>INSERT INTO posts VALUES(1946,183,'Kesandhung ing rata, kebentus ing tawang
+- Nemu bebaya sing ora dinyana-nyana','','')</statement>
+<statement>INSERT INTO posts VALUES(1947,183,'Ketepang ngrangsang gunung
+- Njangka prakara sing mokal kelakone','','')</statement>
+<statement>INSERT INTO posts VALUES(1948,183,'Ketiban awu anget
+- Ora ngerti apa-apa didakwa','','')</statement>
+<statement>INSERT INTO posts VALUES(1949,183,'Ketula-tula ketali
+- Tansah nandhang rekasa','','')</statement>
+<statement>INSERT INTO posts VALUES(1950,183,'Kethek saranggon
+- Wong ala sagrombolan','','')</statement>
+<statement>INSERT INTO posts VALUES(1951,183,'Klenthing wadhah masin
+- Wong sing kulina laku ala, senajan simareni kala mangsane isih nglakoni ala','','')</statement>
+<statement>INSERT INTO posts VALUES(1952,183,'Kleyang kabur kanginan
+- Wong urip sing kalunta-lunta','','')</statement>
+<statement>INSERT INTO posts VALUES(1953,183,'Kongsi jambul uwanan
+- Nganti tuwa banget','','')</statement>
+<statement>INSERT INTO posts VALUES(1954,183,'Krokot ing galeng
+- Wong sing mlarat banget','','')</statement>
+<statement>INSERT INTO posts VALUES(1955,183,'Kriwikan dadi gedhe
+- Prakara cilik dadi gedhe','','')</statement>
+<statement>INSERT INTO posts VALUES(1956,183,'Kumenthus ora pecus
+- Doyan umuk nanging ora sembada','','')</statement>
+<statement>INSERT INTO posts VALUES(1957,183,'Kuncung nganti gelung
+- Suwe banget ora netepi janji','','')</statement>
+<statement>INSERT INTO posts VALUES(1958,183,'Kurung munggah lumbung
+- Batur dipek bojo bendarane','','')</statement>
+<statement>INSERT INTO posts VALUES(1959,183,'Kutuk nggendhong kemiri
+- Nyandhang sarwa aji ngliwati papn sing gawat','','')</statement>
+<statement>INSERT INTO posts VALUES(1960,183,'Kutuk marani sunduk
+- Njarak marang bebaya','','')</statement>
+<statement>INSERT INTO posts VALUES(1961,183,'Ladak kecangklak
+- Wong angkuh nemahi cilaka amarga polahe dhewe','','')</statement>
+<statement>INSERT INTO posts VALUES(1962,183,'Lahang koroban manis
+- Rupa bagus (ayu) tur kuhur bebudene','','')</statement>
+<statement>INSERT INTO posts VALUES(1963,183,'Lambe satumang kari samerang
+- Aweh pitutur nola-bali ora digape','','')</statement>
+<statement>INSERT INTO posts VALUES(1964,183,'Lanang kemangi
+- Wong lanang sing jirih','','')</statement>
+<statement>INSERT INTO posts VALUES(1965,183,'Legan golek momongan
+- Wong sing kepenak golek rekasa','','')</statement>
+<statement>INSERT INTO posts VALUES(1966,183,'Lumpuh ngideri jagad
+- Duwe kekarepan sing mokal kelakone','','')</statement>
+<statement>INSERT INTO posts VALUES(1967,183,'Madu balung tanpa isi
+- Padudon amarga barang sepele','','')</statement>
+<statement>INSERT INTO posts VALUES(1968,183,'Maju tatu mundur ajur
+- Kabeh budidayane ora kasil','','')</statement>
+<statement>INSERT INTO posts VALUES(1969,183,'Matang tuna numbak luput
+- Tansah luput kekarepane','','')</statement>
+<statement>INSERT INTO posts VALUES(1970,183,'Meneng widara uleran
+- Wong sing laire katon anteng nanging ala atine','','')</statement>
+<statement>INSERT INTO posts VALUES(1971,183,'Menthung koja kena sembagine
+- Karepe ngapusi malah kapusan','','')</statement>
+<statement>INSERT INTO posts VALUES(1972,183,'Merangi tatal
+- Mentahake rembug sing wis dadi','','')</statement>
+<statement>INSERT INTO posts VALUES(1973,183,'Mikul dhuwur mendhem jero
+- njunjung drajade wong tuwa','','')</statement>
+<statement>INSERT INTO posts VALUES(1974,183,'Milih-milih tebu oleh boleng
+- Amarga kakehan pilihan wusanane oleh sing ala','','')</statement>
+<statement>INSERT INTO posts VALUES(1975,183,'Mrojol selaning garu
+- kalis ing sambekala','','')</statement>
+<statement>INSERT INTO posts VALUES(1976,183,'Mubra-mrubu blabur madu
+- Sarwa kecukupan','','')</statement>
+<statement>INSERT INTO posts VALUES(1977,183,'Nabok nyilih tangan
+- Nindakake tumindak ala sarana kongkonan','','')</statement>
+<statement>INSERT INTO posts VALUES(1978,183,'Nambong laku
+- Ethok-ethok ora ngerti','','')</statement>
+<statement>INSERT INTO posts VALUES(1979,183,'Nucuk ngiberake
+- Disuguh mulihe mbrekat','','')</statement>
+<statement>INSERT INTO posts VALUES(1980,183,'Nututi layangan pedhot
+- Ngupaya barang sepele sing wis ilang','','')</statement>
+<statement>INSERT INTO posts VALUES(1981,183,'Ngagar metu kawul
+- Ngojok-ojok supaya dadi pasulayan','','')</statement>
+<statement>INSERT INTO posts VALUES(1982,183,'Ngalasake negara
+- Ora manut pranatan negara','','')</statement>
+<statement>INSERT INTO posts VALUES(1983,183,'Ngalem legining gula
+- Nyebut kaluwihing wong liya','','')</statement>
+<statement>INSERT INTO posts VALUES(1984,183,'Ngaturake kidang lumayu
+- Nuduhake gegayuhan sing angel kecekel','','')</statement>
+<statement>INSERT INTO posts VALUES(1985,183,'Ngemut legining gula
+- Bareng karasa kepenak lali marang asale','','')</statement>
+<statement>INSERT INTO posts VALUES(1986,183,'Ngenteni timbule watu item
+- Ngenteni barang sing tangeh kelakon','','')</statement>
+<statement>INSERT INTO posts VALUES(1987,183,'Ngungguhi klasa gumelar
+- nemu kepanake tanpa melu rekasane','','')</statement>
+<statement>INSERT INTO posts VALUES(1988,183,'Ngontragage gunung
+- Wong asor bisa ngalahake wong luhur','','')</statement>
+<statement>INSERT INTO posts VALUES(1989,183,'Nguthik-uthik macan dhedhe
+- Gawe nesune wong','','')</statement>
+<statement>INSERT INTO posts VALUES(1990,183,'Nguyahi segara
+- Tandang gawe sing muspra','','')</statement>
+<statement>INSERT INTO posts VALUES(1991,183,'Nyangoni kawula minggat
+- Ndandani barang sing pijer rusak','','')</statement>
+<statement>INSERT INTO posts VALUES(1992,183,'Nyolong pethek
+- Ora dinyana-nyana','','')</statement>
+<statement>INSERT INTO posts VALUES(1993,183,'Nyunggi lumpang kentheng
+- Munggah drjade nanging ora ana pametuhe','','')</statement>
+<statement>INSERT INTO posts VALUES(1994,183,'Obah ngarep kobet mburi
+- Solah bawane wong gedhe dadi panutane wong cilik','','')</statement>
+<statement>INSERT INTO posts VALUES(1995,183,'Opor bebek mentas awak dhewek
+- Mentas saka rekadayane dhewe','','')</statement>
+<statement>INSERT INTO posts VALUES(1996,183,'Onthak-athik didudut angel
+- Rembuge sajake kepenak bareng ditenani jebul angel','','')</statement>
+<statement>INSERT INTO posts VALUES(1997,183,'Ora ana banyu mili mendhuwur
+- Watake anak mesthi niru wong tuwane','','')</statement>
+<statement>INSERT INTO posts VALUES(1998,183,'Ora ana kukus tanpa geni
+- Ora ana sebab tanpa musabab','','')</statement>
+<statement>INSERT INTO posts VALUES(1999,183,'Ora ana ganja ora unus
+- Ala samubarange','','')</statement>
+<statement>INSERT INTO posts VALUES(2000,183,'Ora ngerti kenthang kimpule
+- ora ngerti jalarane prekasa','','')</statement>
+<statement>INSERT INTO posts VALUES(2001,183,'Ora mambu enthong irus
+- Dudu sanak dudu kadang','','')</statement>
+<statement>INSERT INTO posts VALUES(2002,183,'Ora tembung ora lawang
+- Njupuk barang tanpa nembung dhisik','','')</statement>
+<statement>INSERT INTO posts VALUES(2003,183,'Ora uwur ora sembur
+- Ora gelem cawe-cawe sethithika bae','','')</statement>
+<statement>INSERT INTO posts VALUES(2004,183,'Pager mangan tanduran
+- Dipercaya malah ngrusak','','')</statement>
+<statement>INSERT INTO posts VALUES(2005,183,'Pandegan karo srengenge
+- Mungsuh karo wong kuwasa','','')</statement>
+<statement>INSERT INTO posts VALUES(2006,183,'Pandhitaning antake
+- Laire suci, nanging bathine reged','','')</statement>
+<statement>INSERT INTO posts VALUES(2007,183,'Pitik trondhol diumbar ing pandaringan
+- Wong ala dipasrahi tunggu barang aji','','')</statement>
+<statement>INSERT INTO posts VALUES(2008,183,'Petruk tunggu bara
+- Dipasrahi sing dadi kesenengane','','')</statement>
+<statement>INSERT INTO posts VALUES(2009,183,'Pupur sawise benjut
+- Ngati-ati sawise kebacut kelakon','','')</statement>
+<statement>INSERT INTO posts VALUES(2010,183,'Rampek-rampek kethek
+- Nyedhak-nyedhak mung arep gawe katitunan','','')</statement>
+<statement>INSERT INTO posts VALUES(2011,183,'Rawe-rawe rantas malang-malang putung
+- Kabeh sing ngalang-ngalangi disingkirake','','')</statement>
+<statement>INSERT INTO posts VALUES(2012,183,'Rebut balung tanpaisi, rebut kemiri kopong
+- Padudon rebutan barang sepele','','')</statement>
+<statement>INSERT INTO posts VALUES(2013,183,'Rindhik asu digitik
+- Dikongkon nglakoni gaweyan sing cocok karo kekarepane','','')</statement>
+<statement>INSERT INTO posts VALUES(2014,183,'Rukun agawe santosa, crah agawe bubrah
+- Kerukunan ndadekake sentosa, congkrah ndadekake karusakan','','')</statement>
+<statement>INSERT INTO posts VALUES(2015,183,'Sabaya pati sabaya mukti
+- Rukun nganti tekan pati','','')</statement>
+<statement>INSERT INTO posts VALUES(2016,183,'Sadumuk bathuk sanyari bumi
+- Nglabuhi pati marang bebener','','')</statement>
+<statement>INSERT INTO posts VALUES(2017,183,'Sapa salah saleh
+- Sapa sing salah bakal kalah','','')</statement>
+<statement>INSERT INTO posts VALUES(2018,183,'Satru munggwing cangklakan
+- mungsuh kang isih sedulur','','')</statement>
+<statement>INSERT INTO posts VALUES(2019,183,'Sedhakep ngawe-ngawe
+- Mareni tumnidak ala, nanging isih kepingin tumindak maneh','','')</statement>
+<statement>INSERT INTO posts VALUES(2020,183,'Sembur-sembur adas, siram-siram bayem
+- Bisa kalesanan marga dongane wong akeh','','')</statement>
+<statement>INSERT INTO posts VALUES(2021,183,'Sepi ing pamrih rame ing gawe
+- Tumandang gawe tanpa duwe melik','','')</statement>
+<statement>INSERT INTO posts VALUES(2022,183,'Sluman slumun slamet
+- Tandang tanduke tansah ngati-ngati','','')</statement>
+<statement>INSERT INTO posts VALUES(2023,183,'sumur lumaku tinimba
+- nawak-nawakake ilmu supa diangsu','','')</statement>
+<statement>INSERT INTO posts VALUES(2024,183,'Tebu tuwuh socane
+- Prekara sing wis becik dadi bubrah marga dirusuhi','','')</statement>
+<statement>INSERT INTO posts VALUES(2025,183,'Tekek mati ing ulone
+- nemahi cilaka amarga saka guneme dhewe','','')</statement>
+<statement>INSERT INTO posts VALUES(2026,183,'Tembang rawat-rawat, ujare bakul sinambewara
+- Kabar sing durung mesthi bener lupute','','')</statement>
+<statement>INSERT INTO posts VALUES(2027,183,'Thenguk-thenguk akeklumpuk
+- Wis kepenak tambah kepenak maneh','','')</statement>
+<statement>INSERT INTO posts VALUES(2028,183,'Trenggiling api mati
+- Sejatine ngrungokake nanging ethok-ethok ora merduli','','')</statement>
+<statement>INSERT INTO posts VALUES(2029,183,'Timun jinara
+- Samubarang sing gampang banget','','')</statement>
+<statement>INSERT INTO posts VALUES(2030,183,'Timun mungsuh duren
+- WOng ringkih mungsuh wong kuwat','','')</statement>
+<statement>INSERT INTO posts VALUES(2031,183,'Timun wungkuk jaga imbuh
+- Mung kanggo jagan yen ana kurangane','','')</statement>
+<statement>INSERT INTO posts VALUES(2032,183,'Tinggal glanggang colong playu
+- keplayu saka tanggung jawab','','')</statement>
+<statement>INSERT INTO posts VALUES(2033,183,'Tulung menthung
+- katone nulung nanging marahi susah','','')</statement>
+<statement>INSERT INTO posts VALUES(2034,183,'Tumbak cucukan
+- Seneng adul-adul','','')</statement>
+<statement>INSERT INTO posts VALUES(2035,183,'Tumbu oleh tutup
+- Wong kekancan sing cocok banget','','')</statement>
+<statement>INSERT INTO posts VALUES(2036,183,'Tuna sathak bathi sanak
+- Rugi bandha nanging bathi sedulur','','')</statement>
+<statement>INSERT INTO posts VALUES(2037,183,'Tunggak jarak nrjak, tunggak jati mati
+- Turune wong cilik dadi wong gedhe, turune wong gedhe dadi wong cilik','','')</statement>
+<statement>INSERT INTO posts VALUES(2038,183,'Tunggal banyu
+- Tunggal ngelmu, tunggal guru','','')</statement>
+<statement>INSERT INTO posts VALUES(2039,183,'Tunggal welat
+- Sedulur sinarawedi','','')</statement>
+<statement>INSERT INTO posts VALUES(2040,183,'Tutwuri handayani
+- Menehi kelonggaran lan ugo menhi pepeling amrih becik','','')</statement>
+<statement>INSERT INTO posts VALUES(2041,183,'Ula marani gepuk
+- Njarak marang bebaya','','')</statement>
+<statement>INSERT INTO posts VALUES(2042,183,'Ulat madhep ati karep
+- Wis mantep banget','','')</statement>
+<statement>INSERT INTO posts VALUES(2043,183,'Undhaking pawarta sudaning kiriman
+- Pawarta iku lumrahe wis beda karo nyatane','','')</statement>
+<statement>INSERT INTO posts VALUES(2045,183,'Ungak-ungak pager arang
+- Ngisin-ngisine pokal gawene','','')</statement>
+<statement>INSERT INTO posts VALUES(2046,183,'Welas tanpa lalis
+- Aweh rasa welas nanging njalari rekasane','','')</statement>
+<statement>INSERT INTO posts VALUES(2047,183,'Wis kebak sundukane
+- Wong sing akeh banget kaluputane','','')</statement>
+<statement>INSERT INTO posts VALUES(2048,183,'Wiwit kuncung nganti gelung
+- Wiwit cilik nganti tuwa','','')</statement>
+<statement>INSERT INTO posts VALUES(2049,183,'Yitna yuwana lena kena
+- Sing ngati-ati slamet, sing sembrana bakal cilaka','','')</statement>
+<statement>INSERT INTO posts VALUES(2050,183,'Yuyu rumpung mbarong ronge
+- Omahe katon njenggarong nanging mlarat','','')</statement>
+<statement>INSERT INTO posts VALUES(2051,183,'Yiydan mungging rampadan
+- Maune durjana dadi wong alin','','')</statement>
+<statement>INSERT INTO posts VALUES(2052,183,'Yoga anyangga yogi
+- Murid nirokake piwulangan gurune','','')</statement>
+<statement>INSERT INTO posts VALUES(2053,183,'Yuwanta mati lena
+- Wong becik nemoni cilaka amarga kurang ngati-ati','','')</statement>
+
+<!-- Cangkriman -->
+<statement>INSERT INTO posts VALUES(2054,184,'Pak boletus	: tepak kebo lelene satus','','')</statement>
+<statement>INSERT INTO posts VALUES(2055,184,'Burnas kopen	: bubur panas kokopen','','')</statement>
+<statement>INSERT INTO posts VALUES(2056,184,'Pindhang kileng	: sapi nang kandhang, kaki mentheleng','','')</statement>
+<statement>INSERT INTO posts VALUES(2057,184,'Wiwa wite, lesbo dhonge, karwa pake	: uwi dawa wite, tales amba godhonge, cikar dawa tipake','','')</statement>
+<statement>INSERT INTO posts VALUES(2058,184,'Pak lawa	: tepak ula dawa','','')</statement>
+<statement>INSERT INTO posts VALUES(2059,184,'Bot ginawa entheng, theng ginawa abot	: klobot ginawa entheng, gentheng ginawa abot','','')</statement>
+<statement>INSERT INTO posts VALUES(2060,184,'Surles pe dheg wer-weran	: susurledipe nang gedheg jewer-jeweran','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2061,185,'Pitik walik saba kebon, (nanas)','Nanas','')</statement>
+<statement>INSERT INTO posts VALUES(2062,185,'Sega sakepel dirubung tinggi, (salak)','Salak','')</statement>
+<statement>INSERT INTO posts VALUES(2063,185,'Ora mudhun-mudhun yen ora nggawa mrica sakanthong, (kates)','Pepaya','')</statement>
+<statement>INSERT INTO posts VALUES(2064,185,'Pitik walik saba meja, (salak, kemucing)','Salak','')</statement>
+<statement>INSERT INTO posts VALUES(2065,185,'Emboke dielus-elus anake diidak-idak, (andha)','Tangga','')</statement>
+<statement>INSERT INTO posts VALUES(2066,185,'Gajah nguntal sangkrah, (pawon)','Pawon (tungku jawa)','')</statement>
+<statement>INSERT INTO posts VALUES(2067,185,'Ing dhuwur wayangan, ing ngisor jedhoran, (undhuh kambil)','Metik kelapa','')</statement>
+<statement>INSERT INTO posts VALUES(2068,185,'Kebo bule cancang merang, (buntil)','Buntil','')</statement>
+<statement>INSERT INTO posts VALUES(2069,185,'Disuguh opak angin, (ora disuguh apa-apa)','Tidak ada suguhan','')</statement>
+<statement>INSERT INTO posts VALUES(2070,185,'Anake gelungan ibune ngrembyang, (pakis)','Pohon pakis','')</statement>
+<statement>INSERT INTO posts VALUES(2071,185,'Wis gedhe kok ngguyu tawa, (nangis)','Menangis','')</statement>
+<statement>INSERT INTO posts VALUES(2072,185,'Yen ibune siji anake loro, yen anake siji ibune loro, yen ibune telu ora duwe anak, (salak)','Buah salak','')</statement>
+<statement>INSERT INTO posts VALUES(2073,185,'Lawa lima, kalong telu dadi piro?, (wolu)','Delapan (kelelawar 5 dan (3 kalong sejenis kelelawar malam))','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2074,186,'Pucung
+************************
+Bapak pucung renteng-renteng kaya kalung,
+dawa kaya ula.
+pencokanmu wesi miring
+sing disaba si pucung mung turut kutha. (sepur)','Kereta Api','')</statement>
+<statement>INSERT INTO posts VALUES(2075,186,'Bapak pucung dudu watu dudu gunung.
+Sangkamu ing Plembang
+ngon ingone sang Bupati
+yen lumampah si pucung lembehan grana. (gajah)','Gajah','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2076,187,'Njanur gunung, kadingaren dolan mrene
+(janur gunung : aren)','','')</statement>
+<statement>INSERT INTO posts VALUES(2077,187,'Ngrokok cendhak, bocah cilik ora kena neges-neges
+(rokok cendhak : tegesan)','','')</statement>
+<statement>INSERT INTO posts VALUES(2078,187,'Njenang gula lho, aja lali
+(jenang gula : glali)','','')</statement>
+<statement>INSERT INTO posts VALUES(2079,187,'Nggodhong garing, esuk-esuk kok wis nglaras
+(godhong garing : klaras','','')</statement>
+<statement>INSERT INTO posts VALUES(2080,187,'Balung klapa, ethok-ethok ora ngerti
+(balung klapa : bathok)','','')</statement>
+<statement>INSERT INTO posts VALUES(2081,187,'Balung geni, mbok menawa aku ora bisa teka
+(balung geni : mawa','','')</statement>
+<statement>INSERT INTO posts VALUES(2082,187,'Balung janur, sida lunga apa ora
+(balung janur : sada)','','')</statement>
+<statement>INSERT INTO posts VALUES(2083,187,'Balung pakel, aja seneng alok-alok!
+(balung pakel : pelok)','','')</statement>
+<statement>INSERT INTO posts VALUES(2084,187,'Balung klapa, ethok-ethokan wae
+(balung klapa : bathok)','','')</statement>
+<statement>INSERT INTO posts VALUES(2085,187,'Balung jagung, punika sampun dados tanggel jawab kula
+(balung jagung : janggel)','','')</statement>
+<statement>INSERT INTO posts VALUES(2086,187,'Nyaron bumbung, nganti cengklungan olehku ngenteni
+(saron bumbung : angklung)','','')</statement>
+<statement>INSERT INTO posts VALUES(2087,187,'Jangan gori, nganti judheg anggonku mikir
+(jangan gori : gudheg)','','')</statement>
+<statement>INSERT INTO posts VALUES(2088,187,'Kendhil dawa, enggal ditandangi.
+(kendhil dawa : dandang)','','')</statement>
+<statement>INSERT INTO posts VALUES(2089,187,'Mutra bebek, kawit mau mung wira-wiri wae.
+(putra bebek : meri)','','')</statement>
+<statement>INSERT INTO posts VALUES(2090,187,'Mrica kecut, yen mung muni pancen gampang
+(mrica kecut : wuni)','','')</statement>
+<statement>INSERT INTO posts VALUES(2091,187,'Sarung jagung, abot entheng taklakoni.
+(sarung jagung : klobot)','','')</statement>
+<statement>INSERT INTO posts VALUES(2092,187,'Bocah kok menthil kacang, tansah mbesengut.
+(pentil kacang : besengut)','','')</statement>
+<statement>INSERT INTO posts VALUES(2093,187,'Sekar aren, sampun dangu-dangu.
+(sekar aren : dangu)','','')</statement>
+<statement>INSERT INTO posts VALUES(2094,187,'Reca kayu, goleka kawruh rahayu.
+(reca kayu : golekan)','','')</statement>
+<statement>INSERT INTO posts VALUES(2095,187,'Roning mlinjo, sampun sayah nyuwun ngaso.
+(roning mlinjo : so)','','')</statement>
+<statement>INSERT INTO posts VALUES(2096,187,'Wohing tanjung, becik njunjung bapa biyung.
+(woh tanjung : kecik)','','')</statement>
+<statement>INSERT INTO posts VALUES(2097,187,'Kapi jarwa, dkpethek mangsa wurunga.
+(kapi jarwa : kethek)','','')</statement>
+<statement>INSERT INTO posts VALUES(2098,187,'Kukus gantung, dak sawang kok sajake bingung.
+(kukus gantung : sawang)','','')</statement>
+<statement>INSERT INTO posts VALUES(2099,187,'Kembang jambu, kemaruk duwe sepedha anyar.
+(kembang jambu : karuk)','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2100,188,'Ancur kaca, kaca kocak munggwing netra.
+Wong wruh rasa, tan mamak ing tata krama
+(ancur kaca: rasa, kaca kocak munggwing netra : tesmak)','','')</statement>
+<statement>INSERT INTO posts VALUES(2101,188,'Carang wreksa, wreksa wilis tanpa patra.
+Ora gampang wong urip ing alam donya.
+(cacang wreksa : pang)
+(wreksa wilis tanpa patra : wit kayu urip)','','')</statement>
+<statement>INSERT INTO posts VALUES(2102,188,'Kolik priya, wanara Anjani putra.
+tuhu eman, wong anom wedi kangelan.
+(kolik priya : tuhu, wanara Anjani putra : anoman)','','')</statement>
+<statement>INSERT INTO posts VALUES(2103,188,'Yaksa dewa, dewa dewi lir danawa.
+Kala mudha, bangkit ambengkas durmaga.
+(yeksa dewa : Bethara Kala)
+(Dewa dewi lir danawa : Bethari Durga)','','')</statement>
+<statement>INSERT INTO posts VALUES(2104,188,'Roning kamal, putrane Pandhita Durna.
+Mumpung enom, ngudi laku utama.
+(ron kamal : sinom, putrane Pandhita Durna : Aswatama)','','')</statement>
+<statement>INSERT INTO posts VALUES(2105,188,'Witing kalapa jawata ing ngarcapada.
+Salagune, wong sinau aja sembrana.
+(wit klapa : glugu, jawata ing ngarcapada : wong)','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2106,189,'Kinanthi
+********************************************
+Kinanthi lingging pitutur,
+kenthang rambat menyan putih,
+awasna dipun pratela.
+noleha wiranging wuri,
+cecongkak wohing kalapa,
+kang dadi pathoking uri
+- Kenthang rambat : telo
+- menyan puting : wlirang
+- cecongkak wohing klapa : bathok','Bermaksud : Ketela, Wlirang, Batok kelapa','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2107,190,'Pangkur
+********************************************
+Singgang gung kang piniyara,
+mardi siswa kakawinireng estri,
+wineh winulangaken wadu,
+Peputhut mong Pregiwa,
+kang sumewa pasewakaning kalangun,
+pangrantamireng pradangga,
+sesendhohan genti-genti.
+
+- singagang gung kang piniyara : winih
+- mardi siswa : mulang
+- kakawinireng estri : wadu
+- peputhut pregiwa : janaloka
+- pangrantamireng pradangga : sendhon','Bermaksud : Benih, Mengajar, Wadu, Janaloka','')</statement>
+
+<!-- TEMBANG -->
+<statement>INSERT INTO posts VALUES(2108,191,'TEMBANG
+		--o00o--
+Tembang Jawa ana telung warna:
+1. Tembang Macapat,
+2. Tembang Tengahan,
+3. Tembang Gedhe.
+---------------------------------------------
+
+1. Tembang Macapat ana II pupuh:
+	1. Asmaradana		7. megatruh
+	2. Dhandhang gula	8. Mijil
+	3. Durma			9. Pangkur
+	4. Gambuh			10. Pucung
+	5. Kinanthi			11. Sinom
+	6. Maskumambang
+	
+2. Tembang Tengahan:
+	1. Balabak			3. Jurudemung
+	2. Girisa			4. Wirangrong
+	
+3. Tembang Gedhe:
+	1. Citramengeng		3. Mintajiwa
+	2. Kusumastuti		4. Pamularsih
+	
+---------------------------------------------
+
+Ing tembang Jawa saben sak baris diarani sak gatra
+	Dhandhang gula	ana : 10 gatra ( baris)
+	Gambuh			ana : 5 gatra (baris
+	Kinanthi		ana : 6 gatra (baris)
+	megatruh		ana : 7 gatra (baris)
+	Pangkur			ana : 9 gatra (baris)
+	
+---------------------------------------------
+
+Guru Wilangan lan Guru Lagu
+Guru Wilangan, yaiku : akehing kecap (ucap utawa suku tembung saben sa gatra (baris)
+Guru Lagu, Yaiku : aksara urip (vokal) ing pungkasaning gatra (baris)','','')</statement>
+
+
+<!-- Tuladha -->
+<statement>INSERT INTO posts VALUES(2109,1892,'KINANTHI
+Kinanthi			|	Guru wilangan	| Guru lagu
+---------------------------------------------
+Anoman malumpat sampun		= 8 wanda	= u
+Prapteng witing nagasari	= 8 wanda	= i
+Mulat mangandhap katingal	= 8 wanda	= a
+Wanodya yu kuru aking		= 8 wanda	= i
+Gelung rusak wor lan kisma	= 8 wanda	= a
+Kang iga-iga kaeksi			= 8 wanda 	= i','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2110,193,'PANGKUR
+--------------------------------------------
+Mingkar-mingkuring ankara
+akarana karenan mardi siwi
+sinawung resmining kidung
+sinuba sinukarta
+mrih kertarta pakartining ngelmu luhung
+kang tumrap neng tanah Jawa
+agama ageming aji.
+	(Wedhatama. KGPAA Mangkunegara IV)','','')</statement>
+	
+<statement>INSERT INTO posts VALUES(2111,194,'DHANDHANG GULA
+--------------------------------------------
+Dhuh kusuma ingkang milangoni,
+buron arum ingkang sobeng wana,
+yen panggih sun arasane,
+sumber gung ngisor gunung,
+wreksa langking sisaning agni,
+sun sandhang pinarenga nedya amemanuh,
+wit saking tresnaning manah,
+surya ratri wong kuning sun kawulani,
+sun adhep saben dina.','','')</statement>
+
+<!-- parikan -->
+<statement>INSERT INTO posts VALUES(2112,195,'Abang-abang gendera landa, ana sing ijo kok milih putih.
+Bujang maneh ora ngluyura, sing wis duwe bojo ora tau mulih.','','')</statement>
+<statement>INSERT INTO posts VALUES(2113,195,'Ana brambang saen lima.
+Berjuang labuh negara.','','')</statement>
+<statement>INSERT INTO posts VALUES(2114,195,'Bisa ngendhang ora bisa bisa nyuling.
+Bisa nyawang ora wani nyandhing.','','')</statement>
+<statement>INSERT INTO posts VALUES(2115,195,'Bibi surip tuku klobot, pethuk encik tawa roti.
+Uwong urip pancen abot, mula becik ngati-ngati.','','')</statement>
+<statement>INSERT INTO posts VALUES(2116,195,'Esuk nakir sore nakir, sing ditakir godhong plasa.
+Esok mikir sore mikir, sing dipikir ora rumangsa.','','')</statement>
+<statement>INSERT INTO posts VALUES(2117,195,'Gudheg manggar, bumbune mrica ketumbar.
+Lamun sabar, bisa lejar sarta bingar.','','')</statement>
+<statement>INSERT INTO posts VALUES(2118,195,'Jambu apa jeruk.
+Aku melu apa entuk','','')</statement>
+<statement>INSERT INTO posts VALUES(2119,195,'Jemek-jemek gula jawa.
+Aja sok ngenyek karo kanca.','','')</statement>
+<statement>INSERT INTO posts VALUES(2120,195,'Jangan kacang jangan kara, kaduk uyah kurang gula.
+Welingku marang para mudha, aja wedi ing rekasa.','','')</statement>
+<statement>INSERT INTO posts VALUES(2121,195,'Kembang mlathi, warna peni ngganda wangi.
+Watak putri, kudu setiti angati-anti.','','')</statement>
+<statement>INSERT INTO posts VALUES(2122,195,'Kembang menur tinandur ing pinggir sumur.
+Yen wis makmur aja lali marang sedulur.','','')</statement>
+<statement>INSERT INTO posts VALUES(2123,195,'Kutha kendhal kali wungu.
+Ajar kenal karo aku.','','')</statement>
+<statement>INSERT INTO posts VALUES(2124,195,'Kembang aren sumebar pinggir kalen.
+Aja dhawen yen kowe kepingin kajen.','','')</statement>
+<statement>INSERT INTO posts VALUES(2125,195,'Kembang kencur, ganda sedhep sandhing sumur.
+Kudu jujur, yen kowe kepingin makmur.','','')</statement>
+<statement>INSERT INTO posts VALUES(2126,195,'Kembang mawar, ganda arum ngambar-ngambar.
+Ati bingar ajamung yen nampa bayar.','','')</statement>
+<statement>INSERT INTO posts VALUES(2127,195,'Kembange kembang cempaka, dudu kembang arum dalu.
+Mumpung sira isih mudha, kudu sregep ngundi ngelmu.','','')</statement>
+<statement>INSERT INTO posts VALUES(2128,195,'Manuk emprit mucuk pari.
+Dadi murid sing taberi.','','')</statement>
+<statement>INSERT INTO posts VALUES(2129,195,'Manuk tuhu mencok pager.
+Yen sinau mesthi pinter.','','')</statement>
+<statement>INSERT INTO posts VALUES(2130,195,'Ngasah arit nganti landhep.
+Dadi murid kudu sregep.','','')</statement>
+<statement>INSERT INTO posts VALUES(2131,195,'Rujak cengkir, pantese diwadhahi cangkir.
+Mlipar-mlipir, polahe wong lagi naksir.','','')</statement>
+<statement>INSERT INTO posts VALUES(2132,195,'Semarang kaline banjir.
+Ja sumelang ra dipikir.','','')</statement>
+<statement>INSERT INTO posts VALUES(2133,195,'Tawon madu ngisep sari kembang jambu.
+Aja nesu yen tinuding kaluputanmu.','','')</statement>
+<statement>INSERT INTO posts VALUES(2134,195,'Tawon madu ngisep sekar.
+Dadi guru kudu sabar.','','')</statement>
+<statement>INSERT INTO posts VALUES(2135,195,'Wajik klethik gula jawa.
+Luwih becik sing prasaja.','','')</statement>
+<statement>INSERT INTO posts VALUES(2136,195,'Wedang bubuk gula tebu.
+Mata ngantuk njaluk turu.','','')</statement>
+<statement>INSERT INTO posts VALUES(2137,195,'Korek gambar klenthing.
+Kula ndherek wonten wingking.','','')</statement>
+<statement>INSERT INTO posts VALUES(2138,195,'Wong yen lagi gandrung.
+Ra perduli mbledose gunung.','','')</statement>
+<statement>INSERT INTO posts VALUES(2139,195,'Wong yen lagi naksir.
+Ra perduli sing ditaksir kenthir.','','')</statement>
+
+<!-- Purwakanthi -->
+<statement>INSERT INTO posts VALUES(2140,196,'1. Aja dumeh menang banjur tumindak sewenang-wenang','','')</statement>
+<statement>INSERT INTO posts VALUES(2141,196,'2. Ana awan, ana pangan','','')</statement>
+<statement>INSERT INTO posts VALUES(2142,196,'3. Ana dina, ana upa','','')</statement>
+<statement>INSERT INTO posts VALUES(2143,196,'4. Ati karep, bandha cupet','','')</statement>
+<statement>INSERT INTO posts VALUES(2144,196,'5. Bareg wis makmur, lali marnag sedulur','','')</statement>
+<statement>INSERT INTO posts VALUES(2145,196,'6. Becik ketitik, ala ketara','','')</statement>
+<statement>INSERT INTO posts VALUES(2146,196,'7. Gelem obah, mesti mamah','','')</statement>
+<statement>INSERT INTO posts VALUES(2147,196,'8. Inggah inggih nanging ora kepanggih','','')</statement>
+<statement>INSERT INTO posts VALUES(2148,196,'9. Ijo-ijo godhonge kara, bareng bodho lagi rumangsa','','')</statement>
+<statement>INSERT INTO posts VALUES(2149,196,'10. Ireng-ireng ketok untune, bareng seneng ketok guyune','','')</statement>
+<statement>INSERT INTO posts VALUES(2150,196,'11. Kudu sregep sinau, sapa sing kepingin maju','','')</statement>
+<statement>INSERT INTO posts VALUES(2151,196,'12. Ora cepet, ora ngliwet','','')</statement>
+<statement>INSERT INTO posts VALUES(2152,196,'13. Ora ngedan, ora keduman','','')</statement>
+<statement>INSERT INTO posts VALUES(2153,196,'14. Thengak-thenguk, nemu kethuk','','')</statement>
+<statement>INSERT INTO posts VALUES(2154,196,'15. Tuwas sayah, ora paedah','','')</statement>
+<statement>INSERT INTO posts VALUES(2155,196,'16. Wong bungah sok nemu susah','','')</statement>
+<statement>INSERT INTO posts VALUES(2156,196,'17. Welingng guru, wong iku kudu mituhu marang bapa ibu, supaya slamet sing tinemu.','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2157,197,'Aja dhemen sameng dumadi','','')</statement>
+<statement>INSERT INTO posts VALUES(2158,197,'Bobot, bibit, bebet','','')</statement>
+<statement>INSERT INTO posts VALUES(2159,197,'janji jujur jajahane mesthi makmur','','')</statement>
+<statement>INSERT INTO posts VALUES(2160,197,'katula-tula ketali','','')</statement>
+<statement>INSERT INTO posts VALUES(2161,197,'Kala kula kelas kalih, kalung kula kolang kaling','','')</statement>
+<statement>INSERT INTO posts VALUES(2162,197,'Laras, lurus, leres, laris','','')</statement>
+<statement>INSERT INTO posts VALUES(2163,197,'Makuta, makuti, makunten','','')</statement>
+<statement>INSERT INTO posts VALUES(2164,197,'Pak Kerta kertu dhuwite kertas, nunggang kreta pating kertep liwat Kreteg Kertosono','','')</statement>
+<statement>INSERT INTO posts VALUES(2165,197,'Petruk patroli karo putrani loro putra-putri','','')</statement>
+<statement>INSERT INTO posts VALUES(2166,197,'Ruruh, rereh, ririh ing wewarah','','')</statement>
+<statement>INSERT INTO posts VALUES(2167,197,'Sing sapa salah bakal seleh','','')</statement>
+<statement>INSERT INTO posts VALUES(2168,197,'Sing weweh bakal wuwuh','','')</statement>
+<statement>INSERT INTO posts VALUES(2169,197,'Sluman slumun slamet','','')</statement>
+<statement>INSERT INTO posts VALUES(2170,197,'Tatag, teteg bakal tutug','','')</statement>
+<statement>INSERT INTO posts VALUES(2171,197,'Tata, titi, tentrem','','')</statement>
+<statement>INSERT INTO posts VALUES(2172,197,'Tatune methunthung mentheng-mentheng','','')</statement>
+<statement>INSERT INTO posts VALUES(2173,197,'Tata, titi, tutug, tatag, tanggung tertib','','')</statement>
+
+
+
+<statement>INSERT INTO posts VALUES(2174,198,'Asung bekti, bektine kawula marang Gusti','','')</statement>
+<statement>INSERT INTO posts VALUES(2175,198,'Bayem arda, ardane ngrasuk busana','','')</statement>
+<statement>INSERT INTO posts VALUES(2176,198,'Lungguh dhingklik, dhingklike wong cilik-cilik','','')</statement>
+<statement>INSERT INTO posts VALUES(2177,198,'mangan ati, atine sing kelara-lara','','')</statement>
+<statement>INSERT INTO posts VALUES(2178,198,'Nandhang lara, Larane wong lara lapa','','')</statement>
+<statement>INSERT INTO posts VALUES(2179,198,'Pandhu suta, suta madyaning Pandhawa','','')</statement>
+<statement>INSERT INTO posts VALUES(2180,198,'Raja putra, putra daleme Ngastina','','')</statement>
+<statement>INSERT INTO posts VALUES(2181,198,'Rujak degan, degane krambil ijo','','')</statement>
+<statement>INSERT INTO posts VALUES(2182,198,'Remuk rempu, rempu dadi awu','','')</statement>
+<statement>INSERT INTO posts VALUES(2183,198,'Saking tresna, tresnane mung samudana','','')</statement>
+<statement>INSERT INTO posts VALUES(2184,198,'Rujak dhodhong, rujake sisaning kalong','','')</statement>
+<statement>INSERT INTO posts VALUES(2185,198,'Witing tresna, tresnane mung sawetara','','')</statement>
+
+</sql>

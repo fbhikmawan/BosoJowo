@@ -1,0 +1,652 @@
+<sql>
+<statement>INSERT INTO posts VALUES(1328,38,'Ater-ater Hanuswara sing awujud m-, n-, ng-, lan ny- 
+CONTO: 
+m-	+ bathik	= mbathik; 
+n-	+ dudut		= ndudut; 
+ng-	+ gawa		= nggawa; 
+ny-	+ cuwil		= nyuwil','Ater-ater Hanuswara atau awalan asal seperti: m-, n-, ng-, dan ny-
+CONTOH:
+m-	+ bathik	= mbathik; 
+n-	+ dudut		= ndudut; 
+ng-	+ gawa		= nggawa; 
+ny-	+ cuwil		= nyuwil','')</statement>
+
+<statement>INSERT INTO posts VALUES(1329,39,'Ater-ater Tripurasa sing awujud: dak-, ko-, lan di-
+CONTO:
+dak-	+ pangan	= dakpangan
+ko-		+ jupuk		= kojupuk
+di-		+ ambung	= diambung','Ater-ater Tripurasa yang berwujud: dak-, ko-, dan di-
+CONTOH:
+dak-	+ pangan	= dakpangan
+ko-		+ jupuk		= kojupuk
+di-		+ ambung	= diambung','')</statement>
+<statement>INSERT INTO posts VALUES(1330,40,'Ater-ater Liyane sing awujud:
+a-		+	lungguh	= alungguh
+ma-		+	lumpat	= malumpat
+ka-		+	limpe	= kalimpe
+ke-		+	sandhung= kesandhung
+sa-		+	gegem	= sagegem
+pa-		+	lilah	= palilah
+pi-		+	tutur	= pitutur
+pra-	+	wira	= prawira
+kuma-	+	wani	= kumawani
+kami-	+	tuwa	= kamituwa
+kapi-	+	lare	= kapilare
+tar-	+	waca	= tarwaca','','')</statement>
+<statement>INSERT INTO posts VALUES(1331,41,'Seselan sing awujud: -um, -in, -el lan -er-
+-um	+	guyu	= gumuyu
+-in	+	serat	= sinerat
+-el	+	gawa	= ginawa
+-er	+	kelip	= ceruwil','','')</statement>
+<statement>INSERT INTO posts VALUES(1332,42,'Penambang sing awujud -i, -ake, -e, ke, -a, -ana, -na, ku, -mu, lan -en
+turut	+	-i		= turuti
+jupuk	+	-ake	= jupukake
+teka	+	-ne		= tekakne
+bapak	+	-e		= bapake
+jaluk	+	-ane	= jalukane
+kethok	+	-ke		= kethokke
+turu	+	-a		= turua
+weneh	+	-ana	= wenehana
+gawa	+	-na		= gawakna
+buku	+	-ku		= bukuku
+omah	+	-mu		= omahmu
+lepeh	+	-en		= lepehen','','')</statement>
+<statement>INSERT INTO posts VALUES(1333,43,'Dwilingga Padha Swara
+Conto:
+- guru-guru
+- bapak-bapak
+- bocah-bocah
+- omah-omah','','')</statement>
+<statement>INSERT INTO posts VALUES(1334,43,'Dwilingga Salin Swara
+Conto:
+- mloka-mlaku
+- mrana-mrene
+- wira-wiri
+- nongas-nangis','','')</statement>
+<statement>INSERT INTO posts VALUES(1335,43,'Dwilingga Semu
+Conto:
+- ondhe-ondhe
+- untir-untir
+- anggang-anggang
+- andheng-andheng','','')</statement>
+<statement>INSERT INTO posts VALUES(1336,44,'Tembung Dwipurwa Yaiku tembung-tembung sing diwaca kaping pindho mung wanda sing ngarep.
+Conto:
+- dedunung
+- jejupuk
+- lelumpuk
+- leluri','','')</statement>
+<statement>INSERT INTO posts VALUES(1337,45,'Tembung Dwisasana yaiku tembung-tembung sing diwaca kaping pindho mung wanda sing mburi.
+- cekakak, sekikik, cengingas, cengeges
+- cekikik
+- cengingis
+- celuluk','','')</statement>
+<statement>INSERT INTO posts VALUES(1338,46,'Tembung Camboran yoiku : tembung loro utawa luwih sing dirangkep dadi siji. Manut tegese tembung camboran bisa kaperang dadi loro, yoiku Camboran Tunggal lan Camboran Wudhar.','Tembung camboran adalah Kata Majemuk','')</statement>
+<statement>INSERT INTO posts VALUES(1339,47,'Camboran Tunggal
+Conto:
+- semarmendem
+- nagasari
+- daramuluk
+- ulerkembang','','')</statement>
+<statement>INSERT INTO posts VALUES(1340,48,'Camboran Wudhar
+Conto:
+- meja tulis
+- gedhang goreng
+- gedhe cilik
+- lara lapa','','')</statement>
+<statement>INSERT INTO posts VALUES(1341,49,'Tembung Tanduk Kriya Wantah yaiku tembung sing oleh ater-ater hanuswara (m-, n-, lan ny-). Denen warna-warnane tembung tanduk ana telu, yaiku 
+a.) Tembung tanduk kriya wantah. 
+b.) Tembung tanduk i - kriya. 
+c.) Tembung tanduk ke - kriya','','')</statement>
+<statement>INSERT INTO posts VALUES(1342,50,'Tembung kriya wantah, yaiku tembung sing ora oleh panambang:
+- maju
+- ngadeg
+- ndeleh
+- nyapu','','')</statement>
+<statement>INSERT INTO posts VALUES(1343,51,'Tembung tanduk i - kriya, yaiku tembug tanduk sing oleh panambang i:
+- menthungi
+- nulungi
+- nglabuhi
+- nyaoni','','')</statement>
+<statement>INSERT INTO posts VALUES(1344,52,'Tembung tanduk ke - kriya, yaiku tembung tanduk sing oleh panambang ke utawa -ake:
+- mbalangake
+- ngalungake
+- nduduhake
+- nyelehake','','')</statement>
+<statement>INSERT INTO posts VALUES(1345,53,'Tembung Tanggap, yaiku tembung lingga sing oleh ater-ater tripurasa (dak-, ko-, lan di-) lan seselan -in.
+Warna-warnane tembung tanggap ana papat, yaiku: 
+Tanggap tripurasa, 
+Tanggap na, 
+Tanggap tarung, 
+Tanggap ka.','','')</statement>
+<statement>INSERT INTO posts VALUES(1346,54,'Tanggap tripurasa, yaiku tembung lingga sing oleh ater-ater tripurasa
+Conto:
+- dakpangan
+- kojupuk
+- dibalangi','','')</statement>
+<statement>INSERT INTO posts VALUES(1347,55,'Tanggap na, yaiku tembung lingga sing oleh seselan ti
+Conto:
+- tinubruk
+- tinulis
+- sinengkakake','','')</statement>
+<statement>INSERT INTO posts VALUES(1348,56,'Tanggap tarung, yaiku tembung dwilingga sing oleh seselan tripurasa
+Conto:
+- sawang-sinawang
+- serat-sinerat
+- cokot-cinokot','','')</statement>
+<statement>INSERT INTO posts VALUES(1349,57,'Tanggap ka, yaiku tembung lingga sing oleh ater-ater ka- kanthi teges dijarak 
+Conto:
+- kapangan
+- kaobong
+- kagendhong','','')</statement>
+<statement>INSERT INTO posts VALUES(1350,58,'Ayahane Tembung utawa lungguhing tembung ing basa Indonesia diarani "jabatan kalimat". Ngdhal ukara manut ayahane tembunateges nggoleki perangan ukara sing diarani jejer, wasesa, lesan lan katrangan.
+Conto: 
+* Toni tuku klambi awan mau
+- Toni		: jejer
+- tuku		: wasesa
+- klambi	: lesan
+- awan mau	: katrangan wayah.','Ayahane tembung dalam bahasa Indonesia diartikan sebagai jabatan kalimat (subyek, predikat, obyek dan keterangan).
+Conto: 
+* Toni tuku klambi awan mau
+- Toni		: subyek
+- tuku		: predikat
+- klambi	: obyek
+- awan mau	: keterangan waktu.','')</statement>
+<statement>INSERT INTO posts VALUES(1351,59,'Silah-silahing tembung miturut golonganing tembung ana 10 warna:
+1.) Tembung Aran
+Conto:
+	- radio		- lemari
+	- meja		- sepedhah
+	- kursi		- montor, lsp
+2.) Tembung Kriya
+Conto:
+	- mangan	- nyapu
+	- nulis		- nembang
+	- maca		- mlayu, lsp
+3.) Tembung Ganti
+Conto:
+	- aku		- dheweke
+	- kowe		- ku
+	- ibu		- mu, lsp
+4.) Tembung Wilangan
+Conto:
+	- siji		- setengah
+	- loro		- sethithik
+	- limo		- akeh, lsp
+5.) Tembung Sipat/Kaanan
+Conto:
+	- apik		- abang
+	- bagus		- seneng
+	- susah		- putih, lsp
+6.) Tembung Katrangan
+	- ngisor	- wetan
+	- tengah	- kulon
+	- ndhuwur	- kene, lsp
+7.) Tembung Seru/Pangguwuh
+Conto:
+	- wah		- tulung
+	- adhuh		- lho
+	- ah		- eh, lsp
+8.) Tembung Sandhangan
+Conto:
+	- Sang		- Raden
+	- Hyang		- Kyai, lsp
+9.) Tembung Panyambung
+Conto:
+	- sarta		- wusana
+	- lan		- mulane, lsp
+10.) Tembung Pangarep
+Conto:
+	- saka		- menyang
+	- ing		- sing
+	- mung		- yen, lsp','Jenis Kata menurut golongan terdiri dari 10 macam:
+1.) Kata Benda
+2.) Kata Kerja
+3.) Kata Ganti
+4.) Kata Bilangan
+5.) Kata Sifat
+6.) Kata Keterangan
+7.) Kata Seru
+8.) Kata Sandang
+9.) Kata Sambung
+10.) Kata Depan','')</statement>
+<statement>INSERT INTO posts VALUES(1352,60,'Silah-silahing ukara - silah-silahing ukara sing perlu diweruhi ana 6 warna:
+1.) Ukara Kandha (Kalimat Langsung)
+Conto:
+	- "Kowe kudu sing sregep sinau" dhawuhe ibu
+	- Bapak ngendhika, "Sesuk aku menyang Surabaya".
+	
+2.) Ukara Crita (Kalimat tak langsung)
+Conto:
+	- Ngedhikane ibu, yen sregep sinau mesthi pinter
+	- Kancaku takon, kena apa aku wingi ora mlebu sekolah.
+	
+3.) Ukara Tindak (Kalimat Aktif)
+Conto:
+	- Adhiku ngundhuh pelem.
+	- Ibu mundhut jajan kanggo adhik.
+	
+4.) Ukara Tanggap (Kalimat Pasif)
+Conto:
+	- Rotine dipangan adhik.
+	- Klambine dikrikiti tikus.
+	
+5.) Ukara Pakon (Kalimat Perintah)
+Conto:
+	- Balekna sepedhah iku menyang omahe paklik.
+	- Jupukna bukuku ing dhuwur meja kuwi.
+	
+6.) Ukara Panjaluk (Kalimat Permohonan)
+Conto:
+	- Tulung aku penekna pelem kuwi.
+	- Coba kowe mreneya dak kandhani.','','')</statement>
+<statement>INSERT INTO posts VALUES(1353,61,'Tembung Ngoko - Krama Madya - Krama Inggil
+
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-------------------------------------------------------------
+alis			|	alis				|	imba
+ati			|	manah			|	penggalih
+awak		|	badan			|	salira
+balung		|	balung			|	tosan
+bangkekan	|	bangkekan		|	pamekan
+bathuk		|	bathuk			|	palarapan
+bokong		|	bocong			|	bocong
+brengos		|	brengos			|	gumbala, rawis
+cangkem		|	cangkem			|	tutuk
+cengel		|	cengel			|	griwa
+dhadha		|	dhadha			|	jaja
+dhengkul	|	dhengkul		|	jengku
+dlamakan	|	dlamakan		|	samparan
+driji		|	driji			|	racikan
+embun-embunan	|	embun-embunan	|	pasundhulan
+endhas		|	sirah			|	mustaka
+epek-epek	|	epek-epek		|	tapak asta
+geger		|	geger			|	pangkeran
+gelung		|	gelung			|	ukel
+getih		|	rah				|	rah
+githok		|	githok			|	julukan
+gulu		|	gulu			|	jangga
+idep		|	idep			|	ibing
+idu			|	idu				|	kecoh
+iga			|	iga				|	unusan
+ilat		|	ilat			|	lidhah
+irung		|	irung			|	grana
+janggut		|	janggut			|	kethekan, sadhegan
+jenggot		|	jenggot			|	gumbala
+kempol		|	kempol			|	wengkelan
+kringet		|	kringet			|	riwe
+kuku		|	kuku			|	kenaka
+kuping		|	kuping			|	talingan
+lambe		|	lambe			|	lathi
+luh			|	luh				|	waspa
+mata		|	mripat			|	paningal, soca
+pipi		|	pipi			|	pangarasan
+pundhak		|	pundhak			|	pamindhangan
+pupu		|	pupu			|	wentis
+rai			|	rai				|	pasuryan
+rambut		|	rambut			|	rima, rikma
+riyak		|	riyak			|	jlagra
+sikil		|	suku			|	ampeyan
+susu		|	susu			|	prembayun
+suwara		|	swanten			|	swanten
+tangan		|	tangan			|	asta
+umbel		|	umbel			|	gadhing
+untu		|	untu			|	waja
+uyuh		|	toyan			|	turas
+weteng		|	weteng			|	pandharan
+wudel		|	wudel			|	tuntunan','','')</statement>
+<statement>INSERT INTO posts VALUES(1354,62,'A
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+abang		|	abrit		|	abrit
+adhi		|	adhi		|	rayi
+adeg		|	ngadheg		|	jumeneng
+adoh		|	tebih		|	tebih
+adus		|	adus		|	siram
+ajang		|	ajang		|	ambeng
+aku			|	kul			|	kawula, abdi, dalem
+ambung		|	ambung		|	aras
+amit		|	amit		|	kulanuwun, nuwun sewu
+anak		|	yoga		|	putra
+anggo		|	angge		|	agem
+aran		|	nama		|	asma
+arep		|	ajeng, badhe	|	kersa
+(pem) barep	|	pembajaeng	|	pembajeng
+asu			|	segawon		|	segawon
+aweh		|	nyukani		|	maringi
+ayo			|	mangga		|	mangga
+enya		|	niki		|	punika
+','','')</statement>
+<statement>INSERT INTO posts VALUES(1355,63,'B
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+bali		|	mantuk		|	kundur
+bantal		|	bantal		|	kajang sirah
+banyu		|	toya		|	toya
+bapak		|	bapak		|	rama
+batur		|	rencang		|	abdi
+bebed		|	bebed		|	nyamping
+bebek		|	kambangan	|	kambangan
+bener		|	leres		|	kasinggihan
+beras		|	uwos		|	uwos
+biyen		|	riyin		|	rumiyin
+bojo		|	semah		|	garwa
+boreh		|	boreh		|	konyoh
+buri		|	wingking	|	pangkeran
+buwang		|	bucal		|	kendhang
+bebuwang	|	bebucal		|	bobotan
+buyar		|	rampung		|	rampung','','')</statement>
+<statement>INSERT INTO posts VALUES(1356,64,'C
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+carita		|	cariyos		|	cariyos
+caturan		|	wicanten	|	ngendhikan
+cawis		|	cawis		|	caos
+cekel		|	cepeng		|	asta
+celelng		|	andhapan	|	andhapan
+cewok		|	cawik		|	cawik
+clathu		|	wicanten	|	ngendika
+cucul		|	cucul		|	lukar
+cukur		|	cukur		|	paras, pangkas
+cundhuk		|	cundhuk		|	sangsangan','','')</statement>
+<statement>INSERT INTO posts VALUES(1357,65,'D
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+dadi		|	dados		|	dados
+dalan		|	radinan		|	margi
+dandan		|	dandos		|	busana
+delelng		|	ningali		|	mriksani
+dhewe		|	piymbak		|	piyambak
+dhuwit		|	yatra		|	arta
+dudu		|	sanes		|	sanes
+doyan		|	purun		|	kersa
+dulang		|	ndulang		|	ndhahari
+durung		|	dereng		|	dereng
+duwe		|	gadhah		|	kagungan','','')</statement>
+<statement>INSERT INTO posts VALUES(1358,66,'E
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+eling		|	eling		|	emut, enget
+embah		|	embah		|	eyang
+embuh		|	kirangan	|	ngapunten
+endhem		|	mendhem		|	wuru
+endi		|	pundi		|	pundi
+enteni		|	entosi		|	rantosi
+enyang		|	awis		|	awis
+epek		|	pendhet		|	pundhut
+esuk		|	enjing		|	enjing','','')</statement>
+<statement>INSERT INTO posts VALUES(1359,67,'G
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+gajah		|	liman		|	liman
+gawa		|	betkta		|	asta
+gawe		|	damel		|	damel
+gedhe		|	ageng		|	ageng
+gelang		|	binggel		|	binggel
+gelem		|	purun		|	kersa
+gelis		|	nggal		|	enggal
+gelung		|	gelung		|	ukel
+geni		|	latu		|	latu
+godhong		|	ron			|	ron
+golek		|	pados		|	pados
+gugah		|	gugah		|	wungu
+gula		|	gendhis		|	gendhis
+gunem		|	geneman		|	ngadhika
+guyu		|	gujeng		|	gujeng','','')</statement>
+<statement>INSERT INTO posts VALUES(1360,68,'I
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+iket		|	iket		|	destar
+iki			|	niki		|	punika
+ilang		|	ical		|	ical
+imbuh		|	imbet		|	tanduk
+inep		|	nyipeng		|	nyare
+ireng		|	cemeng		|	cemeng
+(ng)iring(aken)	|	ngiringaken	|	ndherekaken
+isa			|	saged		|	saged
+isin		|	isin		|	lingsem','','')</statement>
+<statement>INSERT INTO posts VALUES(1361,69,'J
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+jaga		|	jagi		|	reksa
+jago		|	sawung		|	sawung
+jaluk		|	nedi		|	nyuwun
+jamu		|	jampi		|	loloh
+jaran		|	jaran		|	titihan
+jarit		|	sinjang		|	nyamping
+jenat		|	jenat		|	swargi
+jeruk		|	jeram		|	jeram
+jisim		|	jisim		|	layon
+joged		|	joged		|	beksa
+jungkat		|	serat		|	pethat
+jupuk		|	pendhet		|	pundhut','','')</statement>
+<statement>INSERT INTO posts VALUES(1362,70,'K
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+kabeh		|	sedaya		|	sedanten
+kacamata	|	kacamripat	|	kacatingal
+kaget		|	kaget		|	kejot
+kakang		|	kakang		|	raka
+kalung		|	kalung		|	sangsangan
+kanggo		|	kangge		|	kagem
+kandha		|	sanjang		|	ngedhika
+kathok		|	kathok		|	lancingan
+katur		|	katur		|	konjuk
+kayu		|	kajeng		|	kajeng
+kebo		|	maesa		|	maesa
+kelambi		|	rasukan		|	ageman
+kelud		|	kelud		|	samparan
+kembang		|	sekar		|	sekar
+kemben		|	kemben		|	kesemekan
+kemul		|	kemul		|	singeb
+keris		|	dhuwung		|	wangkingan
+kijing		|	kijing		|	sekaran
+kira		|	kinten		|	kinten
+kongkon		|	kengken		|	utus
+kowe		|	sampeyan	|	panjenengan
+kramas		|	kramas		|	jamas
+krasan		|	kraos		|	kraos
+krungu		|	kepireng	|	midhanget
+(du) kubur	|	dipetak		|	disarekaken
+kuburan		|	kuburan		|	pasareyan
+kurang		|	kirang		|	kirang
+kuwi		|	niku		|	punika','','')</statement>
+<statement>INSERT INTO posts VALUES(1363,71,'L
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+labuh		|	labet		|	labet
+lagi		|	saweg		|	nembe
+lair		|	lair		|	miyos
+lali		|	supe		|	kalimengan
+lanang		|	jaler		|	kakung
+lara		|	sakit		|	gerah, gering
+larang		|	awis		|	awis
+lemah		|	siti		|	siti
+lemu		|	lema		|	lema
+lunga		|	kesah		|	tindak
+lelungan	|	kekesahan	|	peparan
+lungguh		|	lenggah		|	pinarak','','')</statement>
+<statement>INSERT INTO posts VALUES(1364,72,'M
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+maca		|	maca		|	maos
+macan		|	macan		|	simo
+maling		|	maling		|	pandung
+mambu		|	mabet		|	nggadha
+manak		|	nglairake	|	mbabar
+mangan		|	nedha		|	dhahar
+mangkat		|	bidhal		|	tindak, jengkar
+marang		|	dhateng		|	dhateng
+mati		|	pejah		|	seda, surud
+mayit		|	mayit		|	layon
+melek		|	melek		|	wungu
+melu		|	tumut		|	ndherek
+menehi		|	nyukani		|	maringi, nyaosi
+menjagan	|	sangsam		|	sangsam
+menyang		|	dhateng		|	dhateng
+metu		|	medal		|	miyos
+mikir		|	manah		|	nggalih
+minggat		|	mingat		|	lolos
+mlaku		|	mlampah		|	tindak
+mudhun		|	mandhap		|	mandhap
+mulang		|	mucal		|	mucal
+mulih		|	mantuk		|	kundur
+muni		|	mungel		|	mungel
+murah		|	mirah		|	mirah','','')</statement>
+<statement>INSERT INTO posts VALUES(1365,73,'N
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+nandur		|	nanem		|	nanem
+nangis		|	nagis, mular	|	muwun
+nepsu		|	nepsu		|	duka
+nom			|	nem			|	timur
+nunggang	|	numpak		|	nitih
+ngadeg		|	ngadeg		|	jumeneng
+nganggo		|	ngangge		|	ngagem
+ngaso		|	kendel		|	kendel
+ngelu		|	ngelu		|	puyeng
+ngenger		|	ngeger		|	ngabdi
+ngimpi		|	ngimpi		|	nyupena
+ngising		|	bebanyu		|	bobotan
+ngombe		|	nginum		|	ngunjuk
+ngongkon	|	ngengken	|	ngutus, ngaturi
+nguyuh		|	tiyan		|	turas
+nyambut gawe	|	nyambut damel	|	ngasta damel
+nyekel		|	nyepeng		|	ngasta
+nyilih		|	nyambut		|	ngampil
+nyrengeni	|	nyregem		|	ndukani
+nyritani	|	nyriosi		|	nyriosi','','')</statement>
+<statement>INSERT INTO posts VALUES(1366,74,'O
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+obmo		|	wiyar		|	wiyar
+obat		|	jampi		|	usada
+oleh		|	angsal		|	pikantuk, kapareng
+ompong		|	ompong		|	ndhaut
+ora			|	boten		|	boten','','')</statement>
+<statement>INSERT INTO posts VALUES(1367,75,'P
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+padha		|	sami		|	sami
+padusan		|	padusan		|	pasiraman
+paidon		|	paidon		|	kecohan
+panas		|	benter		|	benter
+pangan		|	tedhan		|	dhaharan
+pangilon	|	pangilon	|	paningalan
+paturon		|	patileman	|	pasareyan
+payung		|	payung		|	songsong
+petan		|	petan		|	ulik
+pikir		|	manah		|	panggalih
+pilis		|	pilis		|	blonyoh
+pitik		|	ayam		|	ayam
+prau		|	kapal		|	baita
+pupak		|	pupak		|	dhaut
+pupur		|	pupur		|	tasik
+putih		|	pethak		|	pethak
+putu		|	putu		|	wayah','','')</statement>
+<statement>INSERT INTO posts VALUES(1368,76,'R
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+rabi		|	emah-emah	|	krama
+rada		|	radi		|	radi
+rasa		|	raos		|	raos
+rata		|	radin		|	radin
+raup		|	raup		|	suryan
+rekasa		|	rekaos		|	rekaos
+rupa		|	warni		|	warni
+rusak		|	risak		|	risak','','')</statement>
+<statement>INSERT INTO posts VALUES(1369,77,'S
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+sabuk		|	sabuk		|	paningset
+sadela		|	sekedhap	|	sakedhap
+sadulur		|	sadherek	|	sadherek
+salin		|	gantos		|	gantos
+sandhangan	|	pangangge	|	pangagem
+sapi		|	lembu		|	lembu
+sapih		|	sapih		|	pegeng
+sapu		|	sapu		|	samparan
+sega		|	sekul		|	sekul
+segara		|	seganten	|	seganten
+selir		|	selir		|	ampil, ampeyan
+sendhok		|	sendhok		|	lantaran
+silih		|	sambut		|	ampil
+slamet		|	wilujeng	|	sugeng
+suwe		|	dangu		|	dangu','','')</statement>
+<statement>INSERT INTO posts VALUES(1370,78,'T
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+takon		|	taken		|	ndangu, nyuwun pirsa
+tandang gawe	|	nyambut damel	|	ngasta damel
+tandha tangan	|	tandha tangan	|	tapak asta
+tandur		|	tanem		|	tanem
+tangi		|	tangi		|	wungu
+tapihan		|	tapihan		|	nyampingan
+teka		|	dugi, dhateng	|	rawuh
+teken		|	teken		|	lantaran
+tetak, sunat	|	tetak, sunat	|	supit
+tiba		|	dhawah		|	dhawah
+tilik		|	tuwi		|	tuwi
+tuku		|	tumbas		|	mundhut
+turah		|	tirah		|	tirah
+turu		|	tilem		|	sare, nendra
+turun		|	turun		|	tedhak','','')</statement>
+<statement>INSERT INTO posts VALUES(1371,79,'U
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+udan		|	jawah		|	jawah
+udheng		|	iket		|	dhestar
+ukiran		|	jejeran		|	jejeran
+ulem-ulem	|	ulem-ulem	|	atur-atur
+umur		|	umur		|	yuswa
+undang		|	ngundhang	|	ngaturi
+urip		|	gesang		|	sugeng
+utang		|	nyambut		|	ngampil
+uyah		|	sarem		|	sarem','','')</statement>
+<statement>INSERT INTO posts VALUES(1372,80,'W
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+wadi		|	wados		|	wados
+wadon		|	estri		|	estri
+wahing		|	wahing		|	sigra
+wani		|	wantun		|	wantun
+waras		|	saras		|	waluya
+watu		|	sela		|	sela
+watuk		|	watuk		|	cekoh
+wayah		|	wanci		|	menda
+wedi		|	ajrih		|	ajrih
+wengi		|	dalu		|	dalu
+weruh		|	sumerep		|	priksa, uninga
+weweh		|	nyukani		|	peparing
+wirang		|	isin		|	lingsem
+wisuh		|	wisuh		|	wijik
+wong		|	tiyang		|	tiyang
+wuda		|	wuda		|	lukar
+wudun		|	wudun		|	untar
+wutuh		|	wetah		|	wetah','','')</statement>
+<statement>INSERT INTO posts VALUES(1373,81,'Y
+-----------------------------------------------------
+NGOKO	|	KRAMA MADYA	|	KRAMA INGGIL
+-----------------------------------------------------
+yekti		|	yektos		|	yektos
+yen			|	menawi		|	menawi','','')</statement>
+
+</sql>

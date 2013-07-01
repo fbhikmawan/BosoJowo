@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="2dp"
+    android:paddingTop="2dp">
+   
+    <ImageView
+        android:id = "@+id/picture"
+        android:layout_width="28dp" 
+    	android:layout_height="18dp"
+    	android:scaleType="fitXY"
+    	android:layout_alignParentTop="true"
+    	android:layout_alignParentLeft="true"
+    	android:paddingRight="4dp"
+    	android:paddingLeft="2dp"
+    	>
+    </ImageView>
+   
+    <TextView
+        android:id = "@+id/postOne"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+    	android:textSize="12dp"
+    	android:layout_toRightOf="@id/picture"
+    	android:ellipsize="end"
+    	android:maxLines="5"
+    	android:text="..."
+    	
+        >
+    </TextView>
+   
+     <TextView
+        android:id = "@+id/postTwo"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+    	android:textSize="12dp"
+    	android:textStyle="italic"
+    	android:textColor="#0675cb"
+    	android:layout_toRightOf="@id/picture"
+    	android:layout_below="@id/postOne"
+    	android:ellipsize="end"
+    	android:maxLines="1"
+    	android:text="..."
+        >
+        
+    </TextView>
+   
+ </RelativeLayout>

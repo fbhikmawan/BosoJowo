@@ -1,0 +1,546 @@
+<sql>
+<!--Kawruh Liya-->
+<!--Jenenge pagawean-->
+<statement>INSERT INTO posts VALUES(817,25,'Algojo : Tukang midana pati','Algojo : Orang yang bertugas mengeksekusi pidana hukuman mati','')</statement>
+<statement>INSERT INTO posts VALUES(818,25,'Babu : Rewange bale seomah','Babu : Orang yang melakukan pekerjaan rumah','')</statement>
+<statement>INSERT INTO posts VALUES(819,25,'Bajag : Wong sing gaweane mbegal ing segara','Bajag : Orang yang sukanya membajak di lautan','')</statement>
+<statement>INSERT INTO posts VALUES(820,25,'Bakul : Wong sing gaweane dodolan','Penjual : Orang yang pekerjaannya berjualan','')</statement>
+<statement>INSERT INTO posts VALUES(821,25,'Batur : Wong sing gaweane ngrewangi wong','Batur : Orang yang pekerjaannya membantu orang','')</statement>
+<statement>INSERT INTO posts VALUES(822,25,'Begal : Wong sing gaweane ngrebut barange wong','Begal : Orang yang pekerjaannya mengambil  paksa barang orang','')</statement>
+<statement>INSERT INTO posts VALUES(823,25,'Bendung : Wong sing gaweane mbendung banyu','Bendung : Orang yang pekerjaannya membendung air','')</statement>
+<statement>INSERT INTO posts VALUES(824,25,'Blandhong : Tukang negor kayu','Blandhong : Orang yang pekerjaannya memotong kayu','')</statement>
+<statement>INSERT INTO posts VALUES(825,25,'Blantik : Bakul kewan rajakaya','Blantik : Penjual hewan berskala besar','')</statement>
+<statement>INSERT INTO posts VALUES(826,25,'Buruh : Wong sing nyambut gawe kasar','Buruh : Orang yang melakukan pekerjaan kasar','')</statement>
+<statement>INSERT INTO posts VALUES(827,25,'Cantrik : Abdine Pandhita ngiras dadi muride','Cantrik : Orang yang membantu Pandhita sekaligus juga muridnya','')</statement>
+
+<statement>INSERT INTO posts VALUES(828,25,'Carik : Juru tulis ing kalurahan','Carik : Juru tulis di kelurahan','')</statement>
+<statement>INSERT INTO posts VALUES(829,25,'Dhalang : Wong sing gaweane nglakokake lan crita wayang','Dhalang : Orang yang pekerjaannya menjalankan dan menceritakan wayang','')</statement>
+<statement>INSERT INTO posts VALUES(830,25,'Dokter : Tukang nambani wong loro','Dokter : Orang yang pekerjaannya menyembuhkan orang sakit','')</statement>
+<statement>INSERT INTO posts VALUES(831,25,'Emban : Tukang momong bocah','Emban : Orang yang pekerjaannya merawat anak','')</statement>
+<statement>INSERT INTO posts VALUES(832,25,'Empu : Tukang gawe keris','Empu : Orang yang pekerjaannya membuat keris','')</statement>
+<statement>INSERT INTO posts VALUES(833,25,'Gamel : Tukang ngopeni jaran','Gamel : Orang yang pekerjaannya memelihara kuda','')</statement>
+<statement>INSERT INTO posts VALUES(834,25,'Gandhek : Utusan ratu','Gandhek : Utusan ratu','')</statement>
+<statement>INSERT INTO posts VALUES(835,25,'Gerji : Tukang dondom klambi','Gerji : Orang yang pekerjaannya membuat baju','')</statement>
+<statement>INSERT INTO posts VALUES(836,25,'Germa : Tukang buru kewan ing alas','Germa : Tukang burung ing alas','')</statement>
+<statement>INSERT INTO posts VALUES(837,25,'Guru : Wong sing gaweane mulang','Guru : Orang yang pekerjaannya mengajar','')</statement>
+
+<statement>INSERT INTO posts VALUES(839,25,'Jagal : Tukang mbeleh rajakaya','Jagal : Orang yang pekerjaannya menyembelih hewan ternak','')</statement>
+<!--<statement>INSERT INTO posts VALUES(839,25,'Jlagra : Tukang natah watu','Jlagra : Orang yang pekerjaannya menata batu','')</statement>-->
+<statement>INSERT INTO posts VALUES(840,25,'Juragan : Sudagar, lurahe pakaryan','Juragan : Pedagang, orang yang membuat lapangan pekerjaan','')</statement>
+<statement>INSERT INTO posts VALUES(841,25,'Juru Basa : Tukang negesi basa manca','Juru Basa : Orang yang pekerjaannya menerjemahkan bahasa asing','')</statement>
+<statement>INSERT INTO posts VALUES(842,25,'Juru Dang : Tukang dang','Juru Dang : Tukang dang','')</statement>
+<statement>INSERT INTO posts VALUES(843,25,'Juru Kunci : Tukang ngrumat pesarean utawa kramat','Juru Kunci : Orang yang pekerjaannya merawat makam atau kramat','')</statement>
+<statement>INSERT INTO posts VALUES(844,25,'Juru Tambang : Tukang prau utawa gethek ing kali','Juru Tambang : Tukang perahu di sungai','')</statement>
+<statement>INSERT INTO posts VALUES(845,25,'Juru Silem : Wong sing gaweane nyilem','Juru Silem : Orang yang pekerjaannya menyilem','')</statement>
+<statement>INSERT INTO posts VALUES(846,25,'Juru Sungging : Wong sing pinter nyungging','Juru Sungging : Orang yang pekerjaannya menyungging','')</statement>
+<statement>INSERT INTO posts VALUES(847,25,'Juru Terbang : Wong sing gaweane nglakokae montor mabur','Pilot : Orang yang pekerjaannya menjalankan pesawat terbang','')</statement>
+
+<statement>INSERT INTO posts VALUES(848,25,'Juru Tulis : Wong sing gaweane nulis','Penulis : Orang yang pekerjaannya menulis','')</statement>
+<statement>INSERT INTO posts VALUES(849,25,'Kemasan : Tukang gawe dandanan saka mas inten','Kemasan : Orang yang pekerjaannya membuat perhiasan dari emas dan intan','')</statement>
+<statement>INSERT INTO posts VALUES(850,25,'Koki : Tukang olah-olah','Koki : Juru Masak','')</statement>
+<statement>INSERT INTO posts VALUES(851,25,'Kondektur : Tukang nariki lan mrekso karcis','Kondektur : Orang yang pekerjaannya memeriksa karcis','')</statement>
+<statement>INSERT INTO posts VALUES(852,25,'Kundhi : Tukang gawe grabah','Kundhi : Orang yang pekerajaannya membuat gerabah','')</statement>
+<statement>INSERT INTO posts VALUES(853,25,'Kusir : Tukang nglakokake dhokar utawa kreta','Kusir : Orang yang pekerjaannya menjalankan dokar atau kereta kuda','')</statement>
+<statement>INSERT INTO posts VALUES(854,25,'Kyai : Wong sing pinter agama Islam','Kyai : Orang yang pintar tentang agama Islam','')</statement>
+<statement>INSERT INTO posts VALUES(855,25,'Madhaharan : Juru Olah-olah','Madhaharan : Juru masak','')</statement>
+<statement>INSERT INTO posts VALUES(856,25,'Malang : Pulisi Desa','Malang : Polisi Desa','')</statement>
+<statement>INSERT INTO posts VALUES(857,25,'Mandhor : Tukang ngawasi buruh','Mandhor : Orang yang pekerjaannya mengawasi buruh','')</statement>
+
+<statement>INSERT INTO posts VALUES(858,25,'Merbot : Punggawa mesjid','Merbot : Punggawa masjid','')</statement>
+<statement>INSERT INTO posts VALUES(859,25,'Molang : Bakul Rajakaya','Molang : Penjual hewan ternak','')</statement>
+<statement>INSERT INTO posts VALUES(860,25,'Montir : Tukang ndandani mesin','Montir : Orang yang pekerjaannya memperbaiki mesin','')</statement>
+<statement>INSERT INTO posts VALUES(861,25,'Mranggi : Tukang gawe wrangka','Mranggi : Orang yang pekerjaannya membuat wrangka','')</statement>
+<statement>INSERT INTO posts VALUES(862,25,'Niyaga, wiyaga : Tukang nabuh gamelan','Niyaga, wiyaga : Orang yang pekerjaannya memukul gamelan','')</statement>
+<statement>INSERT INTO posts VALUES(863,25,'Pacalang : Prajurit sing gaweane ngulatake lakune musuh','Pacalang : Prajurit yang pekerjaannya memata-matai musuh','')</statement>
+<statement>INSERT INTO posts VALUES(864,25,'Pakathik : Tukang nuntun jaran','Pakathik : Orang yang pekerjaannya menuntun kuda','')</statement>
+<statement>INSERT INTO posts VALUES(865,25,'Palara-lara : Para nyai cilik','Palara-lara : Para nyai cilik','')</statement>
+<statement>INSERT INTO posts VALUES(866,25,'Palayangan : Tukang ngeterake layang','Palayangan : Orang yang pekerjaannya mengantarkan surat','')</statement>
+<statement>INSERT INTO posts VALUES(867,25,'Pandhe : Tukang gawe barang-barang saka wesi','Pandhe : Orang yang pekerjaannya membuat barang-barang dari besi','')</statement>
+
+<statement>INSERT INTO posts VALUES(868,25,'Panegar : Tukang ngajari jaran','Panegar : Pelatih kuda','')</statement>
+<statement>INSERT INTO posts VALUES(869,25,'Panjak : Tukang ngladeni pande utawa niyaga','Panjak : Orang yang pekerjaannya melayani pande atau niyaga','')</statement>
+<statement>INSERT INTO posts VALUES(870,25,'Pangobeng : Wong buruh mbathik','Pangobeng : Buruh batik','')</statement>
+<statement>INSERT INTO posts VALUES(871,25,'Para : Bakul mas inten','Para : Penjual emas dan intan','')</statement>
+<statement>INSERT INTO posts VALUES(872,25,'Parekan : Para nyai sing ketengen','Parekan : Para nyai yang ketengen','')</statement>
+<statement>INSERT INTO posts VALUES(873,25,'Pasindhen : Wong kang nyindheni gamelan','Sinden : Orang yang pekerjaannya menyindhen dengan tabuhan gamelan','')</statement>
+<statement>INSERT INTO posts VALUES(874,25,'Pawongan : Batur wadon','Pawongan : Teman perempuan','')</statement>
+<statement>INSERT INTO posts VALUES(875,25,'Prajurit : Wong sing gaweane bela negara','Prajurit : Orang yang pekerjaannya membela negara','')</statement>
+<statement>INSERT INTO posts VALUES(876,25,'Pramugari : Tukang ngladeni penumpang pesawat','Pramugari : Orang yang pekerjaannya melayani penumpang pesawat','')</statement>
+<statement>INSERT INTO posts VALUES(877,25,'Pramuwisma : Wong sing gawene ngrewangi pegawean bale somah','Pramuwisma : Orang yang pekerjaannya membantu pekerjaan rumah','')</statement>
+
+<statement>INSERT INTO posts VALUES(878,25,'Pujangga : Ahli sastra, tukang ngarang','Pujangga : Ahli sastra','')</statement>
+<statement>INSERT INTO posts VALUES(879,25,'Sarawedi : Tukang adol utawa nggosok barleyan inten','Sarawedi : Orang yang pekerjaannya menjual atau menggosok berlian dan intan','')</statement>
+<statement>INSERT INTO posts VALUES(880,25,'Sayang : Tukang gawe barang saka tembaga','Sayang : Orang yang pekerjaannya membuat barang dari tembaga','')</statement>
+<statement>INSERT INTO posts VALUES(881,25,'Sekater : Tukang naksir ing gadhen','Sekater : Tukang taksir di pegadaian','')</statement>
+<statement>INSERT INTO posts VALUES(882,25,'Sinoman : Nom-noman tukang laden','Sinoman : Pelayan','')</statement>
+<statement>INSERT INTO posts VALUES(883,25,'Srati : Tukang ngrumat gajah','Srati : Orang yang pekerjaannya merawat gajah','')</statement>
+<statement>INSERT INTO posts VALUES(884,25,'Sedagar : Wong dagang gedhe','Saudagar : Penjual Berskala besar','')</statement>
+<statement>INSERT INTO posts VALUES(885,25,'Supir : Tukang nglakokake montor','Supir : Orang yang pekerjaannya menjalankan mobil','')</statement>
+<statement>INSERT INTO posts VALUES(886,25,'Tuwa buru : Abdine germa','Tuwa buru : Pelayan germa','')</statement>
+<statement>INSERT INTO posts VALUES(887,25,'Undhagi : Tukang gawe bekakas saka kayu','Undhagi : Orang yang pekerjaannya membuat barang dari kayu','')</statement>
+
+<!--jenenge tali-->
+<statement>INSERT INTO posts VALUES(888,26,'Amben : Tali ing wetenge jaran','Amben : Tali yang diikatkan pada perut kuda','')</statement>
+<statement>INSERT INTO posts VALUES(889,26,'Apus buntut, apus gulu : tali perabote abah-abah jaran','Apus buntut, apus gulu : Tali perabote abah-abah kuda','')</statement>
+<statement>INSERT INTO posts VALUES(890,26,'Dhadhung : Tali kanggo nancang sapi','Dhadhung : Taling yang digunakan untuk mengikat sapi','')</statement>
+
+<statement>INSERT INTO posts VALUES(891,26,'Dhandhan : Tali kanggo nggeret glondhongan kayu','Dhandan : Tali yang digunakan untuk menarik balok kayu','')</statement>
+<statement>INSERT INTO posts VALUES(892,26,'Elis : Tali kendhali','Elis : Tali kendali','')</statement>
+<statement>INSERT INTO posts VALUES(893,26,'Goci : Tali Layangan','Goci : Tali layangan','')</statement>
+<statement>INSERT INTO posts VALUES(894,26,'Godhi : Tali gombal','Godho : Tali gombal','')</statement>
+<statement>INSERT INTO posts VALUES(895,26,'Jala-jala : Tali mbendheng kelir','Jala-jala : Tali yang digunakan untuk membendheng kelir','')</statement>
+<statement>INSERT INTO posts VALUES(896,26,'Janget, ulap-ulap : Tali mblebet garane pethel','Janget, ulap-ulap : Tali mblebet garane pethel','')</statement>
+<statement>INSERT INTO posts VALUES(897,26,'Karset : Taline arloji','Karset : Talinya arloji','')</statement>
+<statement>INSERT INTO posts VALUES(898,26,'Keluh : Tali ing irung sapi','Keluh : Tali pada hidung sapi','')</statement>
+<statement>INSERT INTO posts VALUES(899,26,'Kenur : Tali pancing','Kenur : Tali pancing','')</statement>
+<statement>INSERT INTO posts VALUES(900,26,'Klamar : Tali lawingan bekungkung','Klamar : Tali lawingan bekungkung','')</statement>
+
+<statement>INSERT INTO posts VALUES(901,26,'Klanthe : Tali pancing','Klanthe : Tali pancing','')</statement>
+<statement>INSERT INTO posts VALUES(902,26,'Koloran, usus-usus : Tali kathok','Koloran, usus-usus : Tali celana','')</statement>
+<statement>INSERT INTO posts VALUES(903,26,'Pluntur : Tali nggantung gong, nyangga gamelan','Pluntur : Tali untuk menggantung gong, menyangga gamelan','')</statement>
+<statement>INSERT INTO posts VALUES(904,26,'Rante : Gelangan wesi direnteng','Rante : Gelang Besi yang dikaitkan','')</statement>
+<statement>INSERT INTO posts VALUES(905,26,'Salang : Tali pikulan','Salang : Tali untuk memikul','')</statement>
+<statement>INSERT INTO posts VALUES(906,26,'Sawed : Tali pasangan sapi','Sawed : Tali pasangan sapi','')</statement>
+<statement>INSERT INTO posts VALUES(907,26,'Sendheng : Tali gendhewa utawa langkap','Sendheng : Tali gendhewa atau langkap','')</statement>
+<statement>INSERT INTO posts VALUES(908,26,'Setagen, sabuk, setut : Tali weteng wong','Setagen, sabuk, setut : Tali yang diikatkan pada perut orang','')</statement>
+<statement>INSERT INTO posts VALUES(909,26,'Suh : Tali sapu','Suh : Tali sapu','')</statement>
+<statement>INSERT INTO posts VALUES(910,26,'Tutus : Irat-iratan pring utawa penjalin','Tutus : Tali pring atau penjalin','')</statement>
+<statement>INSERT INTO posts VALUES(911,26,'Ulur : benang ngulukake layangan', 'ulur : benang yang digunakan untuk menerbangkan layangan','')</statement>
+<statement>INSERT INTO posts VALUES(912,26,'Upal-upal : Tali pecut','Upal-upal : Tali pecut','')</statement>
+<statement>INSERT INTO posts VALUES(913,26,'Uwed : Tali kanggo ngubengake gangsingan','Uwed : Tali yang digunakan untuk memutar gasing','')</statement>
+
+<!-- Jenenge wektu -->
+<statement>INSERT INTO posts VALUES(914,27,'Byar : 06.00','Pagi : 06.00','')</statement>
+<statement>INSERT INTO posts VALUES(915,27,'Gumatel : 09.00','Gumatel : 09.00','')</statement>
+<statement>INSERT INTO posts VALUES(916,27,'Pecat sawed : 10.00','Pecad sawed : 10.00','')</statement>
+<statement>INSERT INTO posts VALUES(917,27,'Wisan gawe : 10.00','Wisan gawe : 10.00','')</statement>
+<statement>INSERT INTO posts VALUES(918,27,'Bedhug Duhur : 12.00','Bedug Duhur : 12.00','')</statement>
+<statement>INSERT INTO posts VALUES(919,27,'Tengange : 11.30','Tengange : 11.30','')</statement>
+<statement>INSERT INTO posts VALUES(920,27,'Lingsir kulon : 12.30','Lingsir barat : 12.30','')</statement>
+<statement>INSERT INTO posts VALUES(921,27,'Ngasar : 15.00','Ashar 15.00','')</statement>
+<statement>INSERT INTO posts VALUES(922,27,'Tunggang gunung : 17.00','Tunggang gunung : 17.00','')</statement>
+<statement>INSERT INTO posts VALUES(923,27,'Tiba layu : 17.30','Tiba layu : 17.30','')</statement>
+<statement>INSERT INTO posts VALUES(924,27,'Maghrib, surup : 18.00','Maghrib, petang : 18.00','')</statement>
+<statement>INSERT INTO posts VALUES(925,27,'Bakda Maghrib : 18.30','Bakda Maghrib : 18.30','')</statement>
+<statement>INSERT INTO posts VALUES(926,27,'Ngisak : 19.00','Isyak : 19.00','')</statement>
+<statement>INSERT INTO posts VALUES(927,27,'Bakda Ngisak : 20.00','Bakda Isyak : 20.00','')</statement>
+<statement>INSERT INTO posts VALUES(928,27,'Sirep bocah : 22.00','Sepi bocah : 22.00','')</statement>
+<statement>INSERT INTO posts VALUES(929,27,'Sirep wong : 23.00','Sepi orang : 23.00','')</statement>
+<statement>INSERT INTO posts VALUES(930,27,'Bedhug bengi : 24.00','Bedug malam : 24.00','')</statement>
+<statement>INSERT INTO posts VALUES(931,27,'Lingsir wengi : 01.00','Lingsir malam : 01.00','')</statement>
+<statement>INSERT INTO posts VALUES(932,27,'Titiyoni : 02.00','Titiyoni : 02.00','')</statement>
+<statement>INSERT INTO posts VALUES(933,27,'jago kluruk sepisan : 03.00','Jago berkokok sekali : 03.00','')</statement>
+<statement>INSERT INTO posts VALUES(934,27,'Bedhug telu (Subuh) : 04.00','Bedug tiga (Subuh) : 04.00','')</statement>
+<statement>INSERT INTO posts VALUES(935,27,'Jago kluruk ping pindo : 04.00','Jago berkokok dua kali : 04.00','')</statement>
+<statement>INSERT INTO posts VALUES(936,27,'Jago kluruk ping telu : 05.00','Jago berkokok tiga kali : 05.00','')</statement>
+<statement>INSERT INTO posts VALUES(937,27,'Saput lemah : 05.30','Saput lemah : 05.30','')</statement>
+
+<!-- Jenenge papan panggonan -->
+<statement>INSERT INTO posts VALUES(938,28,'Alun-alun : palemahan jembar ing setengahing kutha','','')</statement>
+<statement>INSERT INTO posts VALUES(939,28,'Babadan : palemahan sing wis dadi dibabadi','','')</statement>
+<statement>INSERT INTO posts VALUES(940,28,'Balapan : papan kanggo adu balap','','')</statement>
+<statement>INSERT INTO posts VALUES(941,28,'Bale mangu : papan kanggo ngadili wong nyalahi hukum','','')</statement>
+<statement>INSERT INTO posts VALUES(942,28,'Bango : papan kanggo dodolan','','')</statement>
+<statement>INSERT INTO posts VALUES(943,28,'Bangsal : omah gedhe kanggo pasamuwan','','')</statement>
+<statement>INSERT INTO posts VALUES(944,28,'Beteng : tembok gedhe dhuwur ing sakubenge kraton','','')</statement>
+<statement>INSERT INTO posts VALUES(945,28,'Besalen : papan kanggo mandhe','','')</statement>
+<statement>INSERT INTO posts VALUES(946,28,'Bong : kuburan Cina','','')</statement>
+<statement>INSERT INTO posts VALUES(947,28,'Bothekan : wadah jamu utawa bumbon','','')</statement>
+<statement>INSERT INTO posts VALUES(948,28,'bubat : papan kanggo adu samubarang','','')</statement>
+<statement>INSERT INTO posts VALUES(949,28,'Cakruk : omah jaga ing pinggir dalan','','')</statement>
+<statement>INSERT INTO posts VALUES(950,28,'Clunthang wadhah janggrik','','')</statement>
+<statement>INSERT INTO posts VALUES(951,28,'Endhong : wadhah panah','','')</statement>
+<statement>INSERT INTO posts VALUES(952,28,'Epok : wadhah kinang','','')</statement>
+<statement>INSERT INTO posts VALUES(953,28,'Esong : growongan pinggir kali, omah landhak','','')</statement>
+<statement>INSERT INTO posts VALUES(954,28,'Gayor : centhelan gong','','')</statement>
+<statement>INSERT INTO posts VALUES(955,28,'Gedhongan : kandhang jaran','','')</statement>
+<statement>INSERT INTO posts VALUES(956,28,'Gerdhu : omah jaga','','')</statement>
+<statement>INSERT INTO posts VALUES(957,28,'Glodhog : kothak kanggo ngingu tawon','','')</statement>
+<statement>INSERT INTO posts VALUES(958,28,'Greja : omah kanggo sembahyang wong kristen','','')</statement>
+<statement>INSERT INTO posts VALUES(959,28,'Gowok : growongan ing kayu','','')</statement>
+<statement>INSERT INTO posts VALUES(960,28,'Grobog : kothakan kanggo nyimpen panganan','','')</statement>
+<statement>INSERT INTO posts VALUES(961,28,'Gubug : omah cilik ing sawh kanggo tunggu manuk','','')</statement>
+<statement>INSERT INTO posts VALUES(962,28,'Gudhang : omah gedhe kanggo nyimpen barang','','')</statement>
+<statement>INSERT INTO posts VALUES(963,28,'Gupit mandragini : gedhong kanggo turu (ing kraton)','','')</statement>
+<statement>INSERT INTO posts VALUES(964,28,'Hotel : omah gedhe kanggo nginep','','')</statement>
+<statement>INSERT INTO posts VALUES(965,28,'Iyan : wadhah kanggo ngleser sega','','')</statement>
+<statement>INSERT INTO posts VALUES(966,28,'Jodhang : wadhah kanggo nggawa panganan mawa pikulan','','')</statement>
+<statement>INSERT INTO posts VALUES(967,28,'Jun : wadhah banyu kanggo ngangsu','','')</statement>
+<statement>INSERT INTO posts VALUES(968,28,'Kabupaten : daleme bupati','','')</statement>
+<statement>INSERT INTO posts VALUES(969,28,'Kadhaton, kraton : daleme ratu','','')</statement>
+<statement>INSERT INTO posts VALUES(970,28,'Kandhang : omahe kewan raja kaya (sapi, kebo, wedhus)','','')</statement>
+<statement>INSERT INTO posts VALUES(971,28,'Kanthongan : sak ing klambi','','')</statement>
+<statement>INSERT INTO posts VALUES(972,28,'kantor bank : kantor ngurusi dhuwit','','')</statement>
+<statement>INSERT INTO posts VALUES(973,28,'Kantor pos : kantor ngurusi surat-surat lsp.','','')</statement>
+<statement>INSERT INTO posts VALUES(974,28,'Klentheng : omah kanggo sembahyang wong Cina','','')</statement>
+<statement>INSERT INTO posts VALUES(975,28,'Kombong : kandhang kewan sato iwen (bebek, menthok, pitik)','','')</statement>
+<statement>INSERT INTO posts VALUES(976,28,'Krangkeng : kandhang kewan galak','','')</statement>
+<statement>INSERT INTO posts VALUES(977,28,'Kranjang : wadhah kanggo belanja','','')</statement>
+<statement>INSERT INTO posts VALUES(978,28,'Kuncung : omah cilik sangarepe pandhapa','','')</statement>
+<statement>INSERT INTO posts VALUES(979,28,'Kurungan : piranti kanggo ngurung','','')</statement>
+<statement>INSERT INTO posts VALUES(980,28,'Langgar : omah cilik kanggo sembahyang utawa ngaji','','')</statement>
+<statement>INSERT INTO posts VALUES(981,28,'Leng : bolongan cilik ono lemah','','')</statement>
+<statement>INSERT INTO posts VALUES(982,28,'Loji : Omah gedhong sing apik','','')</statement>
+<statement>INSERT INTO posts VALUES(983,28,'Lumbung : omah kanggo nyimpen pari','','')</statement>
+<statement>INSERT INTO posts VALUES(984,28,'Mesjid : papan kanggo sembahyang wong Islam','','')</statement>
+<statement>INSERT INTO posts VALUES(985,28,'Pacabrakan : papan kanggo sang wiku, pamulangan','','')</statement>
+<statement>INSERT INTO posts VALUES(986,28,'Padaringan : papan kanggo nyimpen beras','','')</statement>
+<statement>INSERT INTO posts VALUES(987,28,'Padasan : papan kanggo wudlu','','')</statement>
+<statement>INSERT INTO posts VALUES(988,28,'Padhepokan : papan kanggo gladi olah kanuragan','','')</statement>
+<statement>INSERT INTO posts VALUES(990,28,'Paestren : sawah ing tepining kali','','')</statement>
+<statement>INSERT INTO posts VALUES(991,28,'Paga : papan kanggo nyimpen bekakas pawon','','')</statement>
+<statement>INSERT INTO posts VALUES(992,28,'Pagagan : palemahan sing ditanduri pari gaga','','')</statement>
+<statement>INSERT INTO posts VALUES(993,28,'Pagajih : lemah waled nebneban saka kali utawa waduk','','')</statement>
+<statement>INSERT INTO posts VALUES(994,28,'Pagupon : omah dara','','')</statement>
+<statement>INSERT INTO posts VALUES(995,28,'Paidon : wadhah idu','','')</statement>
+<statement>INSERT INTO posts VALUES(996,28,'Pakebonan : lemah sing ditanduri wit-witan','','')</statement>
+<statement>INSERT INTO posts VALUES(997,28,'Pakunjaran : papan kanggo nahan wong','','')</statement>
+<statement>INSERT INTO posts VALUES(998,28,'Pelabuhan : papan kanggo labuh kapal','','')</statement>
+<statement>INSERT INTO posts VALUES(999,28,'Pelataran : lemah kosong sangarepe omah','','')</statement>
+<statement>INSERT INTO posts VALUES(1000,28,'Pamulangan : papan kanggo sekolah','','')</statement>
+<statement>INSERT INTO posts VALUES(1001,28,'Pandhapa : omah ngarep kanggo nemoni tamu','','')</statement>
+<statement>INSERT INTO posts VALUES(1002,28,'Panepen : papan kanggo tapa','','')</statement>
+<statement>INSERT INTO posts VALUES(1003,28,'Pantisari : omah cilik ing tengah taman','','')</statement>
+<statement>INSERT INTO posts VALUES(1004,28,'Papon : wadhah enjet','','')</statement>
+<statement>INSERT INTO posts VALUES(1005,28,'Pasanggrahan : papan kanggo nginep sajabaning kutho','','')</statement>
+<statement>INSERT INTO posts VALUES(1006,28,'Pasantren : omah kanggo nyantri','','')</statement>
+<statement>INSERT INTO posts VALUES(1007,28,'Pasar : papan kanggo dol tinuku barang','','')</statement>
+<statement>INSERT INTO posts VALUES(1008,28,'Pasetran : papan kanggo buang bangkai','','')</statement>
+<statement>INSERT INTO posts VALUES(1009,28,'Pasisir : papan pinggir segara','','')</statement>
+<statement>INSERT INTO posts VALUES(1010,28,'Patamanan : papan sing ditanduri pakembangan','','')</statement>
+<statement>INSERT INTO posts VALUES(1011,28,'Patapan : papan kanggo tapa','','')</statement>
+<statement>INSERT INTO posts VALUES(1012,28,'Patarangan : papan kanggo ngendhok pitik','','')</statement>
+<statement>INSERT INTO posts VALUES(1013,28,'Pawuhan : papan kanggo mbuang uwuh','','')</statement>
+<statement>INSERT INTO posts VALUES(1014,28,'Payudan : ara-ara kanggo perang','','')</statement>
+<statement>INSERT INTO posts VALUES(1015,28,'Pinihan : papan kanggo ndeder winih','','')</statement>
+<statement>INSERT INTO posts VALUES(1016,28,'Plangkan : jagragan sanggan tombak, payung,lsp','','')</statement>
+<statement>INSERT INTO posts VALUES(1017,28,'Plegungan : papan kanggo sapi ngaso','','')</statement>
+<statement>INSERT INTO posts VALUES(1018,28,'Ploncon : gawangan kayu mawa bolongan kanggo ndeleh teken, tumbak, lsp','','')</statement>
+<statement>INSERT INTO posts VALUES(1019,28,'Pluwang : luwungan kanggo masangi kewan alas','','')</statement>
+<statement>INSERT INTO posts VALUES(1020,28,'Pomahan : pekarangan sing diedegi omah','','')</statement>
+<statement>INSERT INTO posts VALUES(1021,28,'Pondhok : omah kanggo santri','','')</statement>
+<statement>INSERT INTO posts VALUES(1022,28,'Pragen : wadhah bumbon','','')</statement>
+<statement>INSERT INTO posts VALUES(1023,28,'Pranji : kurungan pitik','','')</statement>
+<statement>INSERT INTO posts VALUES(1024,28,'Ranggon : gubug kaggo leren','','')</statement>
+<statement>INSERT INTO posts VALUES(1025,28,'Rong : leng sing gede','','')</statement>
+<statement>INSERT INTO posts VALUES(1026,28,'Rumah sakit : omah kanggo ngrumat wong loro','','')</statement>
+<statement>INSERT INTO posts VALUES(1027,28,'Sanggar : papan kanggo muja semedi','','')</statement>
+<statement>INSERT INTO posts VALUES(1028,28,'Segaran : tirone segara','','')</statement>
+<statement>INSERT INTO posts VALUES(1029,28,'Sekolahan : papan kanggo sekolah','','')</statement>
+<statement>INSERT INTO posts VALUES(1030,28,'Selon bumbung kanggo wadhah bumbu','','')</statement>
+<statement>INSERT INTO posts VALUES(1031,28,'Senthong : kamar kanggo turu','','')</statement>
+<statement>INSERT INTO posts VALUES(1032,28,'Setasiun : papan endheg-endhegan sepur','','')</statement>
+<statement>INSERT INTO posts VALUES(1033,28,'Setren : sawah pinggir kali','','')</statement>
+<statement>INSERT INTO posts VALUES(1034,28,'Slepen : wadhah bako','','')</statement>
+<statement>INSERT INTO posts VALUES(1035,28,'Sudhung : gegrumbulan omah celeng','','')</statement>
+<statement>INSERT INTO posts VALUES(1036,28,'Susuh : omah manuk','','')</statement>
+<statement>INSERT INTO posts VALUES(1037,28,'Tobong : luwengan kanggo ngobong gendheng','','')</statement>
+<statement>INSERT INTO posts VALUES(1038,28,'Tala : omah awon','','')</statement>
+<statement>INSERT INTO posts VALUES(1039,28,'Talun : papan ing pagunungan','','')</statement>
+<statement>INSERT INTO posts VALUES(1040,28,'Tambak : blumbang kanggo ngingu bandeng','','')</statement>
+<statement>INSERT INTO posts VALUES(1041,28,'Tangsi : omahe saradhadhu','','')</statement>
+<statement>INSERT INTO posts VALUES(1042,28,'Tegelan : palemahan sing ditanduri palawija','','')</statement>
+<statement>INSERT INTO posts VALUES(1043,28,'Tulang : kothakan cilik kanggo adu jangkrik','','')</statement>
+<statement>INSERT INTO posts VALUES(1044,28,'Warung : omah kanggo dodolan','','')</statement>
+<statement>INSERT INTO posts VALUES(1045,28,'Wrangka : kayu wadhah keris utawa tumbak','','')</statement>
+
+<!-- ambune apa -->
+<statement>INSERT INTO posts VALUES(1046,29,'Ampas bosok : bacin, tengik','Ampas bosok : bacin, tengik','')</statement>
+<statement>INSERT INTO posts VALUES(1047,29,'Arum dalu : arum','Arum dalu : arum','')</statement>
+<statement>INSERT INTO posts VALUES(1048,29,'Bathang kewan : badheg','Bangkai hewan : badheg','')</statement>
+<statement>INSERT INTO posts VALUES(1049,29,'Beras lawas : penguk','Beras lawas : penguk','')</statement>
+<statement>INSERT INTO posts VALUES(1050,29,'Iwak : amis','Ikan : amis','')</statement>
+<statement>INSERT INTO posts VALUES(1051,29,'Kandhang : sengak','Kandang : sengak','')</statement>
+<statement>INSERT INTO posts VALUES(1052,29,'Kembang mlathi : wangi','Kembang melati : wangi','')</statement>
+<statement>INSERT INTO posts VALUES(1053,29,'Krambil bosok : lecit, tengik','Kelapa busuk : tengik','')</statement>
+<statement>INSERT INTO posts VALUES(1054,29,'Kringet : apek','Keringat : apek','')</statement>
+<statement>INSERT INTO posts VALUES(1055,29,'Lombok goreng : sumegrak','Cabe goreng : sumegrak','')</statement>
+<statement>INSERT INTO posts VALUES(1056,29,'Menyan obong : sengir','Menyang bakar : sengir','')</statement>
+<statement>INSERT INTO posts VALUES(1057,29,'Ompol/uyuh : pesing','Ompol : pesing','')</statement>
+<statement>INSERT INTO posts VALUES(1058,29,'Peceren : banger','Got : banger','')</statement>
+<statement>INSERT INTO posts VALUES(1059,29,'Tape : sumegrak','Tape : sumegrak','')</statement>
+<statement>INSERT INTO posts VALUES(1060,29,'Tembako : langu','Tembakau : langu','')</statement>
+<statement>INSERT INTO posts VALUES(1061,29,'Tikus curut : langu','Tikus curut : langu','')</statement>
+<statement>INSERT INTO posts VALUES(1062,29,'Tlethong : sumenthung','Kotoran sapi : sumenthung','')</statement>
+<statement>INSERT INTO posts VALUES(1063,29,'Wedus : prengus','Kambing : prengus','')</statement>
+
+<!-- rasane apa -->
+<statement>INSERT INTO posts VALUES(1064,30,'Anta : rasane banyu tawa','Anta : rasanya air tawar','')</statement>
+<statement>INSERT INTO posts VALUES(1065,30,'Asin : rasane uyah','Asin : rasanya garam','')</statement>
+<statement>INSERT INTO posts VALUES(1066,30,'Getar : rasane lenga goreng ala','Getar : rasanya minyak goreng','')</statement>
+<statement>INSERT INTO posts VALUES(1067,30,'Getir : rasane pete, jengkol, lsp','Getir : rasanya pete, jengkol, dsb','')</statement>
+<statement>INSERT INTO posts VALUES(1068,30,'Gurih : rasane mete, kemiri, lsp','Gurih : rasanya mete, kemiri, dsb','')</statement>
+<statement>INSERT INTO posts VALUES(1069,30,'Kecut : rasane pelem, asem, lsp','Kecut : rasanya mangga, asem, dsb','')</statement>
+<statement>INSERT INTO posts VALUES(1070,30,'Kumetep : rasane lombok jemprit','Kumetep : rasanya cabe jemprit','')</statement>
+<statement>INSERT INTO posts VALUES(1071,30,'Legi : rasane gula','Manis : rasanya gula','')</statement>
+<statement>INSERT INTO posts VALUES(1072,30,'Pait : rasane jamu, bako, lsp','Pahit : rasanya jamu, bako, dsb','')</statement>
+<statement>INSERT INTO posts VALUES(1073,30,'Pedhes : rasane lombok','Pedhes : rasanya cabe','')</statement>
+<statement>INSERT INTO posts VALUES(1074,30,'Seger : rasane banyu krambil','Seger : rasanya air kelapa','')</statement>
+<statement>INSERT INTO posts VALUES(1075,30,'Sepet : rasane salak, sepet, lsp','Sepet : rasanya salak, sepet, dsb','')</statement>
+
+<!-- Wilangan kawi -->
+<statement>INSERT INTO posts VALUES(1076,31,'1. = eka','','')</statement>
+<statement>INSERT INTO posts VALUES(1077,31,'2. = dwi','','')</statement>
+<statement>INSERT INTO posts VALUES(1078,31,'3. = tri','','')</statement>
+<statement>INSERT INTO posts VALUES(1079,31,'4. = catur','','')</statement>
+<statement>INSERT INTO posts VALUES(1080,31,'5. = panca','','')</statement>
+<statement>INSERT INTO posts VALUES(1081,31,'6. = sad','','')</statement>
+<statement>INSERT INTO posts VALUES(1082,31,'7. = sapta','','')</statement>
+<statement>INSERT INTO posts VALUES(1083,31,'8. = astha','','')</statement>
+<statement>INSERT INTO posts VALUES(1084,31,'9. = nawa','','')</statement>
+<statement>INSERT INTO posts VALUES(1085,31,'10. = dasa','','')</statement>
+<statement>INSERT INTO posts VALUES(1086,31,'100 = sata','','')</statement>
+<statement>INSERT INTO posts VALUES(1087,31,'1.000 = sastra','','')</statement>
+<statement>INSERT INTO posts VALUES(1088,31,'10.000 = saleksa','','')</statement>
+<statement>INSERT INTO posts VALUES(1089,31,'100.000 = sakethi','','')</statement>
+<statement>INSERT INTO posts VALUES(1090,31,'1.000.000 = sayuta','','')</statement>
+
+
+<!-- wilangan saperangan -->
+<statement>INSERT INTO posts VALUES(1091,32,'Banyu; satetes','Air; setetes','')</statement>
+<statement>INSERT INTO posts VALUES(1092,32,'Bawang; sasiung','Bawang; sesiung','')</statement>
+<statement>INSERT INTO posts VALUES(1093,32,'Beras; saelas','','')</statement>
+<statement>INSERT INTO posts VALUES(1094,32,'Bolah; saukel','','')</statement>
+<statement>INSERT INTO posts VALUES(1095,32,'Bongko; sawungkus','','')</statement>
+<statement>INSERT INTO posts VALUES(1096,32,'Cangkir; sagagrag','','')</statement>
+<statement>INSERT INTO posts VALUES(1097,32,'Daging; sairis','','')</statement>
+<statement>INSERT INTO posts VALUES(1098,32,'Dara ; sajodho','','')</statement>
+<statement>INSERT INTO posts VALUES(1099,32,'Duk; sakakap','','')</statement>
+<statement>INSERT INTO posts VALUES(1100,32,'Gambir; sakerek','','')</statement>
+<statement>INSERT INTO posts VALUES(1101,32,'Gamelan; sarancang','','')</statement>
+<statement>INSERT INTO posts VALUES(1102,32,'Gedhangl sauler, salirang','','')</statement>
+<statement>INSERT INTO posts VALUES(1103,32,'Godhong; sapapah','','')</statement>
+<statement>INSERT INTO posts VALUES(1104,32,'Gula; satangkep','','')</statement>
+<statement>INSERT INTO posts VALUES(1105,32,'Iwak; sakepis','','')</statement>
+<statement>INSERT INTO posts VALUES(1106,32,'Jae; sarempang','','')</statement>
+<statement>INSERT INTO posts VALUES(1107,32,'Jagung; saontong','','')</statement>
+<statement>INSERT INTO posts VALUES(1108,32,'Jaran; sarakit','','')</statement>
+<statement>INSERT INTO posts VALUES(1109,32,'Jarit; salembar','','')</statement>
+<statement>INSERT INTO posts VALUES(1110,32,'Jeruk; seajar','','')</statement>
+<statement>INSERT INTO posts VALUES(1111,32,'Kembang; segagang','','')</statement>
+<statement>INSERT INTO posts VALUES(1112,32,'Kencur; sagrigih','','')</statement>
+<statement>INSERT INTO posts VALUES(1113,32,'Kertas; salembar','','')</statement>
+<statement>INSERT INTO posts VALUES(1114,32,'Klengkeng; saombyok','','')</statement>
+<statement>INSERT INTO posts VALUES(1115,32,'Krambil; sajanjang','','')</statement>
+<statement>INSERT INTO posts VALUES(1116,32,'Lawe; sagenuh','','')</statement>
+<statement>INSERT INTO posts VALUES(1117,32,'Lenga; sagendul','','')</statement>
+<statement>INSERT INTO posts VALUES(1118,32,'Omah; sawuwung','','')</statement>
+<statement>INSERT INTO posts VALUES(1119,32,'panah; salakon','','')</statement>
+<statement>INSERT INTO posts VALUES(1120,32,'Pari; sawuli','','')</statement>
+<statement>INSERT INTO posts VALUES(1121,32,'Pete; sabengkak, samata','','')</statement>
+<statement>INSERT INTO posts VALUES(1122,32,'Pring; saeros, salonjor','','')</statement>
+<statement>INSERT INTO posts VALUES(1123,32,'Rokok; saeler, sabungkus','','')</statement>
+<statement>INSERT INTO posts VALUES(1124,32,'Sandhal; sapasang','','')</statement>
+<statement>INSERT INTO posts VALUES(1125,32,'Sandhangan; sapengadeg','','')</statement>
+<statement>INSERT INTO posts VALUES(1126,32,'Sate; sasunduk','','')</statement>
+<statement>INSERT INTO posts VALUES(1127,32,'Sawah; sakedhok','','')</statement>
+<statement>INSERT INTO posts VALUES(1128,32,'Sega; sapulukan','','')</statement>
+<statement>INSERT INTO posts VALUES(1129,32,'Semangka; salining','','')</statement>
+<statement>INSERT INTO posts VALUES(1130,32,'Suruh; secandhik','','')</statement>
+<statement>INSERT INTO posts VALUES(1131,32,'Suweng; sasele','','')</statement>
+<statement>INSERT INTO posts VALUES(1132,32,'Tebu; salonjor, sauyan','','')</statement>
+<statement>INSERT INTO posts VALUES(1133,32,'Tela; satenggok','','')</statement>
+<statement>INSERT INTO posts VALUES(1134,32,'Tembako; satampang, sajanang','','')</statement>
+<statement>INSERT INTO posts VALUES(1135,32,'Uyah, sawuku','','')</statement>
+<statement>INSERT INTO posts VALUES(1136,32,'Wedang; sagelas','','')</statement>
+
+<!-- Ngemu teges mbangetake -->
+<statement>INSERT INTO posts VALUES(1137,33,'Abang; mbranang','','')</statement>
+<statement>INSERT INTO posts VALUES(1138,33,'Adhem; njekut','','')</statement>
+<statement>INSERT INTO posts VALUES(1139,33,'Adoh; ngaluk-aluk','','')</statement>
+<statement>INSERT INTO posts VALUES(1140,33,'Amba; ngilak-ilak','','')</statement>
+<statement>INSERT INTO posts VALUES(1141,33,'Ajur; mumur','','')</statement>
+<statement>INSERT INTO posts VALUES(1142,33,'Alas; gung liwang liwung','','')</statement>
+<statement>INSERT INTO posts VALUES(1143,33,'Aneh; nyruwenteh','','')</statement>
+<statement>INSERT INTO posts VALUES(1144,33,'Anyar; kenyar-kenyar','','')</statement>
+<statement>INSERT INTO posts VALUES(1145,33,'Anyep; njejet','Dingin; nggigil','')</statement>
+<statement>INSERT INTO posts VALUES(1146,33,'Asat; nggereng','','')</statement>
+<statement>INSERT INTO posts VALUES(1147,33,'Banjir; bandhang','','')</statement>
+<statement>INSERT INTO posts VALUES(1148,33,'Bedhug; ndhrandhang','','')</statement>
+<statement>INSERT INTO posts VALUES(1149,33,'Bening; nyarong','','')</statement>
+<statement>INSERT INTO posts VALUES(1150,33,'Biru; kecu','','')</statement>
+<statement>INSERT INTO posts VALUES(1151,33,'Bosok; koklok','','')</statement>
+<statement>INSERT INTO posts VALUES(1152,33,'Bunder; seser','','')</statement>
+<statement>INSERT INTO posts VALUES(1153,33,'Burik; cekrik','','')</statement>
+<statement>INSERT INTO posts VALUES(1154,33,'Cebol; ndhrodhol','','')</statement>
+<statement>INSERT INTO posts VALUES(1155,33,'Cedhak; nyangklek','','')</statement>
+<statement>INSERT INTO posts VALUES(1156,33,'Cetha; wela-wela','','')</statement>
+<statement>INSERT INTO posts VALUES(1157,33,'Cilaka; mencit','','')</statement>
+<statement>INSERT INTO posts VALUES(1158,33,'Cilik; menthik','','')</statement>
+<statement>INSERT INTO posts VALUES(1159,33,'Cukat; trengginas','','')</statement>
+<statement>INSERT INTO posts VALUES(1160,33,'Dawa; kole-kole','','')</statement>
+<statement>INSERT INTO posts VALUES(1161,33,'Dhewe; emple','','')</statement>
+<statement>INSERT INTO posts VALUES(1162,33,'Dhuwur; mencit','','')</statement>
+<statement>INSERT INTO posts VALUES(1163,33,'Dremba; moha','','')</statement>
+<statement>INSERT INTO posts VALUES(1164,33,'Endhek; nyemplek','','')</statement>
+<statement>INSERT INTO posts VALUES(1165,33,'Entek, gusis','','')</statement>
+<statement>INSERT INTO posts VALUES(1166,33,'Esuk; umun-umun, uthuk-uthuk','','')</statement>
+<statement>INSERT INTO posts VALUES(1167,33,'gagah; prakosa','','')</statement>
+<statement>INSERT INTO posts VALUES(1168,33,'Garing; kemringking','','')</statement>
+<statement>INSERT INTO posts VALUES(1169,33,'Gedhe; gombong','','')</statement>
+<statement>INSERT INTO posts VALUES(1170,33,'Grimis; riwis-riwis','','')</statement>
+<statement>INSERT INTO posts VALUES(1171,33,'Gosong; pereng','','')</statement>
+<statement>INSERT INTO posts VALUES(1172,33,'Ijen; kijen','','')</statement>
+<statement>INSERT INTO posts VALUES(1173,33,'Ijo; royo-royo','','')</statement>
+<statement>INSERT INTO posts VALUES(1174,33,'Ilang; blas; musna','','')</statement>
+<statement>INSERT INTO posts VALUES(1175,33,'Ireng; thuntheng, janges','','')</statement>
+<statement>INSERT INTO posts VALUES(1176,33,'Jejel; riyel','','')</statement>
+<statement>INSERT INTO posts VALUES(1177,33,'Ngguyu; nyekakak','','')</statement>
+<statement>INSERT INTO posts VALUES(1178,33,'Kaku; kekeng','','')</statement>
+<statement>INSERT INTO posts VALUES(1179,33,'Kapok; kawus','','')</statement>
+<statement>INSERT INTO posts VALUES(1180,33,'Kebak; mencep','','')</statement>
+<statement>INSERT INTO posts VALUES(1181,33,'Kenes; mendes','','')</statement>
+<statement>INSERT INTO posts VALUES(1182,33,'Kothong; blog','','')</statement>
+<statement>INSERT INTO posts VALUES(1183,33,'Kuning; nyekining','','')</statement>
+<statement>INSERT INTO posts VALUES(1184,33,'Kuru; aking','','')</statement>
+<statement>INSERT INTO posts VALUES(1185,33,'Kujur; sangalikur','','')</statement>
+<statement>INSERT INTO posts VALUES(1186,33,'Legi; angleg','','')</statement>
+<statement>INSERT INTO posts VALUES(1187,33,'Loro; selo','','')</statement>
+<statement>INSERT INTO posts VALUES(1188,33,'Lemu; ginuk-ginuk','','')</statement>
+<statement>INSERT INTO posts VALUES(1189,33,'Lunga; bablas','','')</statement>
+<statement>INSERT INTO posts VALUES(1190,33,'Merem; dhipet','','')</statement>
+<statement>INSERT INTO posts VALUES(1191,33,'Mlarat; cemporat','','')</statement>
+<statement>INSERT INTO posts VALUES(1192,33,'Mlayu; ngethipleng','','')</statement>
+<statement>INSERT INTO posts VALUES(1193,33,'Mubeng; seser','','')</statement>
+<statement>INSERT INTO posts VALUES(1194,33,'Nangis; nggiyeng','','')</statement>
+<statement>INSERT INTO posts VALUES(1195,33,'Padhang; njingglang','','')</statement>
+<statement>INSERT INTO posts VALUES(1196,33,'Pait; nyethak','','')</statement>
+<statement>INSERT INTO posts VALUES(1197,33,'Panas; jumepret','','')</statement>
+<statement>INSERT INTO posts VALUES(1198,33,'Pecah; ndhedhet','','')</statement>
+<statement>INSERT INTO posts VALUES(1199,33,'Picek; nrethek','','')</statement>
+<statement>INSERT INTO posts VALUES(1200,33,'Ping; seket bentet, setheng goweng','','')</statement>
+<statement>INSERT INTO posts VALUES(1201,33,'Putih; memplak','','')</statement>
+<statement>INSERT INTO posts VALUES(1202,33,'Remuk; bubuk, rempa','','')</statement>
+<statement>INSERT INTO posts VALUES(1203,33,'Resik; gumrining','','')</statement>
+<statement>INSERT INTO posts VALUES(1204,33,'Rewel; gothel','','')</statement>
+<statement>INSERT INTO posts VALUES(1205,33,'Sadina; muput','','')</statement>
+<statement>INSERT INTO posts VALUES(1206,33,'Sakesuk; njepluk','','')</statement>
+<statement>INSERT INTO posts VALUES(1207,33,'Sasore; bendhe','','')</statement>
+
+<!-- Tegese sanalika -->
+<statement>INSERT INTO posts VALUES(1208,34,'Ambles; bles','','')</statement>
+<statement>INSERT INTO posts VALUES(1209,34,'Ambrug; brug','','')</statement>
+<statement>INSERT INTO posts VALUES(1210,34,'Abjlog; jleg','','')</statement>
+<statement>INSERT INTO posts VALUES(1211,34,'bali; cengkelak','','')</statement>
+<!--<statement>INSERT INTO posts VALUES(1211,34,'Bayar; jreng','','')</statement>-->
+<statement>INSERT INTO posts VALUES(1212,34,'Buwang; brung','','')</statement>
+<statement>INSERT INTO posts VALUES(1213,34,'Bukak; byak','','')</statement>
+<statement>INSERT INTO posts VALUES(1214,34,'Candhak; ceg','','')</statement>
+<statement>INSERT INTO posts VALUES(1215,34,'Dhodhok; prok','','')</statement>
+<statement>INSERT INTO posts VALUES(1216,34,'Dudut; ler','','')</statement>
+<statement>INSERT INTO posts VALUES(1217,34,'Emplok; telep','','')</statement>
+<statement>INSERT INTO posts VALUES(1218,34,'Esok; glogok','','')</statement>
+<statement>INSERT INTO posts VALUES(1219,34,'Gebug; bleg','','')</statement>
+<statement>INSERT INTO posts VALUES(1220,34,'Gendhong; nyeng','','')</statement>
+<statement>INSERT INTO posts VALUES(1221,34,'Goreng; sreng','','')</statement>
+<statement>INSERT INTO posts VALUES(1222,34,'Gulung; klunthung','','')</statement>
+<statement>INSERT INTO posts VALUES(1223,34,'Gunting; kres','','')</statement>
+<statement>INSERT INTO posts VALUES(1224,34,'Guyu; ger','','')</statement>
+<statement>INSERT INTO posts VALUES(1225,34,'Iris; kres','','')</statement>
+<statement>INSERT INTO posts VALUES(1226,34,'Jewer; wir','','')</statement>
+<statement>INSERT INTO posts VALUES(1227,34,'Jiwit; cekit','','')</statement>
+<statement>INSERT INTO posts VALUES(1228,34,'Junjung; kriyeng','','')</statement>
+<statement>INSERT INTO posts VALUES(1229,34,'Jupuk; clemut','','')</statement>
+<statement>INSERT INTO posts VALUES(1230,34,'Kethok; thel','','')</statement>
+<statement>INSERT INTO posts VALUES(1231,34,'Lunga; klepat','','')</statement>
+<statement>INSERT INTO posts VALUES(1232,34,'Lungguh; prok','','')</statement>
+<statement>INSERT INTO posts VALUES(1233,34,'Mabur; bleber','','')</statement>
+<statement>INSERT INTO posts VALUES(1234,34,'Mati; seg','','')</statement>
+<statement>INSERT INTO posts VALUES(1235,34,'Mandheg; greg','','')</statement>
+<statement>INSERT INTO posts VALUES(1236,34,'Menclok; cok','','')</statement>
+<statement>INSERT INTO posts VALUES(1237,34,'Metu; jethul','','')</statement>
+<statement>INSERT INTO posts VALUES(1238,34,'Mlayu; jranthal','','')</statement>
+<statement>INSERT INTO posts VALUES(1239,34,'Mlebu; bleng','','')</statement>
+<statement>INSERT INTO posts VALUES(1240,34,'Mumbul; dhel','','')</statement>
+<statement>INSERT INTO posts VALUES(1241,34,'Murup; bel','','')</statement>
+<statement>INSERT INTO posts VALUES(1242,34,'Nabok; plek','','')</statement>
+<statement>INSERT INTO posts VALUES(1243,34,'Ngadeg; nyat','','')</statement>
+<statement>INSERT INTO posts VALUES(1244,34,'Ngombe; glenggeng, cleguk','','')</statement>
+<statement>INSERT INTO posts VALUES(1245,34,'Nyengklak; cemplo','','')</statement>
+<statement>INSERT INTO posts VALUES(1246,34,'Padhang; byak','','')</statement>
+<statement>INSERT INTO posts VALUES(1247,34,'Pecah; byar','','')</statement>
+<statement>INSERT INTO posts VALUES(1248,34,'Pedhot; dhel','','')</statement>
+<statement>INSERT INTO posts VALUES(1249,34,'Peteng; pet','','')</statement>
+<statement>INSERT INTO posts VALUES(1250,34,'Sabet; bet','','')</statement>
+<statement>INSERT INTO posts VALUES(1251,34,'Saut; ceg','','')</statement>
+<statement>INSERT INTO posts VALUES(1252,34,'Sigar; byak','','')</statement>
+<statement>INSERT INTO posts VALUES(1253,34,'Sila; ngetheker','','')</statement>
+<statement>INSERT INTO posts VALUES(1254,34,'Suduk; cres','','')</statement>
+<statement>INSERT INTO posts VALUES(1255,34,'Sumet; bel','','')</statement>
+<statement>INSERT INTO posts VALUES(1256,34,'Suwek; reketek','','')</statement>
+<statement>INSERT INTO posts VALUES(1257,34,'Taleni;  set','','')</statement>
+<statement>INSERT INTO posts VALUES(1258,34,'Tangi; greagah','','')</statement>
+<statement>INSERT INTO posts VALUES(1259,34,'Tarik; regedeg','','')</statement>
+<statement>INSERT INTO posts VALUES(1260,34,'Tiba; brug','','')</statement>
+<statement>INSERT INTO posts VALUES(1261,34,'Tugel; thel','','')</statement>
+<statement>INSERT INTO posts VALUES(1262,34,'Turu; glethak','','')</statement>
+<statement>INSERT INTO posts VALUES(1263,34,'Tutup; kekep','','')</statement>
+<statement>INSERT INTO posts VALUES(1264,34,'Ulu; legender','','')</statement>
+<statement>INSERT INTO posts VALUES(1265,34,'Uyup; sruput','','')</statement>
+<statement>INSERT INTO posts VALUES(1266,34,'Wutah; sok','','')</statement>
+<statement>INSERT INTO posts VALUES(1267,34,'Sawengi; natas','','')</statement>
+<statement>INSERT INTO posts VALUES(1268,34,'Sedhih; nglangut','','')</statement>
+<statement>INSERT INTO posts VALUES(1269,34,'Sepi; nyenyet','','')</statement>
+<statement>INSERT INTO posts VALUES(1270,34,'Siji; thil','','')</statement>
+<statement>INSERT INTO posts VALUES(1271,34,'Sirna; gempang','','')</statement>
+<statement>INSERT INTO posts VALUES(1272,34,'Sugih; mblegedhu, mbrewu','','')</statement>
+<statement>INSERT INTO posts VALUES(1273,34,'Suwe; nglangut','','')</statement>
+<statement>INSERT INTO posts VALUES(1274,34,'Suwung; brung','','')</statement>
+<statement>INSERT INTO posts VALUES(1275,34,'Tangeh; lamun','','')</statement>
+<statement>INSERT INTO posts VALUES(1276,34,'Tani; untun','','')</statement>
+<statement>INSERT INTO posts VALUES(1277,34,'Teles; sela','','')</statement>
+<statement>INSERT INTO posts VALUES(1278,34,'Telu; selu','','')</statement>
+<statement>INSERT INTO posts VALUES(1279,34,'Terang; gumlintang, sumilak','','')</statement>
+<statement>INSERT INTO posts VALUES(1280,34,'Tumpes; tapis','','')</statement>
+<statement>INSERT INTO posts VALUES(1281,34,'Turu; kepati','','')</statement>
+<statement>INSERT INTO posts VALUES(1282,34,'Udan; nggreceh','','')</statement>
+
+<!-- Tegese tanpa -->
+<statement>INSERT INTO posts VALUES(1283,35,'Anyep : tanpa rasa','Anyep : tanpa rasa','')</statement>
+<statement>INSERT INTO posts VALUES(1284,35,'Bledheh : tanpa benik','Bledheh : tanpa kancing','')</statement>
+<statement>INSERT INTO posts VALUES(1285,35,'Brindhil : tanpa godhong','Brindhil : tanpa daun','')</statement>
+<statement>INSERT INTO posts VALUES(1286,35,'Brondol : tanpa wulu','Brondol : tanpa bulu','')</statement>
+<statement>INSERT INTO posts VALUES(1287,35,'Brumbung : tanpa suthang','','')</statement>
+<statement>INSERT INTO posts VALUES(1288,35,'Buntung : tanpa buntut','Buntung : tanpa ekor','')</statement>
+<statement>INSERT INTO posts VALUES(1289,35,'Cemplang : tanpa uyah','Cemplang : tanpa garam','')</statement>
+<statement>INSERT INTO posts VALUES(1290,35,'Dadakan : tanpa antan-antan','','')</statement>
+<statement>INSERT INTO posts VALUES(1291,35,'Dheprok : tanpa tanpa sikilan (gelas)','','')</statement>
+<statement>INSERT INTO posts VALUES(1292,35,'Gabug : tanpa isi (pari)','','')</statement>
+<statement>INSERT INTO posts VALUES(1293,35,'Gothang : tanpa suthang siji','','')</statement>
+<statement>INSERT INTO posts VALUES(1294,35,'Grumpung : tanpa irung','','')</statement>
+<statement>INSERT INTO posts VALUES(1295,35,'Gundhil : tanpa wulu (pari)','','')</statement>
+<statement>INSERT INTO posts VALUES(1296,35,'Gundhul : tanpa rambut','Gundhul : tanpa rambut','')</statement>
+<statement>INSERT INTO posts VALUES(1297,35,'Kotang : tanpa lengenan','','')</statement>
+<statement>INSERT INTO posts VALUES(1298,35,'Kothong : tanpa  isi','Kosong : tanpa  isi','')</statement>
+<statement>INSERT INTO posts VALUES(1299,35,'Kuthung : tanpa gulon','','')</statement>
+<statement>INSERT INTO posts VALUES(1300,35,'Legeh : tanpa gawan','','')</statement>
+<statement>INSERT INTO posts VALUES(1301,35,'Legena : tanpa sandangan','','')</statement>
+<statement>INSERT INTO posts VALUES(1302,35,'Ligan : tanpa wrangka','','')</statement>
+<statement>INSERT INTO posts VALUES(1303,35,'Ngeblak : tanpa aling-aling','','')</statement>
+<statement>INSERT INTO posts VALUES(1304,35,'Ngujawara : tanpa perlu','','')</statement>
+<statement>INSERT INTO posts VALUES(1305,35,'Ngamplah : tanpa guna','','')</statement>
+<statement>INSERT INTO posts VALUES(1306,35,'Ompong : tanpa untu','','')</statement>
+<statement>INSERT INTO posts VALUES(1307,35,'Perung : tanpa godhong kuping','','')</statement>
+<statement>INSERT INTO posts VALUES(1308,35,'Prucul : tanpa sungu','','')</statement>
+<statement>INSERT INTO posts VALUES(1309,35,'Selak : ora ngakoni','','')</statement>
+<statement>INSERT INTO posts VALUES(1310,35,'Sukun : tanpa isi','','')</statement>
+<statement>INSERT INTO posts VALUES(1311,35,'Suwung : tanpa wong','','')</statement>
+<statement>INSERT INTO posts VALUES(1312,35,'Trondhol : tanpa wulu','','')</statement>
+<statement>INSERT INTO posts VALUES(1313,35,'Tukung : tanpa buntut','','')</statement>
+<statement>INSERT INTO posts VALUES(1314,35,'Wuda : tanpa sandhangan','','')</statement>
+
+<!-- Dina lan pasaran -->
+<statement>INSERT INTO posts VALUES(1315,36,'Senen = Soma','','')</statement>
+<statement>INSERT INTO posts VALUES(1316,36,'Selasa = Anggara','','')</statement>
+<statement>INSERT INTO posts VALUES(1317,36,'Rabo = Buda','','')</statement>
+<statement>INSERT INTO posts VALUES(1318,36,'Kamis = Respati','','')</statement>
+<statement>INSERT INTO posts VALUES(1319,36,'Jumat = Sukra','','')</statement>
+<statement>INSERT INTO posts VALUES(1320,36,'Sabtu = Tumpak','','')</statement>
+<statement>INSERT INTO posts VALUES(1321,36,'Ahad = Dite','','')</statement>
+<statement>INSERT INTO posts VALUES(1322,36,'Paing = Jenar','','')</statement>
+<statement>INSERT INTO posts VALUES(1323,36,'Pon = Pagulna','','')</statement>
+<statement>INSERT INTO posts VALUES(1324,36,'Wage = Cemengan','','')</statement>
+<statement>INSERT INTO posts VALUES(1325,36,'Kliwon = kasih','','')</statement>
+<statement>INSERT INTO posts VALUES(1326,36,'Legi = Manis','','')</statement>
+
+</sql>

@@ -1,0 +1,486 @@
+<sql>
+
+<statement>INSERT INTO posts VALUES(343,15,'Gambar urutane turunan','Gambar urutan keturunan','turunan')</statement>
+<statement>INSERT INTO posts VALUES(344,16,'Gambar urutane sedulur','Gambar urutan saudara','sedulur')</statement>
+
+<!-- Prenahe sedulur -->
+<statement>INSERT INTO posts VALUES(345,17,'Sedulur : Tunggal bapak ibu','Saudara : Adik atau kakak dari bapak dan ibu','')</statement>
+<statement>INSERT INTO posts VALUES(346,17,'Misanan : Sedulur tunggal embah, nakdulur','Misanan : Saudara dari dari simbah','')</statement>
+<statement>INSERT INTO posts VALUES(347,17,'Mindhoan : Sedulur tunggal buyut','Mindhoan : Saudara dari Buyut','')</statement>
+<statement>INSERT INTO posts VALUES(348,17,'Keponakan : Anake sedulur','Keponakan : Anak dari saudara','')</statement>
+<statement>INSERT INTO posts VALUES(349,17,'Putu : Anake anak','Putu : Anak dari anak','')</statement>
+<statement>INSERT INTO posts VALUES(350,17,'Putu Keponakan : Anake keponakan','Putu Keponakan : Anak dari keponakan','')</statement>
+<statement>INSERT INTO posts VALUES(351,17,'Paklik/Bulik(uwa) : Kakang/mbakyune bapak utawa ibu','Paklik/bulik : Kakak dari bapak atau ibu','')</statement>
+<statement>INSERT INTO posts VALUES(352,17,'Anak mantu : Bojone anak','Anak mantu : Suami/istri anak','')</statement>
+<statement>INSERT INTO posts VALUES(353,17,'Putu Mantu : Bojone putu','Putu mantu : Suami/istri menantu','')</statement>
+<statement>INSERT INTO posts VALUES(354,17,'Maratuwa : Wong tuane bojo','Maratuwa : Ayah/ibu dari suami/istri','')</statement>
+<statement>INSERT INTO posts VALUES(355,17,'Besan : Wong tuwane mantu','Besan : Orangtua menantu','')</statement>
+<statement>INSERT INTO posts VALUES(356,17,'Ipe : Sedulure bojo','Ipe : Saudara suami/istri','')</statement>
+<statement>INSERT INTO posts VALUES(357,17,'Pripean : Ipene sedulur','Propean : Saudara dari saudara suami/istri','')</statement>
+<statement>INSERT INTO posts VALUES(358,17,'Sedulur kuwalon : Tunggal bapak seje ibu utawa tunggal ibu seje bapak',' Sedulur kuwalon : Saudara dari bapak yang sama tapi lain ibu atau sebaliknya','')</statement>
+<statement>INSERT INTO posts VALUES(359,17,'Bapak kuwalon : Bapak sambungan','Bapak kuwalon : Bapak sambungan','')</statement>
+<statement>INSERT INTO posts VALUES(360,17,'Anak angkat : Bocah sing diakui anak','Anak angkat : Bocah yang diakui sebagai anak','')</statement>
+<statement>INSERT INTO posts VALUES(361,17,'Sedulur asu : Sedulur tunggal ibu seje bapak','Saudara dari ibu yang sama tapi lain bapak','')</statement>
+<statement>INSERT INTO posts VALUES(362,17,'Tunggal banyu : Sedulur tunggal guru','Tunggal banyu : Saudara dari guru yang sama','')</statement>
+<statement>INSERT INTO posts VALUES(363,17,'Tunggal welat : Sedulur tunggal bapak ibu','Tunggal welat : Sedulur dari bapak/ibu','')</statement>
+
+<!-- Arane wong -->
+<statement>INSERT INTO posts VALUES(364,18,'Jaka : Bocah lanang sing wes diwasa durung rabi','Jaka : Anak laki-laki yang sudah dewasa belum nikah','')</statement>
+<statement>INSERT INTO posts VALUES(365,18,'Jaka jebug : Jaka sing wes tuwa','Jaka jebug : Jaka yang sudah tua','')</statement>
+<statement>INSERT INTO posts VALUES(366,18,'Dhudha : Wong lanang sing wis ora duwe bojo','Duda : Laki-laki yang sudah tidak punya istri','')</statement>
+<statement>INSERT INTO posts VALUES(367,18,'Dhudha kembang : dhudha sing isih enom durung duwe anak','Duda kembang : Duda yang masih muda belum punya anak','')</statement>
+<statement>INSERT INTO posts VALUES(368,18,'Dhudha kawuk : Dhudha sing wis tua','Duda kawuk : duda yang sudah tua','')</statement>
+<statement>INSERT INTO posts VALUES(369,18,'Dhudha bangsong : Dhudha mlarat sing sugeh anak','Duda bangsong : duda yang miskin banyak anak','')</statement>
+<statement>INSERT INTO posts VALUES(370,18,'Dhudha kalung : Dhudha sing duwe anak wadon bisa ngopeni','Duda kalung : Duda yang punya anak perempuan yang bisa nafkahi','')</statement>
+<statement>INSERT INTO posts VALUES(371,18,'Kaki : Wong lanang sing wes tua banget','Kaki : Laki-laki yang sudah tua sekali','')</statement>
+<statement>INSERT INTO posts VALUES(372,18,'Kyai : Wong lanang sing diajeni','Kyai : Laki-laki yang dihormati','')</statement>
+<statement>INSERT INTO posts VALUES(373,18,'Prawan : Bocah wadon sing wis diwasa durung rabi','Perawan : Anak perempuan yang sudah dewasa belum nikah','')</statement>
+<statement>INSERT INTO posts VALUES(374,18,'Prawan sunthi : Prawan cilik (prawan kencur)','Prawan sunthi : Prawan yang masih kecil (prawan kencur)','')</statement>
+<statement>INSERT INTO posts VALUES(375,18,'Prawan gendhor : Prawan kasep','Prawan gendhor : Prawan yang belum juga menikah','')</statement>
+<statement>INSERT INTO posts VALUES(376,18,'Randha : Wong wadon sing wis ora duwe bojo','Randa/Janda : Perempuan yang sudah tidak punya suami','')</statement>
+<statement>INSERT INTO posts VALUES(377,18,'Randha kembang, wulanjar : Randha enom sing durung duwe anak','Randa kembang : janda yang masih muda belum punya anak','')</statement>
+<statement>INSERT INTO posts VALUES(378,18,'Randha kisi : Randha sing duwe anak lanang','Randa kisi : Janda yang punya anak laki-laki','')</statement>
+<statement>INSERT INTO posts VALUES(379,18,'Randha kasihan : Randha mlarat anake akeh','Randa kasihan : Janda yang miskin banyak anak','')</statement>
+<statement>INSERT INTO posts VALUES(380,18,'Randha keringan : Randha sing sugeh','Randa keringan : Janda yang kaya','')</statement>
+<statement>INSERT INTO posts VALUES(381,18,'Randha menter : Randha sing panggonane sarwo apik','Randa menter : Janda yang tempatnya serba bagus','')</statement>
+<statement>INSERT INTO posts VALUES(382,18,'Nini : Wong wadon sing wes tuwa banget','Nini : Perempuan yang sudah tua sekali','')</statement>
+<statement>INSERT INTO posts VALUES(383,18,'Nyai, Nyi : Wong wadon sing di ajeni','Nyai, Nyi : perempuan yang dihormati','')</statement>
+
+<!-- sebutane bocah -->
+<statement>INSERT INTO posts VALUES(384,19,'Ontang anting : anak siji lanang','Ontang anting : Anak satu laki-laki','')</statement>
+<statement>INSERT INTO posts VALUES(385,19,'Unting-unting : anak siji wadon','Unting-unting : Anak satu perempuan','')</statement>
+<statement>INSERT INTO posts VALUES(386,19,'Uger-uger lawang : Anak loro lanang kabeh','Uger-uger lawang : Anak dua laki-laki semua','')</statement>
+<statement>INSERT INTO posts VALUES(387,19,'Kembang sepasang : Anak loro wadon kabeh','Kembang sepasang : Anak dua perempuan semua','')</statement>
+<statement>INSERT INTO posts VALUES(388,19,'Cukit dulit : Anak telu lanang kabeh ','Cukit dulit : Anak tiga laki-laki semua','')</statement>
+<statement>INSERT INTO posts VALUES(389,19,'Gatong mayit : Anak telu wadon kabeh','Gatong mayit : Anak tiga perempuan semua','')</statement>
+<statement>INSERT INTO posts VALUES(390,19,'Saramba : Anak papat lanang kabeh','Saramba : Anak empat laki-laki semua','')</statement>
+<statement>INSERT INTO posts VALUES(391,19,'Sarimpi : Anak papat wadon kabeh',' Sarimpi : Anak empat perempuan semua','')</statement>
+<statement>INSERT INTO posts VALUES(392,19,'Pandhawa : Anak lima lanang kabeh','Pandhawa : Anak lima laki-laki semua','')</statement>
+<statement>INSERT INTO posts VALUES(393,19,'Pancagati : Anak lima wadon kabeh','Pancagati : Anak lima perempuan semua','')</statement>
+<statement>INSERT INTO posts VALUES(394,19,'Kedhana-kedhini : Anak loro lanang wadon','Kendana-kendini : Anak dua laki-laki dan perempuan','')</statement>
+<statement>INSERT INTO posts VALUES(395,19,'Sendhang kapit pancuran : Anak telu wadon-lanang-wadon','Sendang kapit pancuran : Anak tiga Perempuan-Laki-Perempuan','')</statement>
+<statement>INSERT INTO posts VALUES(396,19,'Pancuran kapit sendhang : Anak telu lanang-wadon-lanang','Pancuran kapit sendang : Anak tiga Laki-Perempuan-Laki ','')</statement>
+<statement>INSERT INTO posts VALUES(397,19,'Keblat papat : Anak papat lanang wadon','Keblat papat : Anak empat laki-laki dan perempuan','')</statement>
+<statement>INSERT INTO posts VALUES(398,19,'Padangan : Anak lima wadon siji','Padangan : Anak lima perempuan satu','')</statement>
+<statement>INSERT INTO posts VALUES(399,19,'Ipil-ipil : Anak lima lanang siji','Ipil-ipil : Anak lima laki-laki satu','')</statement>
+<statement>INSERT INTO posts VALUES(400,19,'Kembar : Anak loro lair bareng','Kembar : Anak dua lahir bersamaan','')</statement>
+<statement>INSERT INTO posts VALUES(401,19,'Kembar gantung : Bocah kembar laire sedino','Kembar gantung : Bocah kembar lahirnya dalam satu hari yang sama','')</statement>
+<statement>INSERT INTO posts VALUES(402,19,'Dhampit : Anak loro lanang wadon laire bareng','Dampit : Anak dua laki-laki dan perempuan lahir bersamaan','')</statement>
+<statement>INSERT INTO posts VALUES(403,19,'Gilir kacang : Anake giliran lanang wadon','Gilir kacang : Anaknya giliran laki-laki dan perempuan','')</statement>
+<statement>INSERT INTO posts VALUES(404,19,'Lumput kidang : Anake akeh ora giliran lanang wadon','Lumput kidang : Anak banyak tidak bergiliran','')</statement>
+<statement>INSERT INTO posts VALUES(405,19,'Gendhong : Anak wadon sing ana tengah-tengah anak lanang','Gendhong : Anak perempuan yang ada di tengah-tengah anak laki-laki','')</statement>
+<statement>INSERT INTO posts VALUES(406,19,'Pathok : Anak lanang sing ana tengah-tengah anak wadon','Patok : Anak laki-laki yang ada ditengah-tengah anak perempuan','')</statement>
+<statement>INSERT INTO posts VALUES(407,19,'Grandhel ; Anak lanang pirang-pirang, sing wuragil wadon, utawa anak wadon pirang-pirang sing wuragil lanang','Grandel : Anak laki-laki banyak yang terakhir perempuan atau sebaliknya','')</statement>
+<statement>INSERT INTO posts VALUES(408,19,'Anggana : Anak akeh keri siji','Anggana : Anak banyak tinggal satu','')</statement>
+<statement>INSERT INTO posts VALUES(409,19,'Cemani : Anak ireng mulus','Cemani : Anak yang kulinya hitam mulus','')</statement>
+<statement>INSERT INTO posts VALUES(410,19,'Wungle, bule : Anak putih mulus','Wungle, Bule : Anak yang kulitnya putih mulus','')</statement>
+<statement>INSERT INTO posts VALUES(411,19,'Ghondang kasih : Anak loro beda pakulitane','Gondhang kasih : Anak loro beda kulitnya','')</statement>
+<statement>INSERT INTO posts VALUES(412,19,'Pembarep : Anak sing nomer siji','Pembarep : Anak yang nomer satu','')</statement>
+<statement>INSERT INTO posts VALUES(413,19,'Penggulu : Anak sing nomer loro','Panggulu : Anak yang nomer dua','')</statement>
+<statement>INSERT INTO posts VALUES(414,19,'Pandhadha : Anak sing nomer telu','Pandada : Anak yang nomer tiga','')</statement>
+<statement>INSERT INTO posts VALUES(415,19,'Sumendhi : Kakang wuragil','Sumedi : Kakak dari anak yang terakhir','')</statement>
+<statement>INSERT INTO posts VALUES(416,19,'Wuragil, waruju : Anak sing keri dewe','Wuragil : Anak yang terakhir','')</statement>
+<statement>INSERT INTO posts VALUES(417,19,'Yatim : Bocah lair wes ora menangi bapak ','Yatim : Anak yang tidak punya bapak','')</statement>
+<statement>INSERT INTO posts VALUES(418,19,'Lola : Bocah sing wes ditinggal wong tuwane','Lola : Anak yang sudah ditinggal orang tuanya','')</statement>
+<statement>INSERT INTO posts VALUES(419,19,'Lola bapa (biyung) : Bocah sing wis ora duwe bapak (ibu)','Lola bapa (biyung) : Anak yang sudah tidak punya bapak/ibu','')</statement>
+<!--<statement>INSERT INTO posts VALUES(410,'Konduran : Bocah lair sing ibune sedo','Konduran : Anak yang lahir ibunya mati','')</statement>-->
+<statement>INSERT INTO posts VALUES(420,19,'Sumala : Bocah sing cacad wiwid lair','Sumala : Anak yang cacat sejak lahir','')</statement>
+<statement>INSERT INTO posts VALUES(421,19,'Thok thing : Bocah sing lair kanthi sirah cilik','Thok ting : Anak yang lahir denga kepala kecil','')</statement>
+<statement>INSERT INTO posts VALUES(422,19,'Julung kembang : Bocah lair nalika srengenge mlethek','Julung kembang : Anak yang lahir ketika matahari terang benderang','')</statement>
+<statement>INSERT INTO posts VALUES(423,19,'Julung sungsang : Bocah lair nalika bedhug awan','Julung sungsang : Anak yang lahir ketika siang hari','')</statement>
+<statement>INSERT INTO posts VALUES(424,19,'Julung sarab : Bocah lair sing ngarepkae surup','Julung sarab : Anak yang lahir mengharap sore','')</statement>
+<statement>INSERT INTO posts VALUES(425,19,'Julung caplok : Bocah sing lair nalika surup','Julung Caplok : Anak yang lahir ketika sore','')</statement>
+<statement>INSERT INTO posts VALUES(426,19,'Margana : Bocah sing lair nalika ibune lelungan','Margana : Anak yang lahir ketika ibunya berpergian','')</statement>
+<statement>INSERT INTO posts VALUES(427,19,'Wuyungan : Bocah sing lair nalika perang','Wuyungan : Anak yang lahir ketika perang','')</statement>
+<statement>INSERT INTO posts VALUES(428,19,'Wahana : Bocah sing lair nalika ana pasamuan','Wahana : Anak yang lahir ketika pasamuan','')</statement>
+<statement>INSERT INTO posts VALUES(429,19,'Jempina : Bocah sing lair durung titi mangsane','Jempina : Anak yang lahir belum tepak waktunya','')</statement>
+<statement>INSERT INTO posts VALUES(430,19,'Tiba sampir : Bocah sing lair kalung usus','Tiba sampir : Anak yang lahir berkalung usus','')</statement>
+<statement>INSERT INTO posts VALUES(431,19,'Tiba ungker : Bocah sing lair Nggubet gulu','Tiba ungker : Anak yang lahir berkelut dengan leher','')</statement>
+<statement>INSERT INTO posts VALUES(432,19,'Wungkul : Bocah sig lair tanpa ari-ari','Wungkul : Anak yang lahir tanpa ari-ari','')</statement>
+
+<!-- Candrane perangan awak -->
+<statement>INSERT INTO posts VALUES(433,20,'Alise nanggal sepisan','Alisnya nanggal sepisan','')</statement>
+<statement>INSERT INTO posts VALUES(434,20,'Astane nggendhewa gadhing','Astane nggendhewa gadhing','')</statement>
+<statement>INSERT INTO posts VALUES(435,20,'Athi-athine ngundhup turi','Athi-athine ngundhup turi','')</statement>
+<statement>INSERT INTO posts VALUES(436,20,'Bangkekane nawon kemit','Bangkekane nawon kemit','')</statement>
+<statement>INSERT INTO posts VALUES(437,20,'Bathuke nyela cendhani','Bathuke nyela cendhani','')</statement>
+<statement>INSERT INTO posts VALUES(438,20,'Bokonge manjang ilang','Bokonge manjang ilang','')</statement>
+<statement>INSERT INTO posts VALUES(439,20,'Cahyane sumunar','Cahyane sumunar','')</statement>
+<statement>INSERT INTO posts VALUES(440,20,'Drijine mucuk eri','Drijine mucuk eri','')</statement>
+<statement>INSERT INTO posts VALUES(441,20,'Godhege simbar rumembun','Godhege simbar rumembun','')</statement>
+<statement>INSERT INTO posts VALUES(442,20,'Gulune angelung gadhung','Gulune angelung gadhung','')</statement>
+<statement>INSERT INTO posts VALUES(443,20,'Gulune ngolan-olan','Gulune ngolan-olan','')</statement>
+<statement>INSERT INTO posts VALUES(444,20,'Idepe tumengo tawang','Idepe tumengo tawang','')</statement>
+<statement>INSERT INTO posts VALUES(445,20,'Irunge ngudhup melathi','Irunge ngudhup melathi','')</statement>
+<statement>INSERT INTO posts VALUES(446,20,'Irunge Kencana pinatar','Irunge Kencana pinatar','')</statement>
+<statement>INSERT INTO posts VALUES(447,20,'Kempole ngembang pundhak','Kempole ngembang pundhak','')</statement>
+<statement>INSERT INTO posts VALUES(448,20,'Kempole nyuthang walang','Kempole nyuthang walang','')</statement>
+<statement>INSERT INTO posts VALUES(449,20,'Lakune kaya macan luwe','Lakune kaya macan luwe','')</statement>
+<statement>INSERT INTO posts VALUES(450,20,'Lambene nyigar jambe','Lambene nyigar jambe','')</statement>
+<statement>INSERT INTO posts VALUES(451,20,'Lambene manggis karengat','Lambene manggis karengat','')</statement>
+<statement>INSERT INTO posts VALUES(452,20,'Lambehane Mblarak sempal','Lambehane Mblarak sempal','')</statement>
+<statement>INSERT INTO posts VALUES(453,20,'Lengene nggendhewa pinenthang','Lengene nggendhewa pinenthang','')</statement>
+<statement>INSERT INTO posts VALUES(454,20,'Mpripate blalak-blalak','Mpripate blalak-blalak','')</statement>
+<statement>INSERT INTO posts VALUES(455,20,'Mpripate liyep lindri','Mpripate liyep lindri','')</statement>
+<statement>INSERT INTO posts VALUES(456,20,'Pakilitane ngulit langsep','Pakilitane ngulit langsep','')</statement>
+<statement>INSERT INTO posts VALUES(457,20,'Pamulune bengle kairis','Pamulune bengle kairis','')</statement>
+<statement>INSERT INTO posts VALUES(458,20,'Pamulune prada binabar','Pamulune prada binabar','')</statement>
+<statement>INSERT INTO posts VALUES(459,20,'Pawakane sedhet singset','Pawakane sedhet singset','')</statement>
+<statement>INSERT INTO posts VALUES(460,20,'Pipine nduren sawit','Pipine nduren sawit','')</statement>
+<statement>INSERT INTO posts VALUES(461,20,'Polatane ruruh jatmiko','Polatane ruruh jatmiko','')</statement>
+<statement>INSERT INTO posts VALUES(462,20,'Praene ndamar kanginan','Praene ndamar kanginan','')</statement>
+<statement>INSERT INTO posts VALUES(463,20,'Pundhake nraju mas','Pundhake nraju mas','')</statement>
+<statement>INSERT INTO posts VALUES(464,20,'Rambute ngembang bakung','Rambute ngembang bakung','')</statement>
+<statement>INSERT INTO posts VALUES(465,20,'Sinome micis wutah','Sinome micis wutah','')</statement>
+<statement>INSERT INTO posts VALUES(466,20,'Sinome mbibis mabur','Sinome mbibis mabur','')</statement>
+<statement>INSERT INTO posts VALUES(467,20,'Susune nyengkir gadhing','Sinome nyengkir gadhing','')</statement>
+<statement>INSERT INTO posts VALUES(468,20,'Swarane ngombak banyu','Swarane ngombak banyu','')</statement>
+<statement>INSERT INTO posts VALUES(469,20,'Ulate ndamar kamnginan','Ulate ndamar kamnginan','')</statement>
+<statement>INSERT INTO posts VALUES(470,20,'Untune miji timun','Untune miji timun','')</statement>
+<statement>INSERT INTO posts VALUES(471,20,'Wange nyangkal putung','Wange nyangkal putung','')</statement>
+<statement>INSERT INTO posts VALUES(472,20,'Wentise mukang gangsir','Wentise mukang gangsir','')</statement>
+
+<!-- cacading awak -->
+<statement>INSERT INTO posts VALUES(473,21,'Apus sikile','Apus sikile','')</statement>
+<statement>INSERT INTO posts VALUES(474,21,'Bekel wetenge','Bekel wetenge','')</statement>
+<statement>INSERT INTO posts VALUES(475,21,'Belang kulite','Belang kulite','')</statement>
+<statement>INSERT INTO posts VALUES(476,21,'Belong pilingane','Belong pilingane','')</statement>
+<statement>INSERT INTO posts VALUES(477,21,'Bembeng bangkekane','Bembeng bangkekane','')</statement>
+<statement>INSERT INTO posts VALUES(478,21,'Benjo sirahe','Benjo sirahe','')</statement>
+<statement>INSERT INTO posts VALUES(479,21,'Bindheng swarane','Bindheng swarane','')</statement>
+<statement>INSERT INTO posts VALUES(480,21,'Bisu gunemane','Bisu gunemane','')</statement>
+<statement>INSERT INTO posts VALUES(481,21,'Blawur mripate','Blawur mripate','')</statement>
+<statement>INSERT INTO posts VALUES(482,21,'Bodong wudele','Bodong wudele','')</statement>
+<statement>INSERT INTO posts VALUES(483,21,'Brojol pundhake','Brojol pundhake','')</statement>
+<statement>INSERT INTO posts VALUES(484,21,'Bucu gegere','Bucu gegere','')</statement>
+<statement>INSERT INTO posts VALUES(485,21,'Budheg kupinge','Budheg kupinge','')</statement>
+<statement>INSERT INTO posts VALUES(486,21,'Bujel drijine','Bujel drijine','')</statement>
+<statement>INSERT INTO posts VALUES(487,21,'Burik raine','Burik raine','')</statement>
+<statement>INSERT INTO posts VALUES(488,21,'Busik kulite','Busik kulite','')</statement>
+<statement>INSERT INTO posts VALUES(489,21,'Buthak sirahe','Buthak sirahe','')</statement>
+<statement>INSERT INTO posts VALUES(490,21,'Cedhal ilate','Cedhal ilate','')</statement>
+<statement>INSERT INTO posts VALUES(491,21,'Ceko tangane','Ceko tangane','')</statement>
+<statement>INSERT INTO posts VALUES(492,21,'Crapang brengose','Crapang brengose','')</statement>
+<statement>INSERT INTO posts VALUES(493,21,'Dawir kupinge','Dawir kupinge','')</statement>
+<statement>INSERT INTO posts VALUES(494,21,'Dengek gegere','Dengek gegere','')</statement>
+<statement>INSERT INTO posts VALUES(495,21,'Dhekik pinine','Dhekik pinine','')</statement>
+<statement>INSERT INTO posts VALUES(496,21,'Dhengak dhadhane','Dhengak dhadhane','')</statement>
+<statement>INSERT INTO posts VALUES(497,21,'Dhengkling sikile','Dhengkling sikile','')</statement>
+<statement>INSERT INTO posts VALUES(498,21,'Dhengklang sikile','Dhengklang sikile','')</statement>
+<statement>INSERT INTO posts VALUES(499,21,'Domble lambene','Domble lambene','')</statement>
+<statement>INSERT INTO posts VALUES(500,21,'Dongos lambene','Dongos lambene','')</statement>
+<statement>INSERT INTO posts VALUES(501,21,'Ekar lakune','Ekar lakune','')</statement>
+<statement>INSERT INTO posts VALUES(502,21,'Gandhen sirahe','Gandhen sirahe','')</statement>
+<statement>INSERT INTO posts VALUES(503,21,'gandhul lambene','gandhul lambene','')</statement>
+<statement>INSERT INTO posts VALUES(504,21,'Gejig sikile','Gejig sikile','')</statement>
+<statement>INSERT INTO posts VALUES(505,21,'Gembil pipine','Gembil pipine','')</statement>
+<statement>INSERT INTO posts VALUES(506,21,'Gingsul untune','Gingsul untune','')</statement>
+<statement>INSERT INTO posts VALUES(507,21,'Gloyoran sikile','Gloyoran sikile','')</statement>
+<statement>INSERT INTO posts VALUES(508,21,'Griwing untune','Griwing untune','')</statement>
+<statement>INSERT INTO posts VALUES(509,21,'Groyok gunemane','Groyok gunemane','')</statement>
+<statement>INSERT INTO posts VALUES(510,21,'Grumpung irunge','Grumpung irunge','')</statement>
+<statement>INSERT INTO posts VALUES(511,21,'Gugut janggute','Gugut janggute','')</statement>
+<statement>INSERT INTO posts VALUES(512,21,'Impur sikile','Impur sikile','')</statement>
+<statement>INSERT INTO posts VALUES(513,21,'Kakkong pawakane','Kakkong pawakane','')</statement>
+<statement>INSERT INTO posts VALUES(514,21,'Kempong pipine','Kempong pipine','')</statement>
+<statement>INSERT INTO posts VALUES(515,21,'Kempot pipine','Kempot pipine','')</statement>
+<statement>INSERT INTO posts VALUES(516,21,'Kera mripate','Kera mripate','')</statement>
+<statement>INSERT INTO posts VALUES(517,21,'Kithing drijine','Kithing drijine','')</statement>
+<statement>INSERT INTO posts VALUES(518,21,'Klungsur','Klungsur','')</statement>
+<statement>INSERT INTO posts VALUES(519,21,'Kokop cangkeme','Kokop cangkeme','')</statement>
+<statement>INSERT INTO posts VALUES(520,21,'Kongel pawakane','Kongel pawakane','')</statement>
+<statement>INSERT INTO posts VALUES(521,21,'Lamur mripate','Lamur mripate','')</statement>
+<statement>INSERT INTO posts VALUES(522,21,'Manyul bathuke','Manyul bathuke','')</statement>
+<statement>INSERT INTO posts VALUES(523,21,'Mecucu cangkeme','Mecucu cangkeme','')</statement>
+<statement>INSERT INTO posts VALUES(524,21,'Mining-mining pipine','Mining-mining pipine','')</statement>
+<statement>INSERT INTO posts VALUES(525,21,'Melolo mripate','Melolo mripate','')</statement>
+<statement>INSERT INTO posts VALUES(526,21,'Mlongo cangkeme','Mlongo cangkeme','')</statement>
+<statement>INSERT INTO posts VALUES(527,21,'Mringis untune','Mringis untune','')</statement>
+<statement>INSERT INTO posts VALUES(528,21,'Mingkus dhadhane','Mingkus dhadhane','')</statement>
+<statement>INSERT INTO posts VALUES(529,21,'Ngukal gerang tlapake','Ngukal gerang tlapake','')</statement>
+<statement>INSERT INTO posts VALUES(530,21,'Nonong bathuke','Nonong bathuke','')</statement>
+<statement>INSERT INTO posts VALUES(531,21,'Nyambel wijen rambute','Nyambel wijen rambute','')</statement>
+<statement>INSERT INTO posts VALUES(532,21,'Nyathis janggute','Nyathis janggute','')</statement>
+<statement>INSERT INTO posts VALUES(533,21,'Nyenthing bokonge','Nyenthing bokonge','')</statement>
+<statement>INSERT INTO posts VALUES(534,21,'Nyeprok irunge','Nyeprok irunge','')</statement>
+<statement>INSERT INTO posts VALUES(535,21,'Nyongot lambene','Nyongot lambene','')</statement>
+<statement>INSERT INTO posts VALUES(536,21,'Nyoro cangkeme','Nyoro cangkeme','')</statement>
+<statement>INSERT INTO posts VALUES(537,21,'Panggel gulune','Panggel gulune','')</statement>
+<statement>INSERT INTO posts VALUES(538,21,'Pelo gunemane','Pelo gunemane','')</statement>
+<statement>INSERT INTO posts VALUES(539,21,'Pengkor sikile','Pengkor sikile','')</statement>
+<statement>INSERT INTO posts VALUES(540,21,'Perot cangkeme','Perot cangkeme','')</statement>
+<statement>INSERT INTO posts VALUES(541,21,'Perung kupinge','Perung kupinge','')</statement>
+<statement>INSERT INTO posts VALUES(542,21,'Pesek irunge','Pesek irunge','')</statement>
+<statement>INSERT INTO posts VALUES(543,21,'Pethak rambute','Pethak rambute','')</statement>
+<statement>INSERT INTO posts VALUES(544,21,'Pincang mlakune','Pincang mlakune','')</statement>
+<statement>INSERT INTO posts VALUES(545,21,'Sangkuk gegere','Sangkuk gegere','')</statement>
+<statement>INSERT INTO posts VALUES(546,21,'Sinthir mripate','Sinthir mripate','')</statement>
+<statement>INSERT INTO posts VALUES(547,21,'Siwil drijine','Siwil drijine','')</statement>
+<statement>INSERT INTO posts VALUES(548,21,'Suwing lambene','Suwing lambene','')</statement>
+<statement>INSERT INTO posts VALUES(549,21,'Tepos bokonge','Tepos bokonge','')</statement>
+<statement>INSERT INTO posts VALUES(550,21,'Wungkuk gegere','Wungkuk gegere','')</statement>
+<statement>INSERT INTO posts VALUES(551,21,'Wusu gegere','Wusu gegere','')</statement>
+<statement>INSERT INTO posts VALUES(552,21,'Wuta mripate','Wuta mripate','')</statement>
+
+
+<!-- Perangan sing -->
+<statement>INSERT INTO posts VALUES(553,22,'Ampeg> dhadhane','Sesak> dadanya','')</statement>
+<statement>INSERT INTO posts VALUES(554,22,'Anyel> Atine','Dongkol> hatinya','')</statement>
+<statement>INSERT INTO posts VALUES(555,22,'Ayem> atine','Tenang> hatinya','')</statement>
+<statement>INSERT INTO posts VALUES(556,22,'Benjut> sirahe','Pusing> kepalanya','')</statement>
+<statement>INSERT INTO posts VALUES(557,22,'Bingung> pikirane','Bingung> pikirane','')</statement>
+<statement>INSERT INTO posts VALUES(558,22,'Budheg> kupinge','Budek> telinganya','')</statement>
+<statement>INSERT INTO posts VALUES(559,22,'Cekakaran> sikile','Cekakaran> kakinya','')</statement>
+<statement>INSERT INTO posts VALUES(560,22,'Cekat-ceket> tandange','Keburu-buru> tingkahnya','')</statement>
+<statement>INSERT INTO posts VALUES(561,22,'Cengeng> gulune','Pegal> lehernya','')</statement>
+<statement>INSERT INTO posts VALUES(562,22,'Cleguken> kalamenjinge','Clegukan> lubang udara di bagian leher','')</statement>
+<statement>INSERT INTO posts VALUES(563,22,'Crocosan> luhe','Deras> air matanya','')</statement>
+<statement>INSERT INTO posts VALUES(564,22,'Dheg-dhegan> atine','Deg-degan hatinya','')</statement>
+<statement>INSERT INTO posts VALUES(565,22,'Dleweran> kringete','Menetes-netes> keringetnya','')</statement>
+<statement>INSERT INTO posts VALUES(566,22,'Edheg> sikile','Edeg> kakinya','')</statement>
+<statement>INSERT INTO posts VALUES(567,22,'Gela-gelo> gulune','Gela-gelo> lehernya','')</statement>
+<statement>INSERT INTO posts VALUES(568,22,'Gemeter> awake','Gemeteran> badanya','')</statement>
+<statement>INSERT INTO posts VALUES(569,22,'Ger-geran> guyune','Ckakakan> tertawanya','')</statement>
+<statement>INSERT INTO posts VALUES(570,22,'Glagepan> cangkeme','Gagap> mulutnya','')</statement>
+<statement>INSERT INTO posts VALUES(571,22,'Gomen> ilate','Gomen> lidahnya','')</statement>
+<statement>INSERT INTO posts VALUES(572,22,'Gerus> wetenge','Gerus> perutnya','')</statement>
+<statement>INSERT INTO posts VALUES(573,22,'Gragapan> tangane','Geragapan> tanganya','')</statement>
+<statement>INSERT INTO posts VALUES(574,22,'Greges> awake','Pegal-pegal> badanya','')</statement>
+<statement>INSERT INTO posts VALUES(575,22,'Gringginen> sikile','Kesemutan> kakinya','')</statement>
+<statement>INSERT INTO posts VALUES(576,22,'Grusa-grusu> taduke','Keburu-buru> tingkahnya','')</statement>
+<statement>INSERT INTO posts VALUES(577,22,'Jepapangan> tangane','Jepapangan> tangane','')</statement>
+<statement>INSERT INTO posts VALUES(578,22,'Jimpe> tangane','Jimpe> tanganya','')</statement>
+<statement>INSERT INTO posts VALUES(579,22,'Judheg> atine','Resah> hatinya','')</statement>
+<statement>INSERT INTO posts VALUES(580,22,'Krembyahan> rambute','Terurai> rambutnya','')</statement>
+<statement>INSERT INTO posts VALUES(581,22,'Kaku> awake','Kaku> badanya','')</statement>
+<statement>INSERT INTO posts VALUES(582,22,'Kebat> playune','Cepat> larinya','')</statement>
+<statement>INSERT INTO posts VALUES(583,22,'Keju> tangane','Keju> tanganya','')</statement>
+<statement>INSERT INTO posts VALUES(584,22,'Kemlekaren> wetenge','Kembung> perutnya','')</statement>
+<statement>INSERT INTO posts VALUES(585,22,'Kesel> sikile','Capek> kakinya','')</statement>
+<statement>INSERT INTO posts VALUES(586,22,'Kethawilan> tangane','Ketawilan> tanganya','')</statement>
+<statement>INSERT INTO posts VALUES(587,22,'Kiyu> tangane','Kiyu> tangane','')</statement>
+<statement>INSERT INTO posts VALUES(588,22,'Klakepan> cangkeme','Gagap> mulutnya','')</statement>
+<statement>INSERT INTO posts VALUES(589,22,'Klametan> lambene','Klametan> bibirnya','')</statement>
+<statement>INSERT INTO posts VALUES(590,22,'Kleweran> taline','Terurai> talinya','')</statement>
+<statement>INSERT INTO posts VALUES(591,22,'Konangen> mripate','Konangen> matanya','')</statement>
+<statement>INSERT INTO posts VALUES(592,22,'Krenggehan> tangane','Krenggehan> tanganya','')</statement>
+<statement>INSERT INTO posts VALUES(593,22,'Kriyap-kriyip> mripate','Merem-melek> matanya','')</statement>
+<statement>INSERT INTO posts VALUES(594,22,'Lemet> brengose','Lemet> kumisnya','')</statement>
+<statement>INSERT INTO posts VALUES(595,22,'Leslesan> awake','Leslesan> badanya','')</statement>
+<statement>INSERT INTO posts VALUES(596,22,'Linu> untune','Linu> giginya','')</statement>
+<statement>INSERT INTO posts VALUES(597,22,'Lirih> swarane','Lirih suaranya','')</statement>
+<statement>INSERT INTO posts VALUES(598,22,'Lumpangen> cangkeme','Sariawan> bibirnya','')</statement>
+<statement>INSERT INTO posts VALUES(599,22,'Manggut-manggut> sirahe','Manggut-manggut> kepalanya','')</statement>
+<statement>INSERT INTO posts VALUES(600,22,'Mangkel> atine','Mangkel> atine','')</statement>
+<statement>INSERT INTO posts VALUES(601,22,'Mecucu> cangkeme','Merengut> mulutnya','')</statement>
+<statement>INSERT INTO posts VALUES(602,22,'Melet> ilate','Melet> ilate','')</statement>
+<statement>INSERT INTO posts VALUES(603,22,'Mencep> lambene','Mencep> bibirnya','')</statement>
+<statement>INSERT INTO posts VALUES(604,22,'Meniren> githoke','Meniren> kuduknya','')</statement>
+<statement>INSERT INTO posts VALUES(605,22,'Mengkirig> githoke','Mengkirik> kuduknya','')</statement>
+<statement>INSERT INTO posts VALUES(606,22,'Mlolo> mripate','Belo> matanya','')</statement>
+<statement>INSERT INTO posts VALUES(607,22,'Mlorok> mripate','Melotot> matanya','')</statement>
+<statement>INSERT INTO posts VALUES(608,22,'Mules> wetenge','Mules> perutnya','')</statement>
+<statement>INSERT INTO posts VALUES(609,22,'Mumet> sirahe','Pusing> kepalanya','')</statement>
+<statement>INSERT INTO posts VALUES(610,22,'Ndower> lambene','Dower> bibirnya','')</statement>
+<statement>INSERT INTO posts VALUES(611,22,'Ndomble> lambene','Dower> bibirnya','')</statement>
+<statement>INSERT INTO posts VALUES(612,22,'Ngawet> lambene','Ngawet> lambene','')</statement>
+<statement>INSERT INTO posts VALUES(613,22,'Ngelu> sirahe','Pusing> kepalanya','')</statement>
+<statement>INSERT INTO posts VALUES(614,22,'Ngethok> sikile','Ngecap> kakinya','')</statement>
+<statement>INSERT INTO posts VALUES(615,22,'Ngintip> lambene','Ngintip> bibirnya','')</statement>
+<statement>INSERT INTO posts VALUES(616,22,'Ngorong> gorokane','Ngorong> tenggorokanya','')</statement>
+<statement>INSERT INTO posts VALUES(617,22,'Ngowoh> lambene','Bengong> bibinya','')</statement>
+<statement>INSERT INTO posts VALUES(618,22,'Nyenthing> bokonge','Nyenting> pantatnya','')</statement>
+<statement>INSERT INTO posts VALUES(619,22,'Nyomak-nyamik> cangkeme','Komay-kamit> mulunya','')</statement>
+<statement>INSERT INTO posts VALUES(620,22,'Pancingen> gorokane','Pancingan> tenggorokanya','')</statement>
+<statement>INSERT INTO posts VALUES(621,22,'Pedhes> dlamakane','Pedhes> telapak kakinya','')</statement>
+<statement>INSERT INTO posts VALUES(622,22,'Pegel> boyoke','Pegal> punggungnya','')</statement>
+<statement>INSERT INTO posts VALUES(623,22,'Pekakangan> sikile','Pekakangan> kakinya','')</statement>
+<statement>INSERT INTO posts VALUES(624,22,'Penduringan> mripate','Penduringan> matanya','')</statement>
+<statement>INSERT INTO posts VALUES(625,22,'Perih> tatune','Perih> lukanya','')</statement>
+<statement>INSERT INTO posts VALUES(626,22,'Petpetan> mripate','Sepet> matanya','')</statement>
+<statement>INSERT INTO posts VALUES(627,22,'Pileg> irunge','Pilek> hidungnya','')</statement>
+<statement>INSERT INTO posts VALUES(628,22,'Pringisan> cangkeme','Cengigisan> mulutnya','')</statement>
+<statement>INSERT INTO posts VALUES(629,22,'Pucet> raine','Pucat> mukanya','')</statement>
+<statement>INSERT INTO posts VALUES(630,22,'Rangen> sikile','Kutuair> kakinya','')</statement>
+<statement>INSERT INTO posts VALUES(631,22,'Rembes> mripate','Rembes> matanya','')</statement>
+<statement>INSERT INTO posts VALUES(632,22,'Rindik> lakune','Pelan> jalanya','')</statement>
+<statement>INSERT INTO posts VALUES(633,22,'Seger> awake','Bugar> badanya','')</statement>
+<statement>INSERT INTO posts VALUES(634,22,'Senep> wetenge','Mulas> perutnya','')</statement>
+<statement>INSERT INTO posts VALUES(635,22,'Sengol> gunemane','Sengit> bicaranya','')</statement>
+<statement>INSERT INTO posts VALUES(636,22,'Sepet> mripate','Sepet> matanya','')</statement>
+<statement>INSERT INTO posts VALUES(637,22,'Serak> gorokane','Serak> tenggorokanya','')</statement>
+<statement>INSERT INTO posts VALUES(638,22,'Seseg> dhadhane','Sesak> daadanya','')</statement>
+<statement>INSERT INTO posts VALUES(639,22,'Sraweyan> tangane','Sraweyan> tanganya','')</statement>
+<statement>INSERT INTO posts VALUES(640,22,'Suduken> wetenge','Sedut-sedut> perutnya','')</statement>
+<statement>INSERT INTO posts VALUES(641,22,'Suntrut> raine','Kusam> mukanya','')</statement>
+<statement>INSERT INTO posts VALUES(642,22,'Thik-thikan tangane','Tik-tikan> tanganya','')</statement>
+<statement>INSERT INTO posts VALUES(643,22,'Thingak-thinguk> sirahe','Tengak-tengok kepalanya','')</statement>
+<statement>INSERT INTO posts VALUES(644,22,'Thuyuk-thuyuk> lakune','Pelan> jalanya','')</statement>
+<statement>INSERT INTO posts VALUES(645,22,'Wareg> wetenge','Kenyang> perutnya','')</statement>
+<statement>INSERT INTO posts VALUES(646,22,'Wel-welan> tangane','Wel-welan> tanganya','')</statement>
+
+<!-- Pepindhan -->
+<statement>INSERT INTO posts VALUES(647,23,'Abange; kaya godhong katirah','Merah; seperti daun katirah ','')</statement>
+<statement>INSERT INTO posts VALUES(648,23,'Abang kumpul padha abang; kaya alas kobong','Merah dengan merah; seperti hutan kebakaran','')</statement>
+<statement>INSERT INTO posts VALUES(649,23,'Abote; kaya watu','Beratnya; seperti batu','')</statement>
+<statement>INSERT INTO posts VALUES(650,23,'Adheme; kaya es','Ademe; seperti es','')</statement>
+<statement>INSERT INTO posts VALUES(651,23,'Akehe pepati; kaya babadan pacing','Banyaknya pepati; seperti babadan pacing','')</statement>
+<statement>INSERT INTO posts VALUES(652,23,'Akehe pepati; kaya sulung mlebu geni','Banyaknya pepati; seperti sulung masuk ke dalam api','')</statement>
+<statement>INSERT INTO posts VALUES(653,23,'Ali-aline; nggunung sepikul','Cincinya; gunung sepikul','')</statement>
+<statement>INSERT INTO posts VALUES(654,23,'Aluse; kaya bludru','Alusnya; seperti bludru','')</statement>
+<statement>INSERT INTO posts VALUES(655,23,'Antenge; kaya penganten ditemokne','Antengnya; seperti temanten ditemukan','')</statement>
+<statement>INSERT INTO posts VALUES(656,23,'Anyepe; kaya wesi','Dingine; seperti besi','')</statement>
+<statement>INSERT INTO posts VALUES(657,23,'Asine; kaya uyah','Asinya; seperti garam','')</statement>
+<statement>INSERT INTO posts VALUES(658,23,'Atose; kaya wesi','Kerasnya; seperti besi','')</statement>
+<statement>INSERT INTO posts VALUES(659,23,'Ayune; kaya Dewi Ratih','Cantiknya; seperti Dewi Ratih','')</statement>
+<statement>INSERT INTO posts VALUES(660,23,'Baguse; kaya Bathara Kamajaya tumurun','Gantengnya; seperti Bathara Kamajaya turun','')</statement>
+<statement>INSERT INTO posts VALUES(661,23,'Bangone; awangun gedhang salirang','Bangone; awangun pisang selirang','')</statement>
+<statement>INSERT INTO posts VALUES(662,23,'Bedane; kaya bumi karo langit','Bedanya; seperti bumi dan langit','')</statement>
+<statement>INSERT INTO posts VALUES(663,23,'Bebetane; ngadhal melet','Bebetannya; ngadal melet','')</statement>
+<statement>INSERT INTO posts VALUES(664,23,'Begjane; kaya ketiban ndaru','Beruntungnya> seperti kejatuhan ndaru','')</statement>
+<statement>INSERT INTO posts VALUES(665,23,'Begjane; kaya nemu cempaka sawakul','Beruntungnya; seperti nemu cemapaka sebakul','')</statement>
+<statement>INSERT INTO posts VALUES(666,23,'Bodhone; kaya kebo','Bodohnya; seperti kebo','')</statement>
+<statement>INSERT INTO posts VALUES(667,23,'Branyake kaya Raden Samba','Branyaknya; seperti Raden Samba','')</statement>
+<statement>INSERT INTO posts VALUES(668,23,'Brengose; nglaler menclok','Kumisnya; nglalat menclok','')</statement>
+<statement>INSERT INTO posts VALUES(669,23,'Bungahe; kaya ketiban ndaru','Senangnya; seperti kejatuhan ndaru','')</statement>
+<statement>INSERT INTO posts VALUES(670,23,'Cahyane; Nglentrih kaya rembulan kerainan','Cahyanya; nglentrih seperti rembulan kerainan','')</statement>
+<statement>INSERT INTO posts VALUES(671,23,'Cenanangan; kaya maling konangan','Cenanangan; seperti maling kepergok','')</statement>
+<statement>INSERT INTO posts VALUES(672,23,'Cep klakep; kaya orong-orong kepidak','Cep-klakep; seperti orong-orong ke-injak','')</statement>
+<statement>INSERT INTO posts VALUES(673,23,'Cethile; kaya cina craki','Pelitnya; seperti cina craki','')</statement>
+<statement>INSERT INTO posts VALUES(674,23,'Cumlorot; kaya ndaru','Cumlorot; seperti ndaru','')</statement>
+<statement>INSERT INTO posts VALUES(675,23,'Dalane; mbathok mengkurep','Jalanya; m-batok tengkurap','')</statement>
+<statement>INSERT INTO posts VALUES(676,23,'Dawane; barisan kaya sela brakithi','Panjangnya; barisa; seperti sela brakithi','')</statement>
+<statement>INSERT INTO posts VALUES(677,23,'Dedege; ngringin sungsang','Perawakanya; ng-beringin sungsang','')</statement>
+<statement>INSERT INTO posts VALUES(678,23,'Dhuwur; kaya othak-othak mega','Tingginya; seperti otak-otak mega','')</statement>
+<statement>INSERT INTO posts VALUES(679,23,'Dondomane; kaya tutus kranjang','Jahitanya; seperti tutus keranjang','')</statement>
+<statement>INSERT INTO posts VALUES(680,23,'Empuke; kaya gudir','Empuknya; seperti gudir','')</statement>
+<statement>INSERT INTO posts VALUES(681,23,'Enthenge; kaya kapuk','Entengnya; seperti kapuk','')</statement>
+<statement>INSERT INTO posts VALUES(682,23,'Gagah prakosa; kaya Raden Warkudara','Gagah perkasa; seperti Raden Werkudara','')</statement>
+<statement>INSERT INTO posts VALUES(683,23,'Galake; kaya macan manak','Galaknya; seperti maccan beranak','')</statement>
+<statement>INSERT INTO posts VALUES(684,23,'Gampange; kaya empol pinecok','Gampangnya; seperti empol pinecok','')</statement>
+<statement>INSERT INTO posts VALUES(685,23,'Geger pepuyengan; kaya gabah diinteri','Geger pepuyengan; seperti gabah diinteri','')</statement>
+<statement>INSERT INTO posts VALUES(686,23,'Gelunge; ngadhal menek','Gelungnya; ng-kadal naik','')</statement>
+<statement>INSERT INTO posts VALUES(687,23,'Gendewane; awangaun kadhal meteng','Gendewane; awangun kadal hamil','')</statement>
+<statement>INSERT INTO posts VALUES(688,23,'Gereng-gereng; pindha macan antuk bayangan','Gereng-gereng; pindha macan antuk bayangan','')</statement>
+<statement>INSERT INTO posts VALUES(689,23,'Gilap; kaya emas','Gilap; seperti emas','')</statement>
+<statement>INSERT INTO posts VALUES(690,23,'Gumebyar; kaya prada binabar','Gumebyar; seperti prada binabar','')</statement>
+<statement>INSERT INTO posts VALUES(691,23,'Gurihe; kaya santen','Gurihnya; seperti santen','')</statement>
+<statement>INSERT INTO posts VALUES(692,23,'Ijo kumpul padha ireng; kaya gagak reraton','Hijau kumpul sama hitam; seperti gagak reraton','')</statement>
+<statement>INSERT INTO posts VALUES(693,23,'Irenge; kaya silet kwali','Hitamnya; seperti pantat kwali','')</statement>
+<statement>INSERT INTO posts VALUES(694,23,'Jogede; kaya merak kesimpir','Jogednya; seperti merak kesimpir','')</statement>
+<statement>INSERT INTO posts VALUES(695,23,'Jogede; mucang kanginan','Jogede; mu-pucang kena angin','')</statement>
+<statement>INSERT INTO posts VALUES(696,23,'Kagete; kaya tinubruk wong lepat','Kagete; seperti nubruk orang salah','')</statement>
+<statement>INSERT INTO posts VALUES(697,23,'Kasape; kaya rapelas','Kesatnya; seperti ampelas','')</statement>
+<statement>INSERT INTO posts VALUES(698,23,'Kecute; kaya asem','Kecutnya seperti asem','')</statement>
+<statement>INSERT INTO posts VALUES(699,23,'Kedhepe; kaya lintang','Kedipnya; seperti bintang','')</statement>
+<statement>INSERT INTO posts VALUES(700,23,'Kekejere; kaya manuk branjangan','Kekejere; seperti burung branjangan','')</statement>
+<statement>INSERT INTO posts VALUES(701,23,'Kenese; kaya dewi Dewi Srikandhi','Centilnya; seperti Dewi Srikandi','')</statement>
+<statement>INSERT INTO posts VALUES(702,23,'Kesite; kaya kadhal','Kesitnya; seperti kadal','')</statement>
+<statement>INSERT INTO posts VALUES(703,23,'Klular-klulur; kaya tuma kathok','Klular-klulur; seperti kutu celana','')</statement>
+<statement>INSERT INTO posts VALUES(704,23,'Kopat-kapita; kaya ula tapak angin','Kopat-kapita; seperti ular tapak angin','')</statement>
+<statement>INSERT INTO posts VALUES(705,23,'Kuning kumpul padha kuning; kaya podhang reraton','Kuning kumpul sama kuning; seperti podang reraton','')</statement>
+<statement>INSERT INTO posts VALUES(706,23,'Kuning; pindha emas sinangling','Kuning; pinda emas sinangling','')</statement>
+<statement>INSERT INTO posts VALUES(707,23,'Lakune; kaya macan luwe','Jalanya; seperti macan kelaparan','')</statement>
+<statement>INSERT INTO posts VALUES(708,23,'Legine; kaya madu','Manisnya; seperti madu','')</statement>
+<statement>INSERT INTO posts VALUES(709,23,'Lemune; kaya babi','Gemuknya; seperti babi','')</statement>
+<statement>INSERT INTO posts VALUES(710,23,'Lambeyane; mblarak sempal','Lambaianya; blarak sempal','')</statement>
+<statement>INSERT INTO posts VALUES(712,23,'Lambeyane; kaya merak kesimpir','Lambaianya; seperti merak kesimpir','')</statement>
+<statement>INSERT INTO posts VALUES(713,23,'Lelewane; milangoni','Lelewane; milangoni','')</statement>
+<statement>INSERT INTO posts VALUES(714,23,'Lunyune; kaya welut','Licinya; seperti belut','')</statement>
+<statement>INSERT INTO posts VALUES(715,23,'Mantu; mbata rubuh','Mantu; m-bata roboh','')</statement>
+<statement>INSERT INTO posts VALUES(716,23,'Mencorong; kaya rembulan','Mencorong; seperti rembulan','')</statement>
+<statement>INSERT INTO posts VALUES(717,23,'Mendhak-mendhak; kaya sato memeti','Mendak-mendak; seperti sato memeti','')</statement>
+<statement>INSERT INTO posts VALUES(718,23,'Mider-mider; kaya undar','Mondar-mandir; seperti undar','')</statement>
+<statement>INSERT INTO posts VALUES(719,23,'Miling-miling; kaya jangkung','Miling-miling; seperti jangkung','')</statement>
+<statement>INSERT INTO posts VALUES(720,23,'Mlakune; ngodhok','Jalanya; ngo-kodok','')</statement>
+<statement>INSERT INTO posts VALUES(721,23,'Mundur; mungkur gangsir','Mundur; mungkur gangsir','')</statement>
+<statement>INSERT INTO posts VALUES(722,23,'Ndomblong; kaya sapi ompong','Ndomblong; seperti sapi ompong','')</statement>
+<statement>INSERT INTO posts VALUES(723,23,'Nangise; ngorong-ngorong','Nangise; ngorong-ngorong','')</statement>
+<statement>INSERT INTO posts VALUES(724,23,'Nglentuk; kaya rembulan karainan','Nglentuk; seperti rembulan karainan','')</statement>
+<statement>INSERT INTO posts VALUES(725,23,'Ngleler; kaya cacing','Ngleler; seperti cacing','')</statement>
+<statement>INSERT INTO posts VALUES(726,23,'Nglemer; kaya semut','Nglemer; seperti semut','')</statement>
+<statement>INSERT INTO posts VALUES(727,23,'Nyengite; kaya demit','Pelite; seperti dedemit','')</statement>
+<statement>INSERT INTO posts VALUES(728,23,'Nyetete; kaya kuburan','Sepinya; seperti kuburan','')</statement>
+<statement>INSERT INTO posts VALUES(729,23,'Omahe; awangun glathik mungup','Rumahnya; awangun glathik mungup','')</statement>
+<statement>INSERT INTO posts VALUES(730,23,'Omahe; awangun klabang nyander','Rumanhya;  awangun klabang nyandir','')</statement>
+<statement>INSERT INTO posts VALUES(731,23,'Padhange; kaya rina','Terangnya; seperti siang','')</statement>
+<statement>INSERT INTO posts VALUES(732,23,'Padha pleg; pindha jambe sinigar','Sama persis; seperti jambe dibelah','')</statement>
+<statement>INSERT INTO posts VALUES(733,23,'Pait; butrawali','Pahit; butrawali','')</statement>
+<statement>INSERT INTO posts VALUES(734,23,'Panase; sumelet','Panasnya; sumelet','')</statement>
+<statement>INSERT INTO posts VALUES(735,23,'Panggalihe padha; kaya suruh lumah lan kurepe, padha rupane, yen ginigit padha rasane','Panggalihe padha; sama saja','')</statement>
+<statement>INSERT INTO posts VALUES(736,23,'Parine; gumadhung','Padinya; gumadhung','')</statement>
+<statement>INSERT INTO posts VALUES(737,23,'Petenge; ndumuk irung','Gelapnya; ndumuk hidung','')</statement>
+<statement>INSERT INTO posts VALUES(738,23,'Pintere; kaya bisa njara langit','Pintarnya; seperti bisa menjala langit','')</statement>
+<statement>INSERT INTO posts VALUES(739,23,'Pipane; menyu','Pipanya; m-penyu','')</statement>
+<statement>INSERT INTO posts VALUES(740,23,'Plikete; kaya pulut','Lengketnya; seperti pulut','')</statement>
+<statement>INSERT INTO posts VALUES(750,23,'Plonga-plongo; kaya kebo','Plonga-plongo; seperti kebo','')</statement>
+<statement>INSERT INTO posts VALUES(751,23,'Polahe; kaya gabah diinteri','Tingkahnya; seperti gabah di puter-puter','')</statement>
+<statement>INSERT INTO posts VALUES(752,23,'Putihe; kaya kapuk','Putihnya; seperti kapuk','')</statement>
+<statement>INSERT INTO posts VALUES(753,23,'Putih kumpul padha putih; kaya kuntul neba','Putih sama putih; seperti kuntul neba','')</statement>
+<statement>INSERT INTO posts VALUES(754,23,'Rakete; kaya sedulur sinara wedi','Akrabnya; seperti saudara sinara wedi','')</statement>
+<statement>INSERT INTO posts VALUES(755,23,'Ramene; lir prahara nempuh wukir','Ramenya; lir prahara nempuh wukir','')</statement>
+<statement>INSERT INTO posts VALUES(756,23,'Ratane; nggeger sapi','Ratanya; punggung sapi','')</statement>
+<statement>INSERT INTO posts VALUES(757,23,'Rebutan; kaya kethek','Rebutan; seperti monyet','')</statement>
+<statement>INSERT INTO posts VALUES(758,23,'Rikate; kaya angin','Rikate; seperti angin','')</statement>
+<statement>INSERT INTO posts VALUES(759,23,'Rukunune; kaya mimi lan mintuna','Rukunnya; seperti mimi dan mintuna','')</statement>
+<statement>INSERT INTO posts VALUES(760,23,'Rupane; padha kaya jambe sinigar','Rupannya; sama seperti jambe dibelah','')</statement>
+<statement>INSERT INTO posts VALUES(761,23,'Ruruhe (wadon); kaya Dewi Sembadra','Ruruhe (perempuan); seperti Dewi Sembadra','')</statement>
+<statement>INSERT INTO posts VALUES(762,23,'Ruruhe (lanang); Raden Janaka','Ruruhe (laki-laki); Raden Janaka','')</statement>
+<statement>INSERT INTO posts VALUES(763,23,'Salake; Medhi','Salaknya; Medi','')</statement>
+<statement>INSERT INTO posts VALUES(764,23,'Sambate; kaya ngrantang','Sambate; seperti ng-rantang','')</statement>
+<statement>INSERT INTO posts VALUES(765,23,'Senenge; kaya bubuk oleh leng','Senenge; seperti bubuk dapat leng','')</statement>
+<statement>INSERT INTO posts VALUES(766,23,'Sentosa; banget kaya janget kinatelon','Sentosa; banget seperti janget kinatelon','')</statement>
+<statement>INSERT INTO posts VALUES(767,23,'Sirahe; nggandhen','Kepalanya; ngganden','')</statement>
+<statement>INSERT INTO posts VALUES(768,23,'Sowane; mendhak-mendhak kaya sata manggih krama','Sowannya; mendhak-mendhak seperti sata manggih krama','')</statement>
+<statement>INSERT INTO posts VALUES(769,23,'Suguhane; mbanyu mili','Suguhanya; seperti air mengalir','')</statement>
+<statement>INSERT INTO posts VALUES(770,23,'Sumbare; kaya wani ndilat wesi abang','Sesumbarnya; seperti berani jilat besi merah','')</statement>
+<statement>INSERT INTO posts VALUES(771,23,'Surake; mbata rubuh','Soraknya; m-bata roboh','')</statement>
+<statement>INSERT INTO posts VALUES(772,23,'Suwek; nyangkem kodhok','Suwek; mulut kodok','')</statement>
+<statement>INSERT INTO posts VALUES(773,23,'Swarane; kaya gelap ing mangsa kapat','Suarane; seperti gelap dimusim kapat','')</statement>
+<statement>INSERT INTO posts VALUES(774,23,'Tandange cukat banget; kaya jangkrik mambu kili','Tingkanya cukat banget; seperti jangkrik nyium bau kili','')</statement>
+<statement>INSERT INTO posts VALUES(775,23,'Tandange nggegirisi; kaya bantheng ketaton','Tingkahnya giris; seperti banteng terluka','')</statement>
+<statement>INSERT INTO posts VALUES(776,23,'Tandange cukat; kaya kilat, kesit kadya thathit','Tingkahnya cukat; seperti kilat','')</statement>
+<statement>INSERT INTO posts VALUES(777,23,'Tapa; nyatuka (Dewi Anjani)','Tapa; nyatuka (Dewi Anjani)','')</statement>
+<statement>INSERT INTO posts VALUES(778,23,'Tapa; ngidang','Tapa; ng-kidang','')</statement>
+<statement>INSERT INTO posts VALUES(779,23,'Tekade; kaya geni lan urupe','Tekadnya; seperti api dan nyalanya','')</statement>
+<statement>INSERT INTO posts VALUES(780,23,'Tekade; kaya madu lan manise','Tekadnya; seperti madu dan manisnya','')</statement>
+<statement>INSERT INTO posts VALUES(781,23,'Tepunge; kaya sedulur','Tepunge; seperti saudara','')</statement>
+<statement>INSERT INTO posts VALUES(782,23,'Thingak-thinguk; kaya kethek ditulup','Tengak-tengok; seperti monyet ketulup','')</statement>
+<statement>INSERT INTO posts VALUES(783,23,'Tindake; nusup nganyam alas','Perginya; nusup nganyam hutan','')</statement>
+<statement>INSERT INTO posts VALUES(784,23,'Tulisane; mbata sarimbag(jawa)','Tulisannya; m-bata sarimbag(jawa)','')</statement>
+<statement>INSERT INTO posts VALUES(785,23,'Tulisane; ngeri (jawa)','Tulisannya; ngeri (jawa)','')</statement>
+<statement>INSERT INTO posts VALUES(786,23,'Untabe; nyundhul empyak','Untabe; sundul teras','')</statement>
+<statement>INSERT INTO posts VALUES(787,23,'Utange; turut usuk','Hutangnya; t-urut usuk','')</statement>
+<statement>INSERT INTO posts VALUES(788,23,'Wangsulane; saur manuk','Jawabanya; saur(jawaban) burung','')</statement>
+<statement>INSERT INTO posts VALUES(789,23,'Wrangkane; gayaman','Kerangkanya; gayaman','')</statement>
+
+<!-- Sanepa -->
+<statement>INSERT INTO posts VALUES(790,24,'Ambune arum jamban : Ambune banger','Ambune arum jamban : baunya harum jamban','')</statement>
+<statement>INSERT INTO posts VALUES(791,24,'Awake kuru semangka : Awake lemu banget','Awake kuru semangka : badanya gemuk banget','')</statement>
+<statement>INSERT INTO posts VALUES(792,24,'Balunge atos debog : balunge empuk banget','Balunge atos debog : tulangnya empuk banget','')</statement>
+<statement>INSERT INTO posts VALUES(793,24,'Barange aji godhong garing : barange ora aji banget','Barange aji godhong garing : barangnya tak berarti','')</statement>
+<statement>INSERT INTO posts VALUES(794,24,'Bobote abot kapuk : bobote enteng banget','Bobote abot kapuk : Bobotnya enteng banget','')</statement>
+<statement>INSERT INTO posts VALUES(795,24,'Bobote bot merang segedheng : bobote enteng banget','Bobote bot merang segedheng : bobotnya enteng banget','')</statement>
+<statement>INSERT INTO posts VALUES(796,24,'Cahyane abang dluwang : cahyane pucet banget','Cahyane abang dluwang : Cahyanya pucet banget','')</statement>
+<statement>INSERT INTO posts VALUES(797,24,'Dedege dhuwur kencur : dedege cendhek banget','Dedege dhuwur kencur : Tingginya pendek banget','')</statement>
+<statement>INSERT INTO posts VALUES(798,24,'Enggale suwe banyu sinaring : wektune cepet banget','Enggale suwe banyu sinaring : Waktunya cepat banget','')</statement>
+<statement>INSERT INTO posts VALUES(799,24,'Eseme pait madu : eseme manis banget','Eseme pait madu : Senyumnya manis banget','')</statement>
+<statement>INSERT INTO posts VALUES(800,24,'Kawruhe jeru tapak meri : kawruhe sethithik banget','Kawruhe jeru tapak meri : Ilmunya sedikit sekali','')</statement>
+<statement>INSERT INTO posts VALUES(801,24,'Kulitane wuled godhong jambu : kulite gampang suwek','Kulitane wuled godhong jambu : Kulitnya gampang sobek','')</statement>
+<statement>INSERT INTO posts VALUES(802,24,'Lemune benjo tampah : Lemune bunder banget','Lemune benjo tampah : Gemuknya bunder sekali','')</statement>
+<statement>INSERT INTO posts VALUES(803,24,'Pakulitane kuning silit kwali : pakulitane ireng banget','Pakulitane kuning silit kwali : Kulitnya hitam sekali','')</statement>
+<statement>INSERT INTO posts VALUES(804,24,'Pikirane landhep dhengkul : pikirane bodho banget','Pikirane landhep dhengkul : Pikirannya bodoh sekali','')</statement>
+<statement>INSERT INTO posts VALUES(805,24,'Playune lonjong botor (mimis) : playune banter banget','Playune lonjong botor (mimis) : Larinya kencang sekali','')</statement>
+<statement>INSERT INTO posts VALUES(806,24,'Playune rindhik asu digitik : playune banter banget','Playune rindhik asu digitik : Larinya kencang sekali','')</statement>
+<statement>INSERT INTO posts VALUES(807,24,'Polahe anteng kitiran : polahe akeh banget','Polahe anteng kitiran : Tingkahnya banyak sekali','')</statement>
+<statement>INSERT INTO posts VALUES(808,24,'Rasane legi butrawali : rasane pait banget','Rasane legi butrawali : Rasanya pahit sekali','')</statement>
+<statement>INSERT INTO posts VALUES(809,24,'Rembuge peret beton : rembuge alus banget','Rembuge peret beton : Kata-katanya halus sekali','')</statement>
+<statement>INSERT INTO posts VALUES(810,24,'Srawunge renggang gula kumepyur pulut : Srawunge rangket banget','Srawunge renggang gula kumepyur pulut : Hubunganya akrab sekali','')</statement>
+<statement>INSERT INTO posts VALUES(811,24,'Tatune arang kranjang : tatune kerep banget','Tatune arang kranjang : Lukanya banyak sekali','')</statement>
+<statement>INSERT INTO posts VALUES(812,24,'Tembunge paiit madu : tembunge manis banget','Tembunge paiit madu : Kata-katanya manis banget','')</statement>
+<statement>INSERT INTO posts VALUES(813,24,'Ulate bening leri : ulate mrengut wae','Ulate bening leri : mimiknya merengut saja','')</statement>
+<statement>INSERT INTO posts VALUES(814,24,'Utange arang wulu kucing : utange akeh banget','Utange arang wulu kucing : Hutangnya banyak sekali','')</statement>
+<statement>INSERT INTO posts VALUES(815,24,'Suwe mijet wohing ranti : sedhela banget','Suwe mijet wohing ranti : Sekejap saja','')</statement>
+<statement>INSERT INTO posts VALUES(816,24,'Wujude agal glepung : wujude lembut banget','Wujude agal glepung : Wujudnya lembut sekali','')</statement>
+
+</sql>

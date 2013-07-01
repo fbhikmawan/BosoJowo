@@ -1,0 +1,228 @@
+<sql>
+<!-- Anak Kewan / Anak Hewan -->
+<statement>INSERT INTO posts VALUES(128,7,'Anak Ampal arane Embug-embugan','Anak Ampal disebut Embug-embugan','')</statement>
+<statement>INSERT INTO posts VALUES(129,7,'Anak Angkrang arane Kroto','Anak Angkrang disebut Kroto','')</statement>
+<statement>INSERT INTO posts VALUES(130,7,'Anak Asu arane Kirik','Anak Anjing disebut Kirik','')</statement>
+<statement>INSERT INTO posts VALUES(131,7,'Anak Pitik arane Kuthuk','Anak Ayam disebut Kuthuk','')</statement>
+<statement>INSERT INTO posts VALUES(132,7,'Anak Babi arane Gembluk','Anak Babi disebut Gembluk','')</statement>
+<statement>INSERT INTO posts VALUES(133,7,'Anak Bandeng arane Nener','Anak Bandeng disebut Nener','')</statement>
+<statement>INSERT INTO posts VALUES(134,7,'Anak Bantheng arane Wereng','Anak Banteng disebut Wereng','')</statement>
+<statement>INSERT INTO posts VALUES(135,7,'Anak Banyak arane Blengur','Anak Angsa disebut Blengur','')</statement>
+<statement>INSERT INTO posts VALUES(136,7,'Anak Baya arane Rete','Anak Buaya disebut Rete','')</statement>
+<statement>INSERT INTO posts VALUES(137,7,'Anak Bebek arane Meri','Anak Bebek disebut Meri','')</statement>
+<statement>INSERT INTO posts VALUES(138,7,'Anak Bethik arane Menter','Anak Bethik disebut Menter','')</statement>
+<statement>INSERT INTO posts VALUES(139,7,'Anak Blanak arane Sendha','Anak Blanak disebut Sendha','')</statement>
+<statement>INSERT INTO posts VALUES(140,7,'Anak Brati arane Tongki','Anak Brati disebut Tongki','')</statement>
+<statement>INSERT INTO posts VALUES(142,7,'Anak Budheng arane Kowe','Anak Orang utan disebut Kowe','')</statement>
+<statement>INSERT INTO posts VALUES(143,7,'Anak Bulus arane Ketul','Anak Bulus disebut Ketul','')</statement>
+<statement>INSERT INTO posts VALUES(144,7,'Anak Cacing arane Lur','Anak Cacing disebut Lur','')</statement>
+<statement>INSERT INTO posts VALUES(145,7,'Anak Cecak arane Sawiyah','Anak Cecak disebut Sawiyah','')</statement>
+<statement>INSERT INTO posts VALUES(146,7,'Anak Celeng arane Genjik','Anak Celeng disebut Genjik','')</statement>
+<statement>INSERT INTO posts VALUES(147,7,'Anak Coro arane Mendhet','Anak Kecoak disebut Mendhet','')</statement>
+<statement>INSERT INTO posts VALUES(148,7,'Anak Dara arane Piyik','Anak Dara disebut Piyik','')</statement>
+<statement>INSERT INTO posts VALUES(149,7,'Anak Dhorang arane Tamper','Anak Dorang disebut Temper','')</statement>
+<statement>INSERT INTO posts VALUES(150,7,'Anak Emprit arane Indhil','Anak Emprit disebut Indhil','')</statement>
+<statement>INSERT INTO posts VALUES(151,7,'Anak Gagak arane Engkak','Anak Gagak disebut Engkak','')</statement>
+<statement>INSERT INTO posts VALUES(152,7,'Anak Gajah arane Bledug','Anak Gajah disebut Bledug','')</statement>
+<statement>INSERT INTO posts VALUES(153,7,'Anak Gangsir arane Clondho','Anak Gangsir disebut Clondho','')</statement>
+<statement>INSERT INTO posts VALUES(154,7,'Anak Garangan arane Rase','Anak Garangan disebut Rase','')</statement>
+<statement>INSERT INTO posts VALUES(155,7,'Anak Garengpung arane Drungkuk','Anak Garengpung disebut Drungkuk','')</statement>
+<statement>INSERT INTO posts VALUES(156,7,'Anak Gemak arane Drigul','Anak Gemak disebut Drigul','')</statement>
+<statement>INSERT INTO posts VALUES(157,7,'Anak Glathik arane Cecrekan','Anak Glathik disebut Cecrekan','')</statement>
+<statement>INSERT INTO posts VALUES(158,7,'Anak Gundhik arane Laron','Anak Gundhik disebut Laron','')</statement>
+<statement>INSERT INTO posts VALUES(159,7,'Anak Iwak arane Beyong','Anak Ikan disebut Beyong','')</statement>
+<statement>INSERT INTO posts VALUES(160,7,'Anak Jangkrik arane Gendholo','Anak Jangkrik disebut Gendholo','')</statement>
+<statement>INSERT INTO posts VALUES(161,7,'Anak Jaran arane Belo','Anak Kuda disebut Belo','')</statement>
+<statement>INSERT INTO posts VALUES(162,7,'Anak Kadhal arane Tobil','Anak Kadal disebut Tobil','')</statement>
+<statement>INSERT INTO posts VALUES(163,7,'Anak Kakap arane Caplek','Anak Kakap disebut Caplek','')</statement>
+<statement>INSERT INTO posts VALUES(164,7,'Anak Kalajengking arane Ketupa','Anak Kalajengking disebut Ketupa','')</statement>
+<statement>INSERT INTO posts VALUES(165,7,'Anak Kancil arane Kenthi','Anak Kancil disebut Kenthi','')</statement>
+<statement>INSERT INTO posts VALUES(166,7,'Anak Kebo arane Gudel','Anak Kerbau disebut Gudel','')</statement>
+<statement>INSERT INTO posts VALUES(167,7,'Anak Kecapung arane Jenthit','Anak Capung disebut Jenthit','')</statement>
+<statement>INSERT INTO posts VALUES(168,7,'Anak Kemangga arane Ceriwi','Anak Kemangga disebut Ceriwi','')</statement>
+<statement>INSERT INTO posts VALUES(169,7,'Anak Kepik arane Mreki','Anak Kepik disebut Mreki','')</statement>
+<statement>INSERT INTO posts VALUES(170,7,'Anak Kidang arane Kompreng','Anak Kidang disebut Kompreng','')</statement>
+<statement>INSERT INTO posts VALUES(171,7,'Anak Kimar arane Kedah','Anak Kinjeng disebut Senggutru','')</statement>
+<statement>INSERT INTO posts VALUES(172,7,'Anak Kinjeng arane Senggutru','Anak Kinjeng disebut Senggutru','')</statement>
+<statement>INSERT INTO posts VALUES(173,7,'Anak Kinjeng Dom arane Undur-undur','Anak Kinjeng Dom disebut Undur-undur','')</statement>
+<statement>INSERT INTO posts VALUES(174,7,'Anak Kintel arane Kenthus','Anak Kintel disebut Kenthus','')</statement>
+<statement>INSERT INTO posts VALUES(175,7,'Anak Kethek arane Munyuk/Kenyung','Anak Monyet disebut Munyuk/Kenyung','')</statement>
+<statement>INSERT INTO posts VALUES(176,7,'Anak Kodhok arane Precil','Anak Kodok disebut Precil','')</statement>
+<statement>INSERT INTO posts VALUES(177,7,'Anak Kombang arane Engkuk','Anak Kombang disebut Engkuk','')</statement>
+<statement>INSERT INTO posts VALUES(178,7,'Anak Konang arane Endrak','Anak Kondang disebut Endrak','')</statement>
+<statement>INSERT INTO posts VALUES(179,7,'Anak Kremi arane Racek','Anak Kremi disebut Racek','')</statement>
+<statement>INSERT INTO posts VALUES(180,7,'Anak Kucing arane Cemeng','Anak Kucing disebut Cemeng','')</statement>
+<statement>INSERT INTO posts VALUES(181,7,'Anak Kul/Keyong arane Krikik','Anak Kul/Keong disebut Krikik','')</statement>
+<statement>INSERT INTO posts VALUES(182,7,'Anak Kupu arane Uler','Anak Kupu-kupu disebut Ulat','')</statement>
+<statement>INSERT INTO posts VALUES(183,7,'Anak Kura arane Laos','Anak Kura-kura disebut Laos','')</statement>
+<statement>INSERT INTO posts VALUES(184,7,'Anak Kutuk arane Kotesan','Anak Kutuk disebut Kotesan','')</statement>
+<statement>INSERT INTO posts VALUES(185,7,'Anak Kwangwung arane Gendhot','Anak Kwangwung disebut Gendhot','')</statement>
+<statement>INSERT INTO posts VALUES(186,7,'Anak Laler arane Set/Singgat','Anak Lalat disebut Set/Singgat','')</statement>
+<statement>INSERT INTO posts VALUES(187,7,'Anak Lamuk arane Jenthik','Anak Nyamuk disebut Jenthik','')</statement>
+<statement>INSERT INTO posts VALUES(188,7,'Anak Lawa arane Kampret','Anak Kelelawar disebut Kampret','')</statement>
+<statement>INSERT INTO posts VALUES(189,7,'Anak Lele arane Jabrisan','Anak Lele disebut Jabrisan','')</statement>
+<statement>INSERT INTO posts VALUES(190,7,'Anak Lemut arane Uget-uget','Anak Nyamuk disebut Uget-uget','')</statement>
+<statement>INSERT INTO posts VALUES(200,7,'Anak Lintah arane Pacet','Anak Lintah disebut Pacet','')</statement>
+<statement>INSERT INTO posts VALUES(201,7,'Anak Lisang arane Beles','Anak Lisang disebut Beles','')</statement>
+<statement>INSERT INTO posts VALUES(202,7,'Anak Lodan arane Jengkelong','Anak Lodan disebut Jengkelong','')</statement>
+<statement>INSERT INTO posts VALUES(203,7,'Anak Lutung arane Kenyung','Anak Lutung disebut ','')</statement>
+<statement>INSERT INTO posts VALUES(204,7,'Anak Luwak arane Kuwuk','Anak Luwak disebut Kuwuk','')</statement>
+<statement>INSERT INTO posts VALUES(205,7,'Anak Luwing arane Gonggo','Anak Keluwing disebut Gonggo','')</statement>
+<statement>INSERT INTO posts VALUES(206,7,'Anak Macan arane Gogor','Anak Macan disebut Gogor','')</statement>
+<statement>INSERT INTO posts VALUES(207,7,'Anak Manuk arane Piyik','Anak Burung disebut Piyik','')</statement>
+<statement>INSERT INTO posts VALUES(208,7,'Anak Menjangan arane Kompreng','Anak Menjangan disebut Kompreng','')</statement>
+<statement>INSERT INTO posts VALUES(209,7,'Anak Menthok arane Minthi','Anak Menthok disebut Minthi','')</statement>
+<statement>INSERT INTO posts VALUES(210,7,'Anak Merak arane Uncung','Anak Merak disebut Uncung','')</statement>
+<statement>INSERT INTO posts VALUES(211,7,'Anak Nyambik arane Slira','Anak Nyambik disebut Slira','')</statement>
+<statement>INSERT INTO posts VALUES(212,7,'Anak Pe arane Genyong','Anak Pe disebut Genyong','')</statement>
+<statement>INSERT INTO posts VALUES(213,7,'Anak Pleting arane Jaringan','Anak Pleting disebut Jaringan','')</statement>
+<statement>INSERT INTO posts VALUES(214,7,'Anak Sapi arane Pedhet','Anak Sapi disebut Pedhet','')</statement>
+<statement>INSERT INTO posts VALUES(215,7,'Anak Sembilang arane Lenger','Anak Sembilang disebut Lenger','')</statement>
+<statement>INSERT INTO posts VALUES(216,7,'Anak Singa arane Dibal','Anak Singa disebut Dibal','')</statement>
+<statement>INSERT INTO posts VALUES(217,7,'Anak Tambra arane Bokol','Anak Tambra disebut Bokol','')</statement>
+<statement>INSERT INTO posts VALUES(218,7,'Anak Tawon arane Gana','Anak Lebah disebut Gana','')</statement>
+<statement>INSERT INTO posts VALUES(219,7,'Anak Tekek arane Celolo','Anak Tokek disebut Celolo','')</statement>
+<statement>INSERT INTO posts VALUES(220,7,'Anak Tikus arane Cindhil','Anak Tikus disebut Cindhil','')</statement>
+<statement>INSERT INTO posts VALUES(221,7,'Anak Tongkol arane Cengkik','Anak Tongkol disebut Cengkik','')</statement>
+<statement>INSERT INTO posts VALUES(222,7,'Anak Tuma arane Kor','Anak Kutu disebut Kor','')</statement>
+<statement>INSERT INTO posts VALUES(223,7,'Anak Ula arane Kisi/Ucet','Anak Ular disebut Kisi/Ucet','')</statement>
+<statement>INSERT INTO posts VALUES(224,7,'Anak Urang arane Grago','Anak Udang disebut Grago','')</statement>
+<statement>INSERT INTO posts VALUES(225,7,'Anak Wader arane Sriwet','Anak Wader disebut Sriwet','')</statement>
+<statement>INSERT INTO posts VALUES(226,7,'Anak Wagal arane Jendhil','Anak Wagal disebut Jendhil','')</statement>
+<statement>INSERT INTO posts VALUES(227,7,'Anak Walang arane Dhogol','Anak Belalang disebut Dhogol','')</statement>
+<statement>INSERT INTO posts VALUES(228,7,'Anak Warak arane Plencing','Anak Warak disebut Plencing','')</statement>
+<statement>INSERT INTO posts VALUES(229,7,'Anak Wedhus arane Cempe','Anak Kambing disebut Cempe','')</statement>
+<statement>INSERT INTO posts VALUES(230,7,'Anak Welut arane Udhet','Anak Belut disebut Udhet','')</statement>
+<statement>INSERT INTO posts VALUES(231,7,'Anak Yuyu arane Beyes','Anak Yuyu disebut Beyes','')</statement>
+
+
+<!-- Turunan kewan / keturunan hewan -->
+<statement>INSERT INTO posts VALUES(232,8,'Turunane Ayam Biyasa+Ayam Kate arane Wareng','Keturunan Ayam Biasa+Ayam Kate disebut Wareng','')</statement>
+<statement>INSERT INTO posts VALUES(233,8,'Turunane Ayam Biyasa+Ayam Alas arane Bekisar','Keturunan Ayam Biasa+Ayam Alas disebut Bekisar','')</statement>
+<statement>INSERT INTO posts VALUES(234,8,'Turunane Ayam Biyasa+Bekisar arane Bekikuk','Keturunan Ayam Biyasa+Bekisar disebut Bekikuk','')</statement>
+<statement>INSERT INTO posts VALUES(235,8,'Turunane Bebek+Menthog arane Brati','Keturunan Bebek+Menthog disebut Brati','')</statement>
+<statement>INSERT INTO posts VALUES(236,8,'Turunane Jaran+Kuldi arane Bihal','Keturunan Jaran+Kuldi disebut Bihal','')</statement>
+
+
+<!-- Arane gaman kewan / Nama senjata Hewan -->
+<statement>INSERT INTO posts VALUES(237,9,'Gamane Ayam Jago arane Cucuk, Jalu','Senjata Ayam Jago disebut Cucuk, Jalu','')</statement>
+<statement>INSERT INTO posts VALUES(238,9,'Gamane Asu arane Siyung, Kuku','Senjata Anjing disebut Siyung, Kuku','')</statement>
+<statement>INSERT INTO posts VALUES(239,9,'Gamane Gajah arane Gadhing, Tlale','Senjata Gajah disebut Gadhing, Tlalai','')</statement>
+<statement>INSERT INTO posts VALUES(240,9,'Gamane Jaran arane Sikil','Senjata Kuda disebut Kaki','')</statement>
+<statement>INSERT INTO posts VALUES(241,9,'Gamane Kebo, Sapi arane Sungu','Senjata Kerbau, Sapi disebut Tanduk','')</statement>
+<statement>INSERT INTO posts VALUES(242,9,'Gamane Kidang, Wedhus arane Sungu','Senjata Kidang, Kambing disebut Tanduk','')</statement>
+<statement>INSERT INTO posts VALUES(243,9,'Gamane Kombang, Tunggeng arane Entup','Senjata Kumbang, Tunggeng disebut Sengat','')</statement>
+<statement>INSERT INTO posts VALUES(244,9,'Gamane Tawon, Kalajengking arane Entup','Senjata Lebah, Kalajengking disebut Sengat','')</statement>
+<statement>INSERT INTO posts VALUES(245,9,'Gamane Landhak arane Wulu Eri','Senjata Landak disebut Bulu Tajam','')</statement>
+<statement>INSERT INTO posts VALUES(246,9,'Gamane Lele arane Patil','Senjata Lele disebut Patil','')</statement>
+<statement>INSERT INTO posts VALUES(247,9,'Gamane Macan, Kucing, Singa arane Kuku, Siyung','Senjata Macan, Kucing, Singa disebut Kuku, Siyung','')</statement>
+<statement>INSERT INTO posts VALUES(248,9,'Gamane Tikus arane Kuku, Untu','Senjata Tikus disebut Kuku, Gigi','')</statement>
+<statement>INSERT INTO posts VALUES(249,9,'Gamane Tikus Clurut, Rase arane Ganda','Senjata Tikus Clurut, Rase disebut Ganda','')</statement>
+<statement>INSERT INTO posts VALUES(250,9,'Gamane Ula arane Wisa','Senjata Ular disebut Bisa','')</statement>
+<statement>INSERT INTO posts VALUES(251,9,'Gamane Warak arane Cula','Senjata Badak disebut Cula','')</statement>
+<statement>INSERT INTO posts VALUES(252,9,'Gamane Yuyu, Kepithing arane ','Senjata Yuyu, Kepithing disebut Supit','')</statement>
+
+<!-- Solahe Kewan / Tingkah hewan -->
+<statement>INSERT INTO posts VALUES(253,10,'Solahe Asu arane Nyander, Nyathek','Tingkah Anjing disebut Nyander, Nyathek','')</statement>
+<statement>INSERT INTO posts VALUES(254,10,'Solahe Ayam Babon arane Memeti, Nladhung','Tingkah Ayam Betina disebut Memeti, Nladhung','')</statement>
+<statement>INSERT INTO posts VALUES(255,10,'Solahe Ayam Jago arane Mendel, Nladhung','Tingkah Ayam Jantan disebut Mendel, Nladhung','')</statement>
+<statement>INSERT INTO posts VALUES(256,10,'Solahe Baya arane Nyamber, Nyarab','Tingkah Buaya disebut Nyamber, Nyarab','')</statement>
+<statement>INSERT INTO posts VALUES(257,10,'Solahe Bebek arane Mbondholi, Nyosor','Tingkah Bebek disebut Mbondholi, Nyosor','')</statement>
+<statement>INSERT INTO posts VALUES(258,10,'Solahe Celeng arane Nggandhil, Nyronggot','Tingkah Celeng disebut Nggandhil, Nyronggot','')</statement>
+<statement>INSERT INTO posts VALUES(259,10,'Solahe Dara arane Kalangan','Tingkah Dara disebut Kalangan','')</statement>
+<statement>INSERT INTO posts VALUES(260,10,'Solahe Gajah arane Lembehan Tlale','Tingkah Gajah disebut Lembehan Tlale','')</statement>
+<statement>INSERT INTO posts VALUES(261,10,'Solahe Iwak arane Nylurut','Tingkah Ikan disebut Nylurut','')</statement>
+<statement>INSERT INTO posts VALUES(262,10,'Solahe Jaran arane Mbrakot, Nyepak','Tingkah Kuda disebut Mbrakot, Nyepak','')</statement>
+<statement>INSERT INTO posts VALUES(263,10,'Solahe Kebo arane Nyundhang','Tingkah Kerbau disebut Nyundhang','')</statement>
+<statement>INSERT INTO posts VALUES(264,10,'Solahe Kidang arane Nggayor','Tingkah Kidang disebut Nggayor','')</statement>
+<statement>INSERT INTO posts VALUES(265,10,'Solahe Kucing arane Nyakar','Tingkah Kucing disebut Nyakar','')</statement>
+<statement>INSERT INTO posts VALUES(266,10,'Solahe Kutuk arane Milar','Tingkah Kutuk disebut Milar','')</statement>
+<statement>INSERT INTO posts VALUES(267,10,'Solahe Lele arane Mathil','Tingkah Lele disebut Mathil','')</statement>
+<statement>INSERT INTO posts VALUES(268,10,'Solahe Macan arane Nubruk','Tingkah Macan disebut Nubruk','')</statement>
+<statement>INSERT INTO posts VALUES(269,10,'Solahe Manuk arane Nyamber','Tingkah Burung disebut Nyamber','')</statement>
+<statement>INSERT INTO posts VALUES(270,10,'Solahe Sapi arane Nyepak, Nyundang','Tingkah Sapi disebut Nyepak, Nyundang','')</statement>
+<statement>INSERT INTO posts VALUES(271,10,'Solahe Tikus arane Nyanyah, Ngrikiti','Tingkah Tikus disebut Nyanyah, Ngrikiti','')</statement>
+<statement>INSERT INTO posts VALUES(272,10,'Solahe Ula arane Nggubeti, Nguntal, Nglungsungi, Nyembur','Tingkah Ular disebut Nggubeti, Nguntal, Nglungsungi, Nyembur','')</statement>
+<statement>INSERT INTO posts VALUES(273,10,'Solahe Wedhus arane Mbijig','Tingkah Kambing disebut Mbijig','')</statement>
+
+<!-- Swara ngundang kewan -->
+<statement>INSERT INTO posts VALUES(274,11,'Ngundang Asu swarane Jih, Jih, Jih','Memanggil Anjing dengan suara Jih, Jih, Jih','')</statement>
+<statement>INSERT INTO posts VALUES(275,11,'Ngundang Banyak swarane Kati, Kati, Kati','Memanggil Angsa dengan suara Kati, Kati, Kati','')</statement>
+<statement>INSERT INTO posts VALUES(276,11,'Ngundang Bebek swarane Ri, Ri, Ri','Memanggil Bebek dengan suara Ri, Ri, RI','')</statement>
+<statement>INSERT INTO posts VALUES(277,11,'Ngundang Dara swarane Tu, Tu, Tu','Memanggil Dara dengan suara Tu, Tu, Tu','')</statement>
+<statement>INSERT INTO posts VALUES(278,11,'Ngundang Jaran swarane Ki, Ki, Ki','Memanggil Kuda dengan suara Ki, Ki, Ki','')</statement>
+<statement>INSERT INTO posts VALUES(279,11,'Ngundang Kebo swarane Oek, Oek, Oek','Memanggil Kerbau dengan suara Oek, Oek, Oek,','')</statement>
+<statement>INSERT INTO posts VALUES(280,11,'Ngundang Kucing swarane Pus, Pus, Pus','Memanggil Kucing dengan suara Pus, Pus, Pus','')</statement>
+<statement>INSERT INTO posts VALUES(281,11,'Ngundang Menthog swarane Thi, Thi, Thi','Memanggil Menthog dengan suara Thi, Thi, Thi','')</statement>
+<statement>INSERT INTO posts VALUES(282,11,'Ngundang Pithik swarane Kur, Kur, Kur','Memanggil Ayam dengan suara Kur, Kur, Kur','')</statement>
+<statement>INSERT INTO posts VALUES(283,11,'Ngundang Sapi swarane Meh, Meh, Meh','Memanggil Sapi dengan suara Meh, Meh, Meh','')</statement>
+<statement>INSERT INTO posts VALUES(284,11,'Ngundang Wedhus swarane Mi, Mi, Mi','Memanggil Kambing dengan suara Mi, Mi, Mi','')</statement>
+
+<!-- Swarane kewan / Suara hewan -->
+<statement>INSERT INTO posts VALUES(285,12,'Swara Asu diarani Mbaung/Njeguk','Suara Anjing disebut Mbaung/Njeguk','')</statement>
+<statement>INSERT INTO posts VALUES(286,12,'Swara Babon diarani Petok-petok','Suara Ayam Betina disebut Petok-petok','')</statement>
+<statement>INSERT INTO posts VALUES(287,12,'Swara Banyak diarani Pating Krengah','Suara Angsa disebut Pating Krengah','')</statement>
+<statement>INSERT INTO posts VALUES(288,12,'Swara Bebek diarani Kwek-kwek','Suara Bebek disebut Kwek-kwek','')</statement>
+<statement>INSERT INTO posts VALUES(289,12,'Swara Cecak diarani Ngecek','Suara Cicak disebut Ngecek','')</statement>
+<statement>INSERT INTO posts VALUES(290,12,'Swara Dara diarani Mbekur','Suara Dara disebut Mbekur','')</statement>
+<statement>INSERT INTO posts VALUES(291,12,'Swara Gajah diarani Ngempret','Suara Gajah disebut Ngempret','')</statement>
+<statement>INSERT INTO posts VALUES(292,12,'Swara Gangsir diarani Ngenthir','Suara Gangsir disebut Ngenthir','')</statement>
+<statement>INSERT INTO posts VALUES(293,12,'Swara Garengpung diarani Ngrengreng','Suara Garengpung disebut Ngrengreng','')</statement>
+<statement>INSERT INTO posts VALUES(294,12,'Swara Gemak diarani Ngelung','Suara Gemak disebut Ngelung','')</statement>
+<statement>INSERT INTO posts VALUES(295,12,'Swara Jago diarani Kluruk','Suara Ayam Jantan disebut Kluruk','')</statement>
+<statement>INSERT INTO posts VALUES(296,12,'Swara Jalak diarani Ngoceh','Suara Jalak disebut Ngoceh','')</statement>
+<statement>INSERT INTO posts VALUES(297,12,'Swara Jaran diarani Beker/Bengingeh','Suara Jaran disebut Beker/Bengingeh','')</statement>
+
+<statement>INSERT INTO posts VALUES(298,12,'Swara Jangkrik diarani Ngerik','Suara Jangkrik disebut Ngerik','')</statement>
+
+<statement>INSERT INTO posts VALUES(299,12,'Swara Kebo diarani Ngoweh','Suara Kerbau disebut Ngoweh','')</statement>
+<statement>INSERT INTO posts VALUES(300,12,'Swara Kethek diarani Mere','Suara Monyet disebut Mere','')</statement>
+<statement>INSERT INTO posts VALUES(301,12,'Swara Kidang diarani Mbekik','Suara Kidang disebut Mbekik','')</statement>
+<statement>INSERT INTO posts VALUES(302,12,'Swara Kodhok diarani Ngorek','Suara Kodok disebut Ngorek','')</statement>
+<statement>INSERT INTO posts VALUES(303,12,'Swara Kombang diarani Mbrengengeng','Suara Kumbang disebut Mbrengengeng','')</statement>
+<statement>INSERT INTO posts VALUES(304,12,'Swara Kucing diarani Ngeong','Suara Kucing disebut Ngeong','')</statement>
+<statement>INSERT INTO posts VALUES(305,12,'Swara Kuthilang diarani Ngoceh','Suara Kuthuk disebut Manggung','')</statement>
+<statement>INSERT INTO posts VALUES(306,12,'Swara Kuthuk diarani Kiyik-kiyik','Suara Kuthuk disebut Kiyik-kiyik','')</statement>
+<statement>INSERT INTO posts VALUES(307,12,'Swara Kutut diarani Manggung','Suara Kutut disebut Manggung','')</statement>
+<statement>INSERT INTO posts VALUES(308,12,'Swara Lamuk diarani Nging-nging','Suara Nyamuk disebut Nging-nging','')</statement>
+<statement>INSERT INTO posts VALUES(309,12,'Swara Macan diarani Mbaung/Anggero','Suara Macan disebut Mbaung/Anggero','')</statement>
+<statement>INSERT INTO posts VALUES(310,12,'Swara Menco diarani Ngecoh','Suara Menco disebut Ngecoh','')</statement>
+<statement>INSERT INTO posts VALUES(311,12,'Swara Menjangan diarani Mbekik','Suara Menjangan disebut Mbekik','')</statement>
+<statement>INSERT INTO posts VALUES(312,12,'Swara Merak diarani Nyengungong','Suara Merak disebut Nyengungong','')</statement>
+<statement>INSERT INTO posts VALUES(313,12,'Swara Sapi diarani Mbengah','Suara Sapi disebut Mbengah','')</statement>
+<statement>INSERT INTO posts VALUES(314,12,'Swara Singa diarani Nggero','Suara Singa disebut Nggero','')</statement>
+<statement>INSERT INTO posts VALUES(315,12,'Swara Tikus diarani Citcit','Suara Tikus disebut Citcit','')</statement>
+<statement>INSERT INTO posts VALUES(316,12,'Swara Ula diarani Ngakak/Nyeses','Suara Ular disebut Ngakak/Nyeses','')</statement>
+<statement>INSERT INTO posts VALUES(317,12,'Swara Wedhus diarani Ngembek','Suara Kambing disebut Ngembek','')</statement>
+
+<!-- Ulese/Rupane kewan / Warna Tubuh/kulit/Rupa Hewan  -->
+<statement>INSERT INTO posts VALUES(318,13,'Ulese Asu warnane Belang','Warna Anjing diantaranya Belang','')</statement>
+<statement>INSERT INTO posts VALUES(319,13,'Ulese Dara warnane Gambir, Megan, Klawu, Tlampik','Warna Dara diantaranya Gambir, Megan, Klawu, Tlampik','')</statement>
+<statement>INSERT INTO posts VALUES(320,13,'Ulese Jago warnane Klawu, Widu, Wiring Galih','Warna Ayam Jantan diantaranya Klawu, Wido, Wiring Galih','')</statement>
+<statement>INSERT INTO posts VALUES(321,13,'Ulese Jangkrik warnane Jlitheng, Jrabang, Jragem','Warna Jangkrik diantaranya Jlitheng, Jrabang, Jragem','')</statement>
+<statement>INSERT INTO posts VALUES(322,13,'Ulese Jaran warnane Dhawuk, Kembang duren, Jlitheng, Jragem, Rajeg, Tutul, Pancal Panggung','Warna Kuda diantaranya Dhawuk, Kembang duren, Jlitheng, Jragem, Rajeg, Tutul, Pancal Panggung','')</statement>
+<statement>INSERT INTO posts VALUES(323,13,'Ulese Kebo warnane Bule, Lamus','Warna Kerbau diantaranya Bule, Lamus','')</statement>
+<statement>INSERT INTO posts VALUES(324,13,'Ulese Kucing warnane Kembang Asem, Kembang Telon, Candra Mawa','Warna Kucing diantaranya Kembang Asem, Kembang Telon, Candra Mawa','')</statement>
+<statement>INSERT INTO posts VALUES(325,13,'Ulese Macan warnane Loreng, Tutul','Warna Macan diantaranya Loreng, Tutul','')</statement>
+<statement>INSERT INTO posts VALUES(326,13,'Ulese Pitik warnane Blorok, Gondhang, Lurik Sekul, Sangga Buwana, Tulak','Warna Ayam diantaranya Blorok, Gondhang, Lurik Sekul, Sangga Buwana, Tulak','')</statement>
+<statement>INSERT INTO posts VALUES(327,13,'Ulese Sapi warnane Plonthang','Warna Sapi diantaranya Plonthang','')</statement>
+<statement>INSERT INTO posts VALUES(328,13,'Ulese Wedhus warnane Kedhit, Ireng Mulus','Warna Wedhus diantaranya Kendhit, Ireng Mulus','')</statement>
+
+
+<!-- Sebutane mangan / Sebutan makan -->
+<statement>INSERT INTO posts VALUES(329,14,'Mangane Asu-Babi diarani Nocok','Sebutan makan Anjing-Babi disebut Nocok','')</statement>
+<statement>INSERT INTO posts VALUES(330,14,'Mangane Baya diarani Nyaplok','Sebutan makan Buaya disebut Nyaplok','')</statement>
+<statement>INSERT INTO posts VALUES(331,14,'Mangane Buta, Diyu diarani Mbadhog','Sebutan makan Buta, Diyu disebut Mbadhog','')</statement>
+<statement>INSERT INTO posts VALUES(332,14,'Mangane Celeng diarani Nggogos','Sebutan makan Celeng disebut Nggogos','')</statement>
+<statement>INSERT INTO posts VALUES(333,14,'Mangane Glathik diarani Nisil','Sebutan makan Glathik disebut Nisil','')</statement>
+<statement>INSERT INTO posts VALUES(334,14,'Mangane Kebo, Sapi diarani Nyenggut, Nggayemi','Sebutan makan Kerbau, Sapi disebut Nyenggut, Nggayemi','')</statement>
+<statement>INSERT INTO posts VALUES(335,14,'Mangane Kethek diarani Ngrokoti, Ngemil','Sebutan makan Monyet disebut Ngrokoti, Ngemil','')</statement>
+<statement>INSERT INTO posts VALUES(336,14,'Mangane Macan diarani Nggaglak','Sebutan makan Macan disebut Nggaglak','')</statement>
+<statement>INSERT INTO posts VALUES(337,14,'Mangane Pitik, Manuk diarani Nothol, Nucuk','Sebutan makan Ayam, Burung disebut Nothol, Nucuk','')</statement>
+<statement>INSERT INTO posts VALUES(338,14,'Mangane Singa diarani Mangsa','Sebutan makan Singa disebut Mangsa','')</statement>
+<statement>INSERT INTO posts VALUES(339,14,'Mangane Tikus diarani Ngrikiti','Sebutan makan Tikus disebut Ngrikiti','')</statement>
+<statement>INSERT INTO posts VALUES(340,14,'Mangane Ula diarani Nguntal','Sebutan makan Ular disebut Nguntal','')</statement>
+<statement>INSERT INTO posts VALUES(341,14,'Mangane Wedhus diarani Nyenggut, Nggayemi','Sebutan makan Kambing disebut Nyenggut, Nggayemi','')</statement>
+<statement>INSERT INTO posts VALUES(342,14,'Mangane Wong diarani Madhang','Sebutan makan Manusia disebut Makan','')</statement>
+
+</sql>

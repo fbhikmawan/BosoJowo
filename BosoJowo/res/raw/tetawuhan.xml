@@ -1,0 +1,140 @@
+<sql>
+<!-- Kembang / Bunga -->
+<statement>INSERT INTO posts VALUES(1,1,'Kembang Aren arane Dangu','Bunga Aren disebut Dangu','dangu')</statement>
+<statement>INSERT INTO posts VALUES(2,1,'Kembang Blimbing arane Maya','Bunga Belimbing disebut Maya','maya')</statement>
+<statement>INSERT INTO posts VALUES(3,1,'Kembang Blutru arane Montro','Bunga Blutru disebut Mantra','mantra')</statement>
+<statement>INSERT INTO posts VALUES(4,1,'Kembang Cengkeh arane Polong','Bunga Cengkeh disebut Polong ','')</statement>
+<statement>INSERT INTO posts VALUES(5,1,'Kembang Cubung arane Torong','Bunga Cubung disebut Torong ','')</statement>
+<statement>INSERT INTO posts VALUES(6,1,'Kembang Dhadhap arane Celung','Bunga Dhadhap disebut Celung','')</statement>
+<statement>INSERT INTO posts VALUES(7,1,'Kembang Duren arane Dlongop','Bunga Duren disebut Dlongop','')</statement>
+<statement>INSERT INTO posts VALUES(8,1,'Kembang Ganyong disebut Puspayindra','Kembang Ganyong disebut Puspayindra','')</statement>
+<statement>INSERT INTO posts VALUES(9,1,'Kembang Garut arane Grameng','Bunga Garut disebut Grameng','')</statement>
+<statement>INSERT INTO posts VALUES(10,1,'Kembang Gebang arane Krandhing','Bunga Gebang disebut Krandhing','')</statement>
+<statement>INSERT INTO posts VALUES(11,1,'Kembang Gedhang arane Ontong; tuntut','Bunga Pisang disebut Ontong','ontong')</statement>
+<statement>INSERT INTO posts VALUES(12,1,'Kembang Gembili arane Seneng','Bunga Gembili disebut Seneng','')</statement>
+<statement>INSERT INTO posts VALUES(13,1,'Kembang Jagung arane Sinuwun; jeprak','Bunga Jagung disebut Sinuwun (jeprak)','')</statement>
+<statement>INSERT INTO posts VALUES(14,1,'Kembang Jambe arane Mayang','Bunga Jambe disebut Mayang','')</statement>
+<statement>INSERT INTO posts VALUES(15,1,'Kembang Jarak arane Juwis','Bunga Jarak disebut Juwis','')</statement>
+<statement>INSERT INTO posts VALUES(16,1,'Kembang Jati arane Janggleng','Bunga Jati disebut Janggleng','')</statement>
+<statement>INSERT INTO posts VALUES(17,1,'Kembang Jengkol arane Kecuwis','Bunga Jengkol disebut Kecuwis','')</statement>
+<statement>INSERT INTO posts VALUES(18,1,'Kembang Kacang arane Besengut; Bundhel','Bunga Kacang disebut Besengut; Bundhel','')</statement>
+<statement>INSERT INTO posts VALUES(19,1,'Kembang Kanthil arane Gadhing','Bunga Kanthil disebut Gadhing','')</statement>
+<statement>INSERT INTO posts VALUES(20,1,'Kembang Kapas arane Kadi','Bunga Kapas disebut Kadi','')</statement>
+<statement>INSERT INTO posts VALUES(21,1,'Kembang Kara arane Kepek','Bunga Kara disebut Kepek','')</statement>
+<statement>INSERT INTO posts VALUES(22,1,'Kembang Kecipir arane Cethethet','Bunga Kecipir disebut Cethethet','')</statement>
+<statement>INSERT INTO posts VALUES(23,1,'Kembang Kelor arane Limaran','Bunga Kelor disebut Limaran','')</statement>
+<statement>INSERT INTO posts VALUES(24,1,'Kembang Kemladhingan arane Jedhidhing','Bunga Kemladhingan disebut Jedhidhing','')</statement>
+<statement>INSERT INTO posts VALUES(25,1,'Kembang Kencur arane Sedhet','Bunga Kencur disebut Sedhet','')</statement>
+<statement>INSERT INTO posts VALUES(26,1,'Kembang Tales; Kimpul arane Pancal','Bunga Tales; Kimpul disebut Pancal','')</statement>
+<statement>INSERT INTO posts VALUES(27,1,'Kembang Kluwih arane Onthel','Bunga Kluwih disebut Onthel','')</statement>
+<statement>INSERT INTO posts VALUES(28,1,'Kembang Kopi arane Blanggreng','Bunga Kopi disebut Blanggreng','')</statement>
+<statement>INSERT INTO posts VALUES(29,1,'Kembang Krambil arane Manggar','Bunga Kelapa disebut Manggar','')</statement>
+<statement>INSERT INTO posts VALUES(30,1,'Kembang Krokot arane Naknik','Bunga Krokot disebut Naknik','')</statement>
+<statement>INSERT INTO posts VALUES(31,1,'Kembang Lamtara arane Jedhidhing','Bunga Lamtara disebut Jedhidhing','')</statement>
+<statement>INSERT INTO posts VALUES(32,1,'Kembang Lombok arane Menik','Bunga Lombok disebut Menik','')</statement>
+<statement>INSERT INTO posts VALUES(33,1,'Kembang Mlinjo; So arane Uceng; Kroto','Bunga Mlinjo; So disebut Uceng; Kroto','')</statement>
+<statement>INSERT INTO posts VALUES(34,1,'Kembang Nangka arane Angkup','Bunga Nangka disebut Angkup','')</statement>
+<statement>INSERT INTO posts VALUES(35,1,'Kembang Nipah arane Dongong','Bunga Nipah disebut Dongong','')</statement>
+<statement>INSERT INTO posts VALUES(36,1,'Kembang Pandhan arane Pudhak','Bunga Pandhan disebut Pudhak','')</statement>
+<statement>INSERT INTO posts VALUES(37,1,'Kembang Pace arane Nyrewenteh','Bunga Pace disebut Nyrewenteh','')</statement>
+<statement>INSERT INTO posts VALUES(38,1,'Kembang Pete arane Pendul','Bunga Pete disebut Pendul','')</statement>
+<statement>INSERT INTO posts VALUES(39,1,'Kembang Pohong  arane Ingklik','Bunga Pohong disebut Ingklik','')</statement>
+<statement>INSERT INTO posts VALUES(40,1,'Kembang Pring arane Krosok','Bunga Pring disebut Krosok','')</statement>
+<statement>INSERT INTO posts VALUES(41,1,'Kembang Randhu arane Karuk','Bunga Randhu disebut Karuk','')</statement>
+<statement>INSERT INTO posts VALUES(42,1,'Kembang Salak arane Ketheker','Bunga Salak disebut Ketheker','')</statement>
+<statement>INSERT INTO posts VALUES(43,1,'Kembang Suruh arane Drenges','Bunga Suruh disebut Drenges','')</statement>
+<statement>INSERT INTO posts VALUES(44,1,'Kembang Tebu arane Glagah','Bunga Tebu disebut Glagah','')</statement>
+<statement>INSERT INTO posts VALUES(45,1,'Kembang Timun arane Montro','Bunga Timun disebut Montro','')</statement>
+<statement>INSERT INTO posts VALUES(46,1,'Kembang Widara putih arane Rejasa','Bunga Widara putih disebut Rejasa','')</statement>
+
+<!-- Pentil / buah yang masih kecil -->
+<statement>INSERT INTO posts VALUES(47,2,'Pentil Asem arane Cempaluk','Buah Asem yang masih kecil disebut Cempaluk','asem')</statement>
+<statement>INSERT INTO posts VALUES(48,2,'Pentil Jagung arane Janten','Buah Jagung yang masih kecil disebut Janten','')</statement>
+<statement>INSERT INTO posts VALUES(49,2,'Pentil Jambe arane Bleber','Buah Jambe yang masih kecil disebut Bleber','')</statement>
+<statement>INSERT INTO posts VALUES(50,2,'Pentil Jambu arane Karuk','Buah Jambu yang masih kecil disebut Karuk ','jambu')</statement>
+<statement>INSERT INTO posts VALUES(51,2,'Pentil Kacang arane Besengut','Buah Kacang yang masih kecil disebut Besengut ','')</statement>
+<statement>INSERT INTO posts VALUES(52,2,'Pentil Krambil arane','Buah Kelapa yang masih kecil disebut Bluluk - Cengkir - Degan','')</statement>
+<statement>INSERT INTO posts VALUES(53,2,'Pentil Manggis arane Blibar','Buah Manggis yang masih kecil disebut Blibar','')</statement>
+<statement>INSERT INTO posts VALUES(54,2,'Pentil Nangka disebut Babal - Gori','Buah Nangka yang masih kecil disebut Babal - Gori','')</statement>
+<statement>INSERT INTO posts VALUES(55,2,'Pentil Pelem arane Pencit','Buah Pelem yang masih kecil disebut Pencit','')</statement>
+<statement>INSERT INTO posts VALUES(56,2,'Pentil Randhu arane Plencing','Buah Kapas yang masih kecil disebut Plencing','')</statement>
+<statement>INSERT INTO posts VALUES(57,2,'Pentil Semangka arane Plonco','Buah Semangka yang masih kecil disebut Plonco','')</statement>
+<statement>INSERT INTO posts VALUES(58,2,'Pentil So; Melinjo arane Kroto','Buah Melinjo yang masih kecil disebut Kroto','')</statement>
+
+<!-- Woh / Buah -->
+<statement>INSERT INTO posts VALUES(59,3,'Woh Aren arane Kolang-kaling','BuahAren disebut Kolang-kaling','')</statement>
+<statement>INSERT INTO posts VALUES(60,3,'Woh Bengkowang arane Besusu','Buah Bengkowang disebut Besusu','')</statement>
+<statement>INSERT INTO posts VALUES(61,3,'Woh Cengkeh arane Polong','Buah Cengkeh disebut Polong','')</statement>
+<statement>INSERT INTO posts VALUES(62,3,'Woh Gebang arane Krandhing','Buah Gebang disebut Krandhing ','')</statement>
+<statement>INSERT INTO posts VALUES(63,3,'Woh Gembili arane Katak','Buah Gembili disebut Katak ','')</statement>
+<statement>INSERT INTO posts VALUES(64,3,'Woh Jati arane Janggleng','Buah Kelapa disebut Janggleng','')</statement>
+<statement>INSERT INTO posts VALUES(65,3,'Woh Kanthil arane Gandhenk','Buah Kanthil disebut Gandhenk','')</statement>
+<statement>INSERT INTO posts VALUES(66,3,'Woh Kelor arane Klenthang','Buah Kelor disebut Klenthang','')</statement>
+<statement>INSERT INTO posts VALUES(67,3,'Woh Kesambi arane Kecacil','Buah Kesambi disebut Kecacil','')</statement>
+<statement>INSERT INTO posts VALUES(68,3,'Woh Kluwek arane Pocung','Buah Kluwek disebut Pocung','')</statement>
+<statement>INSERT INTO posts VALUES(69,3,'Woh Pandhan eri arane Padhaga','Buah Pandhan eri disebut Padhaga','')</statement>
+<statement>INSERT INTO posts VALUES(70,3,'Woh So; Melinjo arane Mlinjo','Buah Melinjo disebut Melinjo','')</statement>
+<statement>INSERT INTO posts VALUES(71,3,'Woh Tal arane Siwalan','Buah Tal disebut Siwalan','')</statement>
+<statement>INSERT INTO posts VALUES(72,3,'Woh Turi arane Klenthang','Buah Turi disebut Klenthang','')</statement>
+<statement>INSERT INTO posts VALUES(73,3,'Woh Uwi arane Katak','Buah Uwi disebut Katak','')</statement>
+<statement>INSERT INTO posts VALUES(74,3,'Woh Widara Putih arane Anyang','Buah Widara Putih disebut Anyang','')</statement>
+
+<!-- Isi / Biji -->
+<statement>INSERT INTO posts VALUES(75,4,'Isi Aren arane Klungsu','Biji Aren disebut Klungsu','')</statement>
+<statement>INSERT INTO posts VALUES(76,4,'Isi Cipir arane Botor','Biji Cipir disebut Botor','')</statement>
+<statement>INSERT INTO posts VALUES(77,4,'Isi Duren arane Pongge','Biji Duren disebut Pongge','')</statement>
+<statement>INSERT INTO posts VALUES(78,4,'Isi Jambe arane Jebug','Biji Jambe disebut Jebug ','')</statement>
+<statement>INSERT INTO posts VALUES(79,4,'Isi Kapas arane Wuku','Biji Kapas disebut Wuku ','')</statement>
+<statement>INSERT INTO posts VALUES(80,4,'Isi Kates arane Trempos','Biji Kelapa disebut Trempos','')</statement>
+<statement>INSERT INTO posts VALUES(81,4,'Isi Kluwek arane Pocung','Biji Kluwek disebut Pocung','')</statement>
+<statement>INSERT INTO posts VALUES(82,4,'Isi Kluwih arane Bethem','Biji Kluwih disebut Bethem','')</statement>
+<statement>INSERT INTO posts VALUES(84,4,'Isi Krambil arane Kenthos','Biji Kelapa disebut Kentos','')</statement>
+<statement>INSERT INTO posts VALUES(85,4,'Isi Mlinjo arane Klathak','Biji Melinjo disebut Klatak','')</statement>
+<statement>INSERT INTO posts VALUES(86,4,'Isi Nangka arane Beton','Biji Nangka disebut Beton','')</statement>
+<statement>INSERT INTO posts VALUES(87,4,'Isi Pelem arane Pelok','Biji Mangga disebut Pelok','')</statement>
+<statement>INSERT INTO posts VALUES(89,4,'Isi Randhu arane Klentheng','Biji Randhu disebut Klentheng','')</statement>
+<statement>INSERT INTO posts VALUES(90,4,'Isi Salak arane Kenthos','Biji Salak disebut Kentos','')</statement>
+<statement>INSERT INTO posts VALUES(91,4,'Isi Sawo arane Kecik','Biji Sawo disebut Kecik','')</statement>
+<statement>INSERT INTO posts VALUES(92,4,'Isi Semangka arane Kuwaci','Biji Semangka disebut Kuwaci','')</statement>
+
+<!-- Wit / Pohon -->
+<statement>INSERT INTO posts VALUES(93,6,'Wit Aren arane Ruyung','Pohon Aren disebut Ruyung','')</statement>
+<statement>INSERT INTO posts VALUES(94,6,'Wit Gedhang arane Debog','Pohon Pisang disebut Debog','')</statement>
+<statement>INSERT INTO posts VALUES(95,6,'Wit Jagung arane Tebon','Pohon Jagung disebut Tebon','')</statement>
+<statement>INSERT INTO posts VALUES(96,6,'Wit Jambe arane Pucang','Pohon Jambe disebut Pucang','')</statement>
+<statement>INSERT INTO posts VALUES(97,6,'Wit Kacang arane Rendheng','Pohon Kacang disebut Rendheng','')</statement>
+<statement>INSERT INTO posts VALUES(98,6,'Wit Kapuk arane Randu','Pohon Kapuk disebut Randu','')</statement>
+<statement>INSERT INTO posts VALUES(99,6,'Wit Krambil arane Glugu','Pohon Kelapa disebut Glugu','')</statement>
+<statement>INSERT INTO posts VALUES(100,6,'Wit Mlinjo arane So - Bego','Pohon Melinjo disebut Bego','')</statement>
+<statement>INSERT INTO posts VALUES(101,6,'Wit Pari arane Damen','Pohon Padi disebut Jerami','')</statement>
+<statement>INSERT INTO posts VALUES(102,6,'Wit Pohong arane Benggong','Pohon Ketela disebut Benggong','')</statement>
+<statement>INSERT INTO posts VALUES(103,6,'Wit Pring enom arane Bung','Pohon Bambu muda disebut Bung','')</statement>
+<statement>INSERT INTO posts VALUES(104,6,'Wit Pring tuwa arane Bungkilan','Pohon Bambu tua disebut Bungkilan','')</statement>
+<statement>INSERT INTO posts VALUES(105,6,'Wit Siwalan arane Tal - Bogor','Pohon Siwalan disebut Bogor','')</statement>
+<statement>INSERT INTO posts VALUES(106,6,'Wit Tela arane Lung','Pohon Ubi disebut Lung','')</statement>
+
+<!-- Godhong / Daun -->
+<statement>INSERT INTO posts VALUES(107,5,'Godhong Aren arane Dliring','Bunga Aren disebut Dliring','')</statement>
+<statement>INSERT INTO posts VALUES(108,5,'Godhong Asem arane Sinom','Bunga Asem disebut Sinom','')</statement>
+<statement>INSERT INTO posts VALUES(109,5,'Godhong Cocor bebek arane Tiba urip','Bunga Cocor bebek disebut Tiba urip','')</statement>
+<statement>INSERT INTO posts VALUES(110,5,'Godhong Dhadhap arane Tawa','Bunga Dadap disebut Tawa ','')</statement>
+<statement>INSERT INTO posts VALUES(111,5,'Godhong Gedhang enom arane Pupus','Bunga Pisang muda disebut Pupus ','')</statement>
+<statement>INSERT INTO posts VALUES(112,5,'Godhong Gedhang tuwa arane Ujungan','Bunga Pisang Tua disebut Ujungan','')</statement>
+<statement>INSERT INTO posts VALUES(113,5,'Godhong Gedhang garing arane Klaras','Bunga Gedhang garing disebut Klaras','')</statement>
+<statement>INSERT INTO posts VALUES(114,5,'Godhong Gebang disebut Kajang','Godhong Gebang disebut Kajang','')</statement>
+<statement>INSERT INTO posts VALUES(115,5,'Godhong Jambe arane Pracat - Dedel','Bunga Jambe disebut Pracat - Dedel','')</statement>
+<statement>INSERT INTO posts VALUES(116,5,'Godhong Jarak arane Bledheg','Bunga Jarak disebut Bledheg','')</statement>
+<statement>INSERT INTO posts VALUES(117,5,'Godhong Jarak kebo arane Lomah-lameh','Bunga Jarak kebo disebut lomah-lameh','')</statement>
+<statement>INSERT INTO posts VALUES(118,5,'Godhong Jati arane Jompong','Daun Jati disebut Jompong','')</statement>
+<statement>INSERT INTO posts VALUES(119,5,'Godhong Kacang brol arane Rendeng','Daun Kacang tanah disebut Rendeng','')</statement>
+<statement>INSERT INTO posts VALUES(120,5,'Godhong Kacang lanjaran arane Lembayung','Daun Kacang panjang disebut Lembayung','')</statement>
+<statement>INSERT INTO posts VALUES(121,5,'Godhong Kates arane Gampleng','Daun Pepaya disebut Gampleng','')</statement>
+<statement>INSERT INTO posts VALUES(122,5,'Godhong Kecipir arane Cethethet','Daun Kecipir disebut Cetetet','')</statement>
+<statement>INSERT INTO posts VALUES(123,5,'Godhong Kelor arane Limaran','Daun Kelor disebut Limaran','')</statement>
+<statement>INSERT INTO posts VALUES(124,5,'Godhong Kemladheyan arane Kumuda','Daun Parasit disebut Kumuda','')</statement>
+<statement>INSERT INTO posts VALUES(125,5,'Godhong Kluwih arane Kleyang','Daun Kluwih disebut Kleyang','')</statement>
+<statement>INSERT INTO posts VALUES(126,5,'Godhong Krambil enom arane Janur','Daun Kelapa muda disebut Janur','')</statement>
+
+<statement>INSERT INTO posts VALUES(127,2,'Pentil Timun arane Serit','Buah Mentimun yang masih kecil disebut Serit','')</statement>
+
+</sql>

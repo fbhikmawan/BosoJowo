@@ -1,0 +1,209 @@
+<sql>
+<statement>INSERT INTO posts VALUES(2186,199,'Raden Abimanyu	: Plangkawati','','abimanyu')</statement>
+<statement>INSERT INTO posts VALUES(2187,199,'Raden Anoman	: Kendhali Sada','','anoman')</statement>
+<statement>INSERT INTO posts VALUES(2188,199,'Raden Aswotomo	: Sokolima','','aswotomo')</statement>
+<statement>INSERT INTO posts VALUES(2189,199,'Raden Dursasana	: Bajar jumput','','dursasana')</statement>
+<statement>INSERT INTO posts VALUES(2190,199,'Raden Gathutkaca	: Pringgandani','','gatotkaca')</statement>
+<statement>INSERT INTO posts VALUES(2191,199,'Raden Irawan	: Yasarata','','irawan')</statement>
+<statement>INSERT INTO posts VALUES(2192,199,'Raden Jayajatra	: Bwana Keling','','')</statement>
+<statement>INSERT INTO posts VALUES(2193,199,'Raden Janaka	: Madukara','','janaka')</statement>
+<statement>INSERT INTO posts VALUES(2194,199,'Raden Mandra Kumara	: Saroja Binangun','','lesmana')</statement>
+<statement>INSERT INTO posts VALUES(2195,199,'Raden Nakula	: Bumi Ratawu/Gumbiratalun','','nakula')</statement>
+<statement>INSERT INTO posts VALUES(2196,199,'Raden Ontorejo	: Jangkar Bumi','','ontorejo')</statement>
+<statement>INSERT INTO posts VALUES(2197,199,'Raden Ontoseno	: Sapta Baruna','','ontoseno')</statement>
+<statement>INSERT INTO posts VALUES(2198,199,'Raden Kartamarma	: Tirta Tinalang','','kartamarma')</statement>
+<statement>INSERT INTO posts VALUES(2199,199,'Raden Sadewa	: Sawojajar','','sadewa')</statement>
+<statement>INSERT INTO posts VALUES(2200,199,'Raden Setiyaka	: Tambak Mas','','setyaka')</statement>
+<statement>INSERT INTO posts VALUES(2201,199,'Raden Setyaki	: Lesanpura','','setyaki')</statement>
+<statement>INSERT INTO posts VALUES(2202,199,'Raden Somba	: Parang Garudha','','samba')</statement>
+<statement>INSERT INTO posts VALUES(2203,199,'Raden Suman	: Plasa Jenar','','sengkuni')</statement>
+<statement>INSERT INTO posts VALUES(2204,199,'Raden Udawa	: Widarakandhang','','udawa')</statement>
+<statement>INSERT INTO posts VALUES(2205,199,'Raden Werkudara	: Jodhipati','','werkudara')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2206,200,'Begawan Abiyasa	: Pertapan saptaaga','','')</statement>
+<statement>INSERT INTO posts VALUES(2207,200,'Begawan Anoman	: Pertapan Kendhaiisada','','')</statement>
+<statement>INSERT INTO posts VALUES(2208,200,'Begawan Padmanaba	: Pertapan Argosonya','','')</statement>
+<statement>INSERT INTO posts VALUES(2209,200,'Begawan Ciptahening	: Pertapan Mintaraga','','')</statement>
+<statement>INSERT INTO posts VALUES(2210,200,'Begawan Sidikwasana	: Pertapan Andongsumawi','','')</statement>
+<statement>INSERT INTO posts VALUES(2211,200,'Pandhita Durna	: Pertapan Sokalima','','')</statement>
+<statement>INSERT INTO posts VALUES(2212,200,'Resi Bisma	: Pertapan Talkandha','','')</statement>
+<statement>INSERT INTO posts VALUES(2213,200,'Resi Jembawan	: Pertapan Gandamadama','','')</statement>
+<statement>INSERT INTO posts VALUES(2214,200,'Resi Seta	: Pertapan Sela Prawata','','')</statement>
+<statement>INSERT INTO posts VALUES(2215,200,'Resi Subali	: Pertapan Guwakiskendha','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2216,201,'Aji Candabirawa, kagungane : Prabu Salya','','')</statement>
+<statement>INSERT INTO posts VALUES(2217,201,'Aji Grayang, kagungane : Prabu Detarastra','','')</statement>
+<statement>INSERT INTO posts VALUES(2218,201,'Aji Narantaka, kagungane : - Raden Gathutkaca, Resi seta','','')</statement>
+<statement>INSERT INTO posts VALUES(2219,201,'Aji Pancasona, kagungane : - Prabu Danaraja, Prabu Dasamuka, Prabu Suteja, Resi Subali','','')</statement>
+<statement>INSERT INTO posts VALUES(2220,201,'Aji Sepiangun, kagungane : Raden Janaka','','')</statement>
+<statement>INSERT INTO posts VALUES(2221,201,'Buku Jitabsara, kagungane : Raden Kresna','','')</statement>
+<statement>INSERT INTO posts VALUES(2222,201,'Caping Basumanda, kagungane : Prabu Gathutkaca','','')</statement>
+<statement>INSERT INTO posts VALUES(2223,201,'Cincin Sotyaningampal, kagungane : raden Janaka','','')</statement>
+<statement>INSERT INTO posts VALUES(2224,201,'Cundha manik, kagungane : resi Durna','','')</statement>
+<statement>INSERT INTO posts VALUES(2225,201,'Gada Inten, kagungane : Prabu Duryadana','','')</statement>
+<statement>INSERT INTO posts VALUES(2226,201,'Gada Lukita Sari, kagungane : Raden Werkudara','','')</statement>
+<statement>INSERT INTO posts VALUES(2227,201,'Gada Wesi Kuning, kagungane : Raden Setyaki, Minakjingga','','')</statement>
+<statement>INSERT INTO posts VALUES(2228,201,'Jimat Kalima Sada, kagungane : Prabu Puntadewa','','')</statement>
+<statement>INSERT INTO posts VALUES(2229,201,'Kembang Wijaya Kusuma, kagungane : Kresna','','')</statement>
+<statement>INSERT INTO posts VALUES(2230,201,'Kepel Brahadhenta, kagungane : Raden Gathutkaca','','')</statement>
+<statement>INSERT INTO posts VALUES(2231,201,'Keris Kala Dete, kagungane : Prabu Karna','','')</statement>
+<statement>INSERT INTO posts VALUES(2232,201,'Keris Pulanggeni, kagungane : Raden janaka','','')</statement>
+<statement>INSERT INTO posts VALUES(2233,201,'Kotang Ontokesuma, kagungane : Raden Gathutkaca','','')</statement>
+<statement>INSERT INTO posts VALUES(2234,201,'Kuku Pancanaka, kagungane : Raden Werkudara','','')</statement>
+<statement>INSERT INTO posts VALUES(2235,201,'Kyai Pethel, kagungane : Lurah Petruk','','')</statement>
+<statement>INSERT INTO posts VALUES(2236,201,'Nenggala lan Alugara, kagungane : Prabu Baladewa','','')</statement>
+<statement>INSERT INTO posts VALUES(2237,201,'Panah Arda Dhedhali, kagungane : Raden Janaka','','')</statement>
+<statement>INSERT INTO posts VALUES(2238,201,'Panah Candrasa, kagungane : Prabu Dasamuka','','')</statement>
+<statement>INSERT INTO posts VALUES(2239,201,'Panah Guwa Wijaya, kagungane : Prabu Rama','','')</statement>
+<statement>INSERT INTO posts VALUES(2240,201,'Panah Jungkat Penatas, kagungane : Resi Bisma','','')</statement>
+<statement>INSERT INTO posts VALUES(2241,201,'Panah Nagapasa, kagungane : Raden Indrajid','','')</statement>
+<statement>INSERT INTO posts VALUES(2242,201,'Panah Pasopati, kagungane : Raden Janaka','','')</statement>
+<statement>INSERT INTO posts VALUES(2243,201,'Panah Sarutama, kagungane : Raden janaka','','')</statement>
+<statement>INSERT INTO posts VALUES(2244,201,'Rujak Polo, kagungane : Raden Werkudara','','')</statement>
+<statement>INSERT INTO posts VALUES(2245,201,'Senjata Cakra, kagungane : Prabu Kresna','','')</statement>
+<statement>INSERT INTO posts VALUES(2246,201,'Senjata Kuntawijadanu, kagungane : Prabu Karna','','')</statement>
+<statement>INSERT INTO posts VALUES(2247,201,'Senjata Wijaya Capa, kagungane : Prabu Karna','','')</statement>
+<statement>INSERT INTO posts VALUES(2248,201,'Trumpah Madukacerma, kagungane : Raden Gathutkaca','','')</statement>
+<statement>INSERT INTO posts VALUES(2249,201,'Upas Wisa, kagungane : Raden Ontoreja','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2250,202,'Prabu Abiyasa, ratu idi : Ngastina','Prabu Abiyasa, ','')</statement>
+<statement>INSERT INTO posts VALUES(2251,202,'Prabu Arjuna Sasra, ratu di : Maespati','Prabu Arjuna Sasra, ','')</statement>
+<statement>INSERT INTO posts VALUES(2252,202,'Prabu Baladewa, ratu ing : Mandura','Prabu Baladewa, ratu di : Mandura','')</statement>
+<statement>INSERT INTO posts VALUES(2253,202,'Prabu Basudewa, ratu ing : Mandura','Prabu Basudewa, ratu di : Mandura','')</statement>
+<statement>INSERT INTO posts VALUES(2254,202,'Prabu Danaraja, ratu ing : Lokapala','Prabu Danaraja, ratu di : Lokapala','')</statement>
+<statement>INSERT INTO posts VALUES(2255,202,'Prabu Dasamuka, ratu ing : Ngalengka','Prabu Dasamuka, ratu di : Ngalengka','')</statement>
+<statement>INSERT INTO posts VALUES(2256,202,'Prabu Dasarata, ratu ing : Ayodya pala/Kosala','Prabu Dasarata, ratu di : Ayodya pala/Kosala','')</statement>
+<statement>INSERT INTO posts VALUES(2257,202,'Prabu Dewa Srani, ratu ing : Rancang Kencana','Prabu Dewa Srani, ratu di : Rancang Kencana','')</statement>
+<statement>INSERT INTO posts VALUES(2258,202,'Prabu Drupada, ratu ing : Pancalaradya','Prabu Drupada, ratu di : Pancalaradya','')</statement>
+<statement>INSERT INTO posts VALUES(2259,202,'Prabu Duryadana, ratu ing : Ngastina','Prabu Duryadana, ratu di : Ngastina','')</statement>
+<statement>INSERT INTO posts VALUES(2260,202,'Prabu Janaka, ratu ing : Manthili','Prabu Janaka, ratu ing : Manthili','')</statement>
+<statement>INSERT INTO posts VALUES(2261,202,'Prabu Jungkung Mardeya, ratu ing : Paranggubarja','Prabu Jungkung Mardeya, ratu idi : Paranggubarja','')</statement>
+<statement>INSERT INTO posts VALUES(2262,202,'Prabu Karna, ratu ing : Ngawangga','Prabu Karna, ratu di : Ngawangga','')</statement>
+<statement>INSERT INTO posts VALUES(2263,202,'Prabu Kresna, ratu ing : Dwarawati','Prabu Kresna, ratu di : Dwarawati','')</statement>
+<statement>INSERT INTO posts VALUES(2264,202,'Prabu Matswapati, ratu ing : Wiratha','Prabu Matswapati, ratu di : Wiratha','')</statement>
+<statement>INSERT INTO posts VALUES(2265,202,'Prabu Niwatakawaca, , ratu ing : Imantaka','Prabu Niwatakawaca, , ratu di : Imantaka','')</statement>
+<statement>INSERT INTO posts VALUES(2266,202,'Prabu Palgunadi, ratu ing : Paranggelung','Prabu Palgunadi, ratu di : Paranggelung','')</statement>
+<statement>INSERT INTO posts VALUES(2267,202,'Prabu Pandhu, ratu ing : Ngastina','Prabu Pandhu, ratu di : Ngastina','')</statement>
+<statement>INSERT INTO posts VALUES(2268,202,'Prabu Puntadewa, ratu ing : Ngamarta','Prabu Puntadewa, ratu di : Ngamarta','')</statement>
+<statement>INSERT INTO posts VALUES(2269,202,'Prabu Rama, ratu ing : Pancawati','Prabu Rama, ratu di : Pancawati','')</statement>
+<statement>INSERT INTO posts VALUES(2270,202,'Prabu Salyapati, ratu ing : Mandaraka','Prabu Salyapati, ratu di : Mandaraka','')</statement>
+<statement>INSERT INTO posts VALUES(2271,202,'Prabu Sentanu, ratu ing : Ngastina','Prabu Sentanu, ratu di : Ngastina','')</statement>
+<statement>INSERT INTO posts VALUES(2272,202,'Prabu Somali, ratu ing : Palebur Gangsa','Prabu Somali, ratu di : Palebur Gangsa','')</statement>
+<statement>INSERT INTO posts VALUES(2273,202,'Prabu Sugriwa, ratu ing : Guwa Kiskendha','Prabu Sugriwa, ratu di : Guwa Kiskendha','')</statement>
+<statement>INSERT INTO posts VALUES(2274,202,'Prabu Suteja, ratu ing : Trajutrisna','Prabu Suteja, ratu di : Trajutrisna','')</statement>
+
+
+
+<statement>INSERT INTO posts VALUES(2275,203,'Bathara Endra, ing kahyangan : Endra Loka','Bathara Endra, di kahyangan : Endra Loka','')</statement>
+<statement>INSERT INTO posts VALUES(2276,203,'Bathara Brama, ing kahyangan : Arga Dahana','Bathara Brama, di kahyangan : Arga Dahana','')</statement>
+<statement>INSERT INTO posts VALUES(2277,203,'Bathara Kamajaya, ing kahyangan : Cakra Kembang','Bathara Kamajaya, di kahyangan : Cakra Kembang','')</statement>
+<statement>INSERT INTO posts VALUES(2278,203,'Bathara Wisnu, ing kahyangan : Ariloka','Bathara Wisnu, di kahyangan : Ariloka','')</statement>
+<statement>INSERT INTO posts VALUES(2279,203,'Bathara Yama, ing kahyangan : Yomani Loka','Bathara Yama, di kahyangan : Yomani Loka','')</statement>
+<statement>INSERT INTO posts VALUES(2280,203,'Bathara Durga, ing kahyangan : Setra Ganda Mayit','Bathara Durga, di kahyangan : Setra Ganda Mayit','')</statement>
+<statement>INSERT INTO posts VALUES(2281,203,'Sang Hyang Antaboga, ing kahyangan : Sapta Pratala','Sang Hyang Antaboga, di kahyangan : Sapta Pratala','')</statement>
+<statement>INSERT INTO posts VALUES(2282,203,'Sang Hyang Bathara Guru, ing kahyangan : Junggring Saloka','Sang Hyang Bathara Guru, di kahyangan : Junggring Saloka','')</statement>
+<statement>INSERT INTO posts VALUES(2283,203,'Sang Hyang Nagaraja, ing kahyangan : Sumur Jalatundha','Sang Hyang Nagaraja, di kahyangan : Sumur Jalatundha','')</statement>
+<statement>INSERT INTO posts VALUES(2284,203,'Sang Hyang Wenang, ing kahyangan : Ngandar-andir Bawana','Sang Hyang Wenang, di kahyangan : Ngandar-andir Bawana','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2285,204,'Abdine Pandhawa :
+1. Semar
+2. Gareng
+3. Petruk
+4. Bagong','','')</statement>
+<statement>INSERT INTO posts VALUES(2286,204,'Abdine P. Suyudana :
+1. Cangik
+2. Limbuk','','')</statement>
+<statement>INSERT INTO posts VALUES(2287,204,'Abdine B. Abiyasa : Cantrik Janaloka','','')</statement>
+<statement>INSERT INTO posts VALUES(2288,204,'Abdine Ratu Sabrang :
+1. Togog
+2. Mbilung','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2289,205,'Raden janaka = Arjuna, Premadi, Margana, Pamadya, Dananjaya, Mintaraga, Ciptahening, Prabu Kariti, Kendhitatnala, Palguna, Kombang Ali-ali, Jlamprong, Endra Putra, Endra Tanaya, Wijanarka','','')</statement>
+<statement>INSERT INTO posts VALUES(2290,205,'Raden Werkudara = Bayu Suta, Bayu Putra, Arya Panenggak, Bratasena, Bima, Jagal Bilawa, Wijasena','','')</statement>
+<statement>INSERT INTO posts VALUES(2291,205,'Puntadewa = Yudhistira, Wijakangka, Gunatali, Krama, Ajata Satru','','')</statement>
+<statement>INSERT INTO posts VALUES(2292,205,'Kresna = Nayarana, Padmanaba, Wreniwira, Ari Murti, Wisnu Murti, Wasu Dewa Putra, Narasinga','','')</statement>
+<statement>INSERT INTO posts VALUES(2293,205,'Anoman = Anjani Putra, Kapiwara, Rewandapingul, Wanara Seta, Senggana, Rama Handayapati','','')</statement>
+<statement>INSERT INTO posts VALUES(2294,205,'Duryadana = Kurupati, Suyudana, Dasradmaja, Gendari Suta, Jakapitana, Tri Panangsah, Pambangun Kuru, Kurendra Pati','','')</statement>
+<statement>INSERT INTO posts VALUES(2295,205,'Semar = Ismaya, Badranaya, Nayantaka, Sukma Sejati, Sukma Ekalaya','','')</statement>
+<statement>INSERT INTO posts VALUES(2296,205,'Bathara Guru = Girinata, Sang Hyang Jagad Nata, Pukulun Pramesthi, Ciwa Maha Dewa','','')</statement>
+<statement>INSERT INTO posts VALUES(2297,205,'Gathutkaca = Purbaya, Kaca Negara, Tetuka, Kerincing Wesi, Bima Suta, Rimbat Maja, Arimbi Putra','','')</statement>
+<statement>INSERT INTO posts VALUES(2298,205,'Abimanyu = Pangaribawa, Bambang Pengalasan, Angka Wijaya, Parta Tanaya, Palguna Putra, Tanjung Anom, Satriya Plangkawati','','')</statement>
+<statement>INSERT INTO posts VALUES(2299,205,'Dasamuka = Rahwana','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2300,206,'Miturut wujude gamelan ana 2:
+1. Gamelan Gedhe
+2. Gamelan Barut','Menurut wujudnya gamelan ada 2:
+1. Gamelan Gede
+2. Gamelan Barut','')</statement>
+
+
+
+<statement>INSERT INTO posts VALUES(2301,207,'Miturut swarane gamelan ana 2:
+1. Gamelan Pelog
+2. Gamelan Slendro','Menurut suara gamelan ada 2:
+1. Gamelan Pelog
+2. Gamelan Slendro','')</statement>
+
+<statement>INSERT INTO posts VALUES(2302,208,'Perangan gamelan ana warna-warna:
+1. Bonang
+2. Demung
+3. Gambang
+4. Gender
+5. Gong
+6. Kempul
+7. Kendhang
+8. Kenong
+9. Kethuk
+10. Peking
+11. Rebab
+12. Saron
+13. Siter
+14. Suwuk
+15. Thimplung, lsp.','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2303,209,'Gaweyane:
+1. Dhalang : tukang nglakokake lakon wayang
+2. Waranggana : utawa pesindhen, tukang nembang gendhing-gendhing ing pagelaran wayang
+3. Niyaga : tukang nabuh gamelan','','')</statement>
+
+<statement>INSERT INTO posts VALUES(2304,210,'Gerong-
+Gerong yaiku nabuh gamelan sinambi nembang','','')</statement>
+
+
+<statement>INSERT INTO posts VALUES(2305,211,'Nabuh gamelan kudu ngerti : Pathet lan Wilet
+1. Pathet : Jero cetheke swara utawa cendhek-dhuwure swara
+	Lumrahe : Yen wayah sore - pathet 6
+			  Yen wayah bengi - pathet 9
+			  
+2. Wilet : yaiku sambungane swara ','','')</statement>
+<statement>INSERT INTO posts VALUES(2306,212,'laras
+laras yaiku runtute swara gamelan
+- Dilaras : Diruntutake swara siji-sijine gamelan, diruntutake cendhek-dhuwure lan gedhe-cilike','','')</statement>
+<statement>INSERT INTO posts VALUES(2307,213,'Bahan Gamelan
+Bahan gamelan sing becik digawe saka Prunggu','','')</statement>
+
+<statement>INSERT INTO posts VALUES(2308,214,'Arane Gendhing-Gendhing:
+1. Gendhing Clunthang
+2. Gendhing Gilang
+3. Gendhing Gonjon miring
+4. Gendhing Grompol
+5. Gendhing Pangkur
+6. Gendhing Puspawarna
+7. Gendhing Sinom Parijata
+8, Gendhing Srikaton
+9. Gendhing Srikarongron
+10. Gendhing Ulerkambang, lsp.','','')</statement>
+
+<statement>INSERT INTO posts VALUES(2309,215,'Aksara Jawa/Hanacaraka
+HA - NA - CA - RA - KA
+DA - TA - SA - WA - LA
+PA - DHA - JA - YA - NYA
+MA - GA - BA - THA - NGA','','hanacaraka')</statement>
+</sql>
