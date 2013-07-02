@@ -2,6 +2,7 @@ package com.dephi.bosojowo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
@@ -21,7 +22,7 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 	private DatabaseHelper db;
 	
 	private ListView _list;
-	private ListAdapter _adapter;
+	private AdapterList _adapter;
 	
 	private String _nextSource;
 	
@@ -68,7 +69,7 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-    	BosoJowoUtilities.createActionBarBosoJowo(this, menu);
+    	new BosoJowoUtilities(_adapter).createActionBarBosoJowo(this, menu);
         return super.onCreateOptionsMenu(menu);
     }
     

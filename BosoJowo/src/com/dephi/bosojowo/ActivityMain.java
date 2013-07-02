@@ -57,7 +57,7 @@ public class ActivityMain extends SherlockActivity{
 
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-    	BosoJowoUtilities.createActionBarBosoJowo(this, menu);
+		new BosoJowoUtilities().createActionBarBosoJowo(this, menu);
         return super.onCreateOptionsMenu(menu);
     }
     

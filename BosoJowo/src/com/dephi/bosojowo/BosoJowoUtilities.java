@@ -1,13 +1,16 @@
 package com.dephi.bosojowo;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import android.content.Context;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
@@ -25,12 +28,19 @@ public class BosoJowoUtilities {
 	public static final int third = 2;
 	
 	private EditText mEditsearch;
-	private TextWatcher textWatcher = new TextWatcher() {
-
+	private TextWatcher mTextWatcher;
+	
+	public BosoJowoUtilities() {
+		
+	}
+	
+	public BosoJowoUtilities(final AdapterList adapter) {
+		// Sets the TextWatcher
+		mTextWatcher = new TextWatcher() {
 			@Override
 			public void afterTextChanged(Editable s) {
 				// TODO Auto-generated method stub
-				String text = editsearch.getText().toString()
+				String text = mEditsearch.getText().toString()
 						.toLowerCase(Locale.getDefault());
 				adapter.filter(text);
 			}
@@ -39,20 +49,14 @@ public class BosoJowoUtilities {
 			public void beforeTextChanged(CharSequence arg0, int arg1, int arg2,
 					int arg3) {
 				// TODO Auto-generated method stub
-
 			}
 
 			@Override
 			public void onTextChanged(CharSequence arg0, int arg1, int arg2,
 					int arg3) {
 				// TODO Auto-generated method stub
-
 			}
-
 		};
-	
-	public BosoJowoUtilities() {
-		
 	}
 	
 	public void createActionBarBosoJowo(final Context context, Menu menu) {		
@@ -67,7 +71,7 @@ public class BosoJowoUtilities {
 		
 		// Sets Listener to TextChanged
 		mEditsearch = (EditText) menuItemSearch.getActionView(); 
-		mEditsearch.addTextChangedListener(watcher);
+		mEditsearch.addTextChangedListener(mTextWatcher);
 		
 		// Sets Listener to Search ActionBar
 		menuItemSearch.setOnActionExpandListener(new OnActionExpandListener() {
@@ -106,6 +110,19 @@ public class BosoJowoUtilities {
 		 * .setIcon(R.drawable.ic_action_help)
 		 * .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
 		 */
-
+	}
+	
+	public static void copyToNewList(ArrayList<HashMap<String, String>> from, ArrayList<HashMap<String, String>> target){
+		for(HashMap<String, String> map: from) {
+			HashMap<String, String> tmp = new HashMap<String, String>();
+			HashMap<String, String> toCopy = new HashMap<String, String>();
+		    for(Entry<String, String> mapEntry: map.entrySet()) {
+		    	tmp.put(mapEntry.getKey(), mapEntry.getValue());
+		    }
+		    tmp.keySet().removeAll(toCopy.keySet());
+			toCopy.putAll(tmp);
+			
+		    target.add(toCopy);
+		}
 	}
 }
