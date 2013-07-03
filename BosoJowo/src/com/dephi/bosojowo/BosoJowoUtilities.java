@@ -59,20 +59,52 @@ public class BosoJowoUtilities {
 		};
 	}
 	
-	public void createActionBarBosoJowo(final Context context, Menu menu) {		
-		// Sets for Search ActionBar 
-		MenuItem menuItemSearch = menu.add(Menu.NONE, BosoJowoUtilities.search, BosoJowoUtilities.first,
-				R.string.search)
-				.setIcon(R.drawable.ic_action_search)
-				.setActionView(R.layout.collapsible_edittext)
-				.setShowAsActionFlags(
-						MenuItem.SHOW_AS_ACTION_IF_ROOM
-								| MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW);
+	/**
+	 * Membuat ActionBar untuk halaman Launcher
+	 * 
+	 * @param context Context yang aktif
+	 * @param menu Menu dari Activity yang aktif
+	 */
+	public void createActionBarLauncher(final Context context, Menu menu){
+		createActionBarBosoJowo(context, menu, true);
+	}
+	
+	/**
+	 * Membuat ActionBar untuk halaman-halaman isi
+	 * 
+	 * @param context Context yang aktif
+	 * @param menu Menu dari Activity yang aktif
+	 */
+	public void createActionBarContent(final Context context, Menu menu){
+		createActionBarBosoJowo(context, menu, false);
+	}
+	
+	/**
+	 * Fungsi Dasar untuk membuat ActionBar
+	 * 
+	 * @param context Context yang aktif
+	 * @param menu Menu dari Activity yang aktif
+	 * @param forLauncher Boolean apakah untuk launcher atau tidak
+	 */
+	private void createActionBarBosoJowo(final Context context, Menu menu, boolean forLauncher) {		
+		if(!forLauncher){
+			// Sets for Search ActionBar 
+			MenuItem menuItemSearch = menu.add(Menu.NONE, BosoJowoUtilities.search, BosoJowoUtilities.first,
+					R.string.search)
+					.setIcon(R.drawable.ic_action_search)
+					.setActionView(R.layout.collapsible_edittext)
+					.setShowAsActionFlags(
+							MenuItem.SHOW_AS_ACTION_IF_ROOM
+									| MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW);
+			// Sets Listener to TextChanged
+			mEditsearch = (EditText) menuItemSearch.getActionView(); 
+			mEditsearch.addTextChangedListener(mTextWatcher);
+		}
 		
-		// Sets Listener to TextChanged
-		mEditsearch = (EditText) menuItemSearch.getActionView(); 
-		mEditsearch.addTextChangedListener(mTextWatcher);
 		
+		/*
+		 * Untuk mendeteksi/mengolah saat expand dan collapse
+		 * 
 		// Sets Listener to Search ActionBar
 		menuItemSearch.setOnActionExpandListener(new OnActionExpandListener() {
 			@Override
@@ -95,8 +127,7 @@ public class BosoJowoUtilities {
 				searchText.clearFocus();
 				return true;
 			}
-		});
-		
+		});*/
 		
 		// Sets for Info ActionBar
 		int menuItemIdInfo = menu.add(Menu.NONE, BosoJowoUtilities.info, BosoJowoUtilities.third,
@@ -112,6 +143,12 @@ public class BosoJowoUtilities {
 		 */
 	}
 	
+	/**
+	 * Fungsi untuk mendukung AutoSearch, yaitu menduplikasi 
+	 * 
+	 * @param from ArrayList sumber
+	 * @param target
+	 */
 	public static void copyToNewList(ArrayList<HashMap<String, String>> from, ArrayList<HashMap<String, String>> target){
 		for(HashMap<String, String> map: from) {
 			HashMap<String, String> tmp = new HashMap<String, String>();

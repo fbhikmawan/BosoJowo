@@ -69,7 +69,7 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-    	new BosoJowoUtilities(_adapter).createActionBarBosoJowo(this, menu);
+    	new BosoJowoUtilities(_adapter).createActionBarContent(this, menu);
         return super.onCreateOptionsMenu(menu);
     }
     

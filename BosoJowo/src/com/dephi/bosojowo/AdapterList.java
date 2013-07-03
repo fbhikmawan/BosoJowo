@@ -92,10 +92,9 @@ public class AdapterList extends BaseAdapter {
 			for (HashMap<String, String> search : mOriginalData) {
 				String lala = search.toString();
 				Log.v("Isi ", lala);
-				/*if (wp.getCountry().toLowerCase(Locale.getDefault())
-						.contains(charText)) {
-					mData.add(wp);
-				}*/
+				if (lala.toLowerCase(Locale.getDefault()).contains(charText)) {
+					mData.add(search);
+				}
 			}
 		}
 		notifyDataSetChanged();
