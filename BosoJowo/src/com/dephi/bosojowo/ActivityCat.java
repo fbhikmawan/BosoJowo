@@ -2,7 +2,6 @@ package com.dephi.bosojowo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
@@ -13,9 +12,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class ActivityCat extends SherlockActivity implements OnItemClickListener{
 	private ArrayList<HashMap<String, String>> resultDB;
@@ -33,7 +30,7 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 		
 		// Inisiasi variabel member
 		db = new DatabaseHelper(this);
-		_list = (ListView)findViewById(R.id.listView1);
+		_list = (ListView)findViewById(R.id.listContent);
 		
 		// Ambil Intent Ektra dari pemanggilan sebelumnya
 		Intent intent = getIntent();
@@ -69,27 +66,13 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 	
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-    	new BosoJowoUtilities(_adapter).createActionBarContent(this, menu);
+    	new Utilities(_adapter).createActionBarWholeApp(this, menu);
         return super.onCreateOptionsMenu(menu);
     }
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {    	
-    	switch (item.getItemId()) {
-		case BosoJowoUtilities.search:
-			Toast.makeText(this, "Got click: " + item.toString(), Toast.LENGTH_SHORT).show();
-			break;
-		case BosoJowoUtilities.help:
-			Toast.makeText(this, "Got click: " + item.toString(), Toast.LENGTH_SHORT).show();
-			break;
-		case BosoJowoUtilities.info:
-			Toast.makeText(this, "Got click: " + item.toString(), Toast.LENGTH_SHORT).show();
-			break;
-		case android.R.id.home:
-			finish();
-		default:
-			break;
-		}
+    	new Utilities(this).actionBarResponseWholeApp(this, item);
     	return super.onOptionsItemSelected(item);
     }
 

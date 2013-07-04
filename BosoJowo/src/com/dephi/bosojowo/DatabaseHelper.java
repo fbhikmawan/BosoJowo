@@ -279,21 +279,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		db.close();
 		return resultDB;
 	}
-	
+
 	/**
-	 * Panggillah fungsi ini selalu, untuk mencari 
-	 * nama-nama tabel yang ada :-)
+	 * Panggillah fungsi ini selalu, untuk mencari nama-nama tabel yang ada :-)
 	 */
 	private void loadsAllTables() {
 		if (sTableNames == null) {
 			Log.v(TAG, "Loads All Table's Name");
-			
+
 			// Database Query
 			SQLiteDatabase db = this.getWritableDatabase();
 			Cursor cursor = db.rawQuery(
 					"SELECT name FROM sqlite_master WHERE type='table'",
 					new String[] {});
-			
+
 			// Mengisi variabel staticnya
 			int count = cursor.getCount() - 1;
 			Log.v(TAG, "getCount() = " + count);
@@ -309,9 +308,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 				Log.v(TAG,
 						"ColoumnCount on this positiion  = "
 								+ cursor.getColumnCount());
-				Log.v(TAG,
-						"Table's name on this position  = "
-								+ currentTableName);
+				Log.v(TAG, "Table's name on this position  = "
+						+ currentTableName);
 				sTableNames[i] = currentTableName;
 			}
 			db.close();
@@ -320,7 +318,37 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		}
 	}
 
+	public ArrayList<HashMap<String, String>> getSearchResult(String keyword) {
+		ArrayList<HashMap<String, String>> resultDB = new ArrayList<HashMap<String, String>>();
+
+		// || is the concatenation operation in SQLite
+		SQLiteDatabase db = this.getWritableDatabase();
+		Cursor cursor = db
+				.rawQuery(
+						"SELECT _id, postOne, postTwo FROM posts WHERE postOne || ' ' || postTwo LIKE ? LIMIT 10",
+						new String[] { "%" + keyword + "%" });
+		
+		// looping through all rows and adding to list
+		if (cursor.moveToFirst()) {
+			do {
+				HashMap<String, String> map = new HashMap<String, String>();
+				// adding each child node to HashMap key =&gt; value
+				map.put("_id", "" + cursor.getInt(0));
+				map.put("postOne", cursor.getString(1));
+				map.put("postTwo", cursor.getString(2));
+				//map.put("picture", cursor.getString(3));
+
+				// adding HashList to ArrayList
+				resultDB.add(map);
+			} while (cursor.moveToNext());
+		}
+		
+		db.close();
+		return resultDB;
+	}
+	
 	public void searchAll(String keywords) {
 		loadsAllTables();
 	}
+
 }

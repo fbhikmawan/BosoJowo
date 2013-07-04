@@ -20,7 +20,7 @@ public class ActivityMain extends SherlockActivity{
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
-    	setTheme(BosoJowoUtilities.THEME);
+    	setTheme(Utilities.THEME);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
@@ -57,27 +57,13 @@ public class ActivityMain extends SherlockActivity{
 
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-		new BosoJowoUtilities().createActionBarLauncher(this, menu);
+		new Utilities(this).createActionBarWholeApp(this, menu);
         return super.onCreateOptionsMenu(menu);
     }
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {    	
-    	switch (item.getItemId()) {
-		case BosoJowoUtilities.search:
-			Toast.makeText(this, "Got click: " + item.toString(), Toast.LENGTH_SHORT).show();
-			break;
-		case BosoJowoUtilities.help:
-			Toast.makeText(this, "Got click: " + item.toString(), Toast.LENGTH_SHORT).show();
-			break;
-		case BosoJowoUtilities.info:
-			Toast.makeText(this, "Got click: " + item.toString(), Toast.LENGTH_SHORT).show();
-			break;
-		case android.R.id.home:
-			finish();
-		default:
-			break;
-		}
+    	new Utilities(this).actionBarResponseWholeApp(this, item);
     	return super.onOptionsItemSelected(item);
     }
 }

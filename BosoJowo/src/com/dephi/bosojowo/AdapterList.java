@@ -25,19 +25,12 @@ public class AdapterList extends BaseAdapter {
 
 	private Activity mActivity;
 	private ArrayList<HashMap<String, String>> mData;
-	private ArrayList<HashMap<String, String>> mOriginalData;
 	private LayoutInflater mInflater = null;
 	private AIM mAim;
 
 	public AdapterList(Activity activity, ArrayList<HashMap<String, String>> data, AIM aim) {
 		mActivity = activity;
-		
-		mData = new ArrayList<HashMap<String, String>>();
-		mOriginalData = new ArrayList<HashMap<String, String>>();
-		
 		mData = data;
-		BosoJowoUtilities.copyToNewList(mData, mOriginalData);
-		
 		mInflater = (LayoutInflater) mActivity
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		mAim = aim;
@@ -83,20 +76,10 @@ public class AdapterList extends BaseAdapter {
 	}
 
 	// Filter Class
-	public void filter(String charText) {
-		charText = charText.toLowerCase(Locale.getDefault());
+	public void filter(ArrayList<HashMap<String, String>> resultDB) {
 		mData.clear();
-		if (charText.length() == 0) {
-			mData.addAll(mOriginalData);
-		} else {
-			for (HashMap<String, String> search : mOriginalData) {
-				String lala = search.toString();
-				Log.v("Isi ", lala);
-				if (lala.toLowerCase(Locale.getDefault()).contains(charText)) {
-					mData.add(search);
-				}
-			}
-		}
+		Utilities.copyToNewList(resultDB, mData);
+		mAim = AIM.Post;
 		notifyDataSetChanged();
 	}
 
