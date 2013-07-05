@@ -325,7 +325,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		SQLiteDatabase db = this.getWritableDatabase();
 		Cursor cursor = db
 				.rawQuery(
-						"SELECT _id, postOne, postTwo FROM posts WHERE postOne || ' ' || postTwo LIKE ? LIMIT 10",
+						"SELECT _id, postOne, postTwo, picture FROM posts WHERE postOne || ' ' || postTwo LIKE ?",
 						new String[] { "%" + keyword + "%" });
 		
 		// looping through all rows and adding to list
@@ -336,7 +336,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 				map.put("_id", "" + cursor.getInt(0));
 				map.put("postOne", cursor.getString(1));
 				map.put("postTwo", cursor.getString(2));
-				//map.put("picture", cursor.getString(3));
+				map.put("picture", cursor.getString(3));
 
 				// adding HashList to ArrayList
 				resultDB.add(map);

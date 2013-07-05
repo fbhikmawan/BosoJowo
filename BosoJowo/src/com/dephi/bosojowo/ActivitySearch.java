@@ -30,7 +30,7 @@ public class ActivitySearch extends SherlockActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.search);
+		setContentView(R.layout.activity_search);
 		
 		
 		mList = (ListView)findViewById(R.id.listSearch);
