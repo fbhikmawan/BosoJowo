@@ -57,7 +57,7 @@ public class ActivityMain extends SherlockActivity{
 
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
-		new Utilities(this).createActionBarWholeApp(this, menu);
+		new Utilities(this).createActionBarHome(this, menu);
         return super.onCreateOptionsMenu(menu);
     }
     

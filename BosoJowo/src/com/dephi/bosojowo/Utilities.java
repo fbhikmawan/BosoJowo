@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 
+import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.MenuItem.OnActionExpandListener;
@@ -41,6 +42,13 @@ public class Utilities {
 	private TextWatcher mTextWatcher;
 
 	protected static final String TAG = "Utilities";
+	
+	public enum ACTBAR{
+		Search,
+		Info,
+		Help,
+		Add,
+	}
 
 	public Utilities(Activity activity) {
 		this.mActivity = activity;
@@ -53,39 +61,65 @@ public class Utilities {
 	/**
 	 * Membuat ActionBar untuk halaman Launcher
 	 * 
-	 * @param context
-	 *            Context yang aktif
-	 * @param menu
-	 *            Menu dari Activity yang aktif
 	 */
-	public void createActionBarWholeApp(final Context context, Menu menu) {
-		createActionBarBosoJowo(context, null, menu, false);
+	public void createActionBarHome(final SherlockActivity activity, Menu menu) {
+		createActionBarBosoJowo(activity, null, menu, new ACTBAR[] 
+				{ACTBAR.Search, ACTBAR.Info }, false);
+	}
+	
+	/**
+	 * Membuat ActionBar untuk halaman lain
+	 * 
+	 */
+	public void createActionBarWholeApp(final SherlockActivity activity, Menu menu) {
+		activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		activity.getSupportActionBar().setHomeButtonEnabled(true);
+		
+		createActionBarBosoJowo(activity, null, menu, new ACTBAR[] 
+				{ACTBAR.Info }, false);
 	}
 
 	/**
 	 * Membuat ActionBar untuk halaman Search
 	 * 
-	 * @param context
-	 *            Context yang aktif
-	 * @param menu
-	 *            Menu dari Activity yang aktif
 	 */
-	public void createActionBarSearch(final Context context, AdapterList adapter, Menu menu) {
-		createActionBarBosoJowo(context, adapter, menu, true);
+	public void createActionBarSearch(final SherlockActivity activity, AdapterList adapter, Menu menu) {
+		createActionBarBosoJowo(activity, adapter, menu, new ACTBAR[] 
+				{ACTBAR.Search, ACTBAR.Info },true);
 	}
 
 	/**
 	 * Fungsi Dasar untuk membuat ActionBar
 	 * 
-	 * @param context
+	 * @param activity
 	 *            Context yang aktif
 	 * @param menu
 	 *            Menu dari Activity yang aktif
 	 * @param isSearching
 	 *            Boolean apakah untuk launcher atau tidak
 	 */
-	private void createActionBarBosoJowo(final Context context, final AdapterList adapter , Menu menu,
-			boolean isSearching) {
+	private void createActionBarBosoJowo(final SherlockActivity activity,
+			final AdapterList adapter, Menu menu, ACTBAR[] whichShown, boolean isSearching) {
+		int whichShownSize = whichShown.length;
+		for(int i = 0; i < whichShownSize; i++){
+			switch (whichShown[i]) {
+			case Search:
+				createElementSearch(activity, adapter, menu, isSearching);
+				break;
+			case Info:
+				createElementInfo(menu);
+				break;
+			case Add:
+				createElemetHelp(menu);
+				break;
+			default:
+				break;
+			}
+		}
+	}
+	
+	private void createElementSearch(final Context context,
+			final AdapterList adapter, Menu menu, boolean isSearching) {
 		MenuItem menuItemSearch;
 		if (isSearching) {
 			// Sets for Search ActionBar
@@ -141,23 +175,26 @@ public class Utilities {
 					.setIcon(R.drawable.ic_action_search)
 					.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_IF_ROOM);
 		}
-
+	}
+	
+	private void createElementInfo(Menu menu){
 		// Sets for Info ActionBar
 		int menuItemIdInfo = menu
-				.add(Menu.NONE, Utilities.info,
-						Utilities.third, R.string.info)
+				.add(Menu.NONE, Utilities.info, Utilities.third, R.string.info)
 				.setIcon(R.drawable.ic_action_info)
 				.setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS)
 				.getItemId();
-
-		/*
-		 * // Sets for Help Button menu.add(Menu.NONE, BosoJowoUtilities.help,
-		 * BosoJowoUtilities.second, R.string.help)
-		 * .setIcon(R.drawable.ic_action_help)
-		 * .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-		 */
 	}
-
+	
+	private void createElemetHelp(Menu menu){
+		 // Sets for Help Button 
+		int menuItemIdHelp = menu
+				.add(Menu.NONE, Utilities.help, Utilities.second, R.string.help)
+		 .setIcon(R.drawable.ic_action_help)
+		 .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS)
+		 .getItemId();
+	}
+	
 	public void actionBarResponseWholeApp(Activity activity, MenuItem item) {
 		actionBarResponse(activity, item, false);
 	}
@@ -190,7 +227,10 @@ public class Utilities {
 					Toast.LENGTH_SHORT).show();
 			break;
 		case android.R.id.home:
-			activity.finish();
+			//activity.finish();
+			Intent intent = new Intent(activity, ActivityMain.class);
+	    	intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+	    	activity.startActivity(intent);
 		default:
 			break;
 		}
