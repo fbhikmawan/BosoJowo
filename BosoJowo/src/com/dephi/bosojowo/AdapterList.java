@@ -43,9 +43,15 @@ public class AdapterList extends BaseAdapter {
 	public Object getItem(int position) {
 		return position;
 	}
-
+	
+	@Override
 	public long getItemId(int position) {
-		return position;
+		return 0;
+	}
+	
+	public int getItemDBid(int position) {
+		String id = mData.get(position).get("_id");
+		return Integer.parseInt(id);
 	}
 
 	public View getView(int position, View convertView, ViewGroup parent) {

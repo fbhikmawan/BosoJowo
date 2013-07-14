@@ -9,6 +9,7 @@ import com.actionbarsherlock.view.MenuItem;
 
 import android.os.Bundle;
 import android.content.Intent;
+import android.database.Cursor;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -78,10 +79,10 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 
 
 	@Override
-	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {		
 		Intent intent = new Intent(this, ActivityCat.class);
     	intent.putExtra("SOURCE", _nextSource);
-    	intent.putExtra("ID", arg2+1);
+    	intent.putExtra("ID", _adapter.getItemDBid(arg2));
     	startActivity(intent);
 	}
 }
