@@ -54,12 +54,8 @@ public class Utilities {
 		this.mActivity = activity;
 	}
 
-	public Utilities(final AdapterList adapter) {
-		
-	}
-
 	/**
-	 * Membuat ActionBar untuk halaman Launcher
+	 * Membuat ActionBar untuk halaman Home
 	 * 
 	 */
 	public void createActionBarHome(final SherlockActivity activity, Menu menu) {
@@ -71,19 +67,24 @@ public class Utilities {
 	 * Membuat ActionBar untuk halaman lain
 	 * 
 	 */
-	public void createActionBarWholeApp(final SherlockActivity activity, Menu menu) {
+	public void createActionBarWholeApp(SherlockActivity activity, Menu menu, String source) {
 		activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		activity.getSupportActionBar().setHomeButtonEnabled(true);
 		
-		createActionBarBosoJowo(activity, null, menu, new ACTBAR[] 
-				{ACTBAR.Info }, false);
+		if (source.equals("POSTS_ID")) {
+			createActionBarBosoJowo(activity, null, menu,
+					new ACTBAR[] { ACTBAR.Info, ACTBAR.Add }, false);
+		} else {
+			createActionBarBosoJowo(activity, null, menu,
+					new ACTBAR[] { ACTBAR.Info }, false);
+		}
 	}
 
 	/**
 	 * Membuat ActionBar untuk halaman Search
 	 * 
 	 */
-	public void createActionBarSearch(final SherlockActivity activity, AdapterList adapter, Menu menu) {
+	public void createActionBarSearch(SherlockActivity activity, AdapterList adapter, Menu menu) {
 		createActionBarBosoJowo(activity, adapter, menu, new ACTBAR[] 
 				{ACTBAR.Search, ACTBAR.Info },true);
 	}
@@ -109,15 +110,18 @@ public class Utilities {
 			case Info:
 				createElementInfo(menu);
 				break;
-			case Add:
+			case Help:
 				createElemetHelp(menu);
+				break;
+			case Add:
+				createElemetAdd(menu);
 				break;
 			default:
 				break;
 			}
 		}
 	}
-	
+
 	private void createElementSearch(final Context context,
 			final AdapterList adapter, Menu menu, boolean isSearching) {
 		MenuItem menuItemSearch;
@@ -193,6 +197,10 @@ public class Utilities {
 		 .setIcon(R.drawable.ic_action_help)
 		 .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS)
 		 .getItemId();
+	}
+	
+	private void createElemetAdd(Menu menu) {
+
 	}
 	
 	public void actionBarResponseWholeApp(Activity activity, MenuItem item) {
