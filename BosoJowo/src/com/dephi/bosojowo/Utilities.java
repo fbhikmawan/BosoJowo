@@ -31,6 +31,7 @@ public class Utilities {
 	public static final int search = 10;
 	public static final int help = 11;
 	public static final int info = 12;
+	public static final int add = 13;
 
 	public static final int first = 0;
 	public static final int second = 1;
@@ -43,11 +44,18 @@ public class Utilities {
 
 	protected static final String TAG = "Utilities";
 	
-	public enum ACTBAR{
-		Search,
-		Info,
-		Help,
-		Add,
+	public static enum ACTBAR{
+		SEARCH,
+		INFO,
+		HELP,
+		ADD,
+	}
+	
+	public static enum SOURCE{
+		PEPAK_ID,
+		CATEGORY_ID,
+		SUBCATEGORY_ID,
+		POSTS_ID,
 	}
 
 	public Utilities(Activity activity) {
@@ -60,7 +68,7 @@ public class Utilities {
 	 */
 	public void createActionBarHome(final SherlockActivity activity, Menu menu) {
 		createActionBarBosoJowo(activity, null, menu, new ACTBAR[] 
-				{ACTBAR.Search, ACTBAR.Info }, false);
+				{ACTBAR.SEARCH, ACTBAR.INFO }, false);
 	}
 	
 	/**
@@ -71,12 +79,13 @@ public class Utilities {
 		activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		activity.getSupportActionBar().setHomeButtonEnabled(true);
 		
-		if (source.equals("POSTS_ID")) {
+		// Memunculkan ActionBar Add pada saat halaman di posisi akhir
+		if (source.equals("SUBCATEGORY_ID")) {
 			createActionBarBosoJowo(activity, null, menu,
-					new ACTBAR[] { ACTBAR.Info, ACTBAR.Add }, false);
+					new ACTBAR[] { ACTBAR.INFO, ACTBAR.ADD }, false);
 		} else {
 			createActionBarBosoJowo(activity, null, menu,
-					new ACTBAR[] { ACTBAR.Info }, false);
+					new ACTBAR[] { ACTBAR.INFO }, false);
 		}
 	}
 
@@ -86,7 +95,7 @@ public class Utilities {
 	 */
 	public void createActionBarSearch(SherlockActivity activity, AdapterList adapter, Menu menu) {
 		createActionBarBosoJowo(activity, adapter, menu, new ACTBAR[] 
-				{ACTBAR.Search, ACTBAR.Info },true);
+				{ACTBAR.SEARCH, ACTBAR.INFO },true);
 	}
 
 	/**
@@ -104,16 +113,16 @@ public class Utilities {
 		int whichShownSize = whichShown.length;
 		for(int i = 0; i < whichShownSize; i++){
 			switch (whichShown[i]) {
-			case Search:
+			case SEARCH:
 				createElementSearch(activity, adapter, menu, isSearching);
 				break;
-			case Info:
+			case INFO:
 				createElementInfo(menu);
 				break;
-			case Help:
+			case HELP:
 				createElemetHelp(menu);
 				break;
-			case Add:
+			case ADD:
 				createElemetAdd(menu);
 				break;
 			default:
@@ -191,7 +200,7 @@ public class Utilities {
 	}
 	
 	private void createElemetHelp(Menu menu){
-		 // Sets for Help Button 
+		 // Sets for Help ActionBar 
 		int menuItemIdHelp = menu
 				.add(Menu.NONE, Utilities.help, Utilities.second, R.string.help)
 		 .setIcon(R.drawable.ic_action_help)
@@ -200,7 +209,12 @@ public class Utilities {
 	}
 	
 	private void createElemetAdd(Menu menu) {
-
+		// Sets for Add ActionBar 
+		int menuItemIdAdd = menu
+				.add(Menu.NONE, Utilities.add, Utilities.first, R.string.add)
+		 .setIcon(R.drawable.ic_action_add)
+		 .setShowAsActionFlags(MenuItem.SHOW_AS_ACTION_ALWAYS)
+		 .getItemId();
 	}
 	
 	public void actionBarResponseWholeApp(Activity activity, MenuItem item) {
@@ -231,6 +245,10 @@ public class Utilities {
 					Toast.LENGTH_SHORT).show();
 			break;
 		case Utilities.info:
+			Toast.makeText(activity, "Got click: " + item.toString(),
+					Toast.LENGTH_SHORT).show();
+			break;
+		case Utilities.add:
 			Toast.makeText(activity, "Got click: " + item.toString(),
 					Toast.LENGTH_SHORT).show();
 			break;
