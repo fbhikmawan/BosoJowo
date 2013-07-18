@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActivityNewPost" >
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/content.post.one"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvJudul"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvJudul"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvIsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etJudul"
+        android:layout_below="@+id/etJudul"
+        android:text="@string/content.post.two"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etIsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvIsi"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvIsi"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tvAmbilGambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etIsi"
+        android:layout_below="@+id/etIsi"
+        android:text="@string/content.post.picture"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/etAmbilGambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvAmbilGambar"
+        android:layout_below="@+id/tvAmbilGambar"
+        android:layout_toLeftOf="@+id/btnPilih"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnPilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etAmbilGambar"
+        android:layout_alignBottom="@+id/etAmbilGambar"
+        android:layout_alignRight="@+id/etIsi"
+        android:text="@string/button.pilih" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etAmbilGambar"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etAmbilGambar"
+        android:layout_marginTop="3dp"
+        android:text="@string/button.save" />
+
+</RelativeLayout>

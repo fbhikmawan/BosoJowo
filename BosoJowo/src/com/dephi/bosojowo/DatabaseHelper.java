@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -20,8 +21,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private Context mContext;
 
 	// The Android's default system path of your application database.
-	private String mDB_PATH;
+	private static String sDBpath;
 	private static final String DB_NAME = "dbpepak";
+	private static final String KEY_ID = "_id";
+	private static final String KEY_POSTONE = "postOne";	
+	private static final String KEY_POSTTWO = "postTwo";
+	private static final String KEY_POSTPICTURE= "picture";
 
 	// Static variables
 	private static String[] sTableNames;
@@ -34,7 +39,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		this.mContext = context;
 
 		String destPath = context.getFilesDir().getPath();
-		mDB_PATH = destPath.substring(0, destPath.lastIndexOf("/"))
+		sDBpath = destPath.substring(0, destPath.lastIndexOf("/"))
 				+ "/databases/";
 
 		try {
@@ -68,7 +73,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private boolean checkDataBase() {
 		SQLiteDatabase checkDB = null;
 		try {
-			String myPath = mDB_PATH + DB_NAME;
+			String myPath = sDBpath + DB_NAME;
 			// Perintah pengecekan dengan cara membuka, jika tidak ada maka
 			// masuk ke catch SQLiteException
 			checkDB = SQLiteDatabase.openDatabase(myPath, null,
@@ -94,7 +99,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		InputStream myInput = mContext.getAssets().open(DB_NAME + ".sqlite");
 
 		// Path to the just created empty db
-		String outFile = mDB_PATH + DB_NAME;
+		String outFile = sDBpath + DB_NAME;
 
 		// Open the empty db as the output stream
 		OutputStream myOutput = new FileOutputStream(outFile);
@@ -133,14 +138,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			mDbHelper.close();
 		}
 	}
+	
+	// Menambah entry baru pada database untuk POST
+    public void addPost(String... arg) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        
+        // Set nilai yg akan dimasukkan ke DB
+        ContentValues values = new ContentValues();
+        values.put(KEY_ID, arg[0]); // set post id
+        values.put(KEY_POSTONE, arg[1]); // set post one
+        values.put(KEY_POSTTWO, arg[2]); // set post two
+        values.put(KEY_POSTPICTURE, arg[3]); // set path gambar
+ 
+        // Inserting Row
+        db.insert("posts", null, values);
+        db.close(); // Closing database connection
+    }
 
 	// Mengambil Utama
 	public ArrayList<HashMap<String, String>> getMain() {
+		SQLiteDatabase db = this.getWritableDatabase();
 		ArrayList<HashMap<String, String>> mainCat = new ArrayList<HashMap<String, String>>();
 
 		// Database Query
 		String selectQuery = "SELECT _id, name FROM pepak";
-		SQLiteDatabase db = this.getWritableDatabase();
 		Cursor cursor = db.rawQuery(selectQuery, null);
 
 		// looping through all rows and adding to list
@@ -148,7 +169,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			do {
 				HashMap<String, String> map = new HashMap<String, String>();
 				// adding each child node to HashMap key =&gt; value
-				map.put("_id", cursor.getString(0));
+				map.put(KEY_ID, cursor.getString(0));
 				map.put("name", cursor.getString(1));
 
 				// adding HashList to ArrayList
@@ -175,7 +196,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			do {
 				HashMap<String, String> map = new HashMap<String, String>();
 				// adding each child node to HashMap key =&gt; value
-				map.put("_id", "" + cursor.getInt(0));
+				map.put(KEY_ID, "" + cursor.getInt(0));
 				map.put("pepakId", "" + cursor.getInt(1));
 				// map.put("catname", cursor.getString(2));
 				map.put("seekThis", cursor.getString(2));
@@ -205,7 +226,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			do {
 				HashMap<String, String> map = new HashMap<String, String>();
 				// adding each child node to HashMap key =&gt; value
-				map.put("_id", "" + cursor.getInt(0));
+				map.put(KEY_ID, "" + cursor.getInt(0));
 				map.put("categoryId", "" + cursor.getInt(1));
 				// map.put("subcatname", cursor.getString(2));
 				map.put("seekThis", cursor.getString(2));
@@ -235,7 +256,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			do {
 				HashMap<String, String> map = new HashMap<String, String>();
 				// adding each child node to HashMap key =&gt; value
-				map.put("_id", "" + cursor.getInt(0));
+				map.put(KEY_ID, "" + cursor.getInt(0));
 				map.put("subcatId", "" + cursor.getInt(1));
 				map.put("postOne", cursor.getString(2));
 				map.put("postTwo", cursor.getString(3));
@@ -266,10 +287,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 			do {
 				HashMap<String, String> map = new HashMap<String, String>();
 				// adding each child node to HashMap key =&gt; value
-				map.put("_id", "" + cursor.getInt(0));
-				map.put("postOne", cursor.getString(1));
-				map.put("postTwo", cursor.getString(2));
-				map.put("picture", cursor.getString(3));
+				map.put(KEY_ID, "" + cursor.getInt(0));
+				map.put(KEY_POSTONE, cursor.getString(1));
+				map.put(KEY_POSTTWO, cursor.getString(2));
+				map.put(KEY_POSTPICTURE, cursor.getString(3));
 
 				// adding HashList to ArrayList
 				resultDB.add(map);
@@ -280,6 +301,35 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return resultDB;
 	}
 
+	public ArrayList<HashMap<String, String>> getSearchResult(String keyword) {
+		ArrayList<HashMap<String, String>> resultDB = new ArrayList<HashMap<String, String>>();
+
+		// || is the concatenation operation in SQLite
+		SQLiteDatabase db = this.getWritableDatabase();
+		Cursor cursor = db
+				.rawQuery(
+						"SELECT _id, postOne, postTwo, picture FROM posts WHERE postOne || ' ' || postTwo LIKE ?",
+						new String[] { "%" + keyword + "%" });
+		
+		// looping through all rows and adding to list
+		if (cursor.moveToFirst()) {
+			do {
+				HashMap<String, String> map = new HashMap<String, String>();
+				// adding each child node to HashMap key =&gt; value
+				map.put(KEY_ID, "" + cursor.getInt(0));
+				map.put("postOne", cursor.getString(1));
+				map.put("postTwo", cursor.getString(2));
+				map.put("picture", cursor.getString(3));
+
+				// adding HashList to ArrayList
+				resultDB.add(map);
+			} while (cursor.moveToNext());
+		}
+		
+		db.close();
+		return resultDB;
+	}
+	
 	/**
 	 * Panggillah fungsi ini selalu, untuk mencari nama-nama tabel yang ada :-)
 	 */
@@ -316,35 +366,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		} else {
 			Log.v(TAG, "All Table's Name Loaded");
 		}
-	}
-
-	public ArrayList<HashMap<String, String>> getSearchResult(String keyword) {
-		ArrayList<HashMap<String, String>> resultDB = new ArrayList<HashMap<String, String>>();
-
-		// || is the concatenation operation in SQLite
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db
-				.rawQuery(
-						"SELECT _id, postOne, postTwo, picture FROM posts WHERE postOne || ' ' || postTwo LIKE ?",
-						new String[] { "%" + keyword + "%" });
-		
-		// looping through all rows and adding to list
-		if (cursor.moveToFirst()) {
-			do {
-				HashMap<String, String> map = new HashMap<String, String>();
-				// adding each child node to HashMap key =&gt; value
-				map.put("_id", "" + cursor.getInt(0));
-				map.put("postOne", cursor.getString(1));
-				map.put("postTwo", cursor.getString(2));
-				map.put("picture", cursor.getString(3));
-
-				// adding HashList to ArrayList
-				resultDB.add(map);
-			} while (cursor.moveToNext());
-		}
-		
-		db.close();
-		return resultDB;
 	}
 	
 	public void searchAll(String keywords) {

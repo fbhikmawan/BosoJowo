@@ -23,6 +23,7 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 	private AdapterList mAdapter;
 	
 	private String mSource;
+	private int mSourceID;
 	private String mNextSource;
 	
 	@Override
@@ -37,20 +38,20 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 		// Ambil Intent Ektra dari pemanggilan sebelumnya
 		Intent intent = getIntent();
 		mSource = intent.getStringExtra("SOURCE");
-		int id = getIntent().getIntExtra("ID", 0);
+		mSourceID = intent.getIntExtra("ID", 0);
 		
 		// Lakukan pengambilan data di database dan set untuk intent berikutnya
 		if(mSource.equals("PEPAK_ID")){
-			mResultDB = mDB.getCat(id);
+			mResultDB = mDB.getCat(mSourceID);
 			mNextSource = "CATEGORY_ID";
 		} else if(mSource.equals("CATEGORY_ID")){
-			mResultDB = mDB.getSubCat(id);
+			mResultDB = mDB.getSubCat(mSourceID);
 			mNextSource = "SUBCATEGORY_ID";
 		} else if(mSource.equals("SUBCATEGORY_ID")){
-			mResultDB = mDB.getPostsBySubCat(id);
+			mResultDB = mDB.getPostsBySubCat(mSourceID);
 			mNextSource = "POSTS_ID";
 		} else if(mSource.equals("POSTS_ID")){
-			mResultDB = mDB.getPostsByID(id);
+			mResultDB = mDB.getPostsByID(mSourceID);
 		}
 		
 		// Set adapter ke listView
@@ -74,7 +75,7 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {    	
-    	new Utilities(this).actionBarResponseWholeApp(this, item);
+    	new Utilities(this).actionBarResponseWholeApp(this, item, mSourceID);
     	return super.onOptionsItemSelected(item);
     }
 

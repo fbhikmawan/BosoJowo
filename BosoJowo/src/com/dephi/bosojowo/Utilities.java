@@ -61,7 +61,15 @@ public class Utilities {
 	public Utilities(Activity activity) {
 		this.mActivity = activity;
 	}
-
+	
+	/**
+	 * Membuat ActionBar untuk halaman kosong
+	 * 
+	 */
+	public void createActionBarEmpty(final SherlockActivity activity, Menu menu) {
+		createActionBarBosoJowo(activity, null, menu, null, false);
+	}
+	
 	/**
 	 * Membuat ActionBar untuk halaman Home
 	 * 
@@ -110,23 +118,26 @@ public class Utilities {
 	 */
 	private void createActionBarBosoJowo(final SherlockActivity activity,
 			final AdapterList adapter, Menu menu, ACTBAR[] whichShown, boolean isSearching) {
-		int whichShownSize = whichShown.length;
-		for(int i = 0; i < whichShownSize; i++){
-			switch (whichShown[i]) {
-			case SEARCH:
-				createElementSearch(activity, adapter, menu, isSearching);
-				break;
-			case INFO:
-				createElementInfo(menu);
-				break;
-			case HELP:
-				createElemetHelp(menu);
-				break;
-			case ADD:
-				createElemetAdd(menu);
-				break;
-			default:
-				break;
+		
+		if(whichShown!=null){
+			int whichShownSize = whichShown.length;
+			for(int i = 0; i < whichShownSize; i++){
+				switch (whichShown[i]) {
+				case SEARCH:
+					createElementSearch(activity, adapter, menu, isSearching);
+					break;
+				case INFO:
+					createElementInfo(menu);
+					break;
+				case HELP:
+					createElemetHelp(menu);
+					break;
+				case ADD:
+					createElemetAdd(menu);
+					break;
+				default:
+					break;
+				}
 			}
 		}
 	}
@@ -218,15 +229,19 @@ public class Utilities {
 	}
 	
 	public void actionBarResponseWholeApp(Activity activity, MenuItem item) {
-		actionBarResponse(activity, item, false);
+		actionBarResponse(activity, item, false, (Integer) null);
+	}
+	
+	public void actionBarResponseWholeApp(Activity activity, MenuItem item, int id) {
+		actionBarResponse(activity, item, false, id);
 	}
 
 	public void actionBarResponseSearch(Activity activity, MenuItem item) {
-		actionBarResponse(activity, item, true);
+		actionBarResponse(activity, item, true, (Integer) null);
 	}
 
 	private void actionBarResponse(Activity activity, MenuItem item,
-			boolean isSearching) {
+			boolean isSearching, int id) {
 		switch (item.getItemId()) {
 		case Utilities.search:
 			if (isSearching) {
@@ -249,11 +264,12 @@ public class Utilities {
 					Toast.LENGTH_SHORT).show();
 			break;
 		case Utilities.add:
-			Toast.makeText(activity, "Got click: " + item.toString(),
-					Toast.LENGTH_SHORT).show();
+			Intent i = new Intent(mActivity, ActivityNewPost.class);
+			i.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+			i.putExtra("ID", id);
+			mActivity.startActivity(i);
 			break;
 		case android.R.id.home:
-			//activity.finish();
 			Intent intent = new Intent(activity, ActivityMain.class);
 	    	intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	    	activity.startActivity(intent);
@@ -263,7 +279,7 @@ public class Utilities {
 	}
 
 	/**
-	 * Fungsi untuk mendukung AutoSearch, yaitu menduplikasi
+	 * Fungsi untuk mendukung AutoSearch, yaitu menduplikasi arraylist
 	 * 
 	 * @param from
 	 *            ArrayList sumber

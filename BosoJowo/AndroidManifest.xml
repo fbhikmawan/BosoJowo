@@ -29,6 +29,10 @@
             android:name="com.dephi.bosojowo.ActivitySearch"
             android:label="@string/title_activity_searchable" >
         </activity>
+        <activity
+            android:name="com.dephi.bosojowo.ActivityNewPost"
+            android:label="@string/title_activity_activity_new_post" >
+        </activity>
     </application>
 
 </manifest>
