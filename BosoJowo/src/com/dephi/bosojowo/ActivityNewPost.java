@@ -45,6 +45,8 @@ public class ActivityNewPost extends SherlockActivity {
 		buttonSave.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				prosesMenyimpanEntryKeDatabase();
+				Toast.makeText(ActivityNewPost.this, "New Entry has been saved", 
+						Toast.LENGTH_LONG).show();
 			}
 		});
 	}
@@ -63,16 +65,22 @@ public class ActivityNewPost extends SherlockActivity {
 		String stringJudul = etJudul.getText().toString();
 		String stringIsi = etIsi.getText().toString();
 		String stringAmbilGambar = etAmbilGambar.getText().toString();
+		
+		if(!stringJudul.equals("")){
+			// Deteksi file gambar, jika ya maka simpan
+			if (!stringAmbilGambar.equals("")) {
+				simpanGambarKeSDCard(stringAmbilGambar);
+			}
 
-		// Deteksi file gambar, jika ya maka simpan
-		if (!stringAmbilGambar.equals("")) {
-			simpanGambarKeSDCard(stringAmbilGambar);
+			// Simpan data ke database
+			new DatabaseHelper(this).addPost("" + mIDtoEdit, stringJudul,
+					stringIsi, stringAmbilGambar);
+			finish();
+		} else {
+			Toast.makeText(this, "Baris Jowo harus diisi", Toast.LENGTH_SHORT).show();
 		}
-
-		// Simpan data ke database
-		new DatabaseHelper(this).addPost("" + mIDtoEdit, stringJudul,
-				stringIsi, stringAmbilGambar);
-		finish();
+		
+		
 	}
 
 	private void simpanGambarKeSDCard(String stringAmbilGambar) {

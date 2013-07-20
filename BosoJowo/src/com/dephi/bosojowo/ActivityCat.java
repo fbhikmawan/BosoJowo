@@ -83,9 +83,10 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {   
     	// Deteksi sumber untuk ngambil subcatID untuk new entry
-    	mSubCatIDtoAddNewEntry = 0;
-    	if(mResultDB.get(0).containsKey("subcatId")){
-    		mSubCatIDtoAddNewEntry = Integer.parseInt(mResultDB.get(0).get("subcatId"));
+    	if(!mResultDB.isEmpty()){
+    		if(mResultDB.get(0).containsKey("subcatId")){
+    			mSubCatIDtoAddNewEntry = Integer.parseInt(mResultDB.get(0).get("subcatId"));
+    		}
 		}
     	
     	// Ngrespon actionbar
@@ -109,7 +110,6 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 			// Merefresh list yang telah ada, spya new entry terlihat
 			// dan memberikan notifikasi bhw entry telah disave
 			mAdapter.refresh(mSubCatIDtoAddNewEntry);
-			Toast.makeText(this, "New Entry has been saved", Toast.LENGTH_LONG).show();
 			break;
 		}
 	}
