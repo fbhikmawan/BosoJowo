@@ -7,13 +7,17 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.content.Intent;
 import android.database.Cursor;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class ActivityCat extends SherlockActivity implements OnItemClickListener{
 	private ArrayList<HashMap<String, String>> mResultDB;
@@ -24,7 +28,10 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 	
 	private String mSource;
 	private int mSourceID;
+	private int mSubCatIDtoAddNewEntry;
 	private String mNextSource;
+	
+	public static final int REQ_CODE_REFRESH = 888;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -74,11 +81,17 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
     }
     
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {    	
-    	new Utilities(this).actionBarResponseWholeApp(this, item, mSourceID);
+    public boolean onOptionsItemSelected(MenuItem item) {   
+    	// Deteksi sumber untuk ngambil subcatID untuk new entry
+    	mSubCatIDtoAddNewEntry = 0;
+    	if(mResultDB.get(0).containsKey("subcatId")){
+    		mSubCatIDtoAddNewEntry = Integer.parseInt(mResultDB.get(0).get("subcatId"));
+		}
+    	
+    	// Ngrespon actionbar
+    	new Utilities(this).actionBarResponseWholeApp(this, item, mSubCatIDtoAddNewEntry);
     	return super.onOptionsItemSelected(item);
     }
-
 
 	@Override
 	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {		
@@ -86,5 +99,18 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
     	intent.putExtra("SOURCE", mNextSource);
     	intent.putExtra("ID", mAdapter.getItemDBid(arg2));
     	startActivity(intent);
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		switch (requestCode) {
+		case (REQ_CODE_REFRESH):
+			// Merefresh list yang telah ada, spya new entry terlihat
+			// dan memberikan notifikasi bhw entry telah disave
+			mAdapter.refresh(mSubCatIDtoAddNewEntry);
+			Toast.makeText(this, "New Entry has been saved", Toast.LENGTH_LONG).show();
+			break;
+		}
 	}
 }

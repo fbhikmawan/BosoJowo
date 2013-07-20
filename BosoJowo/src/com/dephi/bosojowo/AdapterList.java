@@ -88,8 +88,14 @@ public class AdapterList extends BaseAdapter {
 		mAim = AIM.Post;
 		notifyDataSetChanged();
 	}
+	
+	public void refresh(int IDtoRefresh){
+		mData.clear();
+		mData = new DatabaseHelper(mActivity).getPostsBySubCat(IDtoRefresh);
+		notifyDataSetChanged();
+	}
 
-	private static void arrangeItems(View vi, HashMap<String, String> current) {
+	private void arrangeItems(View vi, HashMap<String, String> current) {
 		ImageView img = (ImageView) vi.findViewById(R.id.picture);
 		TextView postOne = (TextView) vi.findViewById(R.id.postOne);
 		TextView postTwo = (TextView) vi.findViewById(R.id.postTwo);
@@ -97,8 +103,10 @@ public class AdapterList extends BaseAdapter {
 		postOne.setText(current.get("postOne"));
 		postTwo.setText(current.get("postTwo"));
 		String picture = current.get("picture");
-
-		if (picture.equals("dangu"))
+		
+		if (picture.contains("sdcard"))
+			img.setImageBitmap(Utilities.decodeBitmap(picture));
+		else if (picture.equals("dangu"))
 			img.setImageResource(R.drawable.dangu);
 		else if (picture.equals("ontong"))
 			img.setImageResource(R.drawable.ontong);
@@ -146,7 +154,7 @@ public class AdapterList extends BaseAdapter {
 			img.setImageResource(R.drawable.asem);
 		else if (picture.equals("jambu"))
 			img.setImageResource(R.drawable.jambu);
-		else
+		else 
 			img.setImageResource(R.drawable.default_pic);
 	}
 }

@@ -24,6 +24,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private static String sDBpath;
 	private static final String DB_NAME = "dbpepak";
 	private static final String KEY_ID = "_id";
+	private static final String KEY_SUBID = "subcatId";
 	private static final String KEY_POSTONE = "postOne";	
 	private static final String KEY_POSTTWO = "postTwo";
 	private static final String KEY_POSTPICTURE= "picture";
@@ -145,7 +146,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         
         // Set nilai yg akan dimasukkan ke DB
         ContentValues values = new ContentValues();
-        values.put(KEY_ID, arg[0]); // set post id
+        values.put(KEY_SUBID, arg[0]); // set post id
         values.put(KEY_POSTONE, arg[1]); // set post one
         values.put(KEY_POSTTWO, arg[2]); // set post two
         values.put(KEY_POSTPICTURE, arg[3]); // set path gambar

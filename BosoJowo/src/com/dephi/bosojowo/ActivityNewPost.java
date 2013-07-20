@@ -21,26 +21,27 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 
 public class ActivityNewPost extends SherlockActivity {
-	private int mSourceID;
-	
-	
+	private int mIDtoEdit;
+	private static final int REQ_CODE_CAMERA = 777;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_new_post);
 		// Ambil Intent Ektra dari pemanggilan sebelumnya
-		mSourceID = getIntent().getIntExtra("ID", 0);
-		
+		mIDtoEdit = getIntent().getIntExtra("ID", 0);
+
 		Button buttonAmbilGambar = (Button) findViewById(R.id.btnPilih);
 		Button buttonSave = (Button) findViewById(R.id.btnSave);
-		
+
 		buttonAmbilGambar.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
 				photoPickerIntent.setType("image/png");
-				startActivityForResult(photoPickerIntent, 777);
+				startActivityForResult(photoPickerIntent, REQ_CODE_CAMERA);
 			}
 		});
+
 		buttonSave.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				prosesMenyimpanEntryKeDatabase();
@@ -48,29 +49,33 @@ public class ActivityNewPost extends SherlockActivity {
 		});
 	}
 
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		new Utilities(this).createActionBarEmpty(this, menu);
+		return super.onCreateOptionsMenu(menu);
+	}
+
 	protected void prosesMenyimpanEntryKeDatabase() {
 		EditText etJudul = (EditText) this.findViewById(R.id.etJudul);
 		EditText etIsi = (EditText) this.findViewById(R.id.etIsi);
 		EditText etAmbilGambar = (EditText) this.findViewById(R.id.etAmbilGambar);
-		
+
 		String stringJudul = etJudul.getText().toString();
 		String stringIsi = etIsi.getText().toString();
 		String stringAmbilGambar = etAmbilGambar.getText().toString();
-		
-		if(!stringJudul.equals("") && !stringIsi.equals("")){
-			if(!stringAmbilGambar.equals("")){
-				simpanGambarKeSDCard(stringAmbilGambar);
-			}
-			
-			// Simpan data ke database
-			new DatabaseHelper(this).addPost(""+mSourceID, stringJudul, stringIsi, stringAmbilGambar);
-			finish();
-		} else {
-			Toast.makeText(this, "Kolom Judul dan Isi Harus Terisi", Toast.LENGTH_SHORT).show();
+
+		// Deteksi file gambar, jika ya maka simpan
+		if (!stringAmbilGambar.equals("")) {
+			simpanGambarKeSDCard(stringAmbilGambar);
 		}
+
+		// Simpan data ke database
+		new DatabaseHelper(this).addPost("" + mIDtoEdit, stringJudul,
+				stringIsi, stringAmbilGambar);
+		finish();
 	}
-	
-	private void simpanGambarKeSDCard(String stringAmbilGambar){
+
+	private void simpanGambarKeSDCard(String stringAmbilGambar) {
 		// Load gambar ke memory
 		BitmapFactory.Options opt = new BitmapFactory.Options();
 		opt.inDither = false;
@@ -115,34 +120,31 @@ public class ActivityNewPost extends SherlockActivity {
 	}
 
 	@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-    	new Utilities(this).createActionBarEmpty(this, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-	
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
+	protected void onActivityResult(int requestCode, int resultCode,
+			Intent intent) {
 		super.onActivityResult(requestCode, resultCode, intent);
 		switch (requestCode) {
-			// Kode 777 menandakan ini untuk aksi yang tlh ditentukan
-			case (777):
-				if (resultCode == RESULT_OK) {
-					Uri photoUri = intent.getData();
-					if (photoUri != null) {
-						try {
-							EditText etAmbilGambar = (EditText) this.findViewById(R.id.etAmbilGambar);
-							
-							Cursor cursor = getContentResolver().query(photoUri, null, null, null, null);
-							cursor.moveToFirst();
-							
-							int idx = cursor.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
-							etAmbilGambar.setText(cursor.getString(idx));
-						} catch (Exception e) {
-							e.printStackTrace();
-						}
+		case (REQ_CODE_CAMERA):
+			if (resultCode == RESULT_OK) {
+				Uri photoUri = intent.getData();
+				if (photoUri != null) {
+					try {
+						EditText etAmbilGambar = (EditText) this
+								.findViewById(R.id.etAmbilGambar);
+
+						Cursor cursor = getContentResolver().query(photoUri,
+								null, null, null, null);
+						cursor.moveToFirst();
+
+						int idx = cursor
+								.getColumnIndex(MediaStore.Images.ImageColumns.DATA);
+						etAmbilGambar.setText(cursor.getString(idx));
+					} catch (Exception e) {
+						e.printStackTrace();
 					}
 				}
-				break;
+			}
+			break;
 		}
 	}
 }

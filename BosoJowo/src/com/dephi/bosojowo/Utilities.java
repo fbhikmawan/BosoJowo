@@ -1,5 +1,10 @@
 package com.dephi.bosojowo;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Locale;
@@ -8,6 +13,8 @@ import java.util.Map.Entry;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -37,7 +44,6 @@ public class Utilities {
 	public static final int second = 1;
 	public static final int third = 2;
 
-	private Context mContext;
 	private Activity mActivity;
 	private EditText mEditsearch;
 	private TextWatcher mTextWatcher;
@@ -267,7 +273,7 @@ public class Utilities {
 			Intent i = new Intent(mActivity, ActivityNewPost.class);
 			i.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
 			i.putExtra("ID", id);
-			mActivity.startActivity(i);
+			mActivity.startActivityForResult(i, ActivityCat.REQ_CODE_REFRESH);
 			break;
 		case android.R.id.home:
 			Intent intent = new Intent(activity, ActivityMain.class);
@@ -299,4 +305,52 @@ public class Utilities {
 			target.add(toCopy);
 		}
 	}
+	
+	public static void copyStream(InputStream is, OutputStream os){
+        final int buffer_size=1024;
+        try{
+            byte[] bytes=new byte[buffer_size];
+            for(;;){
+              int count=is.read(bytes, 0, buffer_size);
+              if(count==-1)
+                  break;
+              os.write(bytes, 0, count);
+            }
+        } catch(Exception e){
+        	e.printStackTrace();
+        }
+    }
+	
+    public static Bitmap decodeBitmap(String url){
+        try {
+        	File f = new File(url);
+        	
+            //decode image size
+            BitmapFactory.Options o = new BitmapFactory.Options();
+            o.inJustDecodeBounds = true;
+            o.inInputShareable = true;
+            o.inPurgeable = true;
+            BitmapFactory.decodeStream(new FileInputStream(f),null,o);
+ 
+            //Find the correct scale value. It should be the power of 2.
+            final int REQUIRED_SIZE=100;
+            int width_tmp=o.outWidth, height_tmp=o.outHeight;
+            int scale=1;
+            while(true){
+                if(width_tmp/2<REQUIRED_SIZE || height_tmp/2<REQUIRED_SIZE)
+                    break;
+                width_tmp/=2;
+                height_tmp/=2;
+                scale*=2;
+            }
+ 
+            //decode with inSampleSize
+            BitmapFactory.Options o2 = new BitmapFactory.Options();
+            o2.inSampleSize=scale;
+            return BitmapFactory.decodeStream(new FileInputStream(f), null, o2);
+        } catch (FileNotFoundException e) {
+        	e.printStackTrace();
+        }
+        return null;
+    }        
 }
