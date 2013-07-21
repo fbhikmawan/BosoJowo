@@ -2,17 +2,13 @@ package com.dephi.bosojowo;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Locale;
 
 import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -69,11 +65,11 @@ public class AdapterList extends BaseAdapter {
 			break;
 		case Post:
 			vi = mInflater.inflate(R.layout.list_post, null);
-			arrangeItems(vi, current);
+			Utilities.arrangeItems(vi, current);
 			break;
 		case Detail:
 			vi = mInflater.inflate(R.layout.list_detail, null);
-			arrangeItems(vi, current);
+			Utilities.arrangeItems(vi, current);
 			break;
 		default:
 			break;
@@ -93,68 +89,5 @@ public class AdapterList extends BaseAdapter {
 		mData.clear();
 		mData = new DatabaseHelper(mActivity).getPostsBySubCat(IDtoRefresh);
 		notifyDataSetChanged();
-	}
-
-	private void arrangeItems(View vi, HashMap<String, String> current) {
-		ImageView img = (ImageView) vi.findViewById(R.id.picture);
-		TextView postOne = (TextView) vi.findViewById(R.id.postOne);
-		TextView postTwo = (TextView) vi.findViewById(R.id.postTwo);
-
-		postOne.setText(current.get("postOne"));
-		postTwo.setText(current.get("postTwo"));
-		String picture = current.get("picture");
-		
-		if (picture.contains("sdcard"))
-			img.setImageBitmap(Utilities.decodeBitmap(picture));
-		else if (picture.equals("dangu"))
-			img.setImageResource(R.drawable.dangu);
-		else if (picture.equals("ontong"))
-			img.setImageResource(R.drawable.ontong);
-		else if (picture.equals("hanacaraka"))
-			img.setImageResource(R.drawable.hanan);
-		else if (picture.equals("abimanyu"))
-			img.setImageResource(R.drawable.abimanyu);
-		else if (picture.equals("anoman"))
-			img.setImageResource(R.drawable.anoman);
-		else if (picture.equals("aswotomo"))
-			img.setImageResource(R.drawable.aswotomo);
-		else if (picture.equals("dursasana"))
-			img.setImageResource(R.drawable.dursasana);
-		else if (picture.equals("gatotkaca"))
-			img.setImageResource(R.drawable.gatotkaca);
-		else if (picture.equals("irawan"))
-			img.setImageResource(R.drawable.irawan);
-		else if (picture.equals("janaka"))
-			img.setImageResource(R.drawable.janaka);
-		else if (picture.equals("lesmana"))
-			img.setImageResource(R.drawable.lesmana);
-		else if (picture.equals("nakula"))
-			img.setImageResource(R.drawable.nakula);
-		else if (picture.equals("ontorejo"))
-			img.setImageResource(R.drawable.antareja);
-		else if (picture.equals("ontoseno"))
-			img.setImageResource(R.drawable.antasena);
-		else if (picture.equals("kartamarma"))
-			img.setImageResource(R.drawable.kartamarma);
-		else if (picture.equals("sadewa"))
-			img.setImageResource(R.drawable.sadewa);
-		else if (picture.equals("setyaka"))
-			img.setImageResource(R.drawable.setyaka);
-		else if (picture.equals("setyaki"))
-			img.setImageResource(R.drawable.setyaki);
-		else if (picture.equals("samba"))
-			img.setImageResource(R.drawable.samba);
-		else if (picture.equals("sengkuni"))
-			img.setImageResource(R.drawable.sengkuni);
-		else if (picture.equals("udawa"))
-			img.setImageResource(R.drawable.udawa);
-		else if (picture.equals("werkudara"))
-			img.setImageResource(R.drawable.werkudara);
-		else if (picture.equals("asem"))
-			img.setImageResource(R.drawable.asem);
-		else if (picture.equals("jambu"))
-			img.setImageResource(R.drawable.jambu);
-		else 
-			img.setImageResource(R.drawable.default_pic);
 	}
 }

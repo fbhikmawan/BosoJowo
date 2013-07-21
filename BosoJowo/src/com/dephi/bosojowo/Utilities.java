@@ -7,7 +7,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map.Entry;
 
 import android.app.Activity;
@@ -15,14 +14,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.KeyEvent;
+import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
-import android.widget.ListAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
@@ -34,21 +30,20 @@ import com.actionbarsherlock.view.MenuItem.OnActionExpandListener;
 
 public class Utilities {
 	public static int THEME = R.style.Theme_Sherlock_Light;
-
+	
+	// ID elemen ActionBar
 	public static final int search = 10;
 	public static final int help = 11;
 	public static final int info = 12;
 	public static final int add = 13;
-
+	
+	// Posisi ActionBar
 	public static final int first = 0;
 	public static final int second = 1;
 	public static final int third = 2;
 
 	private Activity mActivity;
 	private EditText mEditsearch;
-	private TextWatcher mTextWatcher;
-
-	protected static final String TAG = "Utilities";
 	
 	public static enum ACTBAR{
 		SEARCH,
@@ -321,6 +316,69 @@ public class Utilities {
         }
     }
 	
+	public static void arrangeItems(View vi, HashMap<String, String> current) {
+		ImageView img = (ImageView) vi.findViewById(R.id.picture);
+		TextView postOne = (TextView) vi.findViewById(R.id.postOne);
+		TextView postTwo = (TextView) vi.findViewById(R.id.postTwo);
+
+		postOne.setText(current.get("postOne"));
+		postTwo.setText(current.get("postTwo"));
+		String picture = current.get("picture");
+		
+		if (picture.contains("sdcard"))
+			img.setImageBitmap(Utilities.decodeBitmap(picture));
+		else if (picture.equals("dangu"))
+			img.setImageResource(R.drawable.dangu);
+		else if (picture.equals("ontong"))
+			img.setImageResource(R.drawable.ontong);
+		else if (picture.equals("hanacaraka"))
+			img.setImageResource(R.drawable.hanan);
+		else if (picture.equals("abimanyu"))
+			img.setImageResource(R.drawable.abimanyu);
+		else if (picture.equals("anoman"))
+			img.setImageResource(R.drawable.anoman);
+		else if (picture.equals("aswotomo"))
+			img.setImageResource(R.drawable.aswotomo);
+		else if (picture.equals("dursasana"))
+			img.setImageResource(R.drawable.dursasana);
+		else if (picture.equals("gatotkaca"))
+			img.setImageResource(R.drawable.gatotkaca);
+		else if (picture.equals("irawan"))
+			img.setImageResource(R.drawable.irawan);
+		else if (picture.equals("janaka"))
+			img.setImageResource(R.drawable.janaka);
+		else if (picture.equals("lesmana"))
+			img.setImageResource(R.drawable.lesmana);
+		else if (picture.equals("nakula"))
+			img.setImageResource(R.drawable.nakula);
+		else if (picture.equals("ontorejo"))
+			img.setImageResource(R.drawable.antareja);
+		else if (picture.equals("ontoseno"))
+			img.setImageResource(R.drawable.antasena);
+		else if (picture.equals("kartamarma"))
+			img.setImageResource(R.drawable.kartamarma);
+		else if (picture.equals("sadewa"))
+			img.setImageResource(R.drawable.sadewa);
+		else if (picture.equals("setyaka"))
+			img.setImageResource(R.drawable.setyaka);
+		else if (picture.equals("setyaki"))
+			img.setImageResource(R.drawable.setyaki);
+		else if (picture.equals("samba"))
+			img.setImageResource(R.drawable.samba);
+		else if (picture.equals("sengkuni"))
+			img.setImageResource(R.drawable.sengkuni);
+		else if (picture.equals("udawa"))
+			img.setImageResource(R.drawable.udawa);
+		else if (picture.equals("werkudara"))
+			img.setImageResource(R.drawable.werkudara);
+		else if (picture.equals("asem"))
+			img.setImageResource(R.drawable.asem);
+		else if (picture.equals("jambu"))
+			img.setImageResource(R.drawable.jambu);
+		else 
+			img.setImageResource(R.drawable.default_pic);
+	}
+	
     public static Bitmap decodeBitmap(String url){
         try {
         	File f = new File(url);
@@ -333,7 +391,7 @@ public class Utilities {
             BitmapFactory.decodeStream(new FileInputStream(f),null,o);
  
             //Find the correct scale value. It should be the power of 2.
-            final int REQUIRED_SIZE=100;
+            final int REQUIRED_SIZE=240;
             int width_tmp=o.outWidth, height_tmp=o.outHeight;
             int scale=1;
             while(true){
