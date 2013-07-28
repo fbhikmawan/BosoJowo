@@ -15,21 +15,21 @@ import android.widget.TextView;
  * Supports the ListActivity to displays the ListViews
  */
 public class AdapterList extends BaseAdapter {
-	public enum AIM {
+	public enum POSITION {
 		Category, Post, Detail,
 	}
 
 	private Activity mActivity;
 	private ArrayList<HashMap<String, String>> mData;
 	private LayoutInflater mInflater = null;
-	private AIM mAim;
+	private POSITION mPosition;
 
-	public AdapterList(Activity activity, ArrayList<HashMap<String, String>> data, AIM aim) {
+	public AdapterList(Activity activity, ArrayList<HashMap<String, String>> data, POSITION position) {
 		mActivity = activity;
 		mData = data;
 		mInflater = (LayoutInflater) mActivity
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-		mAim = aim;
+		mPosition = position;
 	}
 
 	public int getCount() {
@@ -52,24 +52,24 @@ public class AdapterList extends BaseAdapter {
 
 	public View getView(int position, View convertView, ViewGroup parent) {
 		View vi = convertView;
-		HashMap<String, String> current = new HashMap<String, String>();
-		current = mData.get(position);
+		HashMap<String, String> currentData = new HashMap<String, String>();
+		currentData = mData.get(position);
 
-		switch (mAim) {
+		switch (mPosition) {
 		case Category:
 			vi = mInflater.inflate(R.layout.list_category, null);
 			TextView categoryName = (TextView) vi
 					.findViewById(R.id.categoryName);
 
-			categoryName.setText(current.get("seekThis"));
+			categoryName.setText(currentData.get("seekThis"));
 			break;
 		case Post:
 			vi = mInflater.inflate(R.layout.list_post, null);
-			Utilities.arrangeItems(vi, current);
+			Utilities.arrangeItems(vi, currentData, mPosition);
 			break;
 		case Detail:
 			vi = mInflater.inflate(R.layout.list_detail, null);
-			Utilities.arrangeItems(vi, current);
+			Utilities.arrangeItems(vi, currentData, mPosition);
 			break;
 		default:
 			break;
@@ -81,7 +81,7 @@ public class AdapterList extends BaseAdapter {
 	public void filter(ArrayList<HashMap<String, String>> resultDB) {
 		mData.clear();
 		Utilities.copyToNewList(resultDB, mData);
-		mAim = AIM.Post;
+		mPosition = POSITION.Post;
 		notifyDataSetChanged();
 	}
 	

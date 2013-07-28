@@ -27,6 +27,7 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.MenuItem.OnActionExpandListener;
+import com.dephi.bosojowo.AdapterList.POSITION;
 
 public class Utilities {
 	public static int THEME = R.style.Theme_Sherlock_Light;
@@ -230,7 +231,7 @@ public class Utilities {
 	}
 	
 	public void actionBarResponseWholeApp(Activity activity, MenuItem item) {
-		actionBarResponse(activity, item, false, (Integer) null);
+		actionBarResponse(activity, item, false, 0);
 	}
 	
 	public void actionBarResponseWholeApp(Activity activity, MenuItem item, int id) {
@@ -238,7 +239,7 @@ public class Utilities {
 	}
 
 	public void actionBarResponseSearch(Activity activity, MenuItem item) {
-		actionBarResponse(activity, item, true, (Integer) null);
+		actionBarResponse(activity, item, true, 0);
 	}
 
 	private void actionBarResponse(Activity activity, MenuItem item,
@@ -316,7 +317,7 @@ public class Utilities {
         }
     }
 	
-	public static void arrangeItems(View vi, HashMap<String, String> current) {
+	public static void arrangeItems(View vi, HashMap<String, String> current, AdapterList.POSITION position) {
 		ImageView img = (ImageView) vi.findViewById(R.id.picture);
 		TextView postOne = (TextView) vi.findViewById(R.id.postOne);
 		TextView postTwo = (TextView) vi.findViewById(R.id.postTwo);
@@ -326,7 +327,17 @@ public class Utilities {
 		String picture = current.get("picture");
 		
 		if (picture.contains("sdcard"))
-			img.setImageBitmap(Utilities.decodeBitmap(picture));
+			switch (position) {
+			case Post:
+				img.setImageBitmap(Utilities.decodeBitmap(picture, 50));
+				break;
+			case Detail:
+				img.setImageBitmap(Utilities.decodeBitmap(picture, 320));
+				break;
+			default:
+				break;
+			}
+			
 		else if (picture.equals("dangu"))
 			img.setImageResource(R.drawable.dangu);
 		else if (picture.equals("ontong"))
@@ -379,7 +390,11 @@ public class Utilities {
 			img.setImageResource(R.drawable.default_pic);
 	}
 	
-    public static Bitmap decodeBitmap(String url){
+	public static Bitmap decodeBitmap(String url, int size){
+		return doDecodeBitmap(url, size);
+	}
+	
+    private static Bitmap doDecodeBitmap(String url, int size){
         try {
         	File f = new File(url);
         	
@@ -391,11 +406,10 @@ public class Utilities {
             BitmapFactory.decodeStream(new FileInputStream(f),null,o);
  
             //Find the correct scale value. It should be the power of 2.
-            final int REQUIRED_SIZE=240;
             int width_tmp=o.outWidth, height_tmp=o.outHeight;
             int scale=1;
             while(true){
-                if(width_tmp/2<REQUIRED_SIZE || height_tmp/2<REQUIRED_SIZE)
+                if(width_tmp/2<size || height_tmp/2<size)
                     break;
                 width_tmp/=2;
                 height_tmp/=2;

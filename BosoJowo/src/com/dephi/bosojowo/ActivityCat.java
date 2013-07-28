@@ -63,11 +63,11 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 		
 		// Set adapter ke listView
 		if(mSource.equals("PEPAK_ID") || mSource.equals("CATEGORY_ID")){
-			mAdapter=new AdapterList(this, mResultDB, AdapterList.AIM.Category);
+			mAdapter=new AdapterList(this, mResultDB, AdapterList.POSITION.Category);
 		} else if(mSource.equals("SUBCATEGORY_ID")){
-			mAdapter=new AdapterList(this, mResultDB, AdapterList.AIM.Post);
+			mAdapter=new AdapterList(this, mResultDB, AdapterList.POSITION.Post);
 		} else if(mSource.equals("POSTS_ID")){
-			mAdapter=new AdapterList(this, mResultDB, AdapterList.AIM.Detail);
+			mAdapter=new AdapterList(this, mResultDB, AdapterList.POSITION.Detail);
 		}
 
         mList.setAdapter(mAdapter);		

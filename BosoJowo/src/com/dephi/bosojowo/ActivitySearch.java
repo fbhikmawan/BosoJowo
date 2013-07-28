@@ -39,7 +39,7 @@ public class ActivitySearch extends SherlockActivity {
 		String keyword = null;
 		resultDB = mDB.getSearchResult(keyword);
 
-		mAdapter=new AdapterList(this, resultDB, AdapterList.AIM.Category);
+		mAdapter=new AdapterList(this, resultDB, AdapterList.POSITION.Category);
 		mList.setAdapter(mAdapter);		
 	}
 
