@@ -19,5 +19,12 @@
     <string name="content.post.picture">Ambil Gambar :</string>
     <string name="button.pilih">Pilih</string>
     <string name="button.save">SAVE</string>
+    <string name="created.by">Dephi    @2013</string>
+    <string name="content.kawruhrupa">Kawruh Rupa</string>
+    <string name="content.pramasastra">Pramasastra</string>
+    <string name="content.kawruhbasa">Kawruh Basa</string>
+    <string name="content.kasusastraaan">Kasusastraan</string>
+    <string name="content.pewayangan">Pewayangan</string>
+    <string name="content.aksarajawa">Aksara Jawa</string>
 
 </resources>
