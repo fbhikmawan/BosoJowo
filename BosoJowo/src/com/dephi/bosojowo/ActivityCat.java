@@ -83,8 +83,14 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 			mainView.setBackgroundDrawable(getResources().getDrawable(R.drawable.contentbackground));
 		}
 		
-        mList.setAdapter(mAdapter);		
-        mList.setOnItemClickListener(this);
+        mList.setAdapter(mAdapter);
+        
+        if(mSource.equals("POSTS_ID")){
+        	mList.setOnItemClickListener(null);
+        } else {
+        	mList.setOnItemClickListener(this);
+        }
+       
 	}
 	
 	@Override

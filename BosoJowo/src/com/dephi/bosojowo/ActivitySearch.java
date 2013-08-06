@@ -13,12 +13,15 @@ import android.database.sqlite.SQLiteDatabase;
 
 import android.os.Bundle;
 
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.AdapterView.OnItemClickListener;
 
-public class ActivitySearch extends SherlockActivity {
+public class ActivitySearch extends SherlockActivity implements OnItemClickListener{
 	private ArrayList<HashMap<String, String>> resultDB;
 	private ListView mList;
 	private EditText searchText;
@@ -40,7 +43,16 @@ public class ActivitySearch extends SherlockActivity {
 		resultDB = mDB.getSearchResult(keyword);
 
 		mAdapter=new AdapterList(this, resultDB, AdapterList.POSITION.Category);
-		mList.setAdapter(mAdapter);		
+		mList.setAdapter(mAdapter);
+		mList.setOnItemClickListener(this);
+	}
+	
+	@Override
+	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {		
+		Intent intent = new Intent(this, ActivityCat.class);
+    	intent.putExtra("SOURCE", "POSTS_ID");
+    	intent.putExtra("ID", mAdapter.getItemDBid(arg2));
+    	startActivity(intent);
 	}
 
 	@Override

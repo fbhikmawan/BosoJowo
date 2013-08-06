@@ -30,6 +30,11 @@ public class ActivityMain extends SherlockActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.screen_splash);
         
+        // Sembunyikan ActionBar dulu untuk menampilkan splash screen
+        getSupportActionBar().hide();
+        
+        // Jalankan ini untuk menahan splash screen dan 
+        // memunculkan animasi transisi
 		new RunTheMain(this).execute();
 		
         //getSupportActionBar().setIcon(icon);
@@ -87,7 +92,7 @@ public class ActivityMain extends SherlockActivity{
 			anime.setDuration(400);
 			View v = findViewById(R.id.layoutMain);
 			v.startAnimation(anime);
-			
+			getSupportActionBar().show();
 			
 			setForEachItem();
 		}
