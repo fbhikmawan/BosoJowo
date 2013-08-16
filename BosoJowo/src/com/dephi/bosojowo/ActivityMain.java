@@ -8,7 +8,10 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Shader.TileMode;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -36,7 +39,7 @@ public class ActivityMain extends SherlockActivity{
         // Jalankan ini untuk menahan splash screen dan 
         // memunculkan animasi transisi
 		new RunTheMain(this).execute();
-		
+
         //getSupportActionBar().setIcon(icon);
         //getSupportActionBar().setTitle(R.string.home);
         //getSupportActionBar().setHomeButtonEnabled(true);

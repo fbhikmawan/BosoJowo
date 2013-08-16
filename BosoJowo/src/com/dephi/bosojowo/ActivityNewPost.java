@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -53,7 +54,10 @@ public class ActivityNewPost extends SherlockActivity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		new Utilities(this).createActionBarEmpty(this, menu);
+		Resources res = getResources();
+		String title = res.getString(R.string.title_new_post);
+		
+		new Utilities(this).createActionBarEmpty(this, menu, title);
 		return super.onCreateOptionsMenu(menu);
 	}
 

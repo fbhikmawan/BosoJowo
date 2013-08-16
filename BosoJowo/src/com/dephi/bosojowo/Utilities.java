@@ -12,8 +12,12 @@ import java.util.Map.Entry;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.os.Build;
+import android.text.Html;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -68,8 +72,8 @@ public class Utilities {
 	 * Membuat ActionBar untuk halaman kosong
 	 * 
 	 */
-	public void createActionBarEmpty(final SherlockActivity activity, Menu menu) {
-		createActionBarBosoJowo(activity, null, menu, null, false);
+	public void createActionBarEmpty(final SherlockActivity activity, Menu menu, String title) {
+		doCreateActionBarBosoJowo(activity, null, menu, null, title, false);
 	}
 	
 	/**
@@ -77,8 +81,11 @@ public class Utilities {
 	 * 
 	 */
 	public void createActionBarHome(final SherlockActivity activity, Menu menu) {
-		createActionBarBosoJowo(activity, null, menu, new ACTBAR[] 
-				{ACTBAR.SEARCH, ACTBAR.INFO }, false);
+		Resources res = activity.getResources();
+		String titleHome = res.getString(R.string.title_home);
+		
+		doCreateActionBarBosoJowo(activity, null, menu, new ACTBAR[] 
+				{ACTBAR.SEARCH, ACTBAR.INFO }, titleHome,false);
 	}
 	
 	/**
@@ -86,16 +93,28 @@ public class Utilities {
 	 * 
 	 */
 	public void createActionBarWholeApp(SherlockActivity activity, Menu menu, String source) {
+		String title = null;
+		Resources res = activity.getResources();
 		activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		activity.getSupportActionBar().setHomeButtonEnabled(true);
+
+		if(source.equals("PEPAK_ID")){
+			title = res.getString(R.string.title_category);
+		} else if(source.equals("CATEGORY_ID")){
+			title = res.getString(R.string.title_subcategory);
+		} else if(source.equals("SUBCATEGORY_ID")){
+			title = res.getString(R.string.title_isi);
+		} else if(source.equals("POSTS_ID")){
+			title = res.getString(R.string.title_detail);
+		}
 		
 		// Memunculkan ActionBar Add pada saat halaman di posisi akhir
 		if (source.equals("SUBCATEGORY_ID")) {
-			createActionBarBosoJowo(activity, null, menu,
-					new ACTBAR[] { ACTBAR.INFO, ACTBAR.ADD }, false);
+			doCreateActionBarBosoJowo(activity, null, menu,
+					new ACTBAR[] { ACTBAR.INFO, ACTBAR.ADD }, title, false);
 		} else {
-			createActionBarBosoJowo(activity, null, menu,
-					new ACTBAR[] { ACTBAR.INFO }, false);
+			doCreateActionBarBosoJowo(activity, null, menu,
+					new ACTBAR[] { ACTBAR.INFO }, title,false);
 		}
 	}
 
@@ -104,8 +123,10 @@ public class Utilities {
 	 * 
 	 */
 	public void createActionBarSearch(SherlockActivity activity, AdapterList adapter, Menu menu) {
-		createActionBarBosoJowo(activity, adapter, menu, new ACTBAR[] 
-				{ACTBAR.SEARCH, ACTBAR.INFO },true);
+		Resources res = activity.getResources();
+		String title = res.getString(R.string.title_search);
+		doCreateActionBarBosoJowo(activity, adapter, menu, new ACTBAR[] 
+				{ACTBAR.SEARCH}, title,true);
 	}
 
 	/**
@@ -118,24 +139,30 @@ public class Utilities {
 	 * @param isSearching
 	 *            Boolean apakah untuk launcher atau tidak
 	 */
-	private void createActionBarBosoJowo(final SherlockActivity activity,
-			final AdapterList adapter, Menu menu, ACTBAR[] whichShown, boolean isSearching) {
-		
+	private void doCreateActionBarBosoJowo(final SherlockActivity activity,
+			final AdapterList adapter, Menu menu, ACTBAR[] whichShown, String title, boolean isSearching) {
+		activity.getSupportActionBar().setTitle(Html.fromHtml("<font color='#ffffff'>" + title + "</font>"));
+		// Sets the actionbar background
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+            BitmapDrawable bg = (BitmapDrawable) activity.getResources().getDrawable(R.drawable.bg_actionbar);
+            activity.getSupportActionBar().setBackgroundDrawable(bg);
+        }
+        
 		if(whichShown!=null){
 			int whichShownSize = whichShown.length;
 			for(int i = 0; i < whichShownSize; i++){
 				switch (whichShown[i]) {
 				case SEARCH:
-					createElementSearch(activity, adapter, menu, isSearching);
+					doCreateElementSearch(activity, adapter, menu, isSearching);
 					break;
 				case INFO:
-					createElementInfo(menu);
+					doCreateElementInfo(menu);
 					break;
 				case HELP:
-					createElemetHelp(menu);
+					doCreateElemetHelp(menu);
 					break;
 				case ADD:
-					createElemetAdd(menu);
+					doCreateElemetAdd(menu);
 					break;
 				default:
 					break;
@@ -144,7 +171,7 @@ public class Utilities {
 		}
 	}
 
-	private void createElementSearch(final Context context,
+	private void doCreateElementSearch(final Context context,
 			final AdapterList adapter, Menu menu, boolean isSearching) {
 		MenuItem menuItemSearch;
 		if (isSearching) {
@@ -203,7 +230,7 @@ public class Utilities {
 		}
 	}
 	
-	private void createElementInfo(Menu menu){
+	private void doCreateElementInfo(Menu menu){
 		// Sets for Info ActionBar
 		int menuItemIdInfo = menu
 				.add(Menu.NONE, Utilities.info, Utilities.third, R.string.info)
@@ -212,7 +239,7 @@ public class Utilities {
 				.getItemId();
 	}
 	
-	private void createElemetHelp(Menu menu){
+	private void doCreateElemetHelp(Menu menu){
 		 // Sets for Help ActionBar 
 		int menuItemIdHelp = menu
 				.add(Menu.NONE, Utilities.help, Utilities.second, R.string.help)
@@ -221,7 +248,7 @@ public class Utilities {
 		 .getItemId();
 	}
 	
-	private void createElemetAdd(Menu menu) {
+	private void doCreateElemetAdd(Menu menu) {
 		// Sets for Add ActionBar 
 		int menuItemIdAdd = menu
 				.add(Menu.NONE, Utilities.add, Utilities.first, R.string.add)
@@ -244,6 +271,7 @@ public class Utilities {
 
 	private void actionBarResponse(Activity activity, MenuItem item,
 			boolean isSearching, int id) {
+		Intent intent = null;
 		switch (item.getItemId()) {
 		case Utilities.search:
 			if (isSearching) {
@@ -262,17 +290,18 @@ public class Utilities {
 					Toast.LENGTH_SHORT).show();
 			break;
 		case Utilities.info:
-			Toast.makeText(activity, "Got click: " + item.toString(),
-					Toast.LENGTH_SHORT).show();
+			intent = new Intent(activity, ActivityInfo.class);
+	    	intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+	    	activity.startActivity(intent);
 			break;
 		case Utilities.add:
-			Intent i = new Intent(mActivity, ActivityNewPost.class);
-			i.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
-			i.putExtra("ID", id);
-			mActivity.startActivityForResult(i, ActivityCat.REQ_CODE_REFRESH);
+			intent = new Intent(mActivity, ActivityNewPost.class);
+			intent.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+			intent.putExtra("ID", id);
+			mActivity.startActivityForResult(intent, ActivityCat.REQ_CODE_REFRESH);
 			break;
 		case android.R.id.home:
-			Intent intent = new Intent(activity, ActivityMain.class);
+			intent = new Intent(activity, ActivityMain.class);
 	    	intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	    	activity.startActivity(intent);
 		default:

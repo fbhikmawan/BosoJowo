@@ -21,17 +21,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
+        <activity 
             android:name="com.dephi.bosojowo.ActivityCat"
-            android:label="@string/title_activity_sub_cat" >
+            android:label="@string/title_category">
+        </activity>
+        <activity
+            android:name="com.dephi.bosojowo.ActivityInfo"
+            android:label="@string/title_info" >
         </activity>
         <activity
             android:name="com.dephi.bosojowo.ActivitySearch"
-            android:label="@string/title_activity_searchable" >
+            android:label="@string/title_search" >
         </activity>
         <activity
             android:name="com.dephi.bosojowo.ActivityNewPost"
-            android:label="@string/title_activity_activity_new_post" >
+            android:label="@string/title_new_post" >
         </activity>
     </application>
 

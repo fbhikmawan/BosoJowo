@@ -126,7 +126,7 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 		super.onActivityResult(requestCode, resultCode, data);
 		switch (requestCode) {
 		case (REQ_CODE_REFRESH):
-			// Merefresh list yang telah ada, spya new entry terlihat
+			// Merefresh list yang telah ada, supaya new entry terlihat
 			// dan memberikan notifikasi bhw entry telah disave
 			mAdapter.refresh(mSubCatIDtoAddNewEntry);
 			break;

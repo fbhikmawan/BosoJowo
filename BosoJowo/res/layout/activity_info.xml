@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    
+    <TextView 
+    android:text="Pepak Bahasa Jawa Versi 1.0" 
+    android:id="@+id/textView1" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textStyle="bold"
+    android:textSize="14dp"/>
+    
+    <TextView 
+    android:text="Tips Untuk Pepak Versi 1.0"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textSize="12dp"
+    android:textStyle="italic"
+    android:textColor="#0675cb"/>
+    
+    <TextView 
+    android:text="- Gunakan fitur search untuk memudahkan anda dalam pencarian kata yang anda maksud/inginkan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textSize="12dp"
+    android:textColor="#191919"/>
+     
+  
+  <TextView 
+    android:text="- Klik tombol/icon search pada tab pojok kanan lalu masukkan kata/kalimat pada form search kemudian klik button search"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textSize="12dp"
+    android:textColor="#191919"/>
+  
+  <TextView 
+    android:text="- Singkatan Jawa : lsp = lan sapanunggalane atau dan sebagainya/dan lain-lain (dsb/dll)"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textSize="12dp"
+    android:textColor="#191919"/>
+   
+   <TextView 
+    android:text="- Kagungane (jawa) = Kepunyaan (indo)"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:textSize="12dp"
+    android:textColor="#191919"/>
+    
+</LinearLayout>
