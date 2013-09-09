@@ -1,4 +1,4 @@
-package com.dephi.bosojowo;
+package com.dephi.basajawa;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
+import com.dephi.bosojowo.R;
 
 public class ActivityNewPost extends SherlockActivity {
 	private int mIDtoEdit;

@@ -1,7 +1,8 @@
-package com.dephi.bosojowo;
+package com.dephi.basajawa;
 
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
+import com.dephi.bosojowo.R;
 
 import android.app.Activity;
 import android.content.Context;

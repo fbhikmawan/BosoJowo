@@ -1,4 +1,4 @@
-package com.dephi.bosojowo;
+package com.dephi.basajawa;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,7 +31,8 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.MenuItem.OnActionExpandListener;
-import com.dephi.bosojowo.AdapterList.POSITION;
+import com.dephi.basajawa.AdapterList.POSITION;
+import com.dephi.bosojowo.R;
 
 public class Utilities {
 	public static int THEME = R.style.Theme_Sherlock_Light;

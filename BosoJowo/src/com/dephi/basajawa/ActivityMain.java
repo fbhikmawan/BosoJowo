@@ -1,52 +1,68 @@
-
-package com.dephi.bosojowo;
+package com.dephi.basajawa;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import android.app.Activity;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.graphics.Shader.TileMode;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
-
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.dephi.bosojowo.R;
 
+/**
+ * Acivity ini merupakan yang utama, pemanggilan pertama pada applikasi
+ * (dapat dilihat di Androidmanifest.xml).
+ * <br>
+ * Menerapkan Sherlock ActionBar (extend SherlockActivity) sehingga dapat
+ * menampilkan menu di deretan atas yang sesuai dengan kriteria umum 
+ * aplikasi di OS Android.
+ * <br>
+ * Permanggilan/pembuatan ActionBar, dilakukan didalam barisan perintah: 
+ * 		onCreateOptionsMenu(Menu menu).
+ * Sedangkan respon dari ActionBar ditangani melalui barisan perintah:
+ * 		onOptionsItemSelected(MenuItem item).
+ * 
+ * @author Dephi
+ *
+ */
 public class ActivityMain extends SherlockActivity{
 	
     @Override
+    /**
+     * Pengeksekusian dilakukan disini terlebih dulu
+     */
     public void onCreate(Bundle savedInstanceState) {
+    	// Meng-set tema untuk SherockActivity
     	setTheme(Utilities.THEME);
-        super.onCreate(savedInstanceState);
+        
+    	super.onCreate(savedInstanceState);
+        
+        // Menentukan view/layout untuk aktif di activity ini
         setContentView(R.layout.screen_splash);
         
-        // Sembunyikan ActionBar dulu untuk menampilkan splash screen
+        // Sembunyikan ActionBar terlebih dulu untuk 
+        // menampilkan SplashScreen sejenak
         getSupportActionBar().hide();
         
-        // Jalankan ini untuk menahan splash screen dan 
-        // memunculkan animasi transisi
+        // Menampilkan SplashScreen sejenak, kemudian 
+        // memunculkan animasi transisi saat berpindah 
+        // ke activity berikutnya
 		new RunTheMain(this).execute();
 
-        //getSupportActionBar().setIcon(icon);
-        //getSupportActionBar().setTitle(R.string.home);
-        //getSupportActionBar().setHomeButtonEnabled(true);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
-
-    protected void nextSubCat(String id) {
+    
+    /*
+     * Memanggil halaman sleanjutnya, yaitu ActivityCat.java
+     */
+    private void nextSubCat(String id) {
     	Intent intent = new Intent(this, ActivityCat.class);
     	intent.putExtra("SOURCE", "PEPAK_ID");
     	intent.putExtra("ID", Integer.parseInt(id));
@@ -65,6 +81,14 @@ public class ActivityMain extends SherlockActivity{
     	return super.onOptionsItemSelected(item);
     }
     
+    /**
+     * Class untuk menahan SplashScreen beberapa saat lalu memunculkan
+     * animasi perpindahan halaman
+     * 
+     * @author 
+     * 		Dephi
+     *
+     */
     private class RunTheMain extends AsyncTask<Void, Void, Void> {
     	private Activity activity;
     	
@@ -101,18 +125,18 @@ public class ActivityMain extends SherlockActivity{
 		}
 	}
     
+    /**
+     * Untuk menampilkan icon, tulisan dan action yang nantinya akan
+     * di-tap pada halaman utama (menampilkan menu utama)
+     */
 	private void setForEachItem() {
 		DatabaseHelper db = new DatabaseHelper(this);
-
 		ArrayList<HashMap<String, String>> mainCat = db.getMain();
-
 		RelativeLayout mainlayout = (RelativeLayout) findViewById(R.id.layoutMain);
-		int childcount = mainlayout.getChildCount();
 		int i = 0;
 		while (i < 6) {
 			ImageView iv = (ImageView) mainlayout.getChildAt(i);
 			final HashMap<String, String> current = mainCat.get(i);
-			// iv.setText(current.get("name"));
 			iv.setOnClickListener(new OnClickListener() {
 				@Override
 				public void onClick(View v) {

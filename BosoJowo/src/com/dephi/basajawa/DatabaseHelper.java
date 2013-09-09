@@ -1,4 +1,4 @@
-package com.dephi.bosojowo;
+package com.dephi.basajawa;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

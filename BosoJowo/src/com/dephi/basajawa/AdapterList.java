@@ -1,7 +1,9 @@
-package com.dephi.bosojowo;
+package com.dephi.basajawa;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+
+import com.dephi.bosojowo.R;
 
 import android.app.Activity;
 import android.content.Context;

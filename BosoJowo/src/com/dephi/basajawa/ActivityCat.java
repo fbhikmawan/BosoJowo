@@ -1,4 +1,4 @@
-package com.dephi.bosojowo;
+package com.dephi.basajawa;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,6 +6,7 @@ import java.util.HashMap;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.dephi.bosojowo.R;
 
 import android.net.Uri;
 import android.os.Build;

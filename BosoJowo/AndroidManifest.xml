@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.dephi.bosojowo.ActivityMain"
+            android:name="com.dephi.basajawa.ActivityMain"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,19 +22,19 @@
             </intent-filter>
         </activity>
         <activity 
-            android:name="com.dephi.bosojowo.ActivityCat"
+            android:name="com.dephi.basajawa.ActivityCat"
             android:label="@string/title_category">
         </activity>
         <activity
-            android:name="com.dephi.bosojowo.ActivityInfo"
+            android:name="com.dephi.basajawa.ActivityInfo"
             android:label="@string/title_info" >
         </activity>
         <activity
-            android:name="com.dephi.bosojowo.ActivitySearch"
+            android:name="com.dephi.basajawa.ActivitySearch"
             android:label="@string/title_search" >
         </activity>
         <activity
-            android:name="com.dephi.bosojowo.ActivityNewPost"
+            android:name="com.dephi.basajawa.ActivityNewPost"
             android:label="@string/title_new_post" >
         </activity>
     </application>
