@@ -31,7 +31,6 @@ import com.dephi.bosojowo.R;
  * 		onOptionsItemSelected(MenuItem item).
  * 
  * @author Dephi
- *
  */
 public class ActivityMain extends SherlockActivity{
 	
@@ -60,7 +59,12 @@ public class ActivityMain extends SherlockActivity{
     }
     
     /*
-     * Memanggil halaman sleanjutnya, yaitu ActivityCat.java
+     * Memanggil halaman sleanjutnya, yaitu ActivityCat.java,
+     * dengan isi (intent) berupa:
+     * (1) SOURCE, dan
+     * (2) ID
+     * Keduanya penting untuk menentukan asal drmana activity 
+     * tersebut terpanggil.
      */
     private void nextSubCat(String id) {
     	Intent intent = new Intent(this, ActivityCat.class);
@@ -71,19 +75,28 @@ public class ActivityMain extends SherlockActivity{
 
 	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
+		// Pembuatan ActionBar ada di baris ini
 		new Utilities(this).createActionBarHome(this, menu);
-        return super.onCreateOptionsMenu(menu);
+		return super.onCreateOptionsMenu(menu);
     }
     
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {    	
+    	// Penanganan interaksi dengan ActionBar ada di baris ini
     	new Utilities(this).actionBarResponseWholeApp(this, item);
     	return super.onOptionsItemSelected(item);
     }
     
     /**
-     * Class untuk menahan SplashScreen beberapa saat lalu memunculkan
-     * animasi perpindahan halaman
+     * Class ini adalah ekstensi (extend) dari Class AsyncTask, yang
+     * memiliki 2 elemen utama: <br>
+     * (1) doInBackground, elemen ini yang dijalankan pertama.<br>
+     * (2) onPostExecute, lalu setelah elemen pertama selesai dijalankan,
+     * maka akan melakukan elemen ini.<br><br>
+     * 
+     * Class ini pada dasarnya adalah untuk menahan SplashScreen 
+     * beberapa saat lalu memunculkan animasi perpindahan 
+     * ke halaman selanjutnya
      * 
      * @author 
      * 		Dephi
@@ -99,7 +112,8 @@ public class ActivityMain extends SherlockActivity{
 		@Override
 		protected Void doInBackground(Void... params) {
 			try {
-				Thread.sleep(3000); // wait to show logo
+				// Lama waktu tunggu (dalam milidetik)
+				Thread.sleep(3000);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -108,13 +122,12 @@ public class ActivityMain extends SherlockActivity{
 
 		@Override
 		protected void onPostExecute(Void result) {
+			// Animasi perpindahan ada di baris-baris ini
 			View prev = activity.findViewById(R.id.layoutSplash);
 			AlphaAnimation anime0 = new AlphaAnimation(1, 0);
 			anime0.setDuration(400);
 			prev.startAnimation(anime0);
-			
 			setContentView(R.layout.activity_main);
-		
 			AlphaAnimation anime = new AlphaAnimation(0, 1);
 			anime.setDuration(400);
 			View v = findViewById(R.id.layoutMain);
@@ -126,8 +139,8 @@ public class ActivityMain extends SherlockActivity{
 	}
     
     /**
-     * Untuk menampilkan icon, tulisan dan action yang nantinya akan
-     * di-tap pada halaman utama (menampilkan menu utama)
+     * Untuk menampilkan icon dan tulisan serta action untuk 
+     * interaksi pada tampilan menu utama
      */
 	private void setForEachItem() {
 		DatabaseHelper db = new DatabaseHelper(this);
