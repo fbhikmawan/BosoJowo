@@ -3,8 +3,6 @@ package com.dephi.basajawa;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map.Entry;
@@ -31,9 +29,18 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.MenuItem.OnActionExpandListener;
-import com.dephi.basajawa.AdapterList.POSITION;
 import com.dephi.bosojowo.R;
 
+/**
+ * Berisi fungsi2 pendukung untuk aplikasi ini, antara lain: <br>
+ * 1) Pembuatan actionbar, <br>
+ * 2) Pembuatan elemen-elemen yang terdapat dalam actionbar, <br>
+ * 3) Pembuatan action/respon dari interaksi user pada masing2 elemen, <br>
+ * 4) dan Penanganan decode gambar untuk penyimpanan di sdcard atau <br>
+ * penyajian gambar di layar.
+ * 
+ * @author Dephi
+ */
 public class Utilities {
 	public static int THEME = R.style.Theme_Sherlock_Light;
 	
@@ -51,6 +58,7 @@ public class Utilities {
 	private Activity mActivity;
 	private EditText mEditsearch;
 	
+	// macam elemen-elemen yang nanti diisi di actionbar
 	public static enum ACTBAR{
 		SEARCH,
 		INFO,
@@ -58,13 +66,15 @@ public class Utilities {
 		ADD,
 	}
 	
+	// macam sumber data
 	public static enum SOURCE{
 		PEPAK_ID,
 		CATEGORY_ID,
 		SUBCATEGORY_ID,
 		POSTS_ID,
 	}
-
+	
+	// Konstruktor
 	public Utilities(Activity activity) {
 		this.mActivity = activity;
 	}
@@ -171,7 +181,8 @@ public class Utilities {
 			}
 		}
 	}
-
+	
+	// Pembuatan elemen pencarian
 	private void doCreateElementSearch(final Context context,
 			final AdapterList adapter, Menu menu, boolean isSearching) {
 		MenuItem menuItemSearch;
@@ -231,6 +242,7 @@ public class Utilities {
 		}
 	}
 	
+	// Pembuatan elemen info
 	private void doCreateElementInfo(Menu menu){
 		// Sets for Info ActionBar
 		int menuItemIdInfo = menu
@@ -240,6 +252,7 @@ public class Utilities {
 				.getItemId();
 	}
 	
+	// Pembuatan elemen bantuan
 	private void doCreateElemetHelp(Menu menu){
 		 // Sets for Help ActionBar 
 		int menuItemIdHelp = menu
@@ -249,6 +262,7 @@ public class Utilities {
 		 .getItemId();
 	}
 	
+	// Pembuatan elemen penambahan entry baru
 	private void doCreateElemetAdd(Menu menu) {
 		// Sets for Add ActionBar 
 		int menuItemIdAdd = menu
@@ -258,19 +272,41 @@ public class Utilities {
 		 .getItemId();
 	}
 	
+	// Membuat respon untuk interaksi user dengan actionbar tanpa id
 	public void actionBarResponseWholeApp(Activity activity, MenuItem item) {
-		actionBarResponse(activity, item, false, 0);
+		doActionBarResponse(activity, item, false, 0);
 	}
 	
+	// Membuat respon untuk interaksi user dengan actionbar dengan id
 	public void actionBarResponseWholeApp(Activity activity, MenuItem item, int id) {
-		actionBarResponse(activity, item, false, id);
+		doActionBarResponse(activity, item, false, id);
 	}
-
+	
+	// Membuat respon untuk interaksi user dengan actionbar pencarian
 	public void actionBarResponseSearch(Activity activity, MenuItem item) {
-		actionBarResponse(activity, item, true, 0);
+		doActionBarResponse(activity, item, true, 0);
 	}
-
-	private void actionBarResponse(Activity activity, MenuItem item,
+	
+	/**
+	 * 
+	 * 
+	 * @param activity
+	 *            Context yang aktif
+	 * @param menu
+	 *            Menu dari Activity yang aktif
+	 * @param isSearching
+	 *            Boolean apakah untuk launcher atau tidak
+	 */
+	
+	/**
+	 * Fungsi Dasar untuk membuat respon ActionBar
+	 * 
+	 * @param activity Activity yang aktif saat ini
+	 * @param item MenuItem yang dipilih
+	 * @param isSearching Apakah respon ini untuk pencarian
+	 * @param id ID yang dipilih
+	 */
+	private void doActionBarResponse(Activity activity, MenuItem item,
 			boolean isSearching, int id) {
 		Intent intent = null;
 		switch (item.getItemId()) {
@@ -332,30 +368,27 @@ public class Utilities {
 		}
 	}
 	
-	public static void copyStream(InputStream is, OutputStream os){
-        final int buffer_size=1024;
-        try{
-            byte[] bytes=new byte[buffer_size];
-            for(;;){
-              int count=is.read(bytes, 0, buffer_size);
-              if(count==-1)
-                  break;
-              os.write(bytes, 0, count);
-            }
-        } catch(Exception e){
-        	e.printStackTrace();
-        }
-    }
-	
+	/**
+	 * Penanganan gambar saat user ampai pada item detail.
+	 * 
+	 * @param vi View yang aktif saat ini.
+	 * @param current Data yang dipilih oleh user
+	 * @param position Posisi data yang dipilih
+	 */
 	public static void arrangeItems(View vi, HashMap<String, String> current, AdapterList.POSITION position) {
+		// Inisiasi elemen widget pada layout
 		ImageView img = (ImageView) vi.findViewById(R.id.picture);
 		TextView postOne = (TextView) vi.findViewById(R.id.postOne);
 		TextView postTwo = (TextView) vi.findViewById(R.id.postTwo);
-
+		
+		// Ambil data dari Data yang dipilih oleh user kedalam tampilan
 		postOne.setText(current.get("postOne"));
 		postTwo.setText(current.get("postTwo"));
 		String picture = current.get("picture");
 		
+		// Dibawah ini adalah penanganan gambar yang ditampilkan ke bagian detail,
+		// Jika memiliki text "sdcard", maka dapat berarti ini adalah entry baru 
+		// maka gambar diambil dari sdcard, jika tidak maka diambil dari resources. 
 		if (picture.contains("sdcard"))
 			switch (position) {
 			case Post:
@@ -367,7 +400,6 @@ public class Utilities {
 			default:
 				break;
 			}
-			
 		else if (picture.equals("dangu"))
 			img.setImageResource(R.drawable.dangu);
 		else if (picture.equals("ontong"))
@@ -420,13 +452,27 @@ public class Utilities {
 			img.setImageResource(R.drawable.default_pic);
 	}
 	
-	public static Bitmap decodeBitmap(String url, int size){
-		return doDecodeBitmap(url, size);
+	/**
+	 * User memanggil fungsi ini untuk mendecode gambar.
+	 * 
+	 * @param urlImagePath String path dari gambar
+	 * @param ukuranGambarYgDiinginkan Ukuran gambar yang diinginkan
+	 * @return Bitmap hasil decode gambar
+	 */
+	public static Bitmap decodeBitmap(String urlImagePath, int ukuranGambarYgDiinginkan){
+		return doDecodeBitmap(urlImagePath, ukuranGambarYgDiinginkan);
 	}
 	
-    private static Bitmap doDecodeBitmap(String url, int size){
+	/**
+	 * Proses pendecodean gambar
+	 * 
+	 * @param urlImagePath String path dari gambar
+	 * @param ukuranGambarYgDiinginkan Ukuran gambar yang diinginkan
+	 * @return Bitmap hasil decode gambar
+	 */
+    private static Bitmap doDecodeBitmap(String urlImagePath, int ukuranGambarYgDiinginkan){
         try {
-        	File f = new File(url);
+        	File f = new File(urlImagePath);
         	
             //decode image size
             BitmapFactory.Options o = new BitmapFactory.Options();
@@ -439,7 +485,7 @@ public class Utilities {
             int width_tmp=o.outWidth, height_tmp=o.outHeight;
             int scale=1;
             while(true){
-                if(width_tmp/2<size || height_tmp/2<size)
+                if(width_tmp/2<ukuranGambarYgDiinginkan || height_tmp/2<ukuranGambarYgDiinginkan)
                     break;
                 width_tmp/=2;
                 height_tmp/=2;

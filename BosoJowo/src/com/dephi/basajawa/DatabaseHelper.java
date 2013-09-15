@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -14,8 +13,15 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
+/**
+ * Digunakan untuk pemrosesan database keseluruhan pada applikasi ini.
+ * Semua proses meliputi pemanggilan, penyimpanan atau pencarian ada dalam
+ * class ini.
+ * 
+ * @author Dephi
+ *
+ */
 public class DatabaseHelper extends SQLiteOpenHelper {
 	private DatabaseHelper mDbHelper = null;
 	private Context mContext;
@@ -29,12 +35,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private static final String KEY_POSTTWO = "postTwo";
 	private static final String KEY_POSTPICTURE= "picture";
 
-	// Static variables
-	private static String[] sTableNames;
-	private static final String TAG = "DatabaseHelper";
-
-	// Constructor dengan parameter context untuk meng-access assets and
-	// resources.
+	// Konstruktor
 	public DatabaseHelper(Context context) {
 		super(context, DB_NAME, null, 1);
 		this.mContext = context;
@@ -120,7 +121,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		// TODO Auto-generated method stub
 	}
 
 	@Override
@@ -156,7 +156,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close(); // Closing database connection
     }
 
-	// Mengambil Utama
+	// Mengambil data Utama
 	public ArrayList<HashMap<String, String>> getMain() {
 		SQLiteDatabase db = this.getWritableDatabase();
 		ArrayList<HashMap<String, String>> mainCat = new ArrayList<HashMap<String, String>>();
@@ -182,7 +182,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return mainCat;
 	}
 
-	// Mengambil Category
+	// Mengambil data Category
 	public ArrayList<HashMap<String, String>> getCat(int id) {
 		ArrayList<HashMap<String, String>> resultDB = new ArrayList<HashMap<String, String>>();
 
@@ -211,7 +211,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return resultDB;
 	}
 
-	// Mengambil SubCategory
+	// Mengambil data SubCategory
 	public ArrayList<HashMap<String, String>> getSubCat(int id) {
 		ArrayList<HashMap<String, String>> resultDB = new ArrayList<HashMap<String, String>>();
 
@@ -241,7 +241,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return resultDB;
 	}
 
-	// Mengambil Posts by SubCat
+	// Mengambil data Posts dari keyword id SubCat
 	public ArrayList<HashMap<String, String>> getPostsBySubCat(int id) {
 		ArrayList<HashMap<String, String>> resultDB = new ArrayList<HashMap<String, String>>();
 
@@ -272,7 +272,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		return resultDB;
 	}
 
-	// Mengambil Posts by ID
+	// Mengambil data Posts by keyword id ID
 	public ArrayList<HashMap<String, String>> getPostsByID(int id) {
 		ArrayList<HashMap<String, String>> resultDB = new ArrayList<HashMap<String, String>>();
 
@@ -301,11 +301,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		db.close();
 		return resultDB;
 	}
-
+	
+	/**
+	 * Melakukan pencarian sesuai dengan keyword yang diberikan.
+	 * 
+	 * @param keyword String keyword pencarian.
+	 * @return ArrayList pasangan data hasil pencarian
+	 */
 	public ArrayList<HashMap<String, String>> getSearchResult(String keyword) {
 		ArrayList<HashMap<String, String>> resultDB = new ArrayList<HashMap<String, String>>();
 
-		// || is the concatenation operation in SQLite
+		// || is the operasi bersamaan in SQLite
 		SQLiteDatabase db = this.getWritableDatabase();
 		Cursor cursor = db
 				.rawQuery(
@@ -330,47 +336,4 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 		db.close();
 		return resultDB;
 	}
-	
-	/**
-	 * Panggillah fungsi ini selalu, untuk mencari nama-nama tabel yang ada :-)
-	 */
-	private void loadsAllTables() {
-		if (sTableNames == null) {
-			Log.v(TAG, "Loads All Table's Name");
-
-			// Database Query
-			SQLiteDatabase db = this.getWritableDatabase();
-			Cursor cursor = db.rawQuery(
-					"SELECT name FROM sqlite_master WHERE type='table'",
-					new String[] {});
-
-			// Mengisi variabel staticnya
-			int count = cursor.getCount() - 1;
-			Log.v(TAG, "getCount() = " + count);
-			sTableNames = new String[count];
-
-			// looping through all rows and adding to list
-			// reset ke posisi 0, tapi diabaikan lanjut berikutnya
-			cursor.moveToFirst();
-			for (int i = 0; i < count; i++) {
-				cursor.moveToNext();
-				String currentTableName = cursor.getString(0);
-				Log.v(TAG, "Cursor position = " + cursor.getPosition());
-				Log.v(TAG,
-						"ColoumnCount on this positiion  = "
-								+ cursor.getColumnCount());
-				Log.v(TAG, "Table's name on this position  = "
-						+ currentTableName);
-				sTableNames[i] = currentTableName;
-			}
-			db.close();
-		} else {
-			Log.v(TAG, "All Table's Name Loaded");
-		}
-	}
-	
-	public void searchAll(String keywords) {
-		loadsAllTables();
-	}
-
 }

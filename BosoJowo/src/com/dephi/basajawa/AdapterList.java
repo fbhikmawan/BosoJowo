@@ -14,18 +14,20 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 /**
- * Supports the ListActivity to displays the ListViews
+ * Mendukung/menyediakan/memproses segala isi dari list.  
  */
 public class AdapterList extends BaseAdapter {
+	// Kategori posisi list data yang diolah
 	public enum POSITION {
 		Category, Post, Detail,
 	}
-
+	
 	private Activity mActivity;
 	private ArrayList<HashMap<String, String>> mData;
 	private LayoutInflater mInflater = null;
 	private POSITION mPosition;
-
+	
+	// Konstruktor
 	public AdapterList(Activity activity, ArrayList<HashMap<String, String>> data, POSITION position) {
 		mActivity = activity;
 		mData = data;
@@ -79,7 +81,7 @@ public class AdapterList extends BaseAdapter {
 		return vi;
 	}
 
-	// Filter Class
+	// Digunakan untuk mendukung fungsi pencarian.
 	public void filter(ArrayList<HashMap<String, String>> resultDB) {
 		mData.clear();
 		Utilities.copyToNewList(resultDB, mData);
@@ -87,6 +89,7 @@ public class AdapterList extends BaseAdapter {
 		notifyDataSetChanged();
 	}
 	
+	// Digunakan ntuk refresh setelah memasukkan entry baru.
 	public void refresh(int IDtoRefresh){
 		mData.clear();
 		mData = new DatabaseHelper(mActivity).getPostsBySubCat(IDtoRefresh);

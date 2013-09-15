@@ -24,7 +24,11 @@
         android:layout_alignLeft="@+id/tvJudul"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/tvJudul"
-        android:ems="10" >
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="@string/content.post.one.hint"
+        android:singleLine="true" >
+
     </EditText>
 
     <TextView
@@ -43,7 +47,10 @@
         android:layout_alignLeft="@+id/tvIsi"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/tvIsi"
-        android:ems="10" />
+        android:ellipsize="end"
+        android:ems="10"
+        android:hint="@string/content.post.two.hint"
+        android:singleLine="true" />
 
     <TextView
         android:id="@+id/tvAmbilGambar"
@@ -61,7 +68,8 @@
         android:layout_alignLeft="@+id/tvAmbilGambar"
         android:layout_below="@+id/tvAmbilGambar"
         android:layout_toLeftOf="@+id/btnPilih"
-        android:ems="10" />
+        android:ems="10"
+        android:hint="@string/content.post.picture.hint" />
 
     <Button
         android:id="@+id/btnPilih"

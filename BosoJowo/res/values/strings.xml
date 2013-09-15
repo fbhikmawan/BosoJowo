@@ -18,9 +18,12 @@
     <string name="title_new_post">New Post</string>
     <string name="add">Add</string>
     
-    <string name="content.post.one">Jowo :</string>
-    <string name="content.post.two">Indonesia :</string>
+    <string name="content.post.one">Basa Jawa :</string>
+    <string name="content.post.two">Bahasa Indonesia :</string>
     <string name="content.post.picture">Ambil Gambar :</string>
+    <string name="content.post.one.hint">Kata dalam Bahasa Jawa</string>
+    <string name="content.post.two.hint">Kata dalam Bahasa Indonesia</string>
+    <string name="content.post.picture.hint">Pilih gambar untuk entry baru (bisa tidak diberikan)</string>
     <string name="button.pilih">Pilih</string>
     <string name="button.save">SAVE</string>
     <string name="created.by">Dephi    @2013</string>

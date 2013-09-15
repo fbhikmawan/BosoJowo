@@ -21,7 +21,7 @@ import android.widget.RelativeLayout;
 /**
  * Acivity ini akan menampilkan list-list sesuai dengan kategori, subkategori
  * sampai dengan post yang telah dipilih user. Activity ini akan dipanggil 
- * berulang yang kemudian membentuk urutan activity yg berurutan. <br> <br>
+ * berulang yang kemudian membentuk rentetan activity yg berurutan. <br> <br>
  * 
  * Pengategorian supaya pemanggilan berulang activity ini berjalan baik,
  * sebagai berikut: <br>
@@ -44,6 +44,9 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 	
 	public static final int REQ_CODE_REFRESH = 888;
 	
+	/**
+     * Pengeksekusian selalu dilakukan disini terlebih dulu
+     */
 	@SuppressWarnings("deprecation")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -104,7 +107,7 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {   
     	// Deteksi asal pemanggilan lalu mengambil subcatID untuk 
-    	// refresh karena adany new entry
+    	// refresh list karena adany new entry
     	if(!mResultDB.isEmpty() && mResultDB.get(0).containsKey("subcatId")){
     		mSubCatIDtoAddNewEntry = Integer.parseInt(mResultDB.get(0).get("subcatId"));
 		}

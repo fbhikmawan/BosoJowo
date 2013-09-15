@@ -34,10 +34,11 @@ import com.dephi.bosojowo.R;
  */
 public class ActivityMain extends SherlockActivity{
 	
-    @Override
+    
     /**
-     * Pengeksekusian dilakukan disini terlebih dulu
+     * Pengeksekusian selalu dilakukan disini terlebih dulu
      */
+	@Override
     public void onCreate(Bundle savedInstanceState) {
     	// Meng-set tema untuk SherockActivity
     	setTheme(Utilities.THEME);
