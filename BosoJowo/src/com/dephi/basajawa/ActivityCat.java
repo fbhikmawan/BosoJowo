@@ -6,6 +6,7 @@ import java.util.HashMap;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.dephi.basajawa.handler.DatabaseMainHandler;
 import com.dephi.bosojowo.R;
 
 import android.os.Build;
@@ -34,7 +35,7 @@ import android.widget.RelativeLayout;
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 public class ActivityCat extends SherlockActivity implements OnItemClickListener{
 	private ArrayList<HashMap<String, String>> mResultDB;
-	private DatabaseHelper mDB;
+	private DatabaseMainHandler mDB;
 	private ListView mList;
 	private AdapterList mAdapter;
 	private String mSource;
@@ -54,7 +55,7 @@ public class ActivityCat extends SherlockActivity implements OnItemClickListener
 		setContentView(R.layout.activity_sub_cat);
 		
 		// Inisiasi variabel member
-		mDB = new DatabaseHelper(this);
+		mDB = new DatabaseMainHandler(this);
 		mList = (ListView)findViewById(R.id.listContent);
 		
 		// Ambil Intent Ektra dari pemanggilan sebelumnya

@@ -3,6 +3,7 @@ package com.dephi.basajawa;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.dephi.basajawa.handler.DatabaseMainHandler;
 import com.dephi.bosojowo.R;
 
 import android.app.Activity;
@@ -92,7 +93,7 @@ public class AdapterList extends BaseAdapter {
 	// Digunakan ntuk refresh setelah memasukkan entry baru.
 	public void refresh(int IDtoRefresh){
 		mData.clear();
-		mData = new DatabaseHelper(mActivity).getPostsBySubCat(IDtoRefresh);
+		mData = new DatabaseMainHandler(mActivity).getPostsBySubCat(IDtoRefresh);
 		notifyDataSetChanged();
 	}
 }

@@ -6,6 +6,7 @@ import java.util.HashMap;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.dephi.basajawa.handler.DatabaseMainHandler;
 import com.dephi.bosojowo.R;
 
 import android.content.Intent;
@@ -28,7 +29,7 @@ public class ActivitySearch extends SherlockActivity implements OnItemClickListe
 	private ArrayList<HashMap<String, String>> resultDB;
 	private ListView mList;
 	private AdapterList mAdapter;
-	private DatabaseHelper mDB;
+	private DatabaseMainHandler mDB;
 	
 	/**
      * Pengeksekusian selalu dilakukan disini terlebih dulu
@@ -40,7 +41,7 @@ public class ActivitySearch extends SherlockActivity implements OnItemClickListe
 		
 		// Inisiasi elemen widget pada layout
 		mList = (ListView)findViewById(R.id.listSearch);
-		mDB = new DatabaseHelper(this);
+		mDB = new DatabaseMainHandler(this);
 		String keyword = null;
 		resultDB = mDB.getSearchResult(keyword);
 

@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
+import com.dephi.basajawa.handler.DatabaseMainHandler;
 import com.dephi.bosojowo.R;
 
 /**
@@ -107,7 +108,7 @@ public class ActivityNewPost extends SherlockActivity {
 			}
 
 			// Simpan data ke database
-			new DatabaseHelper(this).addPost("" + mIDtoEdit, stringJudul,
+			new DatabaseMainHandler(this).addPost("" + mIDtoEdit, stringJudul,
 					stringIsi, destPath);
 			finish();
 		} else {

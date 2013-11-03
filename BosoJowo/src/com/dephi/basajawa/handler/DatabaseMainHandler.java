@@ -1,4 +1,4 @@
-package com.dephi.basajawa;
+package com.dephi.basajawa.handler;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -22,8 +22,8 @@ import android.database.sqlite.SQLiteOpenHelper;
  * @author Dephi
  *
  */
-public class DatabaseHelper extends SQLiteOpenHelper {
-	private DatabaseHelper mDbHelper = null;
+public class DatabaseMainHandler extends SQLiteOpenHelper {
+	private DatabaseMainHandler mDbHelper = null;
 	private Context mContext;
 
 	// The Android's default system path of your application database.
@@ -36,7 +36,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	private static final String KEY_POSTPICTURE= "picture";
 
 	// Konstruktor
-	public DatabaseHelper(Context context) {
+	public DatabaseMainHandler(Context context) {
 		super(context, DB_NAME, null, 1);
 		this.mContext = context;
 

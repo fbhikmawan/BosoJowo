@@ -15,6 +15,7 @@ import android.widget.RelativeLayout;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
+import com.dephi.basajawa.handler.DatabaseMainHandler;
 import com.dephi.bosojowo.R;
 
 /**
@@ -144,7 +145,7 @@ public class ActivityMain extends SherlockActivity{
      * interaksi pada tampilan menu utama
      */
 	private void setForEachItem() {
-		DatabaseHelper db = new DatabaseHelper(this);
+		DatabaseMainHandler db = new DatabaseMainHandler(this);
 		ArrayList<HashMap<String, String>> mainCat = db.getMain();
 		RelativeLayout mainlayout = (RelativeLayout) findViewById(R.id.layoutMain);
 		int i = 0;

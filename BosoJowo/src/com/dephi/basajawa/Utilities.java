@@ -29,6 +29,7 @@ import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.MenuItem.OnActionExpandListener;
+import com.dephi.basajawa.handler.DatabaseMainHandler;
 import com.dephi.bosojowo.R;
 
 /**
@@ -224,7 +225,7 @@ public class Utilities {
 						KeyEvent event) {
 					String keyword = mEditsearch.getText().toString();
 
-					DatabaseHelper dbHandler = new DatabaseHelper(context);
+					DatabaseMainHandler dbHandler = new DatabaseMainHandler(context);
 					ArrayList<HashMap<String, String>> resultDB = dbHandler.getSearchResult(keyword);
 					
 					adapter.filter(resultDB);
