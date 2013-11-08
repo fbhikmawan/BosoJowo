@@ -118,6 +118,8 @@ public class Utilities {
 			title = res.getString(R.string.title_isi);
 		} else if(source.equals("POSTS_ID")){
 			title = res.getString(R.string.title_detail);
+		} else {
+			title = source;
 		}
 		
 		// Memunculkan ActionBar Add pada saat halaman di posisi akhir
@@ -126,7 +128,7 @@ public class Utilities {
 					new ACTBAR[] { ACTBAR.INFO, ACTBAR.ADD }, title, false);
 		} else {
 			doCreateActionBarBosoJowo(activity, null, menu,
-					new ACTBAR[] { ACTBAR.INFO }, title,false);
+					new ACTBAR[] { ACTBAR.INFO }, title, false);
 		}
 	}
 

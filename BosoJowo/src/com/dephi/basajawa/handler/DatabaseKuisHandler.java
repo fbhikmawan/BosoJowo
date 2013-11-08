@@ -115,96 +115,54 @@ public class DatabaseKuisHandler extends SQLiteOpenHelper {
 	 * Mengambil semua soal dari database
 	 */
 	public List<SoalKuis> getAllSoalKuis() {
-		SQLiteDatabase db = this.getReadableDatabase();
-
+		ArrayList<SoalKuis> AllSoalKuis = new ArrayList<SoalKuis>();
+		
 		// Sets local variable
+		int jumlahSoal;
 		String soal = null;
 		String[] pilihan = new String[4];
+		int[] jawaban = new int[4];
 		
-
-		// Untuk ngambil pertanyaan
-		Cursor cursor = db.query(TABLE_PERTANYAAN, new String[] { PERTANYAAN_ID, PERTANYAAN_NAME}, 
-				PERTANYAAN_ID + "=?", new String[] { String.valueOf(id_pertanyaan) }, null, null, null);
-		if (cursor != null) {
-			totalsoal = cursor.getCount();
-			cursor.moveToPosition(question_number - 1);
-			soal = cursor.getString(1);
+		// Untuk ngambil semua pertanyaan
+		jumlahSoal = getJumlahSoalKeseluruhan();
+		for(int i = 0; i < jumlahSoal; i++){
+			SoalKuis satuSoalKuis = new SoalKuis();
+			
+			// Ambil pertanyaan nomer ke-i kuis
+			soal = getPertanyaanKe(i);
+			
+			// Ambil pilihan jawaban dari pertanyaan nomer ke-i kuis
+			pilihan = getOpsiJawabanDariPertanyaanKe(i);
+			
+			// Ambil tag jawaban dari pertanyaan nomer ke-1 kuis
+			jawaban = getTagJawaban(i);
+			
+			// Set ke dalam model SoalKuis
+			satuSoalKuis.setSoalNomor(i);
+			satuSoalKuis.setPertanyaan(soal);
+			satuSoalKuis.setOpsi(pilihan);
+			satuSoalKuis.setJawaban(jawaban);
+			
+			AllSoalKuis.add(satuSoalKuis);
 		}
-		cursor.close();
-
-		// Untuk ngambil pilihan2
-		Cursor cursor2 = db.query(
-				TABLE_ANSWER,
-				new String[] { ANSWER_ID, ANSWER_ANS, ANSWER_STATUS,
-						QUESTION_ID, PERTANYAAN_ID },
-				PERTANYAAN_ID + "=? AND " + QUESTION_ID + "=?",
-				new String[] { String.valueOf(id_pertanyaan),
-						String.valueOf(question_number) }, null, null, null,
-				null);
-		i = 0;
-		if (cursor2.moveToFirst()) {
-			do {
-				pilihan[i] = cursor2.getString(1);
-				i++;
-			} while (cursor2.moveToNext());
-		}
-		cursor2.close();
-
-		// Untuk ngambil jawaban
-		Cursor cursor3 = db.query(
-				TABLE_ANSWER,
-				new String[] { ANSWER_ID, ANSWER_ANS, ANSWER_STATUS,
-						QUESTION_ID, PERTANYAAN_ID },
-				PERTANYAAN_ID + "=? AND " + QUESTION_ID + "=?",
-				new String[] { String.valueOf(id_pertanyaan),
-						String.valueOf(question_number) }, null, null, null,
-				null);
-		i = 0;
-		int status = 0;
-		if (cursor3.moveToFirst()) {
-			do {
-				status = cursor3.getInt(2);
-				if (status == 1) {
-					jawaban = i;
-					break;
-				}
-				i++;
-			} while (cursor3.moveToNext());
-		}
-		cursor3.close();
-
-		SoalKuis soalKuis = new SoalKuis(question_number, soal, pilihan,
-				jawaban, totalsoal);
+		return AllSoalKuis;
+	}
+	
+	private int getJumlahSoalKeseluruhan() {
+		SQLiteDatabase db = this.getReadableDatabase();
+		String countQuery = "SELECT  * FROM " + TABLE_PERTANYAAN;
+		Cursor cursor = db.rawQuery(countQuery, null);
+		int count = cursor.getCount();
 		db.close();
-
-		// return Pertanyaan
-		return soalKuis;
+		return count;
 	}
 	
-	
-
-	/**
-	 * ** UNTUK PERTANYAAN **
-	 */
-	// Masukkan satu Pertanyaan dalam database
-	public void addPertanyaan(String... arg0) {
-		SQLiteDatabase db = this.getWritableDatabase();
-
-		ContentValues values = new ContentValues();
-		values.put(PERTANYAAN_NAME, arg0[0]);
-
-		// Inserting Row
-		db.insert(TABLE_PERTANYAAN, null, values);
-		db.close(); // Closing database connection
-	}
-	
-	// Ambil satu pertanyaan berdasatkan id
-	public String getPertanyaan(int id_pertanyaan) {
+	private String getPertanyaanKe(int i) {
 		SQLiteDatabase db = this.getReadableDatabase();
 
 		Cursor cursor = db.query(TABLE_PERTANYAAN, new String[] { PERTANYAAN_ID,
 				PERTANYAAN_NAME, }, PERTANYAAN_ID + "=?",
-				new String[] { String.valueOf(id_pertanyaan) }, null, null, null);
+				new String[] { String.valueOf(i) }, null, null, null);
 		if (cursor != null)
 			cursor.moveToFirst();
 
@@ -213,97 +171,49 @@ public class DatabaseKuisHandler extends SQLiteOpenHelper {
 		// return Pertanyaan
 		return cursor.getString(1);
 	}
-
-	// Ambil Semua Pertanyaan
-	public String[] getAllPertanyaan() {
+	
+	private String[] getOpsiJawabanDariPertanyaanKe(int id) {
+		Cursor cursor = getCursorForOPSItable(id);
 		
-		// Select All Query
-		String selectQuery = "SELECT  * FROM " + TABLE_PERTANYAAN;
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(selectQuery, null);
-
 		// looping through all rows and adding to list
-		String[] pertanyaanList = new String[cursor.getCount()];
-		int i=0;
+		String[] opsi = new String[cursor.getCount()];
+		int i = 0;
 		if (cursor.moveToFirst()) {
 			do {
-				pertanyaanList[i] = cursor.getString(1);
+				opsi[i] = cursor.getString(2);
 				i++;
 			} while (cursor.moveToNext());
 		}
-		db.close();
-		// return Pertanyaan list
-		return pertanyaanList;
+		
+		// return tagJawaban
+		return opsi;
 	}
-	/**
-	 * ** SELESAI PERTANYAAN **
-	 */
-
-	/**
-	 * ** UNTUK QUESTION **
-	 */
-	// Masukkan satu Question dalam database
-	public void addQuestion(String... arg0) {
-		SQLiteDatabase db = this.getWritableDatabase();
-
-		ContentValues values = new ContentValues();
-		values.put(QUESTION_SOAL, arg0[0]);
-		values.put(PERTANYAAN_ID, arg0[1]);
-
-		// Inserting Row
-		db.insert(TABLE_OPSI, null, values);
-		db.close(); // Closing database connection
-	}
-
-	// Ambil Jumlah Pertanyaan
-	public int getJumlahQuestions() {
-		SQLiteDatabase db = this.getReadableDatabase();
-		String countQuery = "SELECT  * FROM " + TABLE_OPSI;
-		Cursor cursor = db.rawQuery(countQuery, null);
-		int count = cursor.getCount();
-		db.close();
-
-		// return count
-		return count;
-	}
-
-	/**
-	 * ** SELESAI QUESTION **
-	 */
-
-	/**
-	 * ** UNTUK ANSWER **
-	 */
-	// Masukkan satu Question dalam database
-	public void addAnswer(String... arg0) {
-		SQLiteDatabase db = this.getWritableDatabase();
-
-		ContentValues values = new ContentValues();
-		values.put(ANSWER_ANS, arg0[0]);
-		values.put(ANSWER_STATUS, arg0[1]);
-		values.put(QUESTION_ID, arg0[2]);
-		values.put(PERTANYAAN_ID, arg0[3]);
-
-		// Inserting Row
-		db.insert(TABLE_ANSWER, null, values);
-		db.close(); // Closing database connection
-	}
-
-	// Ambil Jumlah Pertanyaan
-	public int getJumlahAnswer() {
-		SQLiteDatabase db = this.getReadableDatabase();
-		String countQuery = "SELECT  * FROM " + TABLE_ANSWER;
-		Cursor cursor = db.rawQuery(countQuery, null);
-		int count = cursor.getCount();
-		db.close();
-
-		// return count
-		return count;
-	}
-
-	/**
-	 * ** SELESAI QUESTION **
-	 */
-
 	
+	private int[] getTagJawaban(int id) {
+		Cursor cursor = getCursorForOPSItable(id);
+		
+		// looping through all rows and adding to list
+		int[] tags = new int[cursor.getCount()];
+		int i = 0;
+		if (cursor.moveToFirst()) {
+			do {
+				tags[i] = cursor.getInt(3);
+				i++;
+			} while (cursor.moveToNext());
+		}
+		
+		// return tagJawaban
+		return tags;
+	}
+
+	private Cursor getCursorForOPSItable(int id) {
+		SQLiteDatabase db = this.getReadableDatabase();
+
+		Cursor cursor = db.query(TABLE_OPSI, new String[] { OPSI_ID, PERTANYAAN_ID,
+				OPSI_SOAL, OPSI_TAG}, PERTANYAAN_ID + "=?",
+				new String[] { String.valueOf(id) }, null, null, null);
+		db.close();
+		
+		return cursor;
+	}
 }

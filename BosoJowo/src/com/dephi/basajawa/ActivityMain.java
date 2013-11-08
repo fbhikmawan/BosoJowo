@@ -160,5 +160,13 @@ public class ActivityMain extends SherlockActivity{
 			});
 			i++;
 		}
+		ImageView img7 = (ImageView) findViewById(R.id.imageView7);
+		img7.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(ActivityMain.this, ActivityKuis.class);
+		    	startActivity(intent);
+			}
+		});
 	}
 }

@@ -17,7 +17,6 @@
     <string name="title_search">Search</string>
     <string name="title_new_post">New Post</string>
     <string name="add">Add</string>
-    
     <string name="content.post.one">Basa Jawa :</string>
     <string name="content.post.two">Bahasa Indonesia :</string>
     <string name="content.post.picture">Ambil Gambar :</string>
@@ -33,5 +32,9 @@
     <string name="content.kasusastraaan">Kasusastraan</string>
     <string name="content.pewayangan">Pewayangan</string>
     <string name="content.aksarajawa">Aksara Jawa</string>
+    <string name="content.quiz">Quiz</string>
+    <string name="title.activity.activity.kuis">Kuis</string>
+    <string name="title.activity.activity.nilai">Nilai</string>
+    
 
 </resources>

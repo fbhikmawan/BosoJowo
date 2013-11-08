@@ -19,7 +19,7 @@ public class SoalKuis implements Serializable {
 	int SoalNomor;
 	String Pertanyaan;
 	String[] Opsi;
-	int[] jawaban;
+	int[] Jawaban;
 	
 	
 	public int getSoalNomor() {
@@ -41,10 +41,10 @@ public class SoalKuis implements Serializable {
 		Opsi = opsi;
 	}
 	public int[] getJawaban() {
-		return jawaban;
+		return Jawaban;
 	}
 	public void setJawaban(int[] jawaban) {
-		jawaban = jawaban;
+		Jawaban = jawaban;
 	}
 	
 	
