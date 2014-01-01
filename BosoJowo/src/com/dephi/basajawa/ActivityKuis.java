@@ -179,7 +179,7 @@ public class ActivityKuis extends SherlockActivity  {
 			Log.v("Posisi Kata Arane", "" + posisiKataArane);
 			if (posisiKataArane == -1) {
 				kumpulanPertanyaan[i] = null;
-				kumpulanJawaban[i] = null;
+				kumpulanJawaban[i] = "Apel";
 			} else {
 				kumpulanPertanyaan[i] = kalimatPertanyaan;
 				kumpulanJawaban[i] = kalimatJawaban;
@@ -195,29 +195,47 @@ public class ActivityKuis extends SherlockActivity  {
 		for (int i = 0; i < MAX_SOAL; i++) {
 			SoalKuis soal = new SoalKuis();
 			Log.v("Soal Kuis ke-", "" + i);
-			// Generate
+			
+			// Generate Soal
 			boolean cariSelamaTidakNull = true;
 			String pertanyaan;
 			String jawaban;
 			do {
 				int randomArane = getRandomInt(lengthTetawuhanArane);
-				Log.v("Memilih Arane ke-", "" + randomArane);
 				pertanyaan = kumpulanPertanyaan[randomArane];
 				jawaban = kumpulanJawaban[randomArane];
-				if (pertanyaan != null && jawaban != null)
-					cariSelamaTidakNull = false;
+				if (pertanyaan != null && !jawaban.equals("Apel")){
+					if(isSudahAdaSebelumnya(soalsoalKuis, pertanyaan)){
+						cariSelamaTidakNull = true;
+					} else {
+						cariSelamaTidakNull = false;
+					}
+				} else {
+					cariSelamaTidakNull = true;
+				}
 			} while (cariSelamaTidakNull);
 
-			// Untuk menentukan pilihan2 jawaban
+			// Generate Opsi Jawaban
 			String opsiJawaban[] = new String[MAX_PILIHAN_JAWABAN];
 			int letakJawaban = getRandomInt(MAX_PILIHAN_JAWABAN);
-			Log.v("Letak Jawaban", "" + letakJawaban);
 			int[] tagJawaban = new int[MAX_PILIHAN_JAWABAN];
 			for (int j = 0; j < MAX_PILIHAN_JAWABAN; j++) {
-				int randomUntukJawabanAcak = getRandomInt(lengthTetawuhanArane);
-				String jawabanAcak = kumpulanJawaban[randomUntukJawabanAcak];
-				if(jawabanAcak == null) jawabanAcak = "Apel";
-				Log.v("Random Untuk Jawaban Acak", "" + randomUntukJawabanAcak);
+				Log.v("=====================", "=====================");
+				Log.v("Opsi Jawaban", opsiJawaban[0] + "," + opsiJawaban[1] + "," + opsiJawaban[2] + "," + opsiJawaban[3]);
+				boolean cariSelamaTidakSama = true;
+				int randomUntukJawabanAcak;
+				String jawabanAcak;
+				do {
+					randomUntukJawabanAcak = getRandomInt(lengthTetawuhanArane);
+					jawabanAcak = kumpulanJawaban[randomUntukJawabanAcak];
+					Log.v("Jawaban acak yg terpilih", jawabanAcak);
+					if(isSudahAdaSebelumnya(opsiJawaban, jawabanAcak, jawaban)){
+						cariSelamaTidakSama = true;
+					} else {
+						cariSelamaTidakSama = false;
+					}
+				} while (cariSelamaTidakSama);
+				
 				if (j == letakJawaban) {
 					opsiJawaban[j] = jawaban;
 					tagJawaban[j] = 1;
@@ -226,7 +244,7 @@ public class ActivityKuis extends SherlockActivity  {
 					tagJawaban[j] = 0;
 				}
 			}
-
+			Log.v("=====================", "=====================");
 			soal.setSoalNomor(i + 1);
 			soal.setPertanyaan(pertanyaan);
 			soal.setOpsi(opsiJawaban);
@@ -236,26 +254,54 @@ public class ActivityKuis extends SherlockActivity  {
 		}
 	}
 	
+	private boolean isSudahAdaSebelumnya(ArrayList<SoalKuis> soalsoalKuis2,
+			String pertanyaan) {
+		int length = soalsoalKuis2.size();
+		for(int i = 0; i < length; i++){
+			SoalKuis soal = soalsoalKuis2.get(i);
+			if(soal.getPertanyaan().equals(pertanyaan)) return true;
+		}
+		return false;
+	}
+
+	private boolean isSudahAdaSebelumnya(String[] opsiJawaban,
+			String jawabanAcak, String jawaban) {
+		int length = opsiJawaban.length;
+		if(jawabanAcak.equalsIgnoreCase(jawaban)){
+			Log.v("Sama dengan jawaban!!! ulangi lagi", "Sama dengan jawaban!!! ulangi lagi");
+			return true;
+		}
+		for(int i = 0; i < length; i++){
+			if(opsiJawaban[i] != null){
+				if(opsiJawaban[i].equalsIgnoreCase(jawabanAcak)){
+					Log.v("Sudah ada!!! ulangi lagi", "Sudah ada!!! ulangi lagi");
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
 	/**
 	 * Menghasilkan angka acak
 	 * @param maxInt
 	 * @return
 	 */
 	private int getRandomInt(int maxInt){
-		Log.v("Pengolahan angka random", "******************************************");
-		Log.v("Integer Maksimal", "" + maxInt);
+		//Log.v("Pengolahan angka random", "******************************************");
+		//Log.v("Integer Maksimal", "" + maxInt);
 		int faktorKali = 10;
 		if(maxInt > 10 && maxInt <= 100) faktorKali = 100;
-		Log.v("Faktor Pengali", "" + faktorKali);
+		//Log.v("Faktor Pengali", "" + faktorKali);
 		int targetNumber = (int) (Math.round(Math.random()* faktorKali)); 
-		Log.v("Angka Acak yang tercipta", "" + targetNumber);
+		//Log.v("Angka Acak yang tercipta", "" + targetNumber);
 		if(targetNumber != 0) targetNumber = targetNumber - 1;
 		if(targetNumber >= maxInt){
 			targetNumber = (targetNumber % maxInt);
 			//if(targetNumber >= maxInt) targetNumber = targetNumber - 1;
 		}
-		Log.v("Angka Acak yang telah dimodif", "" + targetNumber);
-		Log.v("Selesai", "******************************************");
+		//Log.v("Angka Acak yang telah dimodif", "" + targetNumber);
+		//Log.v("Selesai", "******************************************");
 		return targetNumber;
 	}
 	
